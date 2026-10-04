@@ -115,7 +115,7 @@ async function dump(page, property, window, label) {
   if (!dir) return;
   fs.mkdirSync(dir, { recursive: true });
   const base = path.join(dir, `${property.id}_${window.key}_${label}`);
-  await page.screenshot({ path: base + '.png', fullPage: true }).catch(() => {});
+  if (process.env.DEBUG_SCREENSHOTS !== '0') await page.screenshot({ path: base + '.png', fullPage: true }).catch(() => {});
   const diag = await diagnostics(page);
   fs.writeFileSync(base + '.txt', diag.text || '');
   fs.writeFileSync(base + '.diag.json', JSON.stringify(diag, null, 2));
@@ -171,8 +171,7 @@ async function expandAllOptions(page) {
   if (!(await moreCount(page))) return;
   if (process.env.DEBUG_PRINT) console.log('View more options control:', JSON.stringify(await describeMoreButton(page)));
   const strategies = {
-    roleButton: async () => page.getByRole('button', { name: /view more options/i }).first().click({ timeout: 4000 }),
-    text: async () => page.getByText(/view more options/i).first().click({ timeout: 4000 }),
+    roleButton: async () => page.getByRole('button', { name: /view more options/i }).first().click({ timeout: 3000 }),
     jsClosest: async () => page.evaluate(() => {
       const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
       let node;
@@ -185,12 +184,11 @@ async function expandAllOptions(page) {
       }
       return false;
     }),
-    keyboard: async () => { const t = page.getByText(/view more options/i).first(); await t.focus(); await page.keyboard.press('Enter'); },
   };
   for (const [name, run] of Object.entries(strategies)) {
     try { await run(); } catch (err) { if (process.env.DEBUG_PRINT) console.log(`  expand ${name}: ${err.message.split('\n')[0]}`); }
     let left = 1;
-    for (let i = 0; i < 5 && left; i++) { await sleep(1000); left = await moreCount(page); }
+    for (let i = 0; i < 4 && left; i++) { await sleep(700); left = await moreCount(page); }
     if (process.env.DEBUG_PRINT) console.log(`  expand ${name}: ${left ? 'still shows "View more options"' : 'expanded'}`);
     if (!left) return;
   }
@@ -225,7 +223,7 @@ export function matchScore(property, text) {
 /** Open the hotel's own page when the search landed on a list of results. */
 async function openEntity(page, property) {
   // Google often jumps straight to the hotel page when the query names one hotel.
-  await page.waitForURL(/\/travel\/hotels\/entity\//, { timeout: 6000 }).catch(() => {});
+  await page.waitForURL(/\/travel\/hotels\/entity\//, { timeout: 4000 }).catch(() => {});
   if (/\/travel\/hotels\/entity\//.test(page.url())) return true;
 
   const candidates = await page.evaluate(() => {

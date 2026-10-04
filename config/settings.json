@@ -34,11 +34,11 @@
     "dashboardUrl": "https://himanshumishra2310.github.io/pricecomparison/"
   },
   "crawl": {
-    "concurrency": 3,
+    "concurrency": 4,
     "retries": 2,
     "retryDelayMs": 4000,
-    "pageTimeoutMs": 45000,
-    "politeDelayMs": 1500
+    "pageTimeoutMs": 30000,
+    "politeDelayMs": 1000
   },
   "history": {
     "keepRuns": 500

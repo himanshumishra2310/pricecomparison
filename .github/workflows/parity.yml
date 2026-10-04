@@ -43,7 +43,6 @@ jobs:
       TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
       TWILIO_WHATSAPP_FROM: ${{ secrets.TWILIO_WHATSAPP_FROM }}
       FAIL_ON_ERRORS: '1'
-      DEBUG_DIR: debug
     steps:
       - uses: actions/checkout@v4
         with:
@@ -60,14 +59,6 @@ jobs:
         run: npm run run
         env:
           SCHEDULER: GitHub Actions
-      - name: Save debug screenshots (browser provider only)
-        if: always() && env.PROVIDER == 'browser'
-        uses: actions/upload-artifact@v4
-        with:
-          name: debug-${{ github.run_id }}
-          path: debug/
-          if-no-files-found: ignore
-          retention-days: 3
       - name: Commit results
         run: |
           git config user.name "rate-parity-bot"
