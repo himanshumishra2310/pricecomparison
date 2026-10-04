@@ -194,8 +194,18 @@ async function expandAllOptions(page) {
   }
 }
 
-async function readHeading(page) {
-  return (await page.locator('h1').first().innerText().catch(() => '')).replace(/\s*·\s*[\d,.]+K?\s*results?$/i, '').trim() || null;
+async function readHeading(page, property) {
+  const clean = (x) => String(x || '').replace(/\s*·\s*[\d,.]+K?\s*results?$/i, '').trim();
+  const heads = await page.evaluate(() => [...document.querySelectorAll('h1, h2')].slice(0, 12).map((h) => (h.innerText || '').trim())).catch(() => []);
+  const h1 = clean(heads[0]) || null;
+  if (!property) return h1;
+  let best = { text: h1, score: matchScore(property, h1 || '') };
+  for (const h of heads.slice(1)) {
+    const t = clean(h);
+    const sc = matchScore(property, t);
+    if (sc > best.score) best = { text: t, score: sc };
+  }
+  return best.text;
 }
 
 async function readDateInputs(page) {
@@ -216,10 +226,14 @@ export function matchScore(property, text) {
     else if (t.startsWith(w + ' ') || t.includes(w)) best = Math.max(best, w.length >= t.length * 0.6 ? 85 : 60);
     else if (w.includes(t) && t.length >= w.length * 0.6 && t.split(' ').length >= 3) best = Math.max(best, 80);
     else {
-      const toks = w.split(' ').filter((x) => x.length > 2);
-      const hit = toks.filter((x) => t.includes(x)).length;
-      best = Math.max(best, Math.round((hit / Math.max(1, toks.length)) * 70));
+      const toks = w.split(' ').filter((x) => x.length > 2 || /^\d+$/.test(x));
+      const hit = toks.filter((x) => new RegExp('(^|\\s)' + x + '(\\s|$)').test(t)).length;
+      best = Math.max(best, Math.round((hit / Math.max(1, toks.length)) * 90));
     }
+    // "Sector 27" and "Sector 57" are different hotels: numbers must agree when both names have them.
+    const nw = w.match(/\d+/g) || [];
+    const nt = t.match(/\d+/g) || [];
+    if (nw.length && nt.length && !nw.some((n) => nt.includes(n))) best = Math.min(best, 50);
   }
   return best;
 }
@@ -230,7 +244,7 @@ async function openEntity(page, property, window, settings) {
   await page.waitForURL(/\/travel\/hotels\/entity\//, { timeout: 4000 }).catch(() => {});
   if (/\/travel\/hotels\/entity\//.test(page.url())) return true;
   // Or it shows the hotel's panel inside the search page: heading is the hotel and the price list is there.
-  const heading = await readHeading(page);
+  const heading = await readHeading(page, property);
   if (heading && matchScore(property, heading) >= 75) {
     const hasPrices = await page.getByText(/^(Sponsored\s*·\s*)?(All options|Featured options)$/i).count().catch(() => 0);
     const hasTab = await page.getByRole('tab', { name: /prices/i }).count().catch(() => 0);
@@ -248,7 +262,7 @@ async function openEntity(page, property, window, settings) {
   for (const c of candidates) {
     // Card links read "Hotel name ₹2,195 · 4.3 (21) ..." or "Open Hotel name in a new tab."; score only the name.
     const name = c.text.replace(/^open\s+/i, '').replace(/\s+in a new tab\.?$/i, '').split(/\s₹|\s\d\.\d\s\(/)[0];
-    const score = matchScore(property, name);
+    const score = matchScore(property, name) + (/\/entity\//.test(c.href) ? 2 : 0);
     if (!best || score > best.score) best = { ...c, name, score };
   }
   if (!best || best.score < 75) return false;
@@ -507,11 +521,11 @@ export default {
           return { availability: 'not_found', matchedName: null, prices: [], note: 'Could not find this hotel on Google Hotels.', pricesFor: null, token: null };
         }
         await openPricesTab(page);
-        let matchedName = await readHeading(page);
+        let matchedName = await readHeading(page, property);
         // The page must be this hotel's page. A place name ("Gurugram", "Pitampura") means Google showed a results list instead.
         if (matchScore(property, matchedName || '') < 75) {
           const retried = await openEntity(page, property, window, settings);
-          if (retried) { await openPricesTab(page); matchedName = await readHeading(page); }
+          if (retried) { await openPricesTab(page); matchedName = await readHeading(page, property); }
           if (matchScore(property, matchedName || '') < 75) {
             await dump(page, property, window, 'wronghotel');
             return { availability: 'not_found', matchedName, prices: [], note: `Google opened "${matchedName || 'a results list'}" instead of this hotel. Please check the search wording in config/properties.json.`, pricesFor: null, token: null };
@@ -525,7 +539,7 @@ export default {
             await page.goto(entityUrl(tok[1], property.query, window, settings), { waitUntil: 'domcontentloaded', timeout });
             await sleep(settings.crawl?.politeDelayMs || 1000);
             await openPricesTab(page);
-            matchedName = await readHeading(page);
+            matchedName = await readHeading(page, property);
           }
         }
         await expandAllOptions(page);

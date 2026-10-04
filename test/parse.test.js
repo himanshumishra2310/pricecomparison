@@ -80,6 +80,11 @@ test('matchScore picks the right hotel from a results list', () => {
   assert.ok(matchScore({ name: 'Saltstayz Premier - Pitampura', aliases: [] }, 'Pitampura') < 75);
   assert.ok(matchScore({ name: 'Saltstayz Premier - Pitampura', aliases: [] }, 'Saltstayz Premier - Pitampura · 125 results'.replace(/\s*·.*$/, '')) === 100);
   assert.ok(matchScore(prop, 'Lemon Tree Hotel, Udyog Vihar Gurugram') < 40);
+  // Different sector numbers are different hotels even when every other word matches.
+  assert.ok(matchScore({ name: 'Saltstayz Select - Golf Course Road & Sector 57', aliases: [] }, 'Saltstayz Select Sector 27 - Golf Course Road') <= 50);
+  assert.ok(matchScore({ name: 'Saltstayz Select - Golf Course Road & Sector 27', aliases: [] }, 'Saltstayz Select Sector 27 - Golf Course Road') >= 75);
+  assert.ok(matchScore({ name: 'Saltstayz Premier - Golf Course Road & Sector 42', aliases: [] }, 'Saltstayz Gurgaon - Golf Course Road & Sector 42') >= 75);
+  assert.ok(matchScore({ name: 'Saltstayz Premier - Golf Course Road & Sector 42', aliases: [] }, 'Saltstayz Premier - Golf Course Extension Road') < 75);
 });
 
 test('buildTs reproduces the ts blob Google itself generates', () => {

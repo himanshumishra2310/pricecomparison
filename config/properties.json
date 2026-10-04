@@ -1,38 +1,339 @@
 {
   "_comment": "All 33 live Saltstayz properties. `name` is shown on the dashboard. `query` is what we search on Google Hotels. `aliases` are other names Google may list the hotel under. `googleToken` is filled automatically after the first successful crawl so later runs skip the search step.",
   "properties": [
-    { "id": "autograph-advant-sector-144", "name": "Saltstayz Autograph - Advant & Sector 144", "brand": "Autograph", "city": "Noida", "query": "Saltstayz Autograph Advant Sector 144 Noida", "aliases": ["Saltstayz Autograph Advant"] },
-    { "id": "autograph-connaught-place", "name": "Saltstayz Autograph Connaught Place", "brand": "Autograph", "city": "New Delhi", "query": "Saltstayz Autograph Connaught Place New Delhi", "aliases": ["Saltstayz Autograph CP"] },
-    { "id": "autograph-rishikesh", "name": "Saltstayz Autograph - Rishikesh Near Triveni Ghat", "brand": "Autograph", "city": "Rishikesh", "query": "Saltstayz Autograph Rishikesh Triveni Ghat", "aliases": ["Saltstayz Autograph Rishikesh"] },
-    { "id": "premier-arjun-marg", "name": "Saltstayz Premier - Arjun Marg & Golf Course Road", "brand": "Premier", "city": "Gurugram", "query": "Saltstayz Premier Arjun Marg Golf Course Road Gurugram", "aliases": ["Saltstayz Premier Arjun Marg"] },
-    { "id": "premier-bengaluru-hebbal", "name": "Saltstayz Premier - Bengaluru Hebbal Airport Road", "brand": "Premier", "city": "Bengaluru", "query": "Saltstayz Premier Hebbal Airport Road Bengaluru", "aliases": ["Saltstayz Premier Hebbal"] },
-    { "id": "premier-cyber-hub", "name": "Saltstayz Premier - Cyber Hub", "brand": "Premier", "city": "Gurugram", "query": "Saltstayz Premier Cyber Hub Gurugram", "aliases": ["Saltstayz Premier Cyber Hub"] },
-    { "id": "premier-faridabad-sarita-vihar", "name": "Saltstayz Premier Faridabad Near Sarita Vihar", "brand": "Premier", "city": "Faridabad", "query": "Saltstayz Premier Faridabad Sarita Vihar", "aliases": ["Saltstayz Premier Faridabad"] },
-    { "id": "premier-galleria-sector-27", "name": "Saltstayz Premier - Galleria Market Road & Sector 27", "brand": "Premier", "city": "Gurugram", "query": "Saltstayz Premier Galleria Market Road Sector 27 Gurugram", "aliases": ["Saltstayz Premier Galleria Market"] },
-    { "id": "premier-golf-course-extension-road", "name": "Saltstayz Premier - Golf Course Extension Road", "brand": "Premier", "city": "Gurugram", "query": "Saltstayz Premier Golf Course Extension Road Gurugram", "aliases": ["Saltstayz Premier Golf Course Ext Road"] },
-    { "id": "premier-golf-course-road-sector-42", "name": "Saltstayz Premier - Golf Course Road & Sector 42", "brand": "Premier", "city": "Gurugram", "query": "Saltstayz Premier Golf Course Road Sector 42 Gurugram", "aliases": ["Saltstayz Premier Sector 42"] },
-    { "id": "premier-manesar-sector-86", "name": "Saltstayz Premier - Manesar & Sector 86", "brand": "Premier", "city": "Gurugram", "query": "Saltstayz Premier Manesar Sector 86 Gurugram", "aliases": ["Saltstayz Premier Manesar"] },
-    { "id": "premier-medicity", "name": "Saltstayz Premier - Medicity (Near Medanta)", "brand": "Premier", "city": "Gurugram", "query": "Saltstayz Premier Medicity Medanta Gurugram", "aliases": ["Saltstayz Premier Medicity"] },
-    { "id": "premier-millenium-city-centre", "name": "Saltstayz Premier Millenium City Centre", "brand": "Premier", "city": "Gurugram", "query": "Saltstayz Premier Millennium City Centre Gurugram", "aliases": ["Saltstayz Premier Millennium City Centre"] },
-    { "id": "premier-naraina", "name": "Saltstayz Premier - Naraina, Central Delhi", "brand": "Premier", "city": "New Delhi", "query": "Saltstayz Premier Naraina New Delhi", "aliases": ["Saltstayz Premier Naraina"] },
-    { "id": "premier-near-golf-course-road-sector-57", "name": "Saltstayz Premier - Near Golf Course Road & Sector 57", "brand": "Premier", "city": "Gurugram", "query": "Saltstayz Premier Sector 57 Golf Course Road Gurugram", "aliases": ["Saltstayz Premier"] },
-    { "id": "premier-near-sector-44-corporate-hub", "name": "Saltstayz Premier Near Sector 44 Corporate Hub", "brand": "Premier", "city": "Gurugram", "query": "Saltstayz Premier Sector 44 Corporate Hub Gurugram", "aliases": ["Saltstayz Premier Sector 44"] },
-    { "id": "premier-noida-sector-18-metro", "name": "Saltstayz Premier - Noida, Near Sector 18 Metro", "brand": "Premier", "city": "Noida", "query": "Saltstayz Premier Noida Sector 18 Metro", "aliases": ["Saltstayz Premier Sector 18 Noida"] },
-    { "id": "premier-noida-sector-135-expressway", "name": "Saltstayz Premier Noida Sector 135 Expressway", "brand": "Premier", "city": "Noida", "query": "Saltstayz Premier Noida Sector 135 Expressway", "aliases": ["Saltstayz Premier Sector 135"] },
-    { "id": "premier-paschim-vihar", "name": "Saltstayz Premier - Paschim Vihar", "brand": "Premier", "city": "New Delhi", "query": "Saltstayz Premier Paschim Vihar New Delhi", "aliases": ["Saltstayz Premier Paschim Vihar"] },
-    { "id": "premier-pitampura", "name": "Saltstayz Premier - Pitampura", "brand": "Premier", "city": "New Delhi", "query": "Saltstayz Premier Pitampura New Delhi", "aliases": ["Saltstayz Premier Pitampura"] },
-    { "id": "premier-sector-15-noida", "name": "Saltstayz Premier - Sector 15 Noida", "brand": "Premier", "city": "Noida", "query": "Saltstayz Premier Sector 15 Noida", "aliases": ["Saltstayz Premier Sector 15"] },
-    { "id": "premier-sector-50-golf-course-ext-road", "name": "Saltstayz Premier - Sector 50 & Golf Course Ext Road", "brand": "Premier", "city": "Gurugram", "query": "Saltstayz Premier Sector 50 Golf Course Extension Road Gurugram", "aliases": ["Saltstayz Premier Sector 50"] },
-    { "id": "select-golf-course-road-sector-27", "name": "Saltstayz Select - Golf Course Road & Sector 27", "brand": "Select", "city": "Gurugram", "query": "Saltstayz Select Golf Course Road Sector 27 Gurugram", "aliases": ["Saltstayz Select Sector 27"] },
-    { "id": "select-golf-course-road-sector-57", "name": "Saltstayz Select - Golf Course Road & Sector 57", "brand": "Select", "city": "Gurugram", "query": "Saltstayz Select Golf Course Road Sector 57 Gurugram", "aliases": ["Saltstayz Select Sector 57"] },
-    { "id": "select-malcha-chanakyapuri", "name": "Saltstayz Select - Malcha & Chanakyapuri", "brand": "Select", "city": "New Delhi", "query": "Saltstayz Select Malcha Marg Chanakyapuri New Delhi", "aliases": ["Saltstayz Select Chanakyapuri"] },
-    { "id": "select-near-sohna-road-city-center", "name": "Saltstayz Select - Near Sohna Road City Center", "brand": "Select", "city": "Gurugram", "query": "Saltstayz Select Sohna Road City Center Gurugram", "aliases": ["Saltstayz Select Sohna Road"] },
-    { "id": "select-nehru-place", "name": "Saltstayz Select - Nehru Place & New Friends Colony", "brand": "Select", "city": "New Delhi", "query": "Saltstayz Select Nehru Place New Friends Colony New Delhi", "aliases": ["Saltstayz Select Nehru Place"] },
-    { "id": "select-unitech-cyber-park", "name": "Saltstayz Select - Unitech Cyber Park", "brand": "Select", "city": "Gurugram", "query": "Saltstayz Select Unitech Cyber Park Gurugram", "aliases": ["Saltstayz Select Cyber Park"] },
-    { "id": "trinity-chandigarh-mohali", "name": "Saltstayz Trinity - Chandigarh Mohali", "brand": "Trinity", "city": "Mohali", "query": "Saltstayz Trinity Chandigarh Mohali", "aliases": ["Saltstayz Trinity Mohali"] },
-    { "id": "pause-east-of-kailash", "name": "Pause by Saltstayz - East of Kailash", "brand": "Pause", "city": "New Delhi", "query": "Pause by Saltstayz East of Kailash New Delhi", "aliases": ["Pause East of Kailash"] },
-    { "id": "pause-mg-road", "name": "Pause by Saltstayz - MG Road", "brand": "Pause", "city": "Gurugram", "query": "Pause by Saltstayz MG Road Gurugram", "aliases": ["Pause MG Road"] },
-    { "id": "patio-farms", "name": "Patio Farms by Saltstayz", "brand": "Patio", "city": "Gurugram", "query": "Patio Farms by Saltstayz", "aliases": ["Patio Farms"] },
-    { "id": "golden-tulip-gurugram-manesar", "name": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)", "brand": "Partnership", "city": "Gurugram", "query": "Golden Tulip Gurugram Manesar", "aliases": ["Golden Tulip Gurugram", "Golden Tulip Manesar"] }
+    {
+      "id": "autograph-advant-sector-144",
+      "name": "Saltstayz Autograph - Advant & Sector 144",
+      "brand": "Autograph",
+      "city": "Noida",
+      "query": "Saltstayz Autograph Advant Sector 144 Noida",
+      "aliases": [
+        "Saltstayz Autograph Advant"
+      ]
+    },
+    {
+      "id": "autograph-connaught-place",
+      "name": "Saltstayz Autograph Connaught Place",
+      "brand": "Autograph",
+      "city": "New Delhi",
+      "query": "Saltstayz Autograph Connaught Place New Delhi",
+      "aliases": [
+        "Saltstayz Autograph CP"
+      ]
+    },
+    {
+      "id": "autograph-rishikesh",
+      "name": "Saltstayz Autograph - Rishikesh Near Triveni Ghat",
+      "brand": "Autograph",
+      "city": "Rishikesh",
+      "query": "Saltstayz Autograph Rishikesh Triveni Ghat",
+      "aliases": [
+        "Saltstayz Autograph Rishikesh"
+      ]
+    },
+    {
+      "id": "premier-arjun-marg",
+      "name": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+      "brand": "Premier",
+      "city": "Gurugram",
+      "query": "Saltstayz Premier Arjun Marg Golf Course Road Gurugram",
+      "aliases": [
+        "Saltstayz Premier Arjun Marg"
+      ]
+    },
+    {
+      "id": "premier-bengaluru-hebbal",
+      "name": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+      "brand": "Premier",
+      "city": "Bengaluru",
+      "query": "Saltstayz Premier Hebbal Airport Road Bengaluru",
+      "aliases": [
+        "Saltstayz Premier Hebbal"
+      ]
+    },
+    {
+      "id": "premier-cyber-hub",
+      "name": "Saltstayz Premier - Cyber Hub",
+      "brand": "Premier",
+      "city": "Gurugram",
+      "query": "Saltstayz Premier Cyber Hub Gurugram",
+      "aliases": [
+        "Saltstayz Premier Cyber Hub"
+      ]
+    },
+    {
+      "id": "premier-faridabad-sarita-vihar",
+      "name": "Saltstayz Premier Faridabad Near Sarita Vihar",
+      "brand": "Premier",
+      "city": "Faridabad",
+      "query": "Saltstayz Premier Faridabad Sarita Vihar",
+      "aliases": [
+        "Saltstayz Premier Faridabad"
+      ]
+    },
+    {
+      "id": "premier-galleria-sector-27",
+      "name": "Saltstayz Premier - Galleria Market Road & Sector 27",
+      "brand": "Premier",
+      "city": "Gurugram",
+      "query": "Saltstayz Premier Galleria Market Road Sector 27 Gurugram",
+      "aliases": [
+        "Saltstayz Premier Galleria Market"
+      ]
+    },
+    {
+      "id": "premier-golf-course-extension-road",
+      "name": "Saltstayz Premier - Golf Course Extension Road",
+      "brand": "Premier",
+      "city": "Gurugram",
+      "query": "Saltstayz Premier Golf Course Extension Road Gurugram",
+      "aliases": [
+        "Saltstayz Premier - Golf course extension road",
+        "Saltstayz Premier Golf Course Ext Road"
+      ]
+    },
+    {
+      "id": "premier-golf-course-road-sector-42",
+      "name": "Saltstayz Premier - Golf Course Road & Sector 42",
+      "brand": "Premier",
+      "city": "Gurugram",
+      "query": "Saltstayz Premier Golf Course Road Sector 42 Gurugram",
+      "aliases": [
+        "Saltstayz Gurgaon - Golf Course Road & Sector 42",
+        "Saltstayz Premier Sector 42"
+      ]
+    },
+    {
+      "id": "premier-manesar-sector-86",
+      "name": "Saltstayz Premier - Manesar & Sector 86",
+      "brand": "Premier",
+      "city": "Gurugram",
+      "query": "Saltstayz Premier Manesar Sector 86 Gurugram",
+      "aliases": [
+        "Saltstayz Premier Manesar"
+      ]
+    },
+    {
+      "id": "premier-medicity",
+      "name": "Saltstayz Premier - Medicity (Near Medanta)",
+      "brand": "Premier",
+      "city": "Gurugram",
+      "query": "Saltstayz Premier Medicity Medanta Gurugram",
+      "aliases": [
+        "Saltstayz Premier Medicity"
+      ]
+    },
+    {
+      "id": "premier-millenium-city-centre",
+      "name": "Saltstayz Premier Millenium City Centre",
+      "brand": "Premier",
+      "city": "Gurugram",
+      "query": "Saltstayz Premier Millennium City Centre Gurugram",
+      "aliases": [
+        "Saltstayz Premier Millennium City Centre"
+      ]
+    },
+    {
+      "id": "premier-naraina",
+      "name": "Saltstayz Premier - Naraina, Central Delhi",
+      "brand": "Premier",
+      "city": "New Delhi",
+      "query": "Saltstayz Premier Naraina New Delhi",
+      "aliases": [
+        "Saltstayz Premier Naraina"
+      ]
+    },
+    {
+      "id": "premier-near-golf-course-road-sector-57",
+      "name": "Saltstayz Premier - Near Golf Course Road & Sector 57",
+      "brand": "Premier",
+      "city": "Gurugram",
+      "query": "Saltstayz Premier Sector 57 Golf Course Road Gurugram",
+      "aliases": [
+        "Saltstayz Premier"
+      ]
+    },
+    {
+      "id": "premier-near-sector-44-corporate-hub",
+      "name": "Saltstayz Premier Near Sector 44 Corporate Hub",
+      "brand": "Premier",
+      "city": "Gurugram",
+      "query": "Saltstayz Premier Sector 44 Corporate Hub Gurugram",
+      "aliases": [
+        "Saltstayz Premier Sector 44"
+      ]
+    },
+    {
+      "id": "premier-noida-sector-18-metro",
+      "name": "Saltstayz Premier - Noida, Near Sector 18 Metro",
+      "brand": "Premier",
+      "city": "Noida",
+      "query": "Saltstayz Premier Noida Sector 18 Metro",
+      "aliases": [
+        "Saltstayz Premier Sector 18 Noida"
+      ]
+    },
+    {
+      "id": "premier-noida-sector-135-expressway",
+      "name": "Saltstayz Premier Noida Sector 135 Expressway",
+      "brand": "Premier",
+      "city": "Noida",
+      "query": "Saltstayz Premier Noida Sector 135 Expressway",
+      "aliases": [
+        "Saltstayz Premier Sector 135"
+      ]
+    },
+    {
+      "id": "premier-paschim-vihar",
+      "name": "Saltstayz Premier - Paschim Vihar",
+      "brand": "Premier",
+      "city": "New Delhi",
+      "query": "Saltstayz Premier Paschim Vihar New Delhi",
+      "aliases": [
+        "Saltstayz Premier Paschim Vihar"
+      ]
+    },
+    {
+      "id": "premier-pitampura",
+      "name": "Saltstayz Premier - Pitampura",
+      "brand": "Premier",
+      "city": "New Delhi",
+      "query": "Saltstayz Premier Pitampura New Delhi",
+      "aliases": [
+        "Saltstayz Premier Pitampura"
+      ]
+    },
+    {
+      "id": "premier-sector-15-noida",
+      "name": "Saltstayz Premier - Sector 15 Noida",
+      "brand": "Premier",
+      "city": "Noida",
+      "query": "Saltstayz Premier Sector 15 Noida",
+      "aliases": [
+        "Saltstayz Premier Sector 15"
+      ]
+    },
+    {
+      "id": "premier-sector-50-golf-course-ext-road",
+      "name": "Saltstayz Premier - Sector 50 & Golf Course Ext Road",
+      "brand": "Premier",
+      "city": "Gurugram",
+      "query": "Saltstayz Premier Sector 50 Golf Course Extension Road Gurugram",
+      "aliases": [
+        "Saltstayz Premier Sector 50"
+      ]
+    },
+    {
+      "id": "select-golf-course-road-sector-27",
+      "name": "Saltstayz Select - Golf Course Road & Sector 27",
+      "brand": "Select",
+      "city": "Gurugram",
+      "query": "Saltstayz Select Golf Course Road Sector 27 Gurugram",
+      "aliases": [
+        "Saltstayz Select Sector 27 - Golf Course Road",
+        "Saltstayz Select Sector 27"
+      ]
+    },
+    {
+      "id": "select-golf-course-road-sector-57",
+      "name": "Saltstayz Select - Golf Course Road & Sector 57",
+      "brand": "Select",
+      "city": "Gurugram",
+      "query": "Saltstayz Select Golf Course Road Sector 57 Gurugram",
+      "aliases": [
+        "Saltstayz Select Sector 57"
+      ]
+    },
+    {
+      "id": "select-malcha-chanakyapuri",
+      "name": "Saltstayz Select - Malcha & Chanakyapuri",
+      "brand": "Select",
+      "city": "New Delhi",
+      "query": "Saltstayz Select Malcha Marg Chanakyapuri New Delhi",
+      "aliases": [
+        "Saltstayz Select Chanakyapuri"
+      ]
+    },
+    {
+      "id": "select-near-sohna-road-city-center",
+      "name": "Saltstayz Select - Near Sohna Road City Center",
+      "brand": "Select",
+      "city": "Gurugram",
+      "query": "Saltstayz Select Sohna Road City Center Gurugram",
+      "aliases": [
+        "Saltstayz Select Sohna Road"
+      ]
+    },
+    {
+      "id": "select-nehru-place",
+      "name": "Saltstayz Select - Nehru Place & New Friends Colony",
+      "brand": "Select",
+      "city": "New Delhi",
+      "query": "Saltstayz Select Nehru Place New Friends Colony New Delhi",
+      "aliases": [
+        "Saltstayz Select Nehru Place"
+      ]
+    },
+    {
+      "id": "select-unitech-cyber-park",
+      "name": "Saltstayz Select - Unitech Cyber Park",
+      "brand": "Select",
+      "city": "Gurugram",
+      "query": "Saltstayz Select Unitech Cyber Park Gurugram",
+      "aliases": [
+        "Saltstayz Select Cyber Park"
+      ]
+    },
+    {
+      "id": "trinity-chandigarh-mohali",
+      "name": "Saltstayz Trinity - Chandigarh Mohali",
+      "brand": "Trinity",
+      "city": "Mohali",
+      "query": "Saltstayz Trinity Chandigarh Mohali",
+      "aliases": [
+        "Saltstayz Trinity Mohali"
+      ]
+    },
+    {
+      "id": "pause-east-of-kailash",
+      "name": "Pause by Saltstayz - East of Kailash",
+      "brand": "Pause",
+      "city": "New Delhi",
+      "query": "Pause by Saltstayz East of Kailash New Delhi",
+      "aliases": [
+        "Pause East of Kailash"
+      ]
+    },
+    {
+      "id": "pause-mg-road",
+      "name": "Pause by Saltstayz - MG Road",
+      "brand": "Pause",
+      "city": "Gurugram",
+      "query": "Pause by Saltstayz MG Road Gurugram",
+      "aliases": [
+        "Pause MG Road"
+      ]
+    },
+    {
+      "id": "patio-farms",
+      "name": "Patio Farms by Saltstayz",
+      "brand": "Patio",
+      "city": "Gurugram",
+      "query": "Patio Farms by Saltstayz",
+      "aliases": [
+        "Patio Farms"
+      ]
+    },
+    {
+      "id": "golden-tulip-gurugram-manesar",
+      "name": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+      "brand": "Partnership",
+      "city": "Gurugram",
+      "query": "Golden Tulip Gurugram Manesar",
+      "aliases": [
+        "Golden Tulip Gurugram",
+        "Golden Tulip Manesar"
+      ]
+    }
   ]
 }
