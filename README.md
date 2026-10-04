@@ -85,6 +85,11 @@ by itself.
 
 **Dashboard:** https://himanshumishra2310.github.io/pricecomparison/
 
+One-time step to switch the dashboard link on (GitHub does not let the workflow do this by itself):
+open https://github.com/himanshumishra2310/pricecomparison/settings/pages and under **Build and deployment**
+set **Source** to **GitHub Actions**. Then open the Actions tab, pick "Publish dashboard" and press
+"Run workflow" once. After that every run republishes the page automatically.
+
 One-time setup on the Mac (about 5 minutes):
 
 ```bash
