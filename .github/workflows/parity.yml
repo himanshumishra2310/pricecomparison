@@ -1,14 +1,17 @@
-name: Rate parity check (manual)
+name: Rate parity check
 
-# The every-2-hours schedule runs on a Mac via launchd (scripts/install-mac-schedule.sh),
-# because Google tends to show CAPTCHAs to GitHub's cloud servers. This workflow is kept for
-# manual runs (for example with PROVIDER=serpapi) from the Actions tab.
+# Runs every 2 hours on GitHub's servers (Google Hotels loads fine from there), commits the
+# results to this branch and publishes the dashboard to the gh-pages branch, which GitHub Pages
+# serves at https://himanshumishra2310.github.io/pricecomparison/
+# Can also be started by hand from the Actions tab ("Run workflow").
 on:
+  schedule:
+    - cron: '0 */2 * * *'   # every 2 hours UTC = 01:30, 03:30 ... 23:30 IST
   workflow_dispatch:
     inputs:
       provider:
         description: 'Data source: browser, serpapi or fixture'
-        default: 'serpapi'
+        default: 'browser'
         required: true
 
 concurrency:
@@ -21,9 +24,9 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 50
+    timeout-minutes: 55
     env:
-      PROVIDER: ${{ github.event.inputs.provider }}
+      PROVIDER: ${{ github.event.inputs.provider || vars.PROVIDER || 'browser' }}
       SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
       ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
       SMTP_HOST: ${{ secrets.SMTP_HOST }}
@@ -40,6 +43,7 @@ jobs:
       TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
       TWILIO_WHATSAPP_FROM: ${{ secrets.TWILIO_WHATSAPP_FROM }}
       FAIL_ON_ERRORS: '1'
+      DEBUG_DIR: debug
     steps:
       - uses: actions/checkout@v4
         with:
@@ -55,7 +59,7 @@ jobs:
       - name: Crawl, compare and notify
         run: npm run run
         env:
-          SCHEDULER: GitHub Actions (manual)
+          SCHEDULER: GitHub Actions
       - name: Save debug screenshots (browser provider only)
         if: always() && env.PROVIDER == 'browser'
         uses: actions/upload-artifact@v4
@@ -63,7 +67,8 @@ jobs:
           name: debug-${{ github.run_id }}
           path: debug/
           if-no-files-found: ignore
-      - name: Commit results and dashboard
+          retention-days: 3
+      - name: Commit results
         run: |
           git config user.name "rate-parity-bot"
           git config user.email "rate-parity-bot@users.noreply.github.com"
@@ -73,3 +78,21 @@ jobs:
             git pull --rebase origin "${{ github.ref_name }}" || true
             git push origin HEAD:"${{ github.ref_name }}"
           fi
+      - name: Publish dashboard to gh-pages
+        run: |
+          set -e
+          SRC="$(git rev-parse --short HEAD)"
+          if git fetch origin gh-pages 2>/dev/null; then
+            git worktree add /tmp/site origin/gh-pages
+          else
+            git worktree add --detach /tmp/site
+            (cd /tmp/site && git checkout --orphan gh-pages && git rm -rfq . || true)
+          fi
+          rsync -a --delete --exclude .git docs/ /tmp/site/
+          touch /tmp/site/.nojekyll
+          cd /tmp/site
+          git add -A
+          if git diff --cached --quiet; then echo "Dashboard unchanged."; exit 0; fi
+          git commit -q -m "Publish dashboard from $SRC"
+          git push origin HEAD:gh-pages
+          echo "Published https://himanshumishra2310.github.io/pricecomparison/"

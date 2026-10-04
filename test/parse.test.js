@@ -30,6 +30,11 @@ Deluxe Room with City View
 1 double bed · Free cancellation until 29 Oct
 ₹2,600
 Visit site
+Visit site for more options
+Expedia.com
+Free cancellation until 5 Oct · Free Wi-Fi
+₹2,900
+Visit site
 All options
 Saltstayz Premier - Galleria Market Road & Sector 27
  Official site
@@ -56,6 +61,7 @@ People also viewed
 Townhouse by OYO Tipsyy Inn 16`;
   assert.deepEqual(parsePricesFromText(text), [
     { source: 'Booking.com', price: 2600, official: false },
+    { source: 'Expedia', price: 2900, official: false },
     { source: 'Saltstayz.com', price: 2429, official: true },
     { source: 'MakeMyTrip', price: 2332, official: false },
     { source: 'Agoda', price: 2548, official: false },

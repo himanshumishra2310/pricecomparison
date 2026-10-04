@@ -34,7 +34,7 @@
     "dashboardUrl": "https://himanshumishra2310.github.io/pricecomparison/"
   },
   "crawl": {
-    "concurrency": 2,
+    "concurrency": 3,
     "retries": 2,
     "retryDelayMs": 4000,
     "pageTimeoutMs": 45000,

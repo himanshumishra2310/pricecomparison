@@ -138,10 +138,18 @@ function inputShowsDate(value, iso) {
   return new RegExp('(^|\\D)' + dayMonth(iso).replace(' ', '\\s') + '(\\D|$)', 'i').test(value || '');
 }
 
-/** Google hides most OTAs behind a "View more options" button. */
+/** Google hides most OTAs behind a "View more options from ₹X" button. Click it until it is gone. */
 async function expandAllOptions(page) {
-  const more = page.getByText(/view more options/i).first();
-  if (await more.count()) { await more.click({ timeout: 5000, force: true }).catch(() => {}); await sleep(1200); }
+  for (let i = 0; i < 3; i++) {
+    const btn = page.locator('button, [role="button"], a').filter({ hasText: /view more options/i }).first();
+    const target = (await btn.count()) ? btn : page.getByText(/view more options/i).first();
+    if (!(await target.count())) return;
+    await target.scrollIntoViewIfNeeded().catch(() => {});
+    await target.click({ timeout: 5000, force: true }).catch(() => {});
+    await sleep(1500);
+    const still = await page.getByText(/view more options/i).count().catch(() => 0);
+    if (!still) return;
+  }
 }
 
 async function readDateInputs(page) {
@@ -232,7 +240,7 @@ export function parsePricesFromText(text, directLabel = 'Saltstayz.com') {
   let chunk = [];
   for (let i = start + 1; i < end; i++) {
     const line = lines[i];
-    if (/^visit site$/i.test(line) || /^visit [\w.-]+$/i.test(line)) {
+    if (/^visit site\b/i.test(line) || /^visit [\w.-]+$/i.test(line)) {
       const row = parseRow(chunk, directLabel);
       if (row) out.push(row);
       chunk = [];
@@ -292,13 +300,24 @@ export default {
       const page = await context.newPage();
       page.setDefaultTimeout(timeout);
       try {
-        const url = property.googleToken ? entityUrl(property.googleToken, property.query, window, settings) : searchUrl(property.query, window, settings);
-        await page.goto(url, { waitUntil: 'domcontentloaded', timeout });
-        await sleep(settings.crawl?.politeDelayMs || 1500);
-        if (await isBlocked(page)) { await dump(page, property, window, 'blocked'); throw new Error('Google showed a CAPTCHA / unusual-traffic page. Run from a normal network or use PROVIDER=serpapi.'); }
-
-        await dump(page, property, window, 'search');
-        const opened = await openEntity(page, property);
+        let opened = false;
+        if (property.googleToken) {
+          await page.goto(entityUrl(property.googleToken, property.query, window, settings), { waitUntil: 'domcontentloaded', timeout });
+          await sleep(settings.crawl?.politeDelayMs || 1500);
+          if (await isBlocked(page)) { await dump(page, property, window, 'blocked'); throw new Error('Google showed a CAPTCHA / unusual-traffic page. Run from a normal network or use PROVIDER=serpapi.'); }
+          opened = /\/travel\/hotels\/entity\//.test(page.url());
+        }
+        // Try the configured search first, then the aliases, then "<brand> <city>" and pick the hotel from the list.
+        const brand = property.name.split(/[-,(]/)[0].trim();
+        const queries = [...new Set([property.query, ...(property.aliases || []), `${brand} ${property.city || ''}`.trim()].filter(Boolean))];
+        for (const q of queries) {
+          if (opened) break;
+          await page.goto(searchUrl(q, window, settings), { waitUntil: 'domcontentloaded', timeout });
+          await sleep(settings.crawl?.politeDelayMs || 1500);
+          if (await isBlocked(page)) { await dump(page, property, window, 'blocked'); throw new Error('Google showed a CAPTCHA / unusual-traffic page. Run from a normal network or use PROVIDER=serpapi.'); }
+          await dump(page, property, window, 'search');
+          opened = await openEntity(page, property);
+        }
         if (!opened) {
           await dump(page, property, window, 'notfound');
           return { availability: 'not_found', matchedName: null, prices: [], note: 'Could not find this hotel on Google Hotels.', pricesFor: null, token: null };
@@ -309,7 +328,7 @@ export default {
         await dump(page, property, window, 'prices');
 
         const text = await page.evaluate(() => document.body.innerText);
-        const matchedName = (await page.locator('h1').first().innerText().catch(() => '')).trim() || null;
+        const matchedName = (await page.locator('h1').first().innerText().catch(() => '')).replace(/\s*·\s*[\d,.]+K?\s*results?$/i, '').trim() || null;
         const prices = parsePricesFromText(text, settings.directChannel?.label || 'Saltstayz.com');
         if (!prices.length && /\$\s?\d/.test(text) && !/₹/.test(text)) throw new Error('Google showed prices in a currency other than INR; the ts parameter was not applied.');
         let availability = detectAvailability(text);
