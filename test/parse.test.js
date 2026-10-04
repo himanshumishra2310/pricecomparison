@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parsePrice, normalizeName } from '../src/util.js';
-import { parsePricesFromText } from '../src/providers/browser.js';
+import { parsePricesFromText, buildTs } from '../src/providers/browser.js';
 
 test('parsePrice handles rupee formats', () => {
   assert.equal(parsePrice('₹2,548'), 2548);
@@ -41,4 +41,10 @@ Hotel Something Else
     { source: 'Agoda', price: 2548, official: false },
     { source: 'Cleartrip', price: 2220, official: false },
   ]);
+});
+
+test('buildTs reproduces the ts blob Google itself generates', () => {
+  // Captured from a real Google Hotels URL for 29-30 Oct 2026 in USD.
+  assert.equal(buildTs('2026-10-29', '2026-10-30', 'USD'), 'CAEaIAoCGgASGhIUCgcI6g8QChgdEgcI6g8QChgeGAEyAggBKgkKBToDVVNEGgA');
+  assert.match(buildTs('2026-10-04', '2026-10-05', 'INR'), /^[A-Za-z0-9_-]+$/);
 });

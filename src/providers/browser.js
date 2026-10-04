@@ -54,13 +54,43 @@ async function launch(settings) {
   });
 }
 
-function searchUrl(query) {
-  const u = new URL('https://www.google.com/travel/search');
+/*
+ * Google Hotels keeps the stay dates and the currency in a protobuf blob called `ts` in the URL.
+ * Decoded, it looks like:
+ *   f1: 1
+ *   f3: { f1: { f3: {} }, f2: { f2: { f1: {y, m, d}, f2: {y, m, d}, f3: 1 }, f6: { f1: 1 } } }
+ *   f5: { f1: { f7: "INR" }, f3: {} }
+ * Building it ourselves means the page opens straight on the right dates in rupees.
+ */
+function varint(n) { const out = []; do { let b = n & 0x7f; n >>>= 7; if (n) b |= 0x80; out.push(b); } while (n); return out; }
+function field(num, wire, payload) { return [...varint((num << 3) | wire), ...payload]; }
+function msg(num, bytes) { return field(num, 2, [...varint(bytes.length), ...bytes]); }
+function int(num, v) { return field(num, 0, varint(v)); }
+function str(num, v) { return msg(num, [...Buffer.from(v, 'utf8')]); }
+function dateMsg(num, iso) { const [y, m, d] = iso.split('-').map(Number); return msg(num, [...int(1, y), ...int(2, m), ...int(3, d)]); }
+
+export function buildTs(checkIn, checkOut, currency = 'INR') {
+  const stay = msg(2, [...dateMsg(1, checkIn), ...dateMsg(2, checkOut), ...int(3, 1)]);
+  const f3 = msg(3, [...msg(1, msg(3, [])), ...msg(2, [...stay, ...msg(6, int(1, 1))])]);
+  const f5 = msg(5, [...msg(1, str(7, currency)), ...msg(3, [])]);
+  return Buffer.from([...int(1, 1), ...f3, ...f5]).toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
+function baseParams(u, query, window, settings) {
   u.searchParams.set('q', query);
   u.searchParams.set('hl', 'en-IN');
   u.searchParams.set('gl', 'in');
-  u.searchParams.set('curr', 'INR');
+  u.searchParams.set('curr', settings.currency || 'INR');
+  u.searchParams.set('ts', buildTs(window.checkIn, window.checkOut, settings.currency || 'INR'));
   return u.toString();
+}
+
+function searchUrl(query, window, settings) {
+  return baseParams(new URL('https://www.google.com/travel/search'), query, window, settings);
+}
+
+function entityUrl(token, query, window, settings) {
+  return baseParams(new URL(`https://www.google.com/travel/hotels/entity/${token}/prices`), query, window, settings);
 }
 
 /** What the page looks like right now: url, headings, tabs, inputs, dialogs, travel links and visible text. */
@@ -99,29 +129,19 @@ async function isBlocked(page) {
   return /unusual traffic|detected unusual|not a robot|CAPTCHA/i.test(txt);
 }
 
-/** Type a date into Google's check-in / check-out inputs and confirm. */
-async function setDates(page, window) {
-  const fill = async (label, iso) => {
-    const input = page.locator(`input[aria-label*="${label}" i]`).first();
-    if (!(await input.count())) throw new Error(`${label} date box not found on page`);
-    await input.click({ timeout: 10000 });
-    await input.fill('');
-    await input.type(toGoogleDate(iso), { delay: 30 });
-    await page.keyboard.press('Enter');
-    await sleep(600);
-  };
-  await fill('Check-in', window.checkIn);
-  await fill('Check-out', window.checkOut);
-  // Close the picker if it stayed open.
-  const done = page.getByRole('button', { name: /^done$/i }).first();
-  if (await done.count()) await done.click({ timeout: 3000 }).catch(() => {});
-  await page.keyboard.press('Escape').catch(() => {});
-  await page.waitForLoadState('networkidle', { timeout: 20000 }).catch(() => {});
+/** "2026-10-04" -> "4 Oct", the way Google prints it inside its date boxes ("Sun, 4 Oct"). */
+function dayMonth(iso) {
+  const [y, m, d] = iso.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' });
+}
+function inputShowsDate(value, iso) {
+  return new RegExp('(^|\\D)' + dayMonth(iso).replace(' ', '\\s') + '(\\D|$)', 'i').test(value || '');
 }
 
-function toGoogleDate(iso) {
-  const [y, m, d] = iso.split('-').map(Number);
-  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', timeZone: 'UTC' });
+/** Google hides most OTAs behind a "View more options" button. */
+async function expandAllOptions(page) {
+  const more = page.getByText(/view more options/i).first();
+  if (await more.count()) { await more.click({ timeout: 5000, force: true }).catch(() => {}); await sleep(1200); }
 }
 
 async function readDateInputs(page) {
@@ -226,7 +246,8 @@ export default {
       const page = await context.newPage();
       page.setDefaultTimeout(timeout);
       try {
-        await page.goto(searchUrl(property.query), { waitUntil: 'domcontentloaded', timeout });
+        const url = property.googleToken ? entityUrl(property.googleToken, property.query, window, settings) : searchUrl(property.query, window, settings);
+        await page.goto(url, { waitUntil: 'domcontentloaded', timeout });
         await sleep(settings.crawl?.politeDelayMs || 1500);
         if (await isBlocked(page)) { await dump(page, property, window, 'blocked'); throw new Error('Google showed a CAPTCHA / unusual-traffic page. Run from a normal network or use PROVIDER=serpapi.'); }
 
@@ -236,21 +257,21 @@ export default {
           await dump(page, property, window, 'notfound');
           return { availability: 'not_found', matchedName: null, prices: [], note: 'Could not find this hotel on Google Hotels.', pricesFor: null, token: null };
         }
-        await setDates(page, window);
-        const dates = await readDateInputs(page);
         await openPricesTab(page);
+        await expandAllOptions(page);
+        const dates = await readDateInputs(page);
         await dump(page, property, window, 'prices');
 
         const text = await page.evaluate(() => document.body.innerText);
         const matchedName = (await page.locator('h1').first().innerText().catch(() => '')).trim() || null;
         const prices = parsePricesFromText(text);
+        if (!prices.length && /\$\s?\d/.test(text) && !/₹/.test(text)) throw new Error('Google showed prices in a currency other than INR; the ts parameter was not applied.');
         let availability = detectAvailability(text);
         if (availability === 'available' && prices.length === 0) availability = 'no_rooms';
 
-        const expected = { checkIn: toGoogleDate(window.checkIn), checkOut: toGoogleDate(window.checkOut) };
         let note = '';
         let pricesFor = null;
-        if (dates.checkIn && !dates.checkIn.includes(expected.checkIn.replace(/^\w+, /, ''))) {
+        if (dates.checkIn && !inputShowsDate(dates.checkIn, window.checkIn)) {
           pricesFor = dates.checkIn;
           note = `No rooms on the asked date on Google. Prices shown are for ${dates.checkIn}.`;
           availability = 'no_rooms';
