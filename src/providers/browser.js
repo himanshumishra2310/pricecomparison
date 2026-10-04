@@ -421,12 +421,28 @@ async function setGoogleLocation(page, country) {
     await label.click({ timeout: 4000, force: true }).catch(() => {});
   }
   await sleep(600);
+  if (process.env.DEBUG_PRINT) {
+    const checked = await dialog.evaluate((d) => [...d.querySelectorAll('input[type="radio"]')].filter((r) => r.checked).map((r) => (r.closest('label') || r.parentElement?.parentElement || r.parentElement)?.innerText?.trim().slice(0, 40))).catch(() => null);
+    const indiaRadios = await dialog.getByRole('radio', { name: /^india$/i }).count().catch(() => -1);
+    const indiaText = await dialog.getByText(/^india$/i).count().catch(() => -1);
+    console.log('location: checked =', JSON.stringify(checked), '| india radios =', indiaRadios, '| india text nodes =', indiaText);
+  }
   const ok = dialog.getByRole('button', { name: /^(ok|done|save)$/i }).first();
   if (await ok.count()) await ok.click({ timeout: 4000 }).catch(() => {});
   await page.waitForLoadState('domcontentloaded').catch(() => {});
   await sleep(2500);
   const footer = await page.evaluate(() => (document.body.innerText.match(/(Currency|Location)[^\n]{0,40}/g) || []).join(' / '));
-  if (process.env.DEBUG_PRINT) console.log('location after:', footer);
+  if (process.env.DEBUG_PRINT) {
+    const again = page.getByRole('button', { name: /change location/i }).first();
+    let checked = null;
+    if (await again.count()) {
+      await again.click({ timeout: 4000, force: true }).catch(() => {});
+      await sleep(1200);
+      checked = await page.locator('[role="dialog"]').filter({ hasText: /select your location/i }).first().evaluate((d) => [...d.querySelectorAll('input[type="radio"]')].filter((r) => r.checked).map((r) => (r.closest('label') || r.parentElement?.parentElement || r.parentElement)?.innerText?.trim().slice(0, 40))).catch(() => null);
+      await page.keyboard.press('Escape').catch(() => {});
+    }
+    console.log('location after:', footer, '| re-opened dialog checked =', JSON.stringify(checked), '| url =', page.url().slice(0, 120));
+  }
   return /india/i.test(footer);
 }
 
