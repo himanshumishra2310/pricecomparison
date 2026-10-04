@@ -11,7 +11,7 @@
     "run:serpapi": "PROVIDER=serpapi node src/run.js",
     "run:browser": "PROVIDER=browser node src/run.js",
     "crawl:debug": "node src/debug-crawl.js",
-    "serve": "npx http-server docs -p 8080 -o",
+    "serve": "node scripts/serve.js",
     "test": "node --test \"test/**/*.test.js\""
   },
   "dependencies": {

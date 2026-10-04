@@ -53,7 +53,7 @@ cp .env.example .env      # fill in alert details, see below
 npm run run:fixture       # replay sample data, no network. Good for checking the dashboard.
 npm run run:browser       # crawl Google Hotels in Chromium (free)
 npm run run:serpapi       # crawl via SerpApi (needs SERPAPI_KEY, paid, most reliable)
-npm run serve             # open the dashboard locally
+npm run serve             # view the dashboard locally at http://localhost:8080 (or just open docs/index.html in a browser)
 npm test
 ```
 
@@ -85,10 +85,11 @@ by itself.
 
 **Dashboard:** https://himanshumishra2310.github.io/pricecomparison/
 
-One-time step to switch the dashboard link on (GitHub does not let the workflow do this by itself):
-open https://github.com/himanshumishra2310/pricecomparison/settings/pages and under **Build and deployment**
-set **Source** to **GitHub Actions**. Then open the Actions tab, pick "Publish dashboard" and press
-"Run workflow" once. After that every run republishes the page automatically.
+The page is served from the `gh-pages` branch, which `.github/workflows/pages.yml` refreshes from
+`docs/` every time a crawl pushes new results. Give GitHub a minute or two after a push.
+
+To see the dashboard on your own machine, open `docs/index.html` in any browser (double-click it),
+or run `npm run serve` and open http://localhost:8080. Both show the latest run on that machine.
 
 One-time setup on the Mac (about 5 minutes):
 
@@ -119,7 +120,6 @@ catches up after the Mac wakes from sleep. Keep the Mac awake (System Settings -
 automatic sleeping, or an app like Amphetamine) and logged in. Logs are in `logs/`, screenshots of each
 Google page in `debug/`. Stop it with `scripts/uninstall-mac-schedule.sh`.
 
-`.github/workflows/pages.yml` publishes `docs/` to GitHub Pages on every push, and
 `.github/workflows/parity.yml` is kept for manual cloud runs (for example with SerpApi) from the Actions tab.
 
 Note: this repository is public, so the dashboard and the price history are visible to anyone with
