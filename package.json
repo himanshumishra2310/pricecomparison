@@ -1,0 +1,21 @@
+{
+  "name": "saltstayz-rate-parity",
+  "version": "1.0.0",
+  "description": "Crawls Google Hotels prices for all Saltstayz properties, compares Saltstayz.com against OTAs, and alerts on deviations.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "run": "node src/run.js",
+    "run:fixture": "PROVIDER=fixture node src/run.js",
+    "run:serpapi": "PROVIDER=serpapi node src/run.js",
+    "run:browser": "PROVIDER=browser node src/run.js",
+    "crawl:debug": "node src/debug-crawl.js",
+    "serve": "npx http-server docs -p 8080 -o",
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.16",
+    "playwright": "1.56.1"
+  }
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "2026-10-04_2349",
+    "generatedAt": "2026-10-04T18:19:00.502Z",
+    "windows": [
+      {
+        "key": "D0",
+        "checkIn": "2026-10-04",
+        "total": 33,
+        "comparable": 21,
+        "directLowest": 7,
+        "otaLower": 14,
+        "directMissing": 1,
+        "notOnGoogle": 6,
+        "unavailable": 5,
+        "errors": 0,
+        "pctDirectLowest": 33,
+        "avgGapNearestOta": -0.3,
+        "avgGapWhereDirectLowest": 6.4,
+        "avgGapWhereOtaLowest": -7.2
+      },
+      {
+        "key": "D1",
+        "checkIn": "2026-10-05",
+        "total": 33,
+        "comparable": 21,
+        "directLowest": 9,
+        "otaLower": 12,
+        "directMissing": 1,
+        "notOnGoogle": 6,
+        "unavailable": 5,
+        "errors": 0,
+        "pctDirectLowest": 43,
+        "avgGapNearestOta": 1.7,
+        "avgGapWhereDirectLowest": 7.1,
+        "avgGapWhereOtaLowest": -6.5
+      },
+      {
+        "key": "D2",
+        "checkIn": "2026-10-06",
+        "total": 33,
+        "comparable": 21,
+        "directLowest": 15,
+        "otaLower": 6,
+        "directMissing": 1,
+        "notOnGoogle": 6,
+        "unavailable": 5,
+        "errors": 0,
+        "pctDirectLowest": 71,
+        "avgGapNearestOta": 5.7,
+        "avgGapWhereDirectLowest": 7.6,
+        "avgGapWhereOtaLowest": -7.1
+      }
+    ],
+    "deviations": 46,
+    "added": 46,
+    "resolved": 0
+  }
+]

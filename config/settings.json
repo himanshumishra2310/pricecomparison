@@ -1,0 +1,45 @@
+{
+  "_comment": "Plain-English settings for the rate parity checker. Change these without touching code.",
+  "timezone": "Asia/Kolkata",
+  "currency": "INR",
+  "adults": 2,
+  "nights": 1,
+  "dateWindows": [
+    { "key": "D0", "offsetDays": 0, "label": "Same-day check-in" },
+    { "key": "D1", "offsetDays": 1, "label": "Tomorrow check-in" },
+    { "key": "D2", "offsetDays": 2, "label": "Day-after check-in" }
+  ],
+  "directChannel": {
+    "label": "Saltstayz.com",
+    "matchers": ["saltstayz", "official site", "official"]
+  },
+  "trackedOtas": [
+    { "key": "makemytrip", "label": "MakeMyTrip", "matchers": ["makemytrip", "make my trip", "mmt"] },
+    { "key": "goibibo", "label": "Goibibo", "matchers": ["goibibo"] },
+    { "key": "agoda", "label": "Agoda", "matchers": ["agoda"] },
+    { "key": "booking", "label": "Booking.com", "matchers": ["booking.com", "booking"] }
+  ],
+  "deviation": {
+    "_comment": "Any OTA price below Saltstayz.com is a deviation. minGapRupees / minGapPercent let you ignore rounding noise (0 = flag everything). anyOtaCountsAsDeviation also flags OTAs that are not in trackedOtas (Cleartrip, Traveloka, Vio, etc.).",
+    "minGapRupees": 0,
+    "minGapPercent": 0,
+    "anyOtaCountsAsDeviation": true,
+    "flagMissingDirectPrice": true
+  },
+  "notifications": {
+    "_comment": "mode = 'always' sends an alert on every run that has deviations. 'changes' only sends when a deviation is new or resolved since the last run.",
+    "mode": "always",
+    "includeResolved": true,
+    "dashboardUrl": ""
+  },
+  "crawl": {
+    "concurrency": 2,
+    "retries": 2,
+    "retryDelayMs": 4000,
+    "pageTimeoutMs": 45000,
+    "politeDelayMs": 1500
+  },
+  "history": {
+    "keepRuns": 500
+  }
+}
