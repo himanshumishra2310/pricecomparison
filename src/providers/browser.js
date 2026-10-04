@@ -194,18 +194,28 @@ async function expandAllOptions(page) {
   }
 }
 
+/**
+ * Which hotel is this page showing? In order of reliability:
+ *  1. the "Open <hotel> in a new tab" link that Google adds to the open hotel panel,
+ *  2. the "<hotel> Official site" row at the top of the price list,
+ *  3. the page's h1 (on a results page that is the place, e.g. "Gurugram · 112 results").
+ */
 async function readHeading(page, property) {
   const clean = (x) => String(x || '').replace(/\s*·\s*[\d,.]+K?\s*results?$/i, '').trim();
-  const heads = await page.evaluate(() => [...document.querySelectorAll('h1, h2')].slice(0, 12).map((h) => (h.innerText || '').trim())).catch(() => []);
-  const h1 = clean(heads[0]) || null;
-  if (!property) return h1;
-  let best = { text: h1, score: matchScore(property, h1 || '') };
-  for (const h of heads.slice(1)) {
-    const t = clean(h);
-    const sc = matchScore(property, t);
-    if (sc > best.score) best = { text: t, score: sc };
-  }
-  return best.text;
+  const found = await page.evaluate(() => {
+    const txt = (el) => (el.innerText || el.getAttribute('aria-label') || '').replace(/\s+/g, ' ').trim();
+    for (const a of document.querySelectorAll('a[href*="/entity/"], a[aria-label^="Open "]')) {
+      const m = txt(a).match(/^Open (.+?) in a new tab\.?$/i);
+      if (m) return { via: 'panel', name: m[1] };
+    }
+    const lines = (document.body.innerText || '').split('\n').map((l) => l.trim());
+    const i = lines.findIndex((l) => /^official site$/i.test(l));
+    if (i > 0 && lines[i - 1]) return { via: 'official', name: lines[i - 1] };
+    const h1 = document.querySelector('h1');
+    return { via: 'h1', name: h1 ? h1.innerText.trim() : '' };
+  }).catch(() => ({ via: 'none', name: '' }));
+  if (process.env.DEBUG_PRINT) console.log(`heading via ${found.via}: ${found.name}`);
+  return clean(found.name) || null;
 }
 
 async function readDateInputs(page) {
