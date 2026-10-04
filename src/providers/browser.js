@@ -158,6 +158,8 @@ async function describeMoreButton(page) {
 }
 
 async function moreCount(page) {
+  const fewer = await page.getByText(/^fewer options/i).count().catch(() => 0);
+  if (fewer) return 0;
   return page.getByText(/view more options/i).count().catch(() => 0);
 }
 
@@ -187,8 +189,8 @@ async function expandAllOptions(page) {
   };
   for (const [name, run] of Object.entries(strategies)) {
     try { await run(); } catch (err) { if (process.env.DEBUG_PRINT) console.log(`  expand ${name}: ${err.message.split('\n')[0]}`); }
-    await sleep(1800);
-    const left = await moreCount(page);
+    let left = 1;
+    for (let i = 0; i < 5 && left; i++) { await sleep(1000); left = await moreCount(page); }
     if (process.env.DEBUG_PRINT) console.log(`  expand ${name}: ${left ? 'still shows "View more options"' : 'expanded'}`);
     if (!left) return;
   }
@@ -315,6 +317,63 @@ function parseRow(chunk, directLabel) {
   return null; // a room row or something we do not recognise as a booking platform
 }
 
+/**
+ * Read price rows from the page structure. Every row in the hotel's price list has a "Visit site"
+ * link; the provider is a text line, or a logo whose alt text / aria-label carries the name.
+ * Returns [{ text, names: [...candidate names], price, official }].
+ */
+async function extractRowsFromDom(page) {
+  return page.evaluate(() => {
+    const clean = (x) => String(x || '').replace(/\s+/g, ' ').trim();
+    const isVisit = (el) => /^visit site\b/i.test(clean(el.innerText));
+    const visitLinks = [...document.querySelectorAll('a, [role="link"], button, [role="button"]')].filter(isVisit);
+    const countVisits = (el) => [...el.querySelectorAll('a, [role="link"], button, [role="button"]')].filter(isVisit).length;
+    const rows = [];
+    for (const link of visitLinks) {
+      // Climb until the container holds a price and would hold a second "Visit site" link one level up.
+      let row = link.parentElement;
+      for (let i = 0; i < 10 && row && row.parentElement; i++) {
+        const up = row.parentElement;
+        if (countVisits(up) > 1 || up === document.body) break;
+        row = up;
+      }
+      const text = row.innerText || '';
+      if (!/₹\s?\d/.test(text)) continue;
+      const names = [];
+      for (const img of row.querySelectorAll('img[alt], [aria-label], [title]')) {
+        const v = clean(img.getAttribute('alt') || img.getAttribute('aria-label') || img.getAttribute('title'));
+        if (v && !/visit site|^₹|price|free cancellation|logo$/i.test(v) && v.length < 60) names.push(v.replace(/\s*logo$/i, ''));
+      }
+      rows.push({ text: text.slice(0, 400), names: [...new Set(names)], official: /official site/i.test(text) });
+    }
+    return rows;
+  }).catch(() => []);
+}
+
+/** Turn DOM rows into [{source, price, official}], using the text parser's rules plus logo names. */
+export function pricesFromRows(rows, directLabel = 'Saltstayz.com') {
+  const out = [];
+  for (const r of rows) {
+    const lines = r.text.split('\n').map((l) => l.trim()).filter(Boolean);
+    const priceLine = lines.find((l) => PRICE_RE.test(l));
+    if (!priceLine) continue;
+    const price = parsePrice(priceLine.match(PRICE_RE)[0]);
+    if (price == null) continue;
+    if (r.official) { out.push({ source: directLabel, price, official: true }); continue; }
+    let source = null;
+    for (const cand of [lines[0], ...r.names]) {
+      const m = (cand || '').match(SOURCE_RE);
+      if (m) { source = m[1]; break; }
+      if (/^[A-Za-z][A-Za-z0-9&' .-]{1,30}\.(com|in|co|net|io)$/i.test(cand || '')) { source = cand; break; }
+    }
+    if (!source && r.names.length) source = r.names[0];
+    if (!source) continue; // a room row
+    out.push({ source, price, official: false });
+  }
+  const seen = new Set();
+  return out.filter((p) => { const k = `${p.source.toLowerCase()}|${p.price}`; if (seen.has(k)) return false; seen.add(k); return true; });
+}
+
 /** "Available for 6–7 Oct for ₹3,346." means no rooms on the asked date. */
 function nextAvailable(text) {
   const m = text.match(/Available for ([^.\n]+?) for ₹/i);
@@ -371,7 +430,12 @@ export default {
 
         const text = await page.evaluate(() => document.body.innerText);
         const matchedName = (await page.locator('h1').first().innerText().catch(() => '')).replace(/\s*·\s*[\d,.]+K?\s*results?$/i, '').trim() || null;
-        const prices = parsePricesFromText(text, settings.directChannel?.label || 'Saltstayz.com');
+        const directLabel = settings.directChannel?.label || 'Saltstayz.com';
+        const rows = await extractRowsFromDom(page);
+        if (process.env.DEBUG_PRINT) console.log('DOM rows:', JSON.stringify(rows.map((r) => ({ names: r.names, official: r.official, text: r.text.replace(/\n/g, ' | ').slice(0, 140) })), null, 1));
+        const fromDom = pricesFromRows(rows, directLabel);
+        const fromText = parsePricesFromText(text, directLabel);
+        const prices = fromDom.length >= fromText.length ? fromDom : fromText;
         if (!prices.length && /\$\s?\d/.test(text) && !/₹/.test(text)) throw new Error('Google showed prices in a currency other than INR; the ts parameter was not applied.');
         let availability = detectAvailability(text);
         let note = '';

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parsePrice, normalizeName } from '../src/util.js';
-import { parsePricesFromText, buildTs, matchScore } from '../src/providers/browser.js';
+import { parsePricesFromText, buildTs, matchScore, pricesFromRows } from '../src/providers/browser.js';
 
 test('parsePrice handles rupee formats', () => {
   assert.equal(parsePrice('₹2,548'), 2548);
@@ -82,4 +82,20 @@ test('buildTs reproduces the ts blob Google itself generates', () => {
   // Captured from a real Google Hotels URL for 29-30 Oct 2026 in USD.
   assert.equal(buildTs('2026-10-29', '2026-10-30', 'USD'), 'CAEaIAoCGgASGhIUCgcI6g8QChgdEgcI6g8QChgeGAEyAggBKgkKBToDVVNEGgA');
   assert.match(buildTs('2026-10-04', '2026-10-05', 'INR'), /^[A-Za-z0-9_-]+$/);
+});
+
+test('pricesFromRows uses logo alt text when the provider name is not in the text', () => {
+  const rows = [
+    { text: 'Saltstayz Premier - Cyber Hub\n Official site\n₹3,509\nVisit site', names: [], official: true },
+    { text: 'Agoda\n₹3,346\nVisit site', names: [], official: false },
+    { text: 'Free cancellation until 5 Oct\n,\n₹3,100\nVisit site', names: ['MakeMyTrip'], official: false },
+    { text: 'Free cancellation until 5 Oct\n,\n₹3,050\nVisit site', names: ['Goibibo logo'], official: false },
+    { text: 'Deluxe Room with Balcony\n1 double bed\n₹4,072\nVisit site', names: [], official: false },
+  ];
+  assert.deepEqual(pricesFromRows(rows), [
+    { source: 'Saltstayz.com', price: 3509, official: true },
+    { source: 'Agoda', price: 3346, official: false },
+    { source: 'MakeMyTrip', price: 3100, official: false },
+    { source: 'Goibibo', price: 3050, official: false },
+  ]);
 });
