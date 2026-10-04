@@ -63,14 +63,33 @@ function searchUrl(query) {
   return u.toString();
 }
 
+/** What the page looks like right now: url, headings, tabs, inputs, dialogs, travel links and visible text. */
+async function diagnostics(page) {
+  return page.evaluate(() => {
+    const clean = (s) => String(s || '').replace(/\s+/g, ' ').trim();
+    const links = [...document.querySelectorAll('a[href]')]
+      .filter((a) => /travel|entity/.test(a.getAttribute('href')))
+      .slice(0, 80)
+      .map((a) => `${clean(a.innerText || a.getAttribute('aria-label')).slice(0, 90)}  =>  ${a.getAttribute('href').slice(0, 160)}`);
+    const roleLinks = [...document.querySelectorAll('[role="link"],[role="button"][jsname]')].slice(0, 40).map((d) => clean(d.getAttribute('aria-label') || d.innerText).slice(0, 90));
+    const inputs = [...document.querySelectorAll('input')].map((i) => `${i.getAttribute('aria-label') || ''} | ${i.placeholder || ''} | ${i.value || ''}`);
+    const dialogs = [...document.querySelectorAll('[role="dialog"],[aria-modal="true"]')].map((d) => clean(d.innerText).slice(0, 300));
+    const headings = [...document.querySelectorAll('h1,h2')].slice(0, 12).map((h) => clean(h.innerText).slice(0, 90));
+    const tabs = [...document.querySelectorAll('[role="tab"]')].map((t) => clean(t.innerText).slice(0, 40));
+    return { url: location.href, title: document.title, headings, tabs, inputs, dialogs, links, roleLinks, text: document.body.innerText.slice(0, 7000) };
+  }).catch((e) => ({ error: e.message }));
+}
+
 async function dump(page, property, window, label) {
   const dir = process.env.DEBUG_DIR;
   if (!dir) return;
   fs.mkdirSync(dir, { recursive: true });
   const base = path.join(dir, `${property.id}_${window.key}_${label}`);
   await page.screenshot({ path: base + '.png', fullPage: true }).catch(() => {});
-  const text = await page.evaluate(() => document.body.innerText).catch(() => '');
-  fs.writeFileSync(base + '.txt', text);
+  const diag = await diagnostics(page);
+  fs.writeFileSync(base + '.txt', diag.text || '');
+  fs.writeFileSync(base + '.diag.json', JSON.stringify(diag, null, 2));
+  if (process.env.DEBUG_PRINT) console.log(`\n===== ${label}: ${property.name} =====\n` + JSON.stringify(diag, null, 2));
 }
 
 async function isBlocked(page) {
@@ -126,8 +145,13 @@ async function openEntity(page, property) {
     if (!best || score > best.score) best = { i, score, text };
   }
   if (!best || best.score < 40) return false;
-  await links.nth(best.i).click({ timeout: 10000 });
-  await page.waitForLoadState('domcontentloaded');
+  const href = await links.nth(best.i).getAttribute('href');
+  if (href) {
+    await page.goto(new URL(href, 'https://www.google.com').toString(), { waitUntil: 'domcontentloaded' });
+  } else {
+    await links.nth(best.i).click({ timeout: 10000, force: true });
+    await page.waitForLoadState('domcontentloaded');
+  }
   await sleep(1500);
   return true;
 }
@@ -206,6 +230,7 @@ export default {
         await sleep(settings.crawl?.politeDelayMs || 1500);
         if (await isBlocked(page)) { await dump(page, property, window, 'blocked'); throw new Error('Google showed a CAPTCHA / unusual-traffic page. Run from a normal network or use PROVIDER=serpapi.'); }
 
+        await dump(page, property, window, 'search');
         const opened = await openEntity(page, property);
         if (!opened) {
           await dump(page, property, window, 'notfound');
@@ -232,6 +257,9 @@ export default {
         }
         const tokenMatch = page.url().match(/\/entity\/([^/?]+)/);
         return { availability, matchedName, prices, note, pricesFor, token: tokenMatch ? tokenMatch[1] : null };
+      } catch (err) {
+        await dump(page, property, window, 'error');
+        throw err;
       } finally {
         await page.close().catch(() => {});
       }
