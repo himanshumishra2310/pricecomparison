@@ -450,7 +450,9 @@ export default {
   name: 'browser',
   async init(settings) {
     if (!context) await launch(settings);
-    const country = process.env.GOOGLE_LOCATION ?? 'India';
+    // Setting Google's location to India does NOT make MakeMyTrip / Goibibo appear from a foreign server
+    // (Google picks partners by IP), so this is off by default. Set GOOGLE_LOCATION=India to try it.
+    const country = process.env.GOOGLE_LOCATION || '';
     if (country) {
       const page = await context.newPage();
       try { await setGoogleLocation(page, country); } catch (err) { console.warn('Could not set Google location:', err.message); } finally { await page.close().catch(() => {}); }

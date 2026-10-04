@@ -23,6 +23,8 @@ It runs **every 2 hours** and checks three stays each time, all 1 night, 2 adult
   `config/settings.json` if you only want the four main OTAs to count.
 * **Saltstayz.com price missing** on Google while OTAs are selling the property. This is flagged separately.
 * Sold out, no rooms, or not listed on Google are shown but never raise an alert.
+* Prices are Google's listed nightly rate in INR for 2 adults, exactly as shown in Google's own price
+  list for the hotel. Google's "with taxes + fees" tooltip values are not used.
 * `minGapRupees` / `minGapPercent` in `config/settings.json` let you ignore tiny differences (default 0 = flag everything).
 
 ## How it works
@@ -77,11 +79,19 @@ This opens a visible Chromium, prints what it found, and saves a screenshot and 
 | `fixture` | free | n/a | Replays `test/fixtures/prices.json`. For tests and dashboard previews only. |
 
 
-## Scheduling (every 2 hours, on a Mac)
+## Scheduling (every 2 hours)
 
-The crawl runs on an always-on Mac using Google Chrome, because Google tends to show CAPTCHAs to
-cloud servers. After every run the Mac pushes the results to GitHub and the online dashboard updates
-by itself.
+**Default: GitHub Actions.** `.github/workflows/parity.yml` runs every 2 hours on GitHub's servers,
+commits the results and republishes the dashboard. Nothing to install, nothing to keep awake.
+Google loads fine from there and shows Saltstayz.com against the international OTAs (Agoda,
+Booking.com, Expedia, Trip.com, Hotels.com, Traveloka, Vio, and others).
+
+**Important limitation:** Google chooses which booking sites to list based on the viewer's country.
+From GitHub's servers (USA) it never lists **MakeMyTrip or Goibibo**, so those two columns stay empty
+in GitHub-run results. To include MakeMyTrip and Goibibo the crawl has to run from an Indian internet
+connection: an always-on Mac in the office (setup below), or a server/proxy in India.
+If you switch to the Mac, turn the GitHub schedule off first (comment out the `schedule:` block in
+`parity.yml`) so the two do not push over each other.
 
 **Dashboard:** https://himanshumishra2310.github.io/pricecomparison/
 
@@ -90,6 +100,8 @@ The page is served from the `gh-pages` branch, which `.github/workflows/pages.ym
 
 To see the dashboard on your own machine, open `docs/index.html` in any browser (double-click it),
 or run `npm run serve` and open http://localhost:8080. Both show the latest run on that machine.
+
+### Option B: run on an always-on Mac (gets MakeMyTrip and Goibibo too)
 
 One-time setup on the Mac (about 5 minutes):
 
@@ -120,7 +132,9 @@ catches up after the Mac wakes from sleep. Keep the Mac awake (System Settings -
 automatic sleeping, or an app like Amphetamine) and logged in. Logs are in `logs/`, screenshots of each
 Google page in `debug/`. Stop it with `scripts/uninstall-mac-schedule.sh`.
 
-`.github/workflows/parity.yml` is kept for manual cloud runs (for example with SerpApi) from the Actions tab.
+`.github/workflows/debug.yml` ("Debug one property" in the Actions tab) crawls a single property with
+diagnostics and screenshots. Use it when a property shows "Not on Google" or "Crawl error" to see
+exactly what Google returned.
 
 Note: this repository is public, so the dashboard and the price history are visible to anyone with
 the link. Make the repository private if that is a concern (GitHub Pages on a private repo needs a paid plan).

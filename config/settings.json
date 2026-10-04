@@ -6,19 +6,76 @@
   "adults": 2,
   "nights": 1,
   "dateWindows": [
-    { "key": "D0", "offsetDays": 0, "label": "Same-day check-in" },
-    { "key": "D1", "offsetDays": 1, "label": "Tomorrow check-in" },
-    { "key": "D2", "offsetDays": 2, "label": "Day-after check-in" }
+    {
+      "key": "D0",
+      "offsetDays": 0,
+      "label": "Same-day check-in"
+    },
+    {
+      "key": "D1",
+      "offsetDays": 1,
+      "label": "Tomorrow check-in"
+    },
+    {
+      "key": "D2",
+      "offsetDays": 2,
+      "label": "Day-after check-in"
+    }
   ],
   "directChannel": {
     "label": "Saltstayz.com",
-    "matchers": ["saltstayz", "official site", "official"]
+    "matchers": [
+      "saltstayz",
+      "official site",
+      "official"
+    ]
   },
   "trackedOtas": [
-    { "key": "makemytrip", "label": "MakeMyTrip", "matchers": ["makemytrip", "make my trip", "mmt"] },
-    { "key": "goibibo", "label": "Goibibo", "matchers": ["goibibo"] },
-    { "key": "agoda", "label": "Agoda", "matchers": ["agoda"] },
-    { "key": "booking", "label": "Booking.com", "matchers": ["booking.com", "booking"] }
+    {
+      "key": "makemytrip",
+      "label": "MakeMyTrip",
+      "matchers": [
+        "makemytrip",
+        "make my trip",
+        "mmt"
+      ]
+    },
+    {
+      "key": "goibibo",
+      "label": "Goibibo",
+      "matchers": [
+        "goibibo"
+      ]
+    },
+    {
+      "key": "agoda",
+      "label": "Agoda",
+      "matchers": [
+        "agoda"
+      ]
+    },
+    {
+      "key": "booking",
+      "label": "Booking.com",
+      "matchers": [
+        "booking.com",
+        "booking"
+      ]
+    },
+    {
+      "key": "expedia",
+      "label": "Expedia",
+      "matchers": [
+        "expedia"
+      ]
+    },
+    {
+      "key": "tripcom",
+      "label": "Trip.com",
+      "matchers": [
+        "trip.com"
+      ]
+    }
   ],
   "deviation": {
     "_comment": "Any OTA price below Saltstayz.com is a deviation. minGapRupees / minGapPercent let you ignore rounding noise (0 = flag everything). anyOtaCountsAsDeviation also flags OTAs that are not in trackedOtas (Cleartrip, Traveloka, Vio, etc.).",
@@ -42,5 +99,6 @@
   },
   "history": {
     "keepRuns": 500
-  }
+  },
+  "_comment_otas": "MakeMyTrip and Goibibo only appear on Google when the crawl runs from an Indian internet connection (your Mac). From GitHub's servers Google shows the international OTAs instead. Any OTA not listed here still counts as a deviation and is shown under the property as 'Also cheaper'."
 }
