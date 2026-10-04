@@ -394,12 +394,19 @@ function detectAvailability(text) {
  * sets it to India once per browser session. Set GOOGLE_LOCATION="" to skip.
  */
 async function setGoogleLocation(page, country) {
-  await page.goto('https://www.google.com/travel/hotels?hl=en-IN&gl=in&curr=INR', { waitUntil: 'domcontentloaded' });
+  await page.goto('https://www.google.com/travel/search?q=hotels%20in%20Gurugram&hl=en-IN&gl=in&curr=INR', { waitUntil: 'domcontentloaded' });
+  await sleep(2500);
+  if (process.env.DEBUG_PRINT) {
+    const footer = await page.evaluate(() => (document.body.innerText.match(/(Currency|Location|Language)[^\n]{0,60}/g) || []).slice(0, 6));
+    console.log('location footer before:', JSON.stringify(footer));
+  }
+  const byRole = page.getByRole('button', { name: /change location/i }).first();
+  const byAttr = page.locator('[aria-label*="Change location" i], [role="button"]:has-text("Change location"), button:has-text("Change location"), [role="button"]:has-text("Location")').first();
+  const btn = (await byRole.count()) ? byRole : byAttr;
+  if (!(await btn.count())) { if (process.env.DEBUG_PRINT) console.log('location: no "Change location" control found'); return false; }
+  await btn.scrollIntoViewIfNeeded().catch(() => {});
+  await btn.click({ timeout: 5000, force: true }).catch(async () => { await btn.evaluate((el) => el.click()).catch(() => {}); });
   await sleep(1500);
-  const btn = page.getByRole('button', { name: /change location/i }).first();
-  if (!(await btn.count())) { if (process.env.DEBUG_PRINT) console.log('location: no "Change location" button'); return false; }
-  await btn.click({ timeout: 5000 }).catch(() => {});
-  await sleep(1200);
   if (process.env.DEBUG_PRINT) {
     const dlg = await page.evaluate(() => [...document.querySelectorAll('[role="dialog"],[aria-modal="true"]')].map((d) => ({ text: (d.innerText || '').replace(/\s+/g, ' ').slice(0, 600), inputs: [...d.querySelectorAll('input')].map((i) => `${i.getAttribute('aria-label') || ''}|${i.placeholder || ''}|${i.type}`), buttons: [...d.querySelectorAll('button,[role="button"],[role="option"],[role="radio"]')].slice(0, 40).map((b) => (b.getAttribute('aria-label') || b.innerText || '').replace(/\s+/g, ' ').trim().slice(0, 40)) })));
     console.log('location dialog:', JSON.stringify(dlg, null, 1));
@@ -419,7 +426,7 @@ async function setGoogleLocation(page, country) {
   const done = page.getByRole('button', { name: /^(done|ok|save|apply)$/i }).first();
   if (await done.count()) await done.click({ timeout: 4000 }).catch(() => {});
   await sleep(1500);
-  const footer = await page.evaluate(() => (document.body.innerText.match(/Location\s*[^\n]{0,40}/) || [''])[0]);
+  const footer = await page.evaluate(() => (document.body.innerText.match(/(Currency|Location)[^\n]{0,40}/g) || []).join(' / '));
   if (process.env.DEBUG_PRINT) console.log('location after:', footer);
   return /india/i.test(footer);
 }
