@@ -91,6 +91,8 @@ test('pricesFromRows uses logo alt text when the provider name is not in the tex
     { text: 'Free cancellation until 5 Oct\n,\n₹3,100\nVisit site', names: ['MakeMyTrip'], official: false },
     { text: 'Free cancellation until 5 Oct\n,\n₹3,050\nVisit site', names: ['Goibibo logo'], official: false },
     { text: 'Deluxe Room with Balcony\n1 double bed\n₹4,072\nVisit site', names: [], official: false },
+    { text: 'Agoda₹3,225 with taxes + feesNightly base price', names: [], official: false, tooltip: true },
+    { text: 'Traveloka\n₹9,999\nVisit site', names: [], official: false, hidden: true },
   ];
   assert.deepEqual(pricesFromRows(rows), [
     { source: 'Saltstayz.com', price: 3509, official: true },

@@ -342,9 +342,10 @@ async function extractRowsFromDom(page) {
       const names = [];
       for (const img of row.querySelectorAll('img[alt], [aria-label], [title]')) {
         const v = clean(img.getAttribute('alt') || img.getAttribute('aria-label') || img.getAttribute('title'));
-        if (v && !/visit site|^₹|price|free cancellation|logo$/i.test(v) && v.length < 60) names.push(v.replace(/\s*logo$/i, ''));
+        if (v && !/^visit\b|^₹|price|free cancellation|^logo$/i.test(v) && v.length < 60) names.push(v.replace(/\s*logo$/i, ''));
       }
-      rows.push({ text: text.slice(0, 400), names: [...new Set(names)], official: /official site/i.test(text) });
+      const hidden = !(row.offsetWidth || row.offsetHeight || row.getClientRects().length);
+      rows.push({ text: text.slice(0, 400), names: [...new Set(names)], official: /official site/i.test(text), tooltip: /with taxes \+ fees/i.test(text), hidden });
     }
     return rows;
   }).catch(() => []);
@@ -354,6 +355,7 @@ async function extractRowsFromDom(page) {
 export function pricesFromRows(rows, directLabel = 'Saltstayz.com') {
   const out = [];
   for (const r of rows) {
+    if (r.tooltip || r.hidden) continue; // price-breakdown popups and collapsed rows are not listings
     const lines = r.text.split('\n').map((l) => l.trim()).filter(Boolean);
     const priceLine = lines.find((l) => PRICE_RE.test(l));
     if (!priceLine) continue;
@@ -386,9 +388,52 @@ function detectAvailability(text) {
   return 'available';
 }
 
+/**
+ * Google shows booking partners based on the viewer's country. From a server outside India the
+ * Indian OTAs (MakeMyTrip, Goibibo) are missing. The footer has a "Change location" control; this
+ * sets it to India once per browser session. Set GOOGLE_LOCATION="" to skip.
+ */
+async function setGoogleLocation(page, country) {
+  await page.goto('https://www.google.com/travel/hotels?hl=en-IN&gl=in&curr=INR', { waitUntil: 'domcontentloaded' });
+  await sleep(1500);
+  const btn = page.getByRole('button', { name: /change location/i }).first();
+  if (!(await btn.count())) { if (process.env.DEBUG_PRINT) console.log('location: no "Change location" button'); return false; }
+  await btn.click({ timeout: 5000 }).catch(() => {});
+  await sleep(1200);
+  if (process.env.DEBUG_PRINT) {
+    const dlg = await page.evaluate(() => [...document.querySelectorAll('[role="dialog"],[aria-modal="true"]')].map((d) => ({ text: (d.innerText || '').replace(/\s+/g, ' ').slice(0, 600), inputs: [...d.querySelectorAll('input')].map((i) => `${i.getAttribute('aria-label') || ''}|${i.placeholder || ''}|${i.type}`), buttons: [...d.querySelectorAll('button,[role="button"],[role="option"],[role="radio"]')].slice(0, 40).map((b) => (b.getAttribute('aria-label') || b.innerText || '').replace(/\s+/g, ' ').trim().slice(0, 40)) })));
+    console.log('location dialog:', JSON.stringify(dlg, null, 1));
+  }
+  const input = page.locator('[role="dialog"] input, [aria-modal="true"] input').first();
+  if (await input.count()) {
+    await input.fill(country).catch(() => {});
+    await sleep(1200);
+    const opt = page.locator('[role="dialog"] [role="option"], [role="dialog"] li, [aria-modal="true"] [role="option"]').filter({ hasText: new RegExp(`^${country}$`, 'i') }).first();
+    if (await opt.count()) await opt.click({ timeout: 4000 }).catch(() => {});
+    else await page.keyboard.press('Enter').catch(() => {});
+    await sleep(800);
+  } else {
+    const opt = page.locator('[role="dialog"] [role="option"], [role="dialog"] [role="radio"], [role="dialog"] li').filter({ hasText: new RegExp(`^${country}$`, 'i') }).first();
+    if (await opt.count()) await opt.click({ timeout: 4000 }).catch(() => {});
+  }
+  const done = page.getByRole('button', { name: /^(done|ok|save|apply)$/i }).first();
+  if (await done.count()) await done.click({ timeout: 4000 }).catch(() => {});
+  await sleep(1500);
+  const footer = await page.evaluate(() => (document.body.innerText.match(/Location\s*[^\n]{0,40}/) || [''])[0]);
+  if (process.env.DEBUG_PRINT) console.log('location after:', footer);
+  return /india/i.test(footer);
+}
+
 export default {
   name: 'browser',
-  async init(settings) { if (!context) await launch(settings); },
+  async init(settings) {
+    if (!context) await launch(settings);
+    const country = process.env.GOOGLE_LOCATION ?? 'India';
+    if (country) {
+      const page = await context.newPage();
+      try { await setGoogleLocation(page, country); } catch (err) { console.warn('Could not set Google location:', err.message); } finally { await page.close().catch(() => {}); }
+    }
+  },
   async close() {
     await context?.close().catch(() => {});
     await browser?.close().catch(() => {});
@@ -433,9 +478,10 @@ export default {
         const directLabel = settings.directChannel?.label || 'Saltstayz.com';
         const rows = await extractRowsFromDom(page);
         if (process.env.DEBUG_PRINT) console.log('DOM rows:', JSON.stringify(rows.map((r) => ({ names: r.names, official: r.official, text: r.text.replace(/\n/g, ' | ').slice(0, 140) })), null, 1));
-        const fromDom = pricesFromRows(rows, directLabel);
         const fromText = parsePricesFromText(text, directLabel);
-        const prices = fromDom.length >= fromText.length ? fromDom : fromText;
+        const have = new Set(fromText.map((p) => p.source.toLowerCase()));
+        const fromLogos = pricesFromRows(rows.filter((r) => r.names.length), directLabel).filter((p) => !have.has(p.source.toLowerCase()));
+        const prices = [...fromText, ...fromLogos];
         if (!prices.length && /\$\s?\d/.test(text) && !/₹/.test(text)) throw new Error('Google showed prices in a currency other than INR; the ts parameter was not applied.');
         let availability = detectAvailability(text);
         let note = '';
