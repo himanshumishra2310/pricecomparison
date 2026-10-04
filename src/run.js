@@ -94,9 +94,12 @@ history.push({
   id, generatedAt: run.generatedAt,
   windows: run.windows.map((w) => ({ key: w.key, checkIn: w.checkIn, ...w.summary })),
   deviations: total, added: diff.added.length, resolved: diff.resolved.length,
+  // Short snapshot of who was undercut, so the History tab can show it without opening the run file.
+  undercut: Object.values(diff.current).map((d) => d.kind === 'direct_missing' ? `${d.property} (${d.window}): Saltstayz.com missing, ${d.source} ₹${d.otaPrice.toLocaleString('en-IN')}` : `${d.property} (${d.window}): ${d.source} ₹${d.otaPrice.toLocaleString('en-IN')} vs ₹${d.direct.toLocaleString('en-IN')}, ${d.gapPercent}% lower`),
 });
-writeJson(histFile, history.slice(-(settings.history?.keepRuns || 500)));
-fs.writeFileSync(path.join(ROOT, 'docs', 'index.html'), renderDashboard(run, settings));
+const trimmed = history.slice(-(settings.history?.keepRuns || 500));
+writeJson(histFile, trimmed);
+fs.writeFileSync(path.join(ROOT, 'docs', 'index.html'), renderDashboard(run, settings, trimmed, settings.repoUrl || process.env.REPO_URL || ''));
 if (!dryRun) saveState({ ...state, lastRunId: id, openDeviations: diff.current });
 
 // 5. Console summary

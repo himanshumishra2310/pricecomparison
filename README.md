@@ -39,7 +39,9 @@ data/runs/<date>/<time>.json   every run, kept forever
 data/state.json          which deviations were open last run (so alerts can say "new" / "resolved")
 docs/index.html          the dashboard, served by GitHub Pages
 docs/latest.json         the latest run as data
-docs/history.json        one line per run with the summary numbers
+docs/history.json        one line per run with the summary numbers and who was undercut (the History tab)
+scripts/run-mac.sh       one run + push, used by the Mac schedule
+scripts/install-mac-schedule.sh   switches the every-2-hours Mac schedule on
 ```
 
 ## Running it
@@ -70,27 +72,53 @@ This opens a visible Chromium, prints what it found, and saves a screenshot and 
 
 | Provider | Cost | Reliability | Notes |
 |---|---|---|---|
-| `browser` | free | medium | Google can show a CAPTCHA to cloud IPs (GitHub Actions). Works best from a normal machine. `BROWSER_CHANNEL=chrome` and `BROWSER_PROFILE_DIR=.profile` reduce CAPTCHAs. |
+| `browser` | free | medium | **Default.** Google can show a CAPTCHA to cloud IPs (GitHub Actions). Works best from a normal machine. `BROWSER_CHANNEL=chrome` and `BROWSER_PROFILE_DIR=.profile` reduce CAPTCHAs. |
 | `serpapi` | paid | high | 99 searches per run (33 x 3 windows), ~1,200/day, ~36,000/month at 2-hourly. Check SerpApi pricing before enabling. |
 | `fixture` | free | n/a | Replays `test/fixtures/prices.json`. For tests and dashboard previews only. |
 
-The scheduled GitHub Actions job uses `serpapi` by default. Change it by setting a repository
-**variable** called `PROVIDER` (Settings -> Secrets and variables -> Actions -> Variables) to `browser`.
 
-## Scheduling (every 2 hours)
+## Scheduling (every 2 hours, on a Mac)
 
-`.github/workflows/parity.yml` runs at minute 0 of every even UTC hour (01:30, 03:30, ... 23:30 IST),
-commits the results and the dashboard back to this branch, and can also be started by hand from the
-Actions tab ("Run workflow"). GitHub may delay scheduled runs by a few minutes when busy.
+The crawl runs on an always-on Mac using Google Chrome, because Google tends to show CAPTCHAs to
+cloud servers. After every run the Mac pushes the results to GitHub and the online dashboard updates
+by itself.
 
-To turn on the dashboard: Settings -> Pages -> Source "Deploy from a branch" -> this branch, folder `/docs`.
-Then put the Pages URL in `config/settings.json` under `notifications.dashboardUrl` so alerts link to it.
+**Dashboard:** https://himanshumishra2310.github.io/pricecomparison/
 
-If you would rather run it on a Mac that is always on, a cron line does the same thing:
+One-time setup on the Mac (about 5 minutes):
 
+```bash
+# 1. Get the code. Needs git and Node 20+ (brew install node).
+git clone https://github.com/himanshumishra2310/pricecomparison.git
+cd pricecomparison
+npm install
+
+# 2. Make sure git can push without asking for a password (GitHub Desktop login or `gh auth login` both work),
+#    then test a push once:  git push
+
+# 3. Optional: alert details
+cp .env.example .env     # fill in email / WhatsApp values, see Alerts below
+
+# 4. Check one property in a visible Chrome window to confirm Google's page is read correctly
+HEADLESS=false node src/debug-crawl.js "Cyber Hub" D0
+
+# 5. Do one full run by hand (takes 10-20 minutes for 33 properties x 3 dates)
+scripts/run-mac.sh && tail -20 logs/$(date +%F).log
+
+# 6. Switch on the every-2-hours schedule
+scripts/install-mac-schedule.sh
 ```
-0 */2 * * * cd /path/to/pricecomparison && PROVIDER=browser BROWSER_CHANNEL=chrome BROWSER_PROFILE_DIR=.profile npm run run >> run.log 2>&1
-```
+
+The schedule uses macOS launchd (`~/Library/LaunchAgents/com.saltstayz.rateparity.plist`), which also
+catches up after the Mac wakes from sleep. Keep the Mac awake (System Settings -> Energy -> Prevent
+automatic sleeping, or an app like Amphetamine) and logged in. Logs are in `logs/`, screenshots of each
+Google page in `debug/`. Stop it with `scripts/uninstall-mac-schedule.sh`.
+
+`.github/workflows/pages.yml` publishes `docs/` to GitHub Pages on every push, and
+`.github/workflows/parity.yml` is kept for manual cloud runs (for example with SerpApi) from the Actions tab.
+
+Note: this repository is public, so the dashboard and the price history are visible to anyone with
+the link. Make the repository private if that is a concern (GitHub Pages on a private repo needs a paid plan).
 
 ## Alerts
 

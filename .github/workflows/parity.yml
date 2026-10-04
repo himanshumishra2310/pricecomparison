@@ -1,15 +1,15 @@
-name: Rate parity check
+name: Rate parity check (manual)
 
+# The every-2-hours schedule runs on a Mac via launchd (scripts/install-mac-schedule.sh),
+# because Google tends to show CAPTCHAs to GitHub's cloud servers. This workflow is kept for
+# manual runs (for example with PROVIDER=serpapi) from the Actions tab.
 on:
-  schedule:
-    # Every 2 hours (UTC). In IST that is 01:30, 03:30, 05:30 ... 23:30.
-    - cron: '0 */2 * * *'
   workflow_dispatch:
     inputs:
       provider:
         description: 'Data source: browser, serpapi or fixture'
-        default: ''
-        required: false
+        default: 'serpapi'
+        required: true
 
 concurrency:
   group: rate-parity
@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 50
     env:
-      PROVIDER: ${{ github.event.inputs.provider || vars.PROVIDER || 'serpapi' }}
+      PROVIDER: ${{ github.event.inputs.provider }}
       SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
       ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
       SMTP_HOST: ${{ secrets.SMTP_HOST }}
@@ -44,23 +44,18 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
-
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-
       - run: npm ci
-
       - name: Install Chromium (browser provider only)
         if: env.PROVIDER == 'browser'
         run: npx playwright install --with-deps chromium
-
       - name: Crawl, compare and notify
         run: npm run run
         env:
-          SCHEDULER: GitHub Actions
-
+          SCHEDULER: GitHub Actions (manual)
       - name: Save debug screenshots (browser provider only)
         if: always() && env.PROVIDER == 'browser'
         uses: actions/upload-artifact@v4
@@ -68,16 +63,13 @@ jobs:
           name: debug-${{ github.run_id }}
           path: debug/
           if-no-files-found: ignore
-
       - name: Commit results and dashboard
         if: always()
         run: |
           git config user.name "rate-parity-bot"
           git config user.email "rate-parity-bot@users.noreply.github.com"
           git add data docs
-          if git diff --cached --quiet; then
-            echo "Nothing changed."
-          else
+          if git diff --cached --quiet; then echo "Nothing changed."; else
             git commit -m "Rate parity run $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
             git pull --rebase origin "${{ github.ref_name }}" || true
             git push origin HEAD:"${{ github.ref_name }}"
