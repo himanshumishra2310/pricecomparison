@@ -411,21 +411,22 @@ async function setGoogleLocation(page, country) {
     const dlg = await page.evaluate(() => [...document.querySelectorAll('[role="dialog"],[aria-modal="true"]')].map((d) => ({ text: (d.innerText || '').replace(/\s+/g, ' ').slice(0, 600), inputs: [...d.querySelectorAll('input')].map((i) => `${i.getAttribute('aria-label') || ''}|${i.placeholder || ''}|${i.type}`), buttons: [...d.querySelectorAll('button,[role="button"],[role="option"],[role="radio"]')].slice(0, 40).map((b) => (b.getAttribute('aria-label') || b.innerText || '').replace(/\s+/g, ' ').trim().slice(0, 40)) })));
     console.log('location dialog:', JSON.stringify(dlg, null, 1));
   }
-  const input = page.locator('[role="dialog"] input, [aria-modal="true"] input').first();
-  if (await input.count()) {
-    await input.fill(country).catch(() => {});
-    await sleep(1200);
-    const opt = page.locator('[role="dialog"] [role="option"], [role="dialog"] li, [aria-modal="true"] [role="option"]').filter({ hasText: new RegExp(`^${country}$`, 'i') }).first();
-    if (await opt.count()) await opt.click({ timeout: 4000 }).catch(() => {});
-    else await page.keyboard.press('Enter').catch(() => {});
-    await sleep(800);
+  // The dialog is "Select your location" with one radio per country and Cancel / OK buttons.
+  const dialog = page.locator('[role="dialog"], [aria-modal="true"]').filter({ hasText: /select your location/i }).first();
+  if (!(await dialog.count())) { if (process.env.DEBUG_PRINT) console.log('location: dialog did not open'); return false; }
+  const radio = dialog.getByRole('radio', { name: new RegExp(`^${country}$`, 'i') }).first();
+  if (await radio.count()) {
+    await radio.check({ timeout: 4000, force: true }).catch(async () => radio.click({ timeout: 4000, force: true }).catch(() => {}));
   } else {
-    const opt = page.locator('[role="dialog"] [role="option"], [role="dialog"] [role="radio"], [role="dialog"] li').filter({ hasText: new RegExp(`^${country}$`, 'i') }).first();
-    if (await opt.count()) await opt.click({ timeout: 4000 }).catch(() => {});
+    const label = dialog.getByText(new RegExp(`^${country}$`, 'i')).first();
+    await label.scrollIntoViewIfNeeded().catch(() => {});
+    await label.click({ timeout: 4000, force: true }).catch(() => {});
   }
-  const done = page.getByRole('button', { name: /^(done|ok|save|apply)$/i }).first();
-  if (await done.count()) await done.click({ timeout: 4000 }).catch(() => {});
-  await sleep(1500);
+  await sleep(600);
+  const ok = dialog.getByRole('button', { name: /^(ok|done|save)$/i }).first();
+  if (await ok.count()) await ok.click({ timeout: 4000 }).catch(() => {});
+  await page.waitForLoadState('domcontentloaded').catch(() => {});
+  await sleep(2500);
   const footer = await page.evaluate(() => (document.body.innerText.match(/(Currency|Location)[^\n]{0,40}/g) || []).join(' / '));
   if (process.env.DEBUG_PRINT) console.log('location after:', footer);
   return /india/i.test(footer);
