@@ -81,7 +81,7 @@ export function compareProperty(property, raw, settings) {
   }
   const otas = [...otaMin.values()].sort((a, b) => a.price - b.price);
 
-  if (raw.availability === 'sold_out' || raw.availability === 'no_rooms') {
+  if (raw.availability === 'sold_out' || raw.availability === 'no_rooms' || raw.availability === 'no_prices') {
     row.status = raw.availability;
     if (raw.availability === 'sold_out') row.note = row.note || 'Sold out tonight on Google.';
     // Still compute what is visible so the dashboard shows it, but no deviation is raised.

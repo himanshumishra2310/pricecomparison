@@ -151,27 +151,48 @@ async function readDateInputs(page) {
   });
 }
 
+/** Score how well a listed hotel name matches the property we want (0-100). */
+export function matchScore(property, text) {
+  const t = normalizeName(text);
+  if (!t) return 0;
+  const wanted = [property.name, ...(property.aliases || [])].map(normalizeName);
+  let best = 0;
+  for (const w of wanted) {
+    if (t === w) best = Math.max(best, 100);
+    else if (t.startsWith(w + ' ') || t.includes(w)) best = Math.max(best, w.length >= t.length * 0.6 ? 85 : 60);
+    else if (w.includes(t) && t.length >= w.length * 0.6) best = Math.max(best, 80);
+    else {
+      const toks = w.split(' ').filter((x) => x.length > 2);
+      const hit = toks.filter((x) => t.includes(x)).length;
+      best = Math.max(best, Math.round((hit / Math.max(1, toks.length)) * 70));
+    }
+  }
+  return best;
+}
+
 /** Open the hotel's own page when the search landed on a list of results. */
 async function openEntity(page, property) {
-  if (/\/travel\/hotels\/entity\//.test(page.url()) || /\/travel\/hotels\/[^?]+\/entity/.test(page.url())) return true;
-  const wanted = [property.name, ...(property.aliases || [])].map(normalizeName);
-  const links = page.locator('a[href*="/travel/hotels/entity/"], a[href*="/entity/"]');
-  const n = await links.count();
+  // Google often jumps straight to the hotel page when the query names one hotel.
+  await page.waitForURL(/\/travel\/hotels\/entity\//, { timeout: 6000 }).catch(() => {});
+  if (/\/travel\/hotels\/entity\//.test(page.url())) return true;
+
+  const candidates = await page.evaluate(() => {
+    const clean = (x) => String(x || '').replace(/\s+/g, ' ').trim();
+    return [...document.querySelectorAll('a[href*="/travel/"]')]
+      .map((a) => ({ text: clean(a.innerText || a.getAttribute('aria-label')), href: a.getAttribute('href') }))
+      .filter((l) => l.text && l.href && !/support\.google|accounts\.google/.test(l.href))
+      .slice(0, 200);
+  });
   let best = null;
-  for (let i = 0; i < Math.min(n, 30); i++) {
-    const text = normalizeName((await links.nth(i).innerText().catch(() => '')) || (await links.nth(i).getAttribute('aria-label').catch(() => '')) || '');
-    if (!text) continue;
-    const score = wanted.reduce((s, w) => Math.max(s, text === w ? 100 : text.includes(w) || w.includes(text) ? 80 : w.split(' ').filter((t) => t.length > 2 && text.includes(t)).length * 12), 0);
-    if (!best || score > best.score) best = { i, score, text };
+  for (const c of candidates) {
+    // Card links read "Hotel name ₹2,195 · 4.3 (21) ..."; score only the part before the price/rating.
+    const name = c.text.split(/\s₹|\s\d\.\d\s\(/)[0];
+    const score = matchScore(property, name);
+    if (!best || score > best.score) best = { ...c, name, score };
   }
-  if (!best || best.score < 40) return false;
-  const href = await links.nth(best.i).getAttribute('href');
-  if (href) {
-    await page.goto(new URL(href, 'https://www.google.com').toString(), { waitUntil: 'domcontentloaded' });
-  } else {
-    await links.nth(best.i).click({ timeout: 10000, force: true });
-    await page.waitForLoadState('domcontentloaded');
-  }
+  if (!best || best.score < 75) return false;
+  await page.goto(new URL(best.href, 'https://www.google.com').toString(), { waitUntil: 'domcontentloaded' });
+  await page.waitForURL(/\/travel\/hotels\/entity\//, { timeout: 8000 }).catch(() => {});
   await sleep(1500);
   return true;
 }
@@ -190,32 +211,36 @@ async function openPricesTab(page) {
   }
 }
 
+const SECTION_START = /^(Sponsored\s*·\s*)?(Featured options|All options)$/i;
+const SECTION_END = /^(Sponsored\s*·\s*)?(Similar hotels|People also viewed|Popular hotels|About this hotel|Google review summary|Nearby places|Photos|Holiday rentals nearby|\d+ top things to know)$/i;
+
 /**
- * Parse Google's page text into [{source, price, official}]. We read innerText rather than CSS
- * classes because Google's class names change constantly but the text order is stable:
- *   "Saltstayz.com" / "Official site" / "₹2,429" ... "MakeMyTrip" / "₹2,332".
+ * Parse the hotel's own price list out of the page text into [{source, price, official}].
+ * The list sits between "Featured options"/"All options" and "Similar hotels", and every row ends
+ * with a "Visit site" link:
+ *   Saltstayz Premier - Cyber Hub / Official site / ₹2,429 / Visit site
+ *   MakeMyTrip / Free cancellation until 29 Oct / , / ₹2,332 / Visit site
+ * Room-level rows (e.g. "Deluxe Room ... / ₹2,548 / Visit site") carry no provider name and are skipped.
  */
-export function parsePricesFromText(text) {
+export function parsePricesFromText(text, directLabel = 'Saltstayz.com') {
   const lines = text.split('\n').map((l) => l.trim()).filter(Boolean);
+  const start = lines.findIndex((l) => SECTION_START.test(l));
+  if (start < 0) return [];
+  let end = lines.findIndex((l, i) => i > start && SECTION_END.test(l));
+  if (end < 0) end = lines.length;
   const out = [];
-  for (let i = 0; i < lines.length; i++) {
-    if (/^official site$/i.test(lines[i])) continue; // badge line, not a provider
-    const m = lines[i].match(SOURCE_RE);
-    const isOfficial = /official site/i.test(lines[i]) || (lines[i + 1] && /official site/i.test(lines[i + 1]));
-    let source = m ? m[1] : null;
-    if (!source && /^[A-Za-z][A-Za-z0-9 .'-]{1,30}$/.test(lines[i]) && isOfficial) source = lines[i].trim();
-    if (!source) continue;
-    for (let j = i; j <= Math.min(i + 4, lines.length - 1); j++) {
-      if (j > i && lines[j].match(SOURCE_RE)) break; // ran into the next provider
-      const pm = lines[j].match(PRICE_RE);
-      if (pm) {
-        const price = parsePrice(pm[0]);
-        if (price != null) out.push({ source, price, official: isOfficial || /saltstayz/i.test(source) });
-        break;
-      }
+  let chunk = [];
+  for (let i = start + 1; i < end; i++) {
+    const line = lines[i];
+    if (/^visit site$/i.test(line) || /^visit [\w.-]+$/i.test(line)) {
+      const row = parseRow(chunk, directLabel);
+      if (row) out.push(row);
+      chunk = [];
+      continue;
     }
+    if (SECTION_START.test(line)) { chunk = []; continue; }
+    chunk.push(line);
   }
-  // De-dupe exact repeats (the page often prints the featured price twice).
   const seen = new Set();
   return out.filter((p) => {
     const k = `${p.source.toLowerCase()}|${p.price}`;
@@ -223,6 +248,27 @@ export function parsePricesFromText(text) {
     seen.add(k);
     return true;
   });
+}
+
+function parseRow(chunk, directLabel) {
+  if (!chunk.length) return null;
+  const priceLine = chunk.find((l) => PRICE_RE.test(l));
+  if (!priceLine) return null;
+  const price = parsePrice(priceLine.match(PRICE_RE)[0]);
+  if (price == null) return null;
+  const official = chunk.some((l) => /^official site$/i.test(l));
+  if (official) return { source: directLabel, price, official: true };
+  const head = chunk[0];
+  const m = head.match(SOURCE_RE);
+  if (m) return { source: m[1], price, official: false };
+  if (/^[A-Za-z][A-Za-z0-9&' .-]{1,30}\.(com|in|co|net|io)$/i.test(head)) return { source: head, price, official: false };
+  return null; // a room row or something we do not recognise as a booking platform
+}
+
+/** "Available for 6–7 Oct for ₹3,346." means no rooms on the asked date. */
+function nextAvailable(text) {
+  const m = text.match(/Available for ([^.\n]+?) for ₹/i);
+  return m ? m[1].trim() : null;
 }
 
 function detectAvailability(text) {
@@ -264,17 +310,23 @@ export default {
 
         const text = await page.evaluate(() => document.body.innerText);
         const matchedName = (await page.locator('h1').first().innerText().catch(() => '')).trim() || null;
-        const prices = parsePricesFromText(text);
+        const prices = parsePricesFromText(text, settings.directChannel?.label || 'Saltstayz.com');
         if (!prices.length && /\$\s?\d/.test(text) && !/₹/.test(text)) throw new Error('Google showed prices in a currency other than INR; the ts parameter was not applied.');
         let availability = detectAvailability(text);
-        if (availability === 'available' && prices.length === 0) availability = 'no_rooms';
-
         let note = '';
         let pricesFor = null;
+        const next = nextAvailable(text);
         if (dates.checkIn && !inputShowsDate(dates.checkIn, window.checkIn)) {
           pricesFor = dates.checkIn;
           note = `No rooms on the asked date on Google. Prices shown are for ${dates.checkIn}.`;
           availability = 'no_rooms';
+        } else if (prices.length === 0 && next) {
+          pricesFor = next;
+          note = `No rooms on the asked date on Google. Next date Google offers is ${next}.`;
+          availability = 'no_rooms';
+        } else if (availability === 'available' && prices.length === 0) {
+          availability = 'no_prices';
+          note = 'Google shows no Saltstayz.com or OTA price for this date.';
         }
         const tokenMatch = page.url().match(/\/entity\/([^/?]+)/);
         return { availability, matchedName, prices, note, pricesFor, token: tokenMatch ? tokenMatch[1] : null };

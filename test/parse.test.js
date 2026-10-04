@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parsePrice, normalizeName } from '../src/util.js';
-import { parsePricesFromText, buildTs } from '../src/providers/browser.js';
+import { parsePricesFromText, buildTs, matchScore } from '../src/providers/browser.js';
 
 test('parsePrice handles rupee formats', () => {
   assert.equal(parsePrice('₹2,548'), 2548);
@@ -15,32 +15,61 @@ test('normalizeName', () => {
   assert.equal(normalizeName('Saltstayz Premier - Golf Course Road & Sector 42'), 'saltstayz premier golf course road and sector 42');
 });
 
-test('parsePricesFromText reads the Google Hotels prices tab text', () => {
+test('parsePricesFromText reads only the hotel\'s own price list', () => {
   const text = `Saltstayz Premier - Galleria Market Road & Sector 27
-Overview
-Prices
-Reviews
-Saltstayz.com
-Official site
+OverviewPricesReviewsLocationAboutPhotos
+Check-in
+Check-out
+2
+Sponsored·Featured options
+Booking.com
+Free cancellation until 29 Oct · Free Wi-Fi
+₹2,600
+Visit site
+Deluxe Room with City View
+1 double bed · Free cancellation until 29 Oct
+₹2,600
+Visit site
+All options
+Saltstayz Premier - Galleria Market Road & Sector 27
+ Official site
 ₹2,429
-Free cancellation
+Visit site
 MakeMyTrip
+Free cancellation until 27 Oct
+,
 ₹2,332
+Visit site
 Agoda
 ₹2,548 · Breakfast included
-Booking.com
-Not available
-Cleartrip
-₹2,220
-Hotel Something Else
-₹9,999`;
-  const prices = parsePricesFromText(text);
-  assert.deepEqual(prices, [
+Visit site
+BookMyBooking.com
+₹7,400
+Visit site
+Sponsored·Similar hotels
+Saltstayz Premier - Millenium City Centre
+₹4,264
+ Hotels.com
+Visit Hotels.com
+People also viewed
+₹1,656
+Townhouse by OYO Tipsyy Inn 16`;
+  assert.deepEqual(parsePricesFromText(text), [
+    { source: 'Booking.com', price: 2600, official: false },
     { source: 'Saltstayz.com', price: 2429, official: true },
     { source: 'MakeMyTrip', price: 2332, official: false },
     { source: 'Agoda', price: 2548, official: false },
-    { source: 'Cleartrip', price: 2220, official: false },
+    { source: 'BookMyBooking.com', price: 7400, official: false },
   ]);
+  assert.deepEqual(parsePricesFromText('Nothing here\nAvailable for 6–7 Oct for ₹3,346.\nSponsored·Similar hotels\nX\n₹1\nVisit site'), []);
+});
+
+test('matchScore picks the right hotel from a results list', () => {
+  const prop = { name: 'Saltstayz Select - Near Sohna Road City Center', aliases: ['Saltstayz Select Sohna Road'] };
+  assert.equal(matchScore(prop, 'Saltstayz Select - Near Sohna Road City Center'), 100);
+  assert.ok(matchScore(prop, 'Saltstayz Select') < 75, 'a different Saltstayz Select must not match');
+  assert.ok(matchScore({ name: 'Saltstayz Premier - Near Golf Course Road & Sector 57', aliases: ['Saltstayz Premier'] }, 'Saltstayz Premier') === 100);
+  assert.ok(matchScore(prop, 'Lemon Tree Hotel, Udyog Vihar Gurugram') < 40);
 });
 
 test('buildTs reproduces the ts blob Google itself generates', () => {
