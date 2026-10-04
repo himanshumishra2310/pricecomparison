@@ -138,24 +138,59 @@ function inputShowsDate(value, iso) {
   return new RegExp('(^|\\D)' + dayMonth(iso).replace(' ', '\\s') + '(\\D|$)', 'i').test(value || '');
 }
 
-/** Google hides most OTAs behind a "View more options from ₹X" button. Click it (in-page, so overlays cannot block) until it is gone. */
+/** Where is the "View more options" control and what does it look like? (for diagnostics) */
+async function describeMoreButton(page) {
+  return page.evaluate(() => {
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    let node;
+    while ((node = walker.nextNode())) {
+      if (!/view more options/i.test(node.nodeValue || '')) continue;
+      const chain = [];
+      let el = node.parentElement;
+      for (let i = 0; el && i < 6; i++, el = el.parentElement) {
+        const attrs = [...el.attributes].filter((x) => ['role', 'jsaction', 'jsname', 'aria-expanded', 'aria-controls', 'class', 'tabindex'].includes(x.name)).map((x) => `${x.name}="${x.value.slice(0, 60)}"`).join(' ');
+        chain.push(`<${el.tagName.toLowerCase()} ${attrs}>`);
+      }
+      return chain;
+    }
+    return null;
+  }).catch(() => null);
+}
+
+async function moreCount(page) {
+  return page.getByText(/view more options/i).count().catch(() => 0);
+}
+
+/**
+ * Google hides most OTAs behind a "View more options from ₹X" button. Try several ways of
+ * pressing it and stop as soon as the button disappears. Logs which strategy worked when DEBUG_PRINT is set.
+ */
 async function expandAllOptions(page) {
-  for (let i = 0; i < 4; i++) {
-    const clicked = await page.evaluate(() => {
+  if (!(await moreCount(page))) return;
+  if (process.env.DEBUG_PRINT) console.log('View more options control:', JSON.stringify(await describeMoreButton(page)));
+  const strategies = {
+    roleButton: async () => page.getByRole('button', { name: /view more options/i }).first().click({ timeout: 4000 }),
+    text: async () => page.getByText(/view more options/i).first().click({ timeout: 4000 }),
+    jsClosest: async () => page.evaluate(() => {
       const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
       let node;
       while ((node = walker.nextNode())) {
         if (!/view more options/i.test(node.nodeValue || '')) continue;
-        const el = node.parentElement;
-        const target = el.closest('button, [role="button"], a, [jsaction]') || el;
-        target.scrollIntoView({ block: 'center' });
-        target.click();
+        const el = node.parentElement.closest('button, [role="button"], a') || node.parentElement;
+        el.scrollIntoView({ block: 'center' });
+        for (const type of ['pointerdown', 'mousedown', 'pointerup', 'mouseup', 'click']) el.dispatchEvent(new MouseEvent(type, { bubbles: true, cancelable: true, view: window }));
         return true;
       }
       return false;
-    }).catch(() => false);
-    if (!clicked) return;
+    }),
+    keyboard: async () => { const t = page.getByText(/view more options/i).first(); await t.focus(); await page.keyboard.press('Enter'); },
+  };
+  for (const [name, run] of Object.entries(strategies)) {
+    try { await run(); } catch (err) { if (process.env.DEBUG_PRINT) console.log(`  expand ${name}: ${err.message.split('\n')[0]}`); }
     await sleep(1800);
+    const left = await moreCount(page);
+    if (process.env.DEBUG_PRINT) console.log(`  expand ${name}: ${left ? 'still shows "View more options"' : 'expanded'}`);
+    if (!left) return;
   }
 }
 
