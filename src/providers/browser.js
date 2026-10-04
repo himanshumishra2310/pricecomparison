@@ -159,6 +159,13 @@ async function expandAllOptions(page) {
   }
 }
 
+async function readDateInputs(page) {
+  return page.evaluate(() => {
+    const get = (l) => document.querySelector(`input[aria-label*="${l}" i]`)?.value || '';
+    return { checkIn: get('Check-in'), checkOut: get('Check-out') };
+  });
+}
+
 /** Score how well a listed hotel name matches the property we want (0-100). */
 export function matchScore(property, text) {
   const t = normalizeName(text);
