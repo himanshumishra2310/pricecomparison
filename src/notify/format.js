@@ -15,7 +15,7 @@ export function subject(run, diff) {
 export function textBody(run, diff, settings) {
   const out = [];
   out.push(`Saltstayz Rate Parity · checked ${run.stamp}`);
-  out.push(`Windows: ${run.windows.map((w) => `${w.key} ${w.checkIn}`).join(', ')} · ${run.adults} adults · 1 night · incl. taxes`);
+  out.push(`Windows: ${run.windows.map((w) => `${w.key} ${w.checkIn}`).join(', ')} · ${run.adults} adults · 1 night · nightly price as listed on Google`);
   out.push('');
   for (const w of run.windows) {
     const s = w.summary;
@@ -46,7 +46,7 @@ export function htmlBody(run, diff, settings) {
   const section = (title, items, color) => items.length ? `<h3 style="margin:18px 0 6px;color:${color}">${title} (${items.length})</h3><ul style="padding-left:18px;margin:0">${items.map((d) => `<li style="margin:3px 0">${esc(line(d))}</li>`).join('')}</ul>` : '';
   const rows = run.windows.map((w) => `<tr><td style="padding:4px 10px 4px 0"><b>${w.key}</b> ${esc(w.checkIn)}</td><td style="padding:4px 10px">${w.summary.otaLower} OTA lower</td><td style="padding:4px 10px">${w.summary.directLowest} Saltstayz lowest</td><td style="padding:4px 10px">${w.summary.directMissing} direct missing</td><td style="padding:4px 10px;color:#777">${w.summary.comparable}/${w.summary.total} comparable</td></tr>`).join('');
   return `<div style="font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;font-size:14px;color:#222;max-width:720px">
-  <div style="background:#4a6b2f;color:#fff;padding:14px 18px;border-radius:8px 8px 0 0"><div style="font-size:18px;font-weight:700">Saltstayz Rate Parity</div><div style="opacity:.9;font-size:12px">Google Hotels listing prices · checked ${esc(run.stamp)} · ${run.adults} adults · 1 night · incl. taxes</div></div>
+  <div style="background:#4a6b2f;color:#fff;padding:14px 18px;border-radius:8px 8px 0 0"><div style="font-size:18px;font-weight:700">Saltstayz Rate Parity</div><div style="opacity:.9;font-size:12px">Google Hotels listing prices · checked ${esc(run.stamp)} · ${run.adults} adults · 1 night · nightly price as listed on Google</div></div>
   <div style="border:1px solid #e3e0d6;border-top:0;padding:14px 18px;border-radius:0 0 8px 8px;background:#fff">
     <table style="border-collapse:collapse;font-size:13px">${rows}</table>
     ${section('New since last check', diff.added, '#b3261e')}

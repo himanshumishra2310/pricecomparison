@@ -75,6 +75,10 @@ test('matchScore picks the right hotel from a results list', () => {
   assert.equal(matchScore(prop, 'Saltstayz Select - Near Sohna Road City Center'), 100);
   assert.ok(matchScore(prop, 'Saltstayz Select') < 75, 'a different Saltstayz Select must not match');
   assert.ok(matchScore({ name: 'Saltstayz Premier - Near Golf Course Road & Sector 57', aliases: ['Saltstayz Premier'] }, 'Saltstayz Premier') === 100);
+  // A generic two-word listing must not be accepted for a specific property via a short alias.
+  assert.ok(matchScore({ name: 'Saltstayz Select - Golf Course Road & Sector 57', aliases: ['Saltstayz Select Sector 57'] }, 'Saltstayz Select') < 75);
+  assert.ok(matchScore({ name: 'Saltstayz Premier - Pitampura', aliases: [] }, 'Pitampura') < 75);
+  assert.ok(matchScore({ name: 'Saltstayz Premier - Pitampura', aliases: [] }, 'Saltstayz Premier - Pitampura · 125 results'.replace(/\s*·.*$/, '')) === 100);
   assert.ok(matchScore(prop, 'Lemon Tree Hotel, Udyog Vihar Gurugram') < 40);
 });
 

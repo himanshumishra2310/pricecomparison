@@ -194,6 +194,10 @@ async function expandAllOptions(page) {
   }
 }
 
+async function readHeading(page) {
+  return (await page.locator('h1').first().innerText().catch(() => '')).replace(/\s*·\s*[\d,.]+K?\s*results?$/i, '').trim() || null;
+}
+
 async function readDateInputs(page) {
   return page.evaluate(() => {
     const get = (l) => document.querySelector(`input[aria-label*="${l}" i]`)?.value || '';
@@ -210,7 +214,7 @@ export function matchScore(property, text) {
   for (const w of wanted) {
     if (t === w) best = Math.max(best, 100);
     else if (t.startsWith(w + ' ') || t.includes(w)) best = Math.max(best, w.length >= t.length * 0.6 ? 85 : 60);
-    else if (w.includes(t) && t.length >= w.length * 0.6) best = Math.max(best, 80);
+    else if (w.includes(t) && t.length >= w.length * 0.6 && t.split(' ').length >= 3) best = Math.max(best, 80);
     else {
       const toks = w.split(' ').filter((x) => x.length > 2);
       const hit = toks.filter((x) => t.includes(x)).length;
@@ -493,12 +497,32 @@ export default {
           return { availability: 'not_found', matchedName: null, prices: [], note: 'Could not find this hotel on Google Hotels.', pricesFor: null, token: null };
         }
         await openPricesTab(page);
+        let matchedName = await readHeading(page);
+        // The page must be this hotel's page. A place name ("Gurugram", "Pitampura") means Google showed a results list instead.
+        if (matchScore(property, matchedName || '') < 75) {
+          const retried = await openEntity(page, property);
+          if (retried) { await openPricesTab(page); matchedName = await readHeading(page); }
+          if (matchScore(property, matchedName || '') < 75) {
+            await dump(page, property, window, 'wronghotel');
+            return { availability: 'not_found', matchedName, prices: [], note: `Google opened "${matchedName || 'a results list'}" instead of this hotel. Please check the search wording in config/properties.json.`, pricesFor: null, token: null };
+          }
+        }
+        // Currency safety: if the page is not in rupees, reopen the hotel by its token with our own ts.
+        let bodyText = await page.evaluate(() => document.body.innerText);
+        if (!/₹/.test(bodyText) && /\$\s?\d|Currency\s*(USD|EUR|GBP|IRR)/i.test(bodyText)) {
+          const tok = page.url().match(/\/entity\/([^/?]+)/);
+          if (tok) {
+            await page.goto(entityUrl(tok[1], property.query, window, settings), { waitUntil: 'domcontentloaded', timeout });
+            await sleep(settings.crawl?.politeDelayMs || 1000);
+            await openPricesTab(page);
+            matchedName = await readHeading(page);
+          }
+        }
         await expandAllOptions(page);
         const dates = await readDateInputs(page);
         await dump(page, property, window, 'prices');
 
         const text = await page.evaluate(() => document.body.innerText);
-        const matchedName = (await page.locator('h1').first().innerText().catch(() => '')).replace(/\s*·\s*[\d,.]+K?\s*results?$/i, '').trim() || null;
         const directLabel = settings.directChannel?.label || 'Saltstayz.com';
         const rows = await extractRowsFromDom(page);
         if (process.env.DEBUG_PRINT) console.log('DOM rows:', JSON.stringify(rows.map((r) => ({ names: r.names, official: r.official, text: r.text.replace(/\n/g, ' | ').slice(0, 140) })), null, 1));
