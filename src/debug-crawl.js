@@ -13,6 +13,8 @@ const settings = loadSettings();
 const property = loadProperties().find((p) => p.name.toLowerCase().includes(needle) || p.id.includes(needle));
 if (!property) { console.error('No property matches', needle); process.exit(1); }
 const window = buildWindows(settings).find((w) => w.key === winKey);
+// DEBUG_QUERY="Saltstayz Gurugram" tries a different Google search wording for this property.
+if (process.env.DEBUG_QUERY) { property.query = process.env.DEBUG_QUERY; property.aliases = []; property.googleToken = null; }
 process.env.DEBUG_DIR ||= 'debug';
 const provider = await getProvider(process.env.PROVIDER || 'browser');
 await provider.init(settings);

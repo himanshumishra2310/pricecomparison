@@ -13,6 +13,10 @@ on:
         description: 'D0, D1 or D2'
         default: 'D0'
         required: true
+      query:
+        description: 'Optional: a different Google search wording to try'
+        default: ''
+        required: false
 
 jobs:
   debug:
@@ -27,7 +31,7 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps chromium
       - name: Crawl with diagnostics
-        run: DEBUG_DIR=debug DEBUG_PRINT=1 node src/debug-crawl.js "${{ github.event.inputs.property }}" "${{ github.event.inputs.window }}"
+        run: DEBUG_DIR=debug DEBUG_PRINT=1 DEBUG_QUERY="${{ github.event.inputs.query }}" node src/debug-crawl.js "${{ github.event.inputs.property }}" "${{ github.event.inputs.window }}"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
