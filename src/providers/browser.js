@@ -225,10 +225,17 @@ export function matchScore(property, text) {
 }
 
 /** Open the hotel's own page when the search landed on a list of results. */
-async function openEntity(page, property) {
+async function openEntity(page, property, window, settings) {
   // Google often jumps straight to the hotel page when the query names one hotel.
   await page.waitForURL(/\/travel\/hotels\/entity\//, { timeout: 4000 }).catch(() => {});
   if (/\/travel\/hotels\/entity\//.test(page.url())) return true;
+  // Or it shows the hotel's panel inside the search page: heading is the hotel and the price list is there.
+  const heading = await readHeading(page);
+  if (heading && matchScore(property, heading) >= 75) {
+    const hasPrices = await page.getByText(/^(Sponsored\s*·\s*)?(All options|Featured options)$/i).count().catch(() => 0);
+    const hasTab = await page.getByRole('tab', { name: /prices/i }).count().catch(() => 0);
+    if (hasPrices || hasTab) return true;
+  }
 
   const candidates = await page.evaluate(() => {
     const clean = (x) => String(x || '').replace(/\s+/g, ' ').trim();
@@ -239,13 +246,16 @@ async function openEntity(page, property) {
   });
   let best = null;
   for (const c of candidates) {
-    // Card links read "Hotel name ₹2,195 · 4.3 (21) ..."; score only the part before the price/rating.
-    const name = c.text.split(/\s₹|\s\d\.\d\s\(/)[0];
+    // Card links read "Hotel name ₹2,195 · 4.3 (21) ..." or "Open Hotel name in a new tab."; score only the name.
+    const name = c.text.replace(/^open\s+/i, '').replace(/\s+in a new tab\.?$/i, '').split(/\s₹|\s\d\.\d\s\(/)[0];
     const score = matchScore(property, name);
     if (!best || score > best.score) best = { ...c, name, score };
   }
   if (!best || best.score < 75) return false;
-  await page.goto(new URL(best.href, 'https://www.google.com').toString(), { waitUntil: 'domcontentloaded' });
+  // An entity link from Google carries an empty ts (no dates). Rebuild it with our dates and currency.
+  const tok = best.href.match(/\/entity\/([^/?]+)/);
+  const target = tok && window && settings ? entityUrl(tok[1], property.query, window, settings) : new URL(best.href, 'https://www.google.com').toString();
+  await page.goto(target, { waitUntil: 'domcontentloaded' });
   await page.waitForURL(/\/travel\/hotels\/entity\//, { timeout: 8000 }).catch(() => {});
   await sleep(1500);
   return true;
@@ -490,7 +500,7 @@ export default {
           await sleep(settings.crawl?.politeDelayMs || 1500);
           if (await isBlocked(page)) { await dump(page, property, window, 'blocked'); throw new Error('Google showed a CAPTCHA / unusual-traffic page. Run from a normal network or use PROVIDER=serpapi.'); }
           await dump(page, property, window, 'search');
-          opened = await openEntity(page, property);
+          opened = await openEntity(page, property, window, settings);
         }
         if (!opened) {
           await dump(page, property, window, 'notfound');
@@ -500,7 +510,7 @@ export default {
         let matchedName = await readHeading(page);
         // The page must be this hotel's page. A place name ("Gurugram", "Pitampura") means Google showed a results list instead.
         if (matchScore(property, matchedName || '') < 75) {
-          const retried = await openEntity(page, property);
+          const retried = await openEntity(page, property, window, settings);
           if (retried) { await openPricesTab(page); matchedName = await readHeading(page); }
           if (matchScore(property, matchedName || '') < 75) {
             await dump(page, property, window, 'wronghotel');
