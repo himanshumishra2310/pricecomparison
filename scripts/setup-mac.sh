@@ -10,12 +10,16 @@ step() { printf "\n\033[1m%s\033[0m\n" "$1"; }
 die()  { bad "$1"; echo; echo "Fix this and run scripts/setup-mac.sh again."; exit 1; }
 
 step "1. Tools"
-export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+export PATH="$HOME/.local/node/bin:/opt/homebrew/bin:/usr/local/bin:$PATH"
 command -v git >/dev/null || die "git is missing. Install it with: xcode-select --install"
 ok "git found"
 if ! command -v node >/dev/null; then
-  command -v brew >/dev/null || die "Node.js is missing and Homebrew is not installed. Install Node 20 or newer from https://nodejs.org and re-run."
-  echo "  Installing Node with Homebrew..."; brew install node >/dev/null 2>&1 || die "Could not install Node"
+  echo "  Node.js is not installed. Installing it now (no admin password needed)..."
+  if command -v brew >/dev/null; then brew install node >/dev/null 2>&1 || die "Could not install Node with Homebrew"
+  else scripts/install-node-mac.sh || die "Could not download Node. Check the internet connection, or install Node 20+ from https://nodejs.org"
+  fi
+  export PATH="$HOME/.local/node/bin:$PATH"
+  command -v node >/dev/null || die "Node is still not found after installing"
 fi
 NODE_MAJOR=$(node -p 'process.versions.node.split(".")[0]')
 [ "$NODE_MAJOR" -ge 20 ] || die "Node $NODE_MAJOR is too old. Install Node 20 or newer."

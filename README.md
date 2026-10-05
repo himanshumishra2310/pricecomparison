@@ -104,7 +104,7 @@ cd pricecomparison
 scripts/setup-mac.sh
 ```
 
-The setup checks, in order: git and Node are installed (it installs Node with Homebrew if needed), Chrome is
+The setup checks, in order: git and Node are installed (if Node is missing it installs it for you, no admin password needed), Chrome is
 available, the Mac can push to GitHub, and Google lists MakeMyTrip or Goibibo for a few test hotels. If any
 check fails it stops and says exactly what to fix, then you run it again.
 

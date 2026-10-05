@@ -6,7 +6,7 @@ set -u
 cd "$(dirname "$0")/.."
 
 # Make sure Homebrew / nvm node is on PATH when launched by launchd.
-export PATH="/opt/homebrew/bin:/usr/local/bin:$HOME/.nvm/versions/node/$(ls "$HOME/.nvm/versions/node" 2>/dev/null | tail -1)/bin:$PATH"
+export PATH="$HOME/.local/node/bin:/opt/homebrew/bin:/usr/local/bin:$HOME/.nvm/versions/node/$(ls "$HOME/.nvm/versions/node" 2>/dev/null | tail -1)/bin:$PATH"
 
 # Load alert settings if present (.env is never committed).
 if [ -f .env ]; then set -a; . ./.env; set +a; fi
