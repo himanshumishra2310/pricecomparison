@@ -84,17 +84,18 @@ export function buildTs(checkIn, checkOut, currency = 'INR') {
   return Buffer.from([...int(1, 1), ...f3, ...f5]).toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 }
 
-function baseParams(u, query, window, settings) {
+function baseParams(u, query, window, settings, withDates = true) {
   u.searchParams.set('q', query);
   u.searchParams.set('hl', 'en-IN');
   u.searchParams.set('gl', 'in');
   u.searchParams.set('curr', settings.currency || 'INR');
-  u.searchParams.set('ts', buildTs(window.checkIn, window.checkOut, settings.currency || 'INR'));
+  if (withDates) u.searchParams.set('ts', buildTs(window.checkIn, window.checkOut, settings.currency || 'INR'));
   return u.toString();
 }
 
-function searchUrl(query, window, settings) {
-  return baseParams(new URL('https://www.google.com/travel/search'), query, window, settings);
+/** withDates=false lets Google show a hotel even when it has no rooms on our dates (a dated search hides it). */
+function searchUrl(query, window, settings, withDates = true) {
+  return baseParams(new URL('https://www.google.com/travel/search'), query, window, settings, withDates);
 }
 
 function entityUrl(token, query, window, settings) {
@@ -208,6 +209,25 @@ async function expandAllOptions(page) {
  *  2. the "<hotel> Official site" row at the top of the price list,
  *  3. the page's h1 (on a results page that is the place, e.g. "Gurugram · 112 results").
  */
+/** After finding the hotel (possibly via a dateless search), make sure the page is showing OUR dates. */
+async function ensureDates(page, property, window, settings, timeout) {
+  const dates = await readDateInputs(page);
+  if (dates.checkIn && inputShowsDate(dates.checkIn, window.checkIn)) return;
+  const token = await page.evaluate(() => {
+    const here = location.href.match(/\/entity\/([^/?]+)/);
+    if (here) return here[1];
+    for (const a of document.querySelectorAll('a[href*="/entity/"]')) {
+      const label = (a.innerText || a.getAttribute('aria-label') || '').replace(/\s+/g, ' ').trim();
+      const m = a.getAttribute('href').match(/\/entity\/([^/?]+)/);
+      if (m && /^open .+ in a new tab/i.test(label)) return m[1];
+    }
+    return null;
+  }).catch(() => null);
+  if (!token) return;
+  await page.goto(entityUrl(token, property.query, window, settings), { waitUntil: 'domcontentloaded', timeout });
+  await sleep(settings.crawl?.politeDelayMs || 1000);
+}
+
 async function readHeading(page, property) {
   const clean = (x) => String(x || '').replace(/\s*·\s*[\d,.]+K?\s*results?$/i, '').trim();
   const found = await page.evaluate(() => {
@@ -278,11 +298,7 @@ async function openEntity(page, property, window, settings) {
   if (/\/travel\/hotels\/entity\//.test(page.url())) return true;
   // Or it shows the hotel's panel inside the search page: heading is the hotel and the price list is there.
   const heading = await readHeading(page, property);
-  if (heading && matchScore(property, heading) >= 75) {
-    const hasPrices = await page.getByText(/^(Sponsored\s*·\s*)?(All options|Featured options)$/i).count().catch(() => 0);
-    const hasTab = await page.getByRole('tab', { name: /prices/i }).count().catch(() => 0);
-    if (hasPrices || hasTab) return true;
-  }
+  if (heading && matchScore(property, heading) >= 75) return true;
 
   const candidates = await page.evaluate(() => {
     const clean = (x) => String(x || '').replace(/\s+/g, ' ').trim();
@@ -573,7 +589,15 @@ export default {
           if (await isBlocked(page)) { await dump(page, property, window, 'blocked'); throw new Error('Google showed a CAPTCHA / unusual-traffic page. Run from a normal network or use PROVIDER=serpapi.'); }
           await dump(page, property, window, 'search');
           opened = await openEntity(page, property, window, settings);
+          if (!opened && /no results/i.test(await page.evaluate(() => document.body.innerText).catch(() => ''))) {
+            // A dated search hides hotels with no rooms on those dates. Search without dates to find the hotel, then reopen it with ours.
+            await page.goto(searchUrl(q, window, settings, false), { waitUntil: 'domcontentloaded', timeout });
+            await sleep(settings.crawl?.politeDelayMs || 1500);
+            await dump(page, property, window, 'search-nodates');
+            opened = await openEntity(page, property, window, settings);
+          }
         }
+        if (opened) await ensureDates(page, property, window, settings, timeout);
         if (!opened) {
           await dump(page, property, window, 'notfound');
           const near = await nearbyListings(page, property);
