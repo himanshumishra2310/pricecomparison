@@ -108,8 +108,9 @@ The setup checks, in order: git and Node are installed (if Node is missing it in
 available, the Mac can push to GitHub, and Google lists MakeMyTrip or Goibibo for a few test hotels. If any
 check fails it stops and says exactly what to fix, then you run it again.
 
-**GitHub login:** the Mac must be able to push without asking for a password. The easiest way is to install
-GitHub Desktop and sign in once, or run `brew install gh && gh auth login`.
+**GitHub login:** Git cannot use a normal GitHub login or a Gmail sign-in. The setup asks you once for an access
+token (it opens the right GitHub page and lists the 5 clicks), then saves it in the Mac keychain so the
+2-hourly job can push without asking. The token lasts 1 year; make a new one and re-run the setup before it expires.
 
 **Keep it awake:** System Settings > Battery (or Energy) > turn on "Prevent automatic sleeping when the display is off".
 

@@ -17,6 +17,7 @@ export BROWSER_PROFILE_DIR="${BROWSER_PROFILE_DIR:-.profile}"
 export SCHEDULER="office Mac ($(scutil --get ComputerName 2>/dev/null || hostname))"
 export DEBUG_DIR="${DEBUG_DIR:-debug}"
 export DEBUG_SCREENSHOTS=0
+export GIT_TERMINAL_PROMPT=0   # never wait for a password in the background; fail fast and notify instead
 
 mkdir -p logs
 LOG="logs/$(date '+%Y-%m-%d').log"

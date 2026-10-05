@@ -30,12 +30,35 @@ if [ -d "/Applications/Google Chrome.app" ]; then ok "Google Chrome found"; else
 fi
 npm install --no-audit --no-fund >/dev/null 2>&1 && ok "Project packages installed" || die "npm install failed"
 
-step "2. GitHub login (the Mac must be able to push results)"
+step "2. GitHub login (the Mac must be able to push results without asking for a password)"
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
-if git push --dry-run origin "HEAD:$BRANCH" >/dev/null 2>&1; then ok "Can push to GitHub ($BRANCH)"; else
-  bad "Cannot push to GitHub from this Mac."
-  echo "     Easiest fix: install GitHub Desktop and sign in, or run: brew install gh && gh auth login"
-  die "GitHub login needed"
+GH_USER="himanshumishra2310"
+git config --global credential.helper osxkeychain >/dev/null 2>&1 || true
+can_push() { GIT_TERMINAL_PROMPT=0 git push --dry-run origin "HEAD:$BRANCH" >/dev/null 2>&1; }
+if can_push; then ok "Can push to GitHub ($BRANCH)"; else
+  echo "  GitHub does not accept your account password for Git. It needs a one-time access token instead."
+  echo "  (Being signed in to github.com in the browser, including with Gmail, does not count for Git.)"
+  echo
+  echo "  Do this once. It takes about 2 minutes:"
+  echo "    1. Open https://github.com/settings/personal-access-tokens/new  (sign in with Gmail as usual)"
+  echo "    2. Token name: saltstayz-office-mac      Expiration: 1 year"
+  echo "    3. Repository access: 'Only select repositories' > choose 'pricecomparison'"
+  echo "    4. Permissions > Repository permissions > Contents: 'Read and write'"
+  echo "    5. Click 'Generate token' and copy it (it starts with github_pat_)"
+  echo
+  open "https://github.com/settings/personal-access-tokens/new" >/dev/null 2>&1 || true
+  for attempt in 1 2 3; do
+    printf "  Paste the token here (it will not show on screen), then press Return: "
+    read -r -s TOKEN; echo
+    [ -n "$TOKEN" ] || { bad "Nothing pasted."; continue; }
+    printf 'protocol=https\nhost=github.com\nusername=%s\npassword=%s\n\n' "$GH_USER" "$TOKEN" | git credential approve
+    TOKEN=""
+    if can_push; then ok "Token saved in the Mac keychain. Can push to GitHub ($BRANCH)"; break; fi
+    printf 'protocol=https\nhost=github.com\nusername=%s\n\n' "$GH_USER" | git credential reject
+    bad "GitHub rejected that token. Check it is for the 'pricecomparison' repository with Contents: Read and write."
+    [ "$attempt" -eq 3 ] && die "GitHub login still not working"
+  done
+  echo "  Note: this token expires in 1 year. Put a reminder in the calendar to make a new one and re-run this setup."
 fi
 
 step "3. Is this connection in India? (Google must list MakeMyTrip and Goibibo)"
