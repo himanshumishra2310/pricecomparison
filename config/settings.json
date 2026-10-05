@@ -100,5 +100,9 @@
   "history": {
     "keepRuns": 500
   },
-  "_comment_otas": "MakeMyTrip and Goibibo only appear on Google when the crawl runs from an Indian internet connection (your Mac). From GitHub's servers Google shows the international OTAs instead. Any OTA not listed here still counts as a deviation and is shown under the property as 'Also cheaper'."
+  "_comment_otas": "MakeMyTrip and Goibibo only appear on Google when the crawl runs from an Indian internet connection (your Mac). From GitHub's servers Google shows the international OTAs instead. Any OTA not listed here still counts as a deviation and is shown under the property as 'Also cheaper'.",
+  "failover": {
+    "_comment": "The office Mac is the main crawler (Indian connection, sees MakeMyTrip and Goibibo). The GitHub schedule only runs when the last Indian run is older than this many hours.",
+    "indianRunFreshHours": 3
+  }
 }

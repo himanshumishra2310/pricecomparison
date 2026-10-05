@@ -42,8 +42,9 @@ data/state.json          which deviations were open last run (so alerts can say 
 docs/index.html          the dashboard, served by GitHub Pages
 docs/latest.json         the latest run as data
 docs/history.json        one line per run with the summary numbers and who was undercut (the History tab)
+scripts/setup-mac.sh     one-command setup of the office Mac (checks, tests, switches the schedule on)
 scripts/run-mac.sh       one run + push, used by the Mac schedule
-scripts/install-mac-schedule.sh   switches the every-2-hours Mac schedule on
+scripts/should-run.js    lets the GitHub backup step aside while the Mac is reporting
 ```
 
 ## Running it
@@ -81,72 +82,66 @@ This opens a visible Chromium, prints what it found, and saves a screenshot and 
 
 ## Scheduling (every 2 hours)
 
-**Default: GitHub Actions.** `.github/workflows/parity.yml` runs every 2 hours on GitHub's servers,
-commits the results and republishes the dashboard. Nothing to install, nothing to keep awake.
-Google loads fine from there and shows Saltstayz.com against the international OTAs (Agoda,
-Booking.com, Expedia, Trip.com, Hotels.com, Traveloka, Vio, and others).
+**The office Mac is the main crawler. GitHub is the backup.**
 
-**MakeMyTrip and Goibibo need an Indian connection.** Google chooses which booking sites to list based
-on the country the viewer is in. From GitHub's servers (USA) it never lists MakeMyTrip or Goibibo, so
-those two columns stay empty and the dashboard shows a yellow note. There are two ways to crawl from India:
-
-**Way 1: keep GitHub, add an Indian proxy (nothing to keep running in the office).**
-Buy a proxy with an Indian IP (for example Webshare, IPRoyal, Smartproxy or Bright Data offer Indian
-residential or ISP proxies from roughly USD 5 to 15 per month; the crawl uses well under 5 GB a month).
-Add three repository secrets: `PROXY_SERVER` (like `http://in.proxyhost.com:8080`), `PROXY_USERNAME`,
-`PROXY_PASSWORD`. The next run picks them up automatically. The run log prints
-"Indian OTAs visible" when it worked.
-
-**Way 2: run on an always-on Mac in the office (free).** Follow Option B below, then set the repository
-variable `CRAWL_ON_GITHUB` to `false` (Settings -> Secrets and variables -> Actions -> Variables) so the
-GitHub schedule pauses and the two do not push over each other. The Mac pushes its results and the
-dashboard updates the same way.
+Google decides which booking sites to list from the country the viewer is in. MakeMyTrip and Goibibo only
+appear on an Indian internet connection, so the crawl runs on an always-on Mac in the office. After each run
+the Mac pushes the results to GitHub and the dashboard updates by itself.
 
 **Dashboard:** https://himanshumishra2310.github.io/pricecomparison/
 
-The page is served from the `gh-pages` branch, which `.github/workflows/pages.yml` refreshes from
-`docs/` every time a crawl pushes new results. Give GitHub a minute or two after a push.
+### One-time setup on the office Mac (about 10 minutes)
 
-To see the dashboard on your own machine, open `docs/index.html` in any browser (double-click it),
-or run `npm run serve` and open http://localhost:8080. Both show the latest run on that machine.
-
-### Option B: run on an always-on Mac (gets MakeMyTrip and Goibibo too)
-
-One-time setup on the Mac (about 5 minutes):
+You need a Mac that stays on, plugged in, logged in, and on the office internet (no VPN to another country).
 
 ```bash
-# 1. Get the code. Needs git and Node 20+ (brew install node).
+# 1. Download the project (needs git; macOS will offer to install it the first time)
 git clone https://github.com/himanshumishra2310/pricecomparison.git
 cd pricecomparison
-npm install
 
-# 2. Make sure git can push without asking for a password (GitHub Desktop login or `gh auth login` both work),
-#    then test a push once:  git push
-
-# 3. Optional: alert details
-cp .env.example .env     # fill in email / WhatsApp values, see Alerts below
-
-# 4. Check one property in a visible Chrome window to confirm Google's page is read correctly
-HEADLESS=false node src/debug-crawl.js "Cyber Hub" D0
-
-# 5. Do one full run by hand (takes 10-20 minutes for 33 properties x 3 dates)
-scripts/run-mac.sh && tail -20 logs/$(date +%F).log
-
-# 6. Switch on the every-2-hours schedule
-scripts/install-mac-schedule.sh
+# 2. Run the setup. It checks everything, tests that Google shows MakeMyTrip and Goibibo from this
+#    connection, and only then switches the 2-hourly schedule on.
+scripts/setup-mac.sh
 ```
 
-The schedule uses macOS launchd (`~/Library/LaunchAgents/com.saltstayz.rateparity.plist`), which also
-catches up after the Mac wakes from sleep. Keep the Mac awake (System Settings -> Energy -> Prevent
-automatic sleeping, or an app like Amphetamine) and logged in. Logs are in `logs/`, screenshots of each
-Google page in `debug/`. Stop it with `scripts/uninstall-mac-schedule.sh`.
+The setup checks, in order: git and Node are installed (it installs Node with Homebrew if needed), Chrome is
+available, the Mac can push to GitHub, and Google lists MakeMyTrip or Goibibo for a few test hotels. If any
+check fails it stops and says exactly what to fix, then you run it again.
 
-`.github/workflows/debug.yml` ("Debug one property" in the Actions tab) crawls a single property with
-diagnostics and screenshots. Use it when a property shows "Not on Google" or "Crawl error" to see
-exactly what Google returned.
+**GitHub login:** the Mac must be able to push without asking for a password. The easiest way is to install
+GitHub Desktop and sign in once, or run `brew install gh && gh auth login`.
 
-Note: this repository is public, so the dashboard and the price history are visible to anyone with
-the link. Make the repository private if that is a concern (GitHub Pages on a private repo needs a paid plan).
+**Keep it awake:** System Settings > Battery (or Energy) > turn on "Prevent automatic sleeping when the display is off".
+
+### What happens if the Mac is off
+
+`.github/workflows/parity.yml` still runs every 2 hours on GitHub, but it steps aside whenever the Mac has
+reported from India within the last 3 hours (`failover.indianRunFreshHours` in `config/settings.json`). If the
+Mac has been silent longer, GitHub covers with its own crawl. That crawl cannot see MakeMyTrip or Goibibo, and the
+dashboard shows a yellow note saying so. When the Mac comes back, it takes over again.
+
+### Day-to-day
+
+```bash
+tail -f logs/$(date +%F).log        # watch a run
+scripts/run-mac.sh                  # run once by hand
+scripts/uninstall-mac-schedule.sh   # stop the schedule
+```
+
+The Mac shows a macOS notification if a crawl fails, if it cannot push to GitHub, or if Google stops showing
+MakeMyTrip and Goibibo from that connection.
+
+### Other options
+
+* **Indian proxy instead of a Mac:** buy a proxy with an Indian address (roughly USD 5 to 15 a month) and add the
+  repository secrets `PROXY_SERVER`, `PROXY_USERNAME`, `PROXY_PASSWORD`. GitHub's crawl then goes through India and
+  the Mac is not needed.
+* **Pause the GitHub backup completely:** set the repository variable `CRAWL_ON_GITHUB` to `false`.
+* `.github/workflows/debug.yml` ("Debug one property" in the Actions tab) crawls a single property with
+  diagnostics and screenshots. Use it when a property shows "Not on Google" or "Crawl error".
+
+Note: this repository is public, so the dashboard and the price history are visible to anyone with the link.
+Make the repository private if that is a concern (GitHub Pages on a private repo needs a paid plan).
 
 ## Alerts
 

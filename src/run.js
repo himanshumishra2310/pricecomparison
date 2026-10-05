@@ -48,6 +48,10 @@ try {
 }
 
 // 2. Compare
+// Did Google show MakeMyTrip or Goibibo on any hotel? If a whole run has none, the crawl is not coming from India.
+const allPrices = Object.values(results).flatMap((x) => x.prices || []);
+const indianOtasVisible = allPrices.length ? allPrices.some((p) => /makemytrip|goibibo/i.test(p.source)) : null;
+console.log(`Indian OTAs (MakeMyTrip / Goibibo) seen: ${indianOtasVisible === null ? 'no prices at all' : indianOtasVisible ? 'yes' : 'NO, this crawl is not coming from an Indian connection'}`);
 const run = {
   id,
   stamp: formatStamp(now, settings.timezone),
@@ -55,7 +59,7 @@ const run = {
   provider: provider.name,
   adults: settings.adults || 2,
   scheduled: process.env.GITHUB_ACTIONS ? 'GitHub Actions' : process.env.SCHEDULER || '',
-  indianOtasVisible: provider.indianOtasVisible ?? null,
+  indianOtasVisible,
   windows: windows.map((w) => {
     const rows = sortRows(properties.map((p) => compareProperty(p, results[`${p.id}|${w.key}`], settings)));
     return { key: w.key, checkIn: w.checkIn, checkOut: w.checkOut, label: w.label, summary: summarize(rows, settings), rows };

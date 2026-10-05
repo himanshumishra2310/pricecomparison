@@ -492,25 +492,10 @@ async function setGoogleLocation(page, country) {
   return /india/i.test(footer);
 }
 
-/** Which country does Google think we are in? Logged once per run so a missing MakeMyTrip column is explainable. */
-async function whereAmI() {
-  const page = await context.newPage();
-  try {
-    await page.goto('https://www.google.com/travel/search?q=hotels%20in%20Gurugram&hl=en-IN&gl=in&curr=INR', { waitUntil: 'domcontentloaded', timeout: 30000 });
-    await sleep(2000);
-    const text = await page.evaluate(() => document.body.innerText);
-    const hasIndianOtas = /makemytrip|goibibo/i.test(text);
-    const currency = (text.match(/Currency\s*([A-Z]{3})/) || [])[1] || '?';
-    console.log(`Google sees us with currency ${currency}; Indian OTAs ${hasIndianOtas ? 'visible' : 'NOT visible (crawl is not coming from India)'}`);
-    return hasIndianOtas;
-  } catch (err) { console.warn('Could not check location:', err.message); return null; } finally { await page.close().catch(() => {}); }
-}
-
 export default {
   name: 'browser',
   async init(settings) {
     if (!context) await launch(settings);
-    this.indianOtasVisible = await whereAmI();
     // Setting Google's location to India does NOT make MakeMyTrip / Goibibo appear from a foreign server
     // (Google picks partners by IP), so this is off by default. Set GOOGLE_LOCATION=India to try it.
     const country = process.env.GOOGLE_LOCATION || '';

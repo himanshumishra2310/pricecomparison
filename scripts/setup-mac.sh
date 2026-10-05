@@ -1,0 +1,61 @@
+#!/bin/bash
+# One-command setup of the office Mac as the main crawler. Safe to run again.
+#   cd pricecomparison && scripts/setup-mac.sh
+# It checks everything the 2-hourly job needs, tests it on one property, and only then switches the schedule on.
+set -u
+cd "$(dirname "$0")/.."
+ok()   { printf "  \033[32m✓\033[0m %s\n" "$1"; }
+bad()  { printf "  \033[31m✗\033[0m %s\n" "$1"; }
+step() { printf "\n\033[1m%s\033[0m\n" "$1"; }
+die()  { bad "$1"; echo; echo "Fix this and run scripts/setup-mac.sh again."; exit 1; }
+
+step "1. Tools"
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+command -v git >/dev/null || die "git is missing. Install it with: xcode-select --install"
+ok "git found"
+if ! command -v node >/dev/null; then
+  command -v brew >/dev/null || die "Node.js is missing and Homebrew is not installed. Install Node 20 or newer from https://nodejs.org and re-run."
+  echo "  Installing Node with Homebrew..."; brew install node >/dev/null 2>&1 || die "Could not install Node"
+fi
+NODE_MAJOR=$(node -p 'process.versions.node.split(".")[0]')
+[ "$NODE_MAJOR" -ge 20 ] || die "Node $NODE_MAJOR is too old. Install Node 20 or newer."
+ok "Node $(node -v)"
+if [ -d "/Applications/Google Chrome.app" ]; then ok "Google Chrome found"; else
+  export BROWSER_CHANNEL=""; echo "  Google Chrome not found. Installing the built-in browser instead..."
+  npx playwright install chromium >/dev/null 2>&1 && ok "Built-in Chromium installed" || die "Could not install a browser"
+fi
+npm install --no-audit --no-fund >/dev/null 2>&1 && ok "Project packages installed" || die "npm install failed"
+
+step "2. GitHub login (the Mac must be able to push results)"
+BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+if git push --dry-run origin "HEAD:$BRANCH" >/dev/null 2>&1; then ok "Can push to GitHub ($BRANCH)"; else
+  bad "Cannot push to GitHub from this Mac."
+  echo "     Easiest fix: install GitHub Desktop and sign in, or run: brew install gh && gh auth login"
+  die "GitHub login needed"
+fi
+
+step "3. Is this connection in India? (Google must list MakeMyTrip and Goibibo)"
+mkdir -p logs
+HEADLESS=true DEBUG_SCREENSHOTS=0 BROWSER_CHANNEL="${BROWSER_CHANNEL-chrome}" BROWSER_PROFILE_DIR=.profile node scripts/check-india.js 2>&1 | sed 's/^/  /'
+if [ "${PIPESTATUS[0]}" -eq 0 ]; then ok "MakeMyTrip / Goibibo are visible from this connection"; else
+  bad "Google does not show MakeMyTrip or Goibibo from this connection."
+  echo "     This Mac must be on an Indian internet connection (office broadband, no VPN to another country)."
+  echo "     If it is, send the lines above to the person who set this up."
+  die "Not an Indian view of Google"
+fi
+
+step "4. Alerts (optional)"
+if [ -f .env ]; then ok ".env found (email / WhatsApp settings are read from it)"; else
+  cp .env.example .env; echo "  Created .env from the example. Fill in the email / WhatsApp lines whenever you are ready:"; echo "     open -e $(pwd)/.env"
+fi
+if [ -z "${BROWSER_CHANNEL-x}" ] && ! grep -q '^BROWSER_CHANNEL=' .env; then echo 'BROWSER_CHANNEL=' >> .env; fi
+
+step "5. Switch on the every-2-hours schedule"
+scripts/install-mac-schedule.sh && ok "Schedule installed. The first full run is starting now (takes about 10 to 15 minutes)."
+
+step "Done"
+echo "  Dashboard : https://himanshumishra2310.github.io/pricecomparison/"
+echo "  Logs      : $(pwd)/logs/   (tail -f logs/\$(date +%F).log)"
+echo "  Keep this Mac plugged in, on the office network, and logged in. In System Settings > Battery (or Energy),"
+echo "  turn on 'Prevent automatic sleeping when the display is off'."
+echo "  If the Mac is off, GitHub covers for it automatically after 3 hours (without MakeMyTrip and Goibibo)."

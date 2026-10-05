@@ -23,7 +23,8 @@ permissions:
 
 jobs:
   check:
-    # Set repository variable CRAWL_ON_GITHUB=false to pause the 2-hourly GitHub crawl (e.g. when the office Mac runs it).
+    # The office Mac is the main crawler. This job is the backup: on the schedule it steps aside whenever
+    # the Mac has reported from India within the last few hours (see the "Check whether the Mac ran" step).
     if: github.event_name != 'schedule' || vars.CRAWL_ON_GITHUB != 'false'
     runs-on: ubuntu-latest
     timeout-minutes: 55
@@ -55,16 +56,21 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
+      - name: Check whether the Mac ran recently
+        id: gate
+        run: node scripts/should-run.js >> "$GITHUB_OUTPUT"
       - run: npm ci
+        if: steps.gate.outputs.skip != 'true'
       - name: Install Chromium (browser provider only)
-        if: env.PROVIDER == 'browser'
+        if: steps.gate.outputs.skip != 'true' && env.PROVIDER == 'browser'
         run: npx playwright install --with-deps chromium
       - name: Crawl, compare and notify
+        if: steps.gate.outputs.skip != 'true'
         run: npm run run
         env:
-          SCHEDULER: GitHub Actions
+          SCHEDULER: GitHub Actions (backup)
       - name: Commit results
+        if: steps.gate.outputs.skip != 'true'
         run: |
           git config user.name "rate-parity-bot"
           git config user.email "rate-parity-bot@users.noreply.github.com"
@@ -75,6 +81,7 @@ jobs:
             git push origin HEAD:"${{ github.ref_name }}"
           fi
       - name: Publish dashboard to gh-pages
+        if: steps.gate.outputs.skip != 'true'
         run: |
           set -e
           SRC="$(git rev-parse --short HEAD)"
