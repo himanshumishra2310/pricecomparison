@@ -95,7 +95,8 @@
     "retries": 2,
     "retryDelayMs": 4000,
     "pageTimeoutMs": 30000,
-    "politeDelayMs": 1000
+    "politeDelayMs": 1000,
+    "maxMinutes": 40
   },
   "history": {
     "keepRuns": 500

@@ -586,7 +586,8 @@ export default {
         }
         // Try the configured search first, then the aliases, then "<brand> <city>" and pick the hotel from the list.
         const brand = property.name.split(/[-,(]/)[0].trim();
-        const queries = [...new Set([property.query, ...(property.aliases || []), `${brand} ${property.city || ''}`.trim()].filter(Boolean))];
+        const queries = [...new Set([property.query, ...(property.aliases || []).slice(0, 2), `${brand} ${property.city || ''}`.trim()].filter(Boolean))].slice(0, 4);
+        let triedDateless = false;
         for (const q of queries) {
           if (opened) break;
           await page.goto(searchUrl(q, window, settings), { waitUntil: 'domcontentloaded', timeout });
@@ -594,7 +595,8 @@ export default {
           if (await isBlocked(page)) { await dump(page, property, window, 'blocked'); throw new Error('Google showed a CAPTCHA / unusual-traffic page. Run from a normal network or use PROVIDER=serpapi.'); }
           await dump(page, property, window, 'search');
           opened = await openEntity(page, property, window, settings);
-          if (!opened && /no results/i.test(await page.evaluate(() => document.body.innerText).catch(() => ''))) {
+          if (!opened && !triedDateless && /no results/i.test(await page.evaluate(() => document.body.innerText).catch(() => ''))) {
+            triedDateless = true;
             // A dated search hides hotels with no rooms on those dates. Search without dates to find the hotel, then reopen it with ours.
             await page.goto(searchUrl(q, window, settings, false), { waitUntil: 'domcontentloaded', timeout });
             await sleep(settings.crawl?.politeDelayMs || 1500);

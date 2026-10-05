@@ -28,15 +28,31 @@ console.log(`Saltstayz rate parity · run ${id} · provider ${provider.name} · 
 // 1. Crawl
 await provider.init(settings);
 const results = {};
+// Safety nets so a slow Google day can never make a run time out and lose everything:
+//  - a total time budget: jobs that have not started when it runs out are marked "skipped"
+//  - a hotel that Google cannot find is searched for once per run, not once per date
+const deadline = Date.now() + (settings.crawl?.maxMinutes ?? 40) * 60000;
+const notFoundCache = new Map();
+let skipped = 0;
 try {
   const jobs = windows.flatMap((w) => properties.map((p) => ({ p, w })));
   await mapLimit(jobs, settings.crawl?.concurrency || 2, async ({ p, w }) => {
+    if (Date.now() > deadline) {
+      skipped++;
+      results[`${p.id}|${w.key}`] = { availability: 'error', prices: [], note: 'Skipped: the crawl ran out of time before reaching this hotel.' };
+      return;
+    }
+    if (notFoundCache.has(p.id)) {
+      results[`${p.id}|${w.key}`] = notFoundCache.get(p.id);
+      return;
+    }
     // A Google Hotels link pasted into config/properties.json ("googleUrl") is the most reliable way to point at a hotel.
     const tokenFromUrl = (String(p.googleUrl || '').match(/\/entity\/([^/?#]+)/) || [])[1] || null;
     const prop = { ...p, googleToken: p.googleToken || tokenFromUrl || state.tokens?.[p.id] || null };
     try {
       const raw = await provider.fetchPrices(prop, w, settings);
       results[`${p.id}|${w.key}`] = raw;
+      if (raw.availability === 'not_found') notFoundCache.set(p.id, raw);
       if (raw.token) state.tokens = { ...(state.tokens || {}), [p.id]: raw.token };
       const n = raw.prices?.length || 0;
       console.log(`  ${w.key} ${p.name}: ${raw.availability}${n ? `, ${n} prices` : ''}`);
@@ -48,6 +64,7 @@ try {
 } finally {
   await provider.close();
 }
+if (skipped) console.warn(`WARNING: ${skipped} lookups were skipped because the ${settings.crawl?.maxMinutes ?? 40} minute time budget ran out.`);
 
 // 2. Compare
 // Did Google show MakeMyTrip or Goibibo on any hotel? If a whole run has none, the crawl is not coming from India.
