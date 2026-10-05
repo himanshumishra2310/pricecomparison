@@ -86,12 +86,21 @@ commits the results and republishes the dashboard. Nothing to install, nothing t
 Google loads fine from there and shows Saltstayz.com against the international OTAs (Agoda,
 Booking.com, Expedia, Trip.com, Hotels.com, Traveloka, Vio, and others).
 
-**Important limitation:** Google chooses which booking sites to list based on the viewer's country.
-From GitHub's servers (USA) it never lists **MakeMyTrip or Goibibo**, so those two columns stay empty
-in GitHub-run results. To include MakeMyTrip and Goibibo the crawl has to run from an Indian internet
-connection: an always-on Mac in the office (setup below), or a server/proxy in India.
-If you switch to the Mac, turn the GitHub schedule off first (comment out the `schedule:` block in
-`parity.yml`) so the two do not push over each other.
+**MakeMyTrip and Goibibo need an Indian connection.** Google chooses which booking sites to list based
+on the country the viewer is in. From GitHub's servers (USA) it never lists MakeMyTrip or Goibibo, so
+those two columns stay empty and the dashboard shows a yellow note. There are two ways to crawl from India:
+
+**Way 1: keep GitHub, add an Indian proxy (nothing to keep running in the office).**
+Buy a proxy with an Indian IP (for example Webshare, IPRoyal, Smartproxy or Bright Data offer Indian
+residential or ISP proxies from roughly USD 5 to 15 per month; the crawl uses well under 5 GB a month).
+Add three repository secrets: `PROXY_SERVER` (like `http://in.proxyhost.com:8080`), `PROXY_USERNAME`,
+`PROXY_PASSWORD`. The next run picks them up automatically. The run log prints
+"Indian OTAs visible" when it worked.
+
+**Way 2: run on an always-on Mac in the office (free).** Follow Option B below, then set the repository
+variable `CRAWL_ON_GITHUB` to `false` (Settings -> Secrets and variables -> Actions -> Variables) so the
+GitHub schedule pauses and the two do not push over each other. The Mac pushes its results and the
+dashboard updates the same way.
 
 **Dashboard:** https://himanshumishra2310.github.io/pricecomparison/
 

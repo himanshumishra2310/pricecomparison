@@ -55,6 +55,7 @@ const run = {
   provider: provider.name,
   adults: settings.adults || 2,
   scheduled: process.env.GITHUB_ACTIONS ? 'GitHub Actions' : process.env.SCHEDULER || '',
+  indianOtasVisible: provider.indianOtasVisible ?? null,
   windows: windows.map((w) => {
     const rows = sortRows(properties.map((p) => compareProperty(p, results[`${p.id}|${w.key}`], settings)));
     return { key: w.key, checkIn: w.checkIn, checkOut: w.checkOut, label: w.label, summary: summarize(rows, settings), rows };

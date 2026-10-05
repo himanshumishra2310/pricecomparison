@@ -139,6 +139,7 @@ footer{color:var(--muted);font-size:12px;margin-top:28px}
 <body>
 <header><h1>Saltstayz Rate Parity</h1><p>Google Hotels listing prices · Saltstayz.com vs ${settings.trackedOtas.map((o) => esc(o.label)).join(', ')} · ${run.adults} adults, nightly price as listed on Google (INR) · checked ${esc(run.stamp)}</p></header>
 <main>
+  ${run.indianOtasVisible === false ? '<div class="banner">This crawl did not come from an Indian internet connection, so Google did not list MakeMyTrip or Goibibo. See the README for how to run it from India (office Mac or an Indian proxy).</div>' : ''}
   ${run.provider === 'fixture' ? '<div class="banner">Sample data replayed from the one-off Chrome crawl of 4 Oct 2026. The first scheduled run replaces this page with live Google Hotels prices.</div>' : ''}
   <div class="tabs">${tabs}</div>
   ${sections}

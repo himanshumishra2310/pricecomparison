@@ -23,6 +23,8 @@ permissions:
 
 jobs:
   check:
+    # Set repository variable CRAWL_ON_GITHUB=false to pause the 2-hourly GitHub crawl (e.g. when the office Mac runs it).
+    if: github.event_name != 'schedule' || vars.CRAWL_ON_GITHUB != 'false'
     runs-on: ubuntu-latest
     timeout-minutes: 55
     env:
@@ -43,6 +45,9 @@ jobs:
       TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
       TWILIO_WHATSAPP_FROM: ${{ secrets.TWILIO_WHATSAPP_FROM }}
       FAIL_ON_ERRORS: '1'
+      PROXY_SERVER: ${{ secrets.PROXY_SERVER }}
+      PROXY_USERNAME: ${{ secrets.PROXY_USERNAME }}
+      PROXY_PASSWORD: ${{ secrets.PROXY_PASSWORD }}
     steps:
       - uses: actions/checkout@v4
         with:
