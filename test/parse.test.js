@@ -78,6 +78,14 @@ test('matchScore picks the right hotel from a results list', () => {
   assert.ok(matchScore({ name: 'Saltstayz Premier - Near Golf Course Road & Sector 57', aliases: ['Saltstayz Premier'] }, 'Saltstayz Premier') === 100);
   // A generic two-word listing must not be accepted for a specific property via a short alias.
   assert.ok(matchScore({ name: 'Saltstayz Select - Golf Course Road & Sector 57', aliases: ['Saltstayz Select Sector 57'] }, 'Saltstayz Select') < 75);
+  // ...but when Google really lists the hotel under that short name, the exact alias is accepted (Select Sector 57).
+  assert.equal(matchScore({ name: 'Saltstayz Select - Golf Course Road & Sector 57', aliases: ['Saltstayz Select'] }, 'Saltstayz Select'), 100);
+  // The five hotels Google lists under different names.
+  assert.ok(matchScore({ name: 'Saltstayz Premier - Noida, Near Sector 18 Metro', aliases: ['Saltstayz Premier- Sector 26 Noida'] }, 'Saltstayz Premier- Sector 26 Noida') === 100);
+  assert.ok(matchScore({ name: 'Saltstayz Premier Near Sector 44 Corporate Hub', aliases: ['Saltstayz Residences Sector 45'] }, 'Saltstayz Residences Sector 45') === 100);
+  assert.ok(matchScore({ name: 'Saltstayz Select - Malcha & Chanakyapuri', aliases: ['Saltstayz Select - Malcha & Chankyapuri'] }, 'Saltstayz Select - Malcha & Chankyapuri') === 100);
+  assert.ok(matchScore({ name: 'Saltstayz Select - Near Sohna Road City Center', aliases: ['Saltstayz'] }, 'Saltstayz') === 100);
+  assert.ok(matchScore({ name: 'Saltstayz Select - Near Sohna Road City Center', aliases: ['Saltstayz'] }, 'Saltstayz Premier') < 75);
   assert.ok(matchScore({ name: 'Saltstayz Premier - Pitampura', aliases: [] }, 'Pitampura') < 75);
   assert.ok(matchScore({ name: 'Saltstayz Premier - Pitampura', aliases: [] }, 'Saltstayz Premier - Pitampura · 125 results'.replace(/\s*·.*$/, '')) === 100);
   assert.ok(matchScore(prop, 'Lemon Tree Hotel, Udyog Vihar Gurugram') < 40);

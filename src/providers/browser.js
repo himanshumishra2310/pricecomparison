@@ -256,6 +256,21 @@ export function matchScore(property, text) {
   return best;
 }
 
+/** Names of Saltstayz-family listings visible on the page, closest match first. Shown on the dashboard when a hotel is not found. */
+async function nearbyListings(page, property) {
+  const names = await page.evaluate(() => {
+    const clean = (x) => String(x || '').replace(/\s+/g, ' ').trim();
+    const out = [];
+    for (const a of document.querySelectorAll('a[href*="/travel/"]')) {
+      const t = clean(a.innerText || a.getAttribute('aria-label')).replace(/^open\s+/i, '').replace(/\s+in a new tab\.?$/i, '').split(/\s₹|\s\d\.\d\s\(/)[0];
+      if (/saltstayz|patio farms|golden tulip|\bpause\b/i.test(t) && t.length < 80) out.push(t);
+    }
+    for (const h of document.querySelectorAll('h1, h2')) { const t = clean(h.innerText); if (/saltstayz|patio farms|golden tulip|\bpause\b/i.test(t) && t.length < 80) out.push(t); }
+    return out;
+  }).catch(() => []);
+  return [...new Set(names)].sort((a, b) => matchScore(property, b) - matchScore(property, a)).slice(0, 5);
+}
+
 /** Open the hotel's own page when the search landed on a list of results. */
 async function openEntity(page, property, window, settings) {
   // Google often jumps straight to the hotel page when the query names one hotel.
@@ -561,7 +576,9 @@ export default {
         }
         if (!opened) {
           await dump(page, property, window, 'notfound');
-          return { availability: 'not_found', matchedName: null, prices: [], note: 'Could not find this hotel on Google Hotels.', pricesFor: null, token: null };
+          const near = await nearbyListings(page, property);
+          const hint = near.length ? ` Closest Google listings: ${near.map((n) => `“${n}”`).join(', ')}. If one is this hotel, add its name to aliases in config/properties.json.` : '';
+          return { availability: 'not_found', matchedName: null, prices: [], note: `Could not find this hotel on Google Hotels.${hint}`, pricesFor: null, token: null };
         }
         await openPricesTab(page);
         let matchedName = await readHeading(page, property);
