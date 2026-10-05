@@ -1,10 +1,11 @@
 {
-  "id": "2026-10-05_0411",
-  "stamp": "05 Oct 2026, 04:11 am IST",
-  "generatedAt": "2026-10-04T22:41:03.771Z",
+  "id": "2026-10-05_0816",
+  "stamp": "05 Oct 2026, 08:16 am IST",
+  "generatedAt": "2026-10-05T02:46:47.702Z",
   "provider": "browser",
   "adults": 2,
   "scheduled": "GitHub Actions",
+  "indianOtasVisible": false,
   "windows": [
     {
       "key": "D0",
@@ -13,19 +14,62 @@
       "label": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
       "summary": {
         "total": 33,
-        "comparable": 19,
-        "directLowest": 1,
+        "comparable": 20,
+        "directLowest": 2,
         "otaLower": 18,
-        "directMissing": 5,
+        "directMissing": 4,
         "notOnGoogle": 6,
         "unavailable": 3,
         "errors": 0,
-        "pctDirectLowest": 5,
-        "avgGapNearestOta": -8.4,
-        "avgGapWhereDirectLowest": 22.9,
-        "avgGapWhereOtaLowest": -12.8
+        "pctDirectLowest": 10,
+        "avgGapNearestOta": -11.4,
+        "avgGapWhereDirectLowest": 13.8,
+        "avgGapWhereOtaLowest": -16
       },
       "rows": [
+        {
+          "id": "golden-tulip-gurugram-manesar",
+          "name": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+          "brand": "Partnership",
+          "city": "Gurugram",
+          "matchedName": "Golden Tulip- Sector 80, Gurugram",
+          "nameMismatch": true,
+          "direct": 8800,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3410,
+            "booking": 4804,
+            "expedia": 9386,
+            "tripcom": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 3410
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 3410,
+              "gapRupees": 5390,
+              "gapPercent": 61.3,
+              "tracked": true,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "Booking.com",
+              "price": 4804,
+              "gapRupees": 3996,
+              "gapPercent": 45.4,
+              "tracked": true,
+              "kind": "ota_lower"
+            }
+          ],
+          "note": "",
+          "pricesFor": null
+        },
         {
           "id": "premier-bengaluru-hebbal",
           "name": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
@@ -39,33 +83,33 @@
             "goibibo": null,
             "agoda": 3241,
             "booking": 3654,
-            "expedia": 5834,
+            "expedia": 5824,
             "tripcom": null
           },
           "others": [
             {
-              "source": "Vio.com",
-              "price": 3655
-            },
-            {
               "source": "goseek.com",
-              "price": 3655
+              "price": 3648
             },
             {
               "source": "Travelocity",
-              "price": 5834
+              "price": 5824
             },
             {
               "source": "Orbitz",
-              "price": 5834
+              "price": 5824
             },
             {
               "source": "CheapTickets.com",
-              "price": 5834
+              "price": 5824
             },
             {
               "source": "Hotels.com",
-              "price": 5881
+              "price": 5871
+            },
+            {
+              "source": "eDreams",
+              "price": 6386
             }
           ],
           "lowest": {
@@ -83,6 +127,14 @@
               "kind": "ota_lower"
             },
             {
+              "source": "goseek.com",
+              "price": 3648,
+              "gapRupees": 3732,
+              "gapPercent": 50.6,
+              "tracked": false,
+              "kind": "ota_lower"
+            },
+            {
               "source": "Booking.com",
               "price": 3654,
               "gapRupees": 3726,
@@ -91,58 +143,50 @@
               "kind": "ota_lower"
             },
             {
-              "source": "Vio.com",
-              "price": 3655,
-              "gapRupees": 3725,
-              "gapPercent": 50.5,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "goseek.com",
-              "price": 3655,
-              "gapRupees": 3725,
-              "gapPercent": 50.5,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
               "source": "Expedia",
-              "price": 5834,
-              "gapRupees": 1546,
-              "gapPercent": 20.9,
+              "price": 5824,
+              "gapRupees": 1556,
+              "gapPercent": 21.1,
               "tracked": true,
               "kind": "ota_lower"
             },
             {
               "source": "Travelocity",
-              "price": 5834,
-              "gapRupees": 1546,
-              "gapPercent": 20.9,
+              "price": 5824,
+              "gapRupees": 1556,
+              "gapPercent": 21.1,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Orbitz",
-              "price": 5834,
-              "gapRupees": 1546,
-              "gapPercent": 20.9,
+              "price": 5824,
+              "gapRupees": 1556,
+              "gapPercent": 21.1,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "CheapTickets.com",
-              "price": 5834,
-              "gapRupees": 1546,
-              "gapPercent": 20.9,
+              "price": 5824,
+              "gapRupees": 1556,
+              "gapPercent": 21.1,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Hotels.com",
-              "price": 5881,
-              "gapRupees": 1499,
-              "gapPercent": 20.3,
+              "price": 5871,
+              "gapRupees": 1509,
+              "gapPercent": 20.4,
+              "tracked": false,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "eDreams",
+              "price": 6386,
+              "gapRupees": 994,
+              "gapPercent": 13.5,
               "tracked": false,
               "kind": "ota_lower"
             }
@@ -163,118 +207,94 @@
             "goibibo": null,
             "agoda": 2887,
             "booking": 3513,
-            "expedia": 2065,
+            "expedia": 2062,
             "tripcom": null
           },
           "others": [
             {
+              "source": "Traveloka",
+              "price": 2061
+            },
+            {
               "source": "Hotels.com",
-              "price": 2065
+              "price": 2062
             },
             {
               "source": "Travelocity",
-              "price": 2065
-            },
-            {
-              "source": "Traveloka",
-              "price": 2065
+              "price": 2062
             },
             {
               "source": "Orbitz",
-              "price": 2065
+              "price": 2062
             },
             {
-              "source": "eDreams",
-              "price": 2065
+              "source": "CheapTickets.com",
+              "price": 2062
             },
             {
-              "source": "Vio.com",
-              "price": 2066
-            },
-            {
-              "source": "Etrip.net",
-              "price": 2066
-            },
-            {
-              "source": "goseek.com",
-              "price": 2066
+              "source": "ZenHotels",
+              "price": 2062
             }
           ],
           "lowest": {
-            "source": "Hotels.com",
-            "price": 2065
+            "source": "Traveloka",
+            "price": 2061
           },
           "status": "ota_lower",
           "deviations": [
             {
+              "source": "Traveloka",
+              "price": 2061,
+              "gapRupees": 1088,
+              "gapPercent": 34.6,
+              "tracked": false,
+              "kind": "ota_lower"
+            },
+            {
               "source": "Hotels.com",
-              "price": 2065,
-              "gapRupees": 1084,
-              "gapPercent": 34.4,
+              "price": 2062,
+              "gapRupees": 1087,
+              "gapPercent": 34.5,
+              "tracked": false,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "Travelocity",
+              "price": 2062,
+              "gapRupees": 1087,
+              "gapPercent": 34.5,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Expedia",
-              "price": 2065,
-              "gapRupees": 1084,
-              "gapPercent": 34.4,
+              "price": 2062,
+              "gapRupees": 1087,
+              "gapPercent": 34.5,
               "tracked": true,
               "kind": "ota_lower"
             },
             {
-              "source": "Travelocity",
-              "price": 2065,
-              "gapRupees": 1084,
-              "gapPercent": 34.4,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Traveloka",
-              "price": 2065,
-              "gapRupees": 1084,
-              "gapPercent": 34.4,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
               "source": "Orbitz",
-              "price": 2065,
-              "gapRupees": 1084,
-              "gapPercent": 34.4,
+              "price": 2062,
+              "gapRupees": 1087,
+              "gapPercent": 34.5,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
-              "source": "eDreams",
-              "price": 2065,
-              "gapRupees": 1084,
-              "gapPercent": 34.4,
+              "source": "CheapTickets.com",
+              "price": 2062,
+              "gapRupees": 1087,
+              "gapPercent": 34.5,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
-              "source": "Vio.com",
-              "price": 2066,
-              "gapRupees": 1083,
-              "gapPercent": 34.4,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Etrip.net",
-              "price": 2066,
-              "gapRupees": 1083,
-              "gapPercent": 34.4,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "goseek.com",
-              "price": 2066,
-              "gapRupees": 1083,
-              "gapPercent": 34.4,
+              "source": "ZenHotels",
+              "price": 2062,
+              "gapRupees": 1087,
+              "gapPercent": 34.5,
               "tracked": false,
               "kind": "ota_lower"
             },
@@ -303,8 +323,8 @@
             "goibibo": null,
             "agoda": 2437,
             "booking": 3557,
-            "expedia": 2965,
-            "tripcom": null
+            "expedia": 2960,
+            "tripcom": 3598
           },
           "others": [
             {
@@ -351,7 +371,7 @@
             "goibibo": null,
             "agoda": 3083,
             "booking": 4533,
-            "expedia": 4537,
+            "expedia": 4529,
             "tripcom": null
           },
           "others": [],
@@ -386,8 +406,8 @@
             "goibibo": null,
             "agoda": 2771,
             "booking": 2606,
-            "expedia": 3971,
-            "tripcom": 3923
+            "expedia": 3965,
+            "tripcom": 3917
           },
           "others": [],
           "lowest": {
@@ -427,156 +447,48 @@
           "otas": {
             "makemytrip": null,
             "goibibo": null,
-            "agoda": 2039,
-            "booking": 2618,
-            "expedia": 2105,
-            "tripcom": null
+            "agoda": 2057,
+            "booking": 5060,
+            "expedia": null,
+            "tripcom": 3566
           },
           "others": [
             {
               "source": "Hotels.com",
-              "price": 1978
-            },
-            {
-              "source": "Travelocity",
-              "price": 2105
-            },
-            {
-              "source": "Orbitz",
-              "price": 2105
+              "price": 1975
             },
             {
               "source": "eDreams",
-              "price": 2105
-            },
-            {
-              "source": "CheapTickets.com",
-              "price": 2105
+              "price": 2101
             }
           ],
           "lowest": {
             "source": "Hotels.com",
-            "price": 1978
+            "price": 1975
           },
           "status": "ota_lower",
           "deviations": [
             {
               "source": "Hotels.com",
-              "price": 1978,
-              "gapRupees": 297,
-              "gapPercent": 13.1,
+              "price": 1975,
+              "gapRupees": 300,
+              "gapPercent": 13.2,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Agoda",
-              "price": 2039,
-              "gapRupees": 236,
-              "gapPercent": 10.4,
+              "price": 2057,
+              "gapRupees": 218,
+              "gapPercent": 9.6,
               "tracked": true,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Expedia",
-              "price": 2105,
-              "gapRupees": 170,
-              "gapPercent": 7.5,
-              "tracked": true,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Travelocity",
-              "price": 2105,
-              "gapRupees": 170,
-              "gapPercent": 7.5,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Orbitz",
-              "price": 2105,
-              "gapRupees": 170,
-              "gapPercent": 7.5,
-              "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "eDreams",
-              "price": 2105,
-              "gapRupees": 170,
-              "gapPercent": 7.5,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "CheapTickets.com",
-              "price": 2105,
-              "gapRupees": 170,
-              "gapPercent": 7.5,
-              "tracked": false,
-              "kind": "ota_lower"
-            }
-          ],
-          "note": "",
-          "pricesFor": null
-        },
-        {
-          "id": "autograph-connaught-place",
-          "name": "Saltstayz Autograph Connaught Place",
-          "brand": "Autograph",
-          "city": "New Delhi",
-          "matchedName": "Saltstayz Autograph Connaught Place",
-          "nameMismatch": false,
-          "direct": 9739,
-          "otas": {
-            "makemytrip": null,
-            "goibibo": null,
-            "agoda": 10324,
-            "booking": 10226,
-            "expedia": 13226,
-            "tripcom": null
-          },
-          "others": [
-            {
-              "source": "Vio.com",
-              "price": 8776
-            },
-            {
-              "source": "goseek.com",
-              "price": 8776
-            },
-            {
-              "source": "Traveloka",
-              "price": 9548
-            }
-          ],
-          "lowest": {
-            "source": "Vio.com",
-            "price": 8776
-          },
-          "status": "ota_lower",
-          "deviations": [
-            {
-              "source": "Vio.com",
-              "price": 8776,
-              "gapRupees": 963,
-              "gapPercent": 9.9,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "goseek.com",
-              "price": 8776,
-              "gapRupees": 963,
-              "gapPercent": 9.9,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Traveloka",
-              "price": 9548,
-              "gapRupees": 191,
-              "gapPercent": 2,
+              "price": 2101,
+              "gapRupees": 174,
+              "gapPercent": 7.6,
               "tracked": false,
               "kind": "ota_lower"
             }
@@ -595,9 +507,9 @@
           "otas": {
             "makemytrip": null,
             "goibibo": null,
-            "agoda": 3380,
+            "agoda": 3290,
             "booking": 3431,
-            "expedia": 5700,
+            "expedia": 5690,
             "tripcom": null
           },
           "others": [
@@ -608,15 +520,15 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 3380
+            "price": 3290
           },
           "status": "ota_lower",
           "deviations": [
             {
               "source": "Agoda",
-              "price": 3380,
-              "gapRupees": 330,
-              "gapPercent": 8.9,
+              "price": 3290,
+              "gapRupees": 420,
+              "gapPercent": 11.3,
               "tracked": true,
               "kind": "ota_lower"
             },
@@ -641,6 +553,41 @@
           "pricesFor": null
         },
         {
+          "id": "premier-naraina",
+          "name": "Saltstayz Premier - Naraina, Central Delhi",
+          "brand": "Premier",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Premier - Naraina, Central Delhi",
+          "nameMismatch": false,
+          "direct": 3288,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3010,
+            "booking": 3772,
+            "expedia": 4294,
+            "tripcom": 4263
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 3010
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 3010,
+              "gapRupees": 278,
+              "gapPercent": 8.5,
+              "tracked": true,
+              "kind": "ota_lower"
+            }
+          ],
+          "note": "",
+          "pricesFor": null
+        },
+        {
           "id": "premier-golf-course-road-sector-42",
           "name": "Saltstayz Premier - Golf Course Road & Sector 42",
           "brand": "Premier",
@@ -653,8 +600,8 @@
             "goibibo": null,
             "agoda": 3574,
             "booking": 3700,
-            "expedia": 5063,
-            "tripcom": 5621
+            "expedia": 5054,
+            "tripcom": 5611
           },
           "others": [
             {
@@ -709,8 +656,8 @@
             "goibibo": null,
             "agoda": 2213,
             "booking": 2685,
-            "expedia": 3162,
-            "tripcom": 3158
+            "expedia": 3157,
+            "tripcom": 3153
           },
           "others": [],
           "lowest": {
@@ -744,14 +691,10 @@
             "goibibo": null,
             "agoda": 2874,
             "booking": 3964,
-            "expedia": 3411,
-            "tripcom": 4147
+            "expedia": 3405,
+            "tripcom": null
           },
           "others": [
-            {
-              "source": "Traveloka",
-              "price": 3004
-            },
             {
               "source": "EaseMyTrip",
               "price": 3064
@@ -769,14 +712,6 @@
               "gapRupees": 256,
               "gapPercent": 8.2,
               "tracked": true,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Traveloka",
-              "price": 3004,
-              "gapRupees": 126,
-              "gapPercent": 4,
-              "tracked": false,
               "kind": "ota_lower"
             },
             {
@@ -804,8 +739,8 @@
             "goibibo": null,
             "agoda": 2882,
             "booking": 3704,
-            "expedia": 3420,
-            "tripcom": 3944
+            "expedia": 3415,
+            "tripcom": 3937
           },
           "others": [
             {
@@ -840,6 +775,41 @@
           "pricesFor": null
         },
         {
+          "id": "select-golf-course-road-sector-27",
+          "name": "Saltstayz Select - Golf Course Road & Sector 27",
+          "brand": "Select",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Select Sector 27 - Golf Course Road",
+          "nameMismatch": false,
+          "direct": 2491,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2310,
+            "booking": 2934,
+            "expedia": 3258,
+            "tripcom": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2310
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2310,
+              "gapRupees": 181,
+              "gapPercent": 7.3,
+              "tracked": true,
+              "kind": "ota_lower"
+            }
+          ],
+          "note": "",
+          "pricesFor": null
+        },
+        {
           "id": "premier-golf-course-extension-road",
           "name": "Saltstayz Premier - Golf Course Extension Road",
           "brand": "Premier",
@@ -852,8 +822,8 @@
             "goibibo": null,
             "agoda": 2418,
             "booking": 3405,
-            "expedia": 3417,
-            "tripcom": null
+            "expedia": 3411,
+            "tripcom": 3712
           },
           "others": [],
           "lowest": {
@@ -875,49 +845,6 @@
           "pricesFor": null
         },
         {
-          "id": "premier-paschim-vihar",
-          "name": "Saltstayz Premier - Paschim Vihar",
-          "brand": "Premier",
-          "city": "New Delhi",
-          "matchedName": "Saltstayz Premier - Paschim Vihar",
-          "nameMismatch": false,
-          "direct": 3096,
-          "otas": {
-            "makemytrip": null,
-            "goibibo": null,
-            "agoda": 2878,
-            "booking": 2971,
-            "expedia": null,
-            "tripcom": 4945
-          },
-          "others": [],
-          "lowest": {
-            "source": "Agoda",
-            "price": 2878
-          },
-          "status": "ota_lower",
-          "deviations": [
-            {
-              "source": "Agoda",
-              "price": 2878,
-              "gapRupees": 218,
-              "gapPercent": 7,
-              "tracked": true,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Booking.com",
-              "price": 2971,
-              "gapRupees": 125,
-              "gapPercent": 4,
-              "tracked": true,
-              "kind": "ota_lower"
-            }
-          ],
-          "note": "",
-          "pricesFor": null
-        },
-        {
           "id": "premier-pitampura",
           "name": "Saltstayz Premier - Pitampura",
           "brand": "Premier",
@@ -930,7 +857,7 @@
             "goibibo": null,
             "agoda": 3271,
             "booking": 3498,
-            "expedia": 3313,
+            "expedia": 3307,
             "tripcom": null
           },
           "others": [
@@ -958,68 +885,33 @@
           "pricesFor": null
         },
         {
-          "id": "select-golf-course-road-sector-27",
-          "name": "Saltstayz Select - Golf Course Road & Sector 27",
-          "brand": "Select",
-          "city": "Gurugram",
-          "matchedName": "Saltstayz Select Sector 27 - Golf Course Road",
-          "nameMismatch": false,
-          "direct": 2443,
-          "otas": {
-            "makemytrip": null,
-            "goibibo": null,
-            "agoda": 2310,
-            "booking": 2934,
-            "expedia": 3263,
-            "tripcom": null
-          },
-          "others": [],
-          "lowest": {
-            "source": "Agoda",
-            "price": 2310
-          },
-          "status": "ota_lower",
-          "deviations": [
-            {
-              "source": "Agoda",
-              "price": 2310,
-              "gapRupees": 133,
-              "gapPercent": 5.4,
-              "tracked": true,
-              "kind": "ota_lower"
-            }
-          ],
-          "note": "",
-          "pricesFor": null
-        },
-        {
-          "id": "premier-naraina",
-          "name": "Saltstayz Premier - Naraina, Central Delhi",
+          "id": "premier-paschim-vihar",
+          "name": "Saltstayz Premier - Paschim Vihar",
           "brand": "Premier",
           "city": "New Delhi",
-          "matchedName": "Saltstayz Premier - Naraina, Central Delhi",
+          "matchedName": "Saltstayz Premier - Paschim Vihar",
           "nameMismatch": false,
           "direct": 3096,
           "otas": {
             "makemytrip": null,
             "goibibo": null,
-            "agoda": 3010,
-            "booking": 3772,
-            "expedia": 4302,
-            "tripcom": 4296
+            "agoda": 3376,
+            "booking": 2971,
+            "expedia": 4059,
+            "tripcom": 4937
           },
           "others": [],
           "lowest": {
-            "source": "Agoda",
-            "price": 3010
+            "source": "Booking.com",
+            "price": 2971
           },
           "status": "ota_lower",
           "deviations": [
             {
-              "source": "Agoda",
-              "price": 3010,
-              "gapRupees": 86,
-              "gapPercent": 2.8,
+              "source": "Booking.com",
+              "price": 2971,
+              "gapRupees": 125,
+              "gapPercent": 4,
               "tracked": true,
               "kind": "ota_lower"
             }
@@ -1040,8 +932,8 @@
             "goibibo": null,
             "agoda": null,
             "booking": 2711,
-            "expedia": 2651,
-            "tripcom": 3187
+            "expedia": 2646,
+            "tripcom": 3182
           },
           "others": [
             {
@@ -1068,41 +960,6 @@
           "pricesFor": null
         },
         {
-          "id": "golden-tulip-gurugram-manesar",
-          "name": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
-          "brand": "Partnership",
-          "city": "Gurugram",
-          "matchedName": "Golden Tulip- Sector 80, Gurugram",
-          "nameMismatch": false,
-          "direct": null,
-          "otas": {
-            "makemytrip": null,
-            "goibibo": null,
-            "agoda": 3410,
-            "booking": 4804,
-            "expedia": 9402,
-            "tripcom": null
-          },
-          "others": [],
-          "lowest": {
-            "source": "Agoda",
-            "price": 3410
-          },
-          "status": "direct_missing",
-          "deviations": [
-            {
-              "source": "Agoda",
-              "price": 3410,
-              "gapRupees": null,
-              "gapPercent": null,
-              "tracked": true,
-              "kind": "direct_missing"
-            }
-          ],
-          "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
-          "pricesFor": null
-        },
-        {
           "id": "pause-east-of-kailash",
           "name": "Pause by Saltstayz - East of Kailash",
           "brand": "Pause",
@@ -1115,7 +972,7 @@
             "goibibo": null,
             "agoda": 5712,
             "booking": 5712,
-            "expedia": 8702,
+            "expedia": 8687,
             "tripcom": null
           },
           "others": [],
@@ -1183,9 +1040,9 @@
           "otas": {
             "makemytrip": null,
             "goibibo": null,
-            "agoda": 3516,
-            "booking": 3516,
-            "expedia": 5923,
+            "agoda": 3838,
+            "booking": 3838,
+            "expedia": 5913,
             "tripcom": null
           },
           "others": [],
@@ -1266,29 +1123,6 @@
           "pricesFor": "6–7 Oct"
         },
         {
-          "id": "premier-cyber-hub",
-          "name": "Saltstayz Premier - Cyber Hub",
-          "brand": "Premier",
-          "city": "Gurugram",
-          "matchedName": "Saltstayz Premier - Cyber Hub",
-          "nameMismatch": false,
-          "direct": null,
-          "otas": {
-            "makemytrip": null,
-            "goibibo": null,
-            "agoda": null,
-            "booking": null,
-            "expedia": null,
-            "tripcom": null
-          },
-          "others": [],
-          "lowest": null,
-          "status": "no_rooms",
-          "deviations": [],
-          "note": "No rooms on the asked date on Google. Next date Google offers is 6–7 Oct.",
-          "pricesFor": "6–7 Oct"
-        },
-        {
           "id": "premier-sector-15-noida",
           "name": "Saltstayz Premier - Sector 15 Noida",
           "brand": "Premier",
@@ -1312,6 +1146,29 @@
           "pricesFor": "6–7 Oct"
         },
         {
+          "id": "premier-cyber-hub",
+          "name": "Saltstayz Premier - Cyber Hub",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Cyber Hub",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "expedia": null,
+            "tripcom": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "no_prices",
+          "deviations": [],
+          "note": "Google shows no Saltstayz.com or OTA price for this date.",
+          "pricesFor": null
+        },
+        {
           "id": "autograph-rishikesh",
           "name": "Saltstayz Autograph - Rishikesh Near Triveni Ghat",
           "brand": "Autograph",
@@ -1324,13 +1181,39 @@
             "goibibo": null,
             "agoda": 6933,
             "booking": 6933,
-            "expedia": 6584,
-            "tripcom": 8199
+            "expedia": 6573,
+            "tripcom": 8185
           },
           "others": [],
           "lowest": {
             "source": "Saltstayz.com",
             "price": 5357
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null
+        },
+        {
+          "id": "autograph-connaught-place",
+          "name": "Saltstayz Autograph Connaught Place",
+          "brand": "Autograph",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Autograph Connaught Place",
+          "nameMismatch": false,
+          "direct": 9739,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 10324,
+            "booking": 10226,
+            "expedia": 13420,
+            "tripcom": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 9739
           },
           "status": "direct_lowest",
           "deviations": [],
@@ -1492,9 +1375,9 @@
         "unavailable": 1,
         "errors": 0,
         "pctDirectLowest": 5,
-        "avgGapNearestOta": -12.5,
-        "avgGapWhereDirectLowest": 17.9,
-        "avgGapWhereOtaLowest": -15.7
+        "avgGapNearestOta": -12.7,
+        "avgGapWhereDirectLowest": 17.7,
+        "avgGapWhereOtaLowest": -15.4
       },
       "rows": [
         {
@@ -1510,29 +1393,25 @@
             "goibibo": null,
             "agoda": 3660,
             "booking": 5171,
-            "expedia": 8451,
+            "expedia": 8437,
             "tripcom": null
           },
           "others": [
             {
               "source": "Hotels.com",
-              "price": 8451
+              "price": 8437
             },
             {
               "source": "Travelocity",
-              "price": 8451
+              "price": 8437
             },
             {
               "source": "Orbitz",
-              "price": 8451
+              "price": 8437
             },
             {
-              "source": "eDreams",
-              "price": 8451
-            },
-            {
-              "source": "CheapTickets.com",
-              "price": 8451
+              "source": "ZenHotels",
+              "price": 8437
             }
           ],
           "lowest": {
@@ -1559,49 +1438,41 @@
             },
             {
               "source": "Expedia",
-              "price": 8451,
-              "gapRupees": 549,
-              "gapPercent": 6.1,
+              "price": 8437,
+              "gapRupees": 563,
+              "gapPercent": 6.3,
               "tracked": true,
               "kind": "ota_lower"
             },
             {
               "source": "Hotels.com",
-              "price": 8451,
-              "gapRupees": 549,
-              "gapPercent": 6.1,
+              "price": 8437,
+              "gapRupees": 563,
+              "gapPercent": 6.3,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Travelocity",
-              "price": 8451,
-              "gapRupees": 549,
-              "gapPercent": 6.1,
+              "price": 8437,
+              "gapRupees": 563,
+              "gapPercent": 6.3,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Orbitz",
-              "price": 8451,
-              "gapRupees": 549,
-              "gapPercent": 6.1,
+              "price": 8437,
+              "gapRupees": 563,
+              "gapPercent": 6.3,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
-              "source": "eDreams",
-              "price": 8451,
-              "gapRupees": 549,
-              "gapPercent": 6.1,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "CheapTickets.com",
-              "price": 8451,
-              "gapRupees": 549,
-              "gapPercent": 6.1,
+              "source": "ZenHotels",
+              "price": 8437,
+              "gapRupees": 563,
+              "gapPercent": 6.3,
               "tracked": false,
               "kind": "ota_lower"
             }
@@ -1622,29 +1493,37 @@
             "goibibo": null,
             "agoda": 3437,
             "booking": 3888,
-            "expedia": 6409,
+            "expedia": 6473,
             "tripcom": null
           },
           "others": [
             {
-              "source": "Bluepillow",
-              "price": 3676
+              "source": "Vio.com",
+              "price": 3883
+            },
+            {
+              "source": "dealbase.com",
+              "price": 3883
+            },
+            {
+              "source": "goseek.com",
+              "price": 3883
+            },
+            {
+              "source": "Etrip.net",
+              "price": 3883
             },
             {
               "source": "Hotels.com",
-              "price": 6375
+              "price": 6364
             },
             {
               "source": "Travelocity",
-              "price": 6409
+              "price": 6473
             },
             {
-              "source": "Orbitz",
-              "price": 6409
-            },
-            {
-              "source": "CheapTickets.com",
-              "price": 6409
+              "source": "eDreams",
+              "price": 6770
             }
           ],
           "lowest": {
@@ -1662,10 +1541,34 @@
               "kind": "ota_lower"
             },
             {
-              "source": "Bluepillow",
-              "price": 3676,
-              "gapRupees": 4134,
-              "gapPercent": 52.9,
+              "source": "Vio.com",
+              "price": 3883,
+              "gapRupees": 3927,
+              "gapPercent": 50.3,
+              "tracked": false,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "dealbase.com",
+              "price": 3883,
+              "gapRupees": 3927,
+              "gapPercent": 50.3,
+              "tracked": false,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "goseek.com",
+              "price": 3883,
+              "gapRupees": 3927,
+              "gapPercent": 50.3,
+              "tracked": false,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "Etrip.net",
+              "price": 3883,
+              "gapRupees": 3927,
+              "gapPercent": 50.3,
               "tracked": false,
               "kind": "ota_lower"
             },
@@ -1679,41 +1582,33 @@
             },
             {
               "source": "Hotels.com",
-              "price": 6375,
-              "gapRupees": 1435,
-              "gapPercent": 18.4,
+              "price": 6364,
+              "gapRupees": 1446,
+              "gapPercent": 18.5,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Expedia",
-              "price": 6409,
-              "gapRupees": 1401,
-              "gapPercent": 17.9,
+              "price": 6473,
+              "gapRupees": 1337,
+              "gapPercent": 17.1,
               "tracked": true,
               "kind": "ota_lower"
             },
             {
               "source": "Travelocity",
-              "price": 6409,
-              "gapRupees": 1401,
-              "gapPercent": 17.9,
+              "price": 6473,
+              "gapRupees": 1337,
+              "gapPercent": 17.1,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
-              "source": "Orbitz",
-              "price": 6409,
-              "gapRupees": 1401,
-              "gapPercent": 17.9,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "CheapTickets.com",
-              "price": 6409,
-              "gapRupees": 1401,
-              "gapPercent": 17.9,
+              "source": "eDreams",
+              "price": 6770,
+              "gapRupees": 1040,
+              "gapPercent": 13.3,
               "tracked": false,
               "kind": "ota_lower"
             }
@@ -1734,25 +1629,33 @@
             "goibibo": null,
             "agoda": 4261,
             "booking": 4888,
-            "expedia": 6608,
+            "expedia": 6597,
             "tripcom": null
           },
           "others": [
             {
               "source": "goseek.com",
-              "price": 5463
+              "price": 5453
+            },
+            {
+              "source": "dealbase.com",
+              "price": 5453
+            },
+            {
+              "source": "Etrip.net",
+              "price": 5453
             },
             {
               "source": "Travelocity",
-              "price": 6608
+              "price": 6597
             },
             {
-              "source": "Orbitz",
-              "price": 6608
+              "source": "Hotels.com",
+              "price": 6684
             },
             {
-              "source": "CheapTickets.com",
-              "price": 6608
+              "source": "eDreams",
+              "price": 7132
             }
           ],
           "lowest": {
@@ -1779,41 +1682,57 @@
             },
             {
               "source": "goseek.com",
-              "price": 5463,
-              "gapRupees": 3207,
-              "gapPercent": 37,
+              "price": 5453,
+              "gapRupees": 3217,
+              "gapPercent": 37.1,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
-              "source": "Travelocity",
-              "price": 6608,
-              "gapRupees": 2062,
-              "gapPercent": 23.8,
+              "source": "dealbase.com",
+              "price": 5453,
+              "gapRupees": 3217,
+              "gapPercent": 37.1,
+              "tracked": false,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "Etrip.net",
+              "price": 5453,
+              "gapRupees": 3217,
+              "gapPercent": 37.1,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Expedia",
-              "price": 6608,
-              "gapRupees": 2062,
-              "gapPercent": 23.8,
+              "price": 6597,
+              "gapRupees": 2073,
+              "gapPercent": 23.9,
               "tracked": true,
               "kind": "ota_lower"
             },
             {
-              "source": "Orbitz",
-              "price": 6608,
-              "gapRupees": 2062,
-              "gapPercent": 23.8,
+              "source": "Travelocity",
+              "price": 6597,
+              "gapRupees": 2073,
+              "gapPercent": 23.9,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
-              "source": "CheapTickets.com",
-              "price": 6608,
-              "gapRupees": 2062,
-              "gapPercent": 23.8,
+              "source": "Hotels.com",
+              "price": 6684,
+              "gapRupees": 1986,
+              "gapPercent": 22.9,
+              "tracked": false,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "eDreams",
+              "price": 7132,
+              "gapRupees": 1538,
+              "gapPercent": 17.7,
               "tracked": false,
               "kind": "ota_lower"
             }
@@ -1833,87 +1752,83 @@
             "makemytrip": null,
             "goibibo": null,
             "agoda": 2062,
-            "booking": 2649,
-            "expedia": 2036,
-            "tripcom": 3606
+            "booking": null,
+            "expedia": 2033,
+            "tripcom": null
           },
           "others": [
             {
               "source": "Hotels.com",
-              "price": 1914
+              "price": 1911
             },
             {
               "source": "Travelocity",
-              "price": 2036
+              "price": 2033
             },
             {
               "source": "Orbitz",
-              "price": 2036
+              "price": 2033
             },
             {
               "source": "eDreams",
-              "price": 2036
+              "price": 2033
             },
             {
               "source": "CheapTickets.com",
-              "price": 2036
-            },
-            {
-              "source": "Bluepillow",
-              "price": 2204
+              "price": 2033
             }
           ],
           "lowest": {
             "source": "Hotels.com",
-            "price": 1914
+            "price": 1911
           },
           "status": "ota_lower",
           "deviations": [
             {
               "source": "Hotels.com",
-              "price": 1914,
-              "gapRupees": 385,
-              "gapPercent": 16.7,
+              "price": 1911,
+              "gapRupees": 388,
+              "gapPercent": 16.9,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Expedia",
-              "price": 2036,
-              "gapRupees": 263,
-              "gapPercent": 11.4,
+              "price": 2033,
+              "gapRupees": 266,
+              "gapPercent": 11.6,
               "tracked": true,
               "kind": "ota_lower"
             },
             {
               "source": "Travelocity",
-              "price": 2036,
-              "gapRupees": 263,
-              "gapPercent": 11.4,
+              "price": 2033,
+              "gapRupees": 266,
+              "gapPercent": 11.6,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Orbitz",
-              "price": 2036,
-              "gapRupees": 263,
-              "gapPercent": 11.4,
+              "price": 2033,
+              "gapRupees": 266,
+              "gapPercent": 11.6,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "eDreams",
-              "price": 2036,
-              "gapRupees": 263,
-              "gapPercent": 11.4,
+              "price": 2033,
+              "gapRupees": 266,
+              "gapPercent": 11.6,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "CheapTickets.com",
-              "price": 2036,
-              "gapRupees": 263,
-              "gapPercent": 11.4,
+              "price": 2033,
+              "gapRupees": 266,
+              "gapPercent": 11.6,
               "tracked": false,
               "kind": "ota_lower"
             },
@@ -1923,98 +1838,6 @@
               "gapRupees": 237,
               "gapPercent": 10.3,
               "tracked": true,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Bluepillow",
-              "price": 2204,
-              "gapRupees": 95,
-              "gapPercent": 4.1,
-              "tracked": false,
-              "kind": "ota_lower"
-            }
-          ],
-          "note": "",
-          "pricesFor": null
-        },
-        {
-          "id": "autograph-connaught-place",
-          "name": "Saltstayz Autograph Connaught Place",
-          "brand": "Autograph",
-          "city": "New Delhi",
-          "matchedName": "Saltstayz Autograph Connaught Place",
-          "nameMismatch": false,
-          "direct": 9826,
-          "otas": {
-            "makemytrip": null,
-            "goibibo": null,
-            "agoda": 10587,
-            "booking": 10316,
-            "expedia": 11575,
-            "tripcom": 8416
-          },
-          "others": [
-            {
-              "source": "Vio.com",
-              "price": 8334
-            },
-            {
-              "source": "goseek.com",
-              "price": 8334
-            },
-            {
-              "source": "Etrip.net",
-              "price": 8334
-            },
-            {
-              "source": "Traveloka",
-              "price": 9630
-            }
-          ],
-          "lowest": {
-            "source": "Vio.com",
-            "price": 8334
-          },
-          "status": "ota_lower",
-          "deviations": [
-            {
-              "source": "Vio.com",
-              "price": 8334,
-              "gapRupees": 1492,
-              "gapPercent": 15.2,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "goseek.com",
-              "price": 8334,
-              "gapRupees": 1492,
-              "gapPercent": 15.2,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Etrip.net",
-              "price": 8334,
-              "gapRupees": 1492,
-              "gapPercent": 15.2,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Trip.com",
-              "price": 8416,
-              "gapRupees": 1410,
-              "gapPercent": 14.3,
-              "tracked": true,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Traveloka",
-              "price": 9630,
-              "gapRupees": 196,
-              "gapPercent": 2,
-              "tracked": false,
               "kind": "ota_lower"
             }
           ],
@@ -2034,13 +1857,13 @@
             "goibibo": null,
             "agoda": 3174,
             "booking": 4669,
-            "expedia": 3859,
+            "expedia": 3852,
             "tripcom": null
           },
           "others": [
             {
               "source": "Hotels.com",
-              "price": 3721
+              "price": 3715
             }
           ],
           "lowest": {
@@ -2059,9 +1882,9 @@
             },
             {
               "source": "Hotels.com",
-              "price": 3721,
-              "gapRupees": 24,
-              "gapPercent": 0.6,
+              "price": 3715,
+              "gapRupees": 30,
+              "gapPercent": 0.8,
               "tracked": false,
               "kind": "ota_lower"
             }
@@ -2082,8 +1905,8 @@
             "goibibo": null,
             "agoda": 2953,
             "booking": 2776,
-            "expedia": 4017,
-            "tripcom": 4180
+            "expedia": 4010,
+            "tripcom": 4173
           },
           "others": [],
           "lowest": {
@@ -2113,6 +1936,109 @@
           "pricesFor": null
         },
         {
+          "id": "premier-cyber-hub",
+          "name": "Saltstayz Premier - Cyber Hub",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Cyber Hub",
+          "nameMismatch": false,
+          "direct": 3509,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3089,
+            "booking": 4072,
+            "expedia": 4400,
+            "tripcom": 4989
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 3089
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 3089,
+              "gapRupees": 420,
+              "gapPercent": 12,
+              "tracked": true,
+              "kind": "ota_lower"
+            }
+          ],
+          "note": "",
+          "pricesFor": null
+        },
+        {
+          "id": "trinity-chandigarh-mohali",
+          "name": "Saltstayz Trinity - Chandigarh Mohali",
+          "brand": "Trinity",
+          "city": "Mohali",
+          "matchedName": "Saltstayz Trinity - Chandigarh & Mohali",
+          "nameMismatch": false,
+          "direct": 3634,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3222,
+            "booking": 3488,
+            "expedia": 5331,
+            "tripcom": null
+          },
+          "others": [
+            {
+              "source": "EaseMyTrip",
+              "price": 3439
+            },
+            {
+              "source": "Bluepillow",
+              "price": 3612
+            }
+          ],
+          "lowest": {
+            "source": "Agoda",
+            "price": 3222
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 3222,
+              "gapRupees": 412,
+              "gapPercent": 11.3,
+              "tracked": true,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "EaseMyTrip",
+              "price": 3439,
+              "gapRupees": 195,
+              "gapPercent": 5.4,
+              "tracked": false,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "Booking.com",
+              "price": 3488,
+              "gapRupees": 146,
+              "gapPercent": 4,
+              "tracked": true,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "Bluepillow",
+              "price": 3612,
+              "gapRupees": 22,
+              "gapPercent": 0.6,
+              "tracked": false,
+              "kind": "ota_lower"
+            }
+          ],
+          "note": "",
+          "pricesFor": null
+        },
+        {
           "id": "premier-near-golf-course-road-sector-57",
           "name": "Saltstayz Premier - Near Golf Course Road & Sector 57",
           "brand": "Premier",
@@ -2125,8 +2051,8 @@
             "goibibo": null,
             "agoda": 2590,
             "booking": 3781,
-            "expedia": 3601,
-            "tripcom": 3830
+            "expedia": 3594,
+            "tripcom": 3823
           },
           "others": [
             {
@@ -2161,49 +2087,6 @@
           "pricesFor": null
         },
         {
-          "id": "trinity-chandigarh-mohali",
-          "name": "Saltstayz Trinity - Chandigarh Mohali",
-          "brand": "Trinity",
-          "city": "Mohali",
-          "matchedName": "Saltstayz Trinity - Chandigarh & Mohali",
-          "nameMismatch": false,
-          "direct": 3634,
-          "otas": {
-            "makemytrip": null,
-            "goibibo": null,
-            "agoda": 3311,
-            "booking": 3488,
-            "expedia": 5340,
-            "tripcom": null
-          },
-          "others": [],
-          "lowest": {
-            "source": "Agoda",
-            "price": 3311
-          },
-          "status": "ota_lower",
-          "deviations": [
-            {
-              "source": "Agoda",
-              "price": 3311,
-              "gapRupees": 323,
-              "gapPercent": 8.9,
-              "tracked": true,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Booking.com",
-              "price": 3488,
-              "gapRupees": 146,
-              "gapPercent": 4,
-              "tracked": true,
-              "kind": "ota_lower"
-            }
-          ],
-          "note": "",
-          "pricesFor": null
-        },
-        {
           "id": "premier-arjun-marg",
           "name": "Saltstayz Premier - Arjun Marg & Golf Course Road",
           "brand": "Premier",
@@ -2216,25 +2099,29 @@
             "goibibo": null,
             "agoda": 2986,
             "booking": 3633,
-            "expedia": 3151,
+            "expedia": 3145,
             "tripcom": null
           },
           "others": [
             {
+              "source": "Traveloka",
+              "price": 3144
+            },
+            {
               "source": "Hotels.com",
-              "price": 3151
+              "price": 3145
             },
             {
               "source": "Travelocity",
-              "price": 3151
+              "price": 3145
             },
             {
               "source": "Orbitz",
-              "price": 3151
+              "price": 3145
             },
             {
               "source": "Vio.com",
-              "price": 3152
+              "price": 3146
             }
           ],
           "lowest": {
@@ -2252,42 +2139,50 @@
               "kind": "ota_lower"
             },
             {
+              "source": "Traveloka",
+              "price": 3144,
+              "gapRupees": 115,
+              "gapPercent": 3.5,
+              "tracked": false,
+              "kind": "ota_lower"
+            },
+            {
               "source": "Hotels.com",
-              "price": 3151,
-              "gapRupees": 108,
-              "gapPercent": 3.3,
+              "price": 3145,
+              "gapRupees": 114,
+              "gapPercent": 3.5,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Expedia",
-              "price": 3151,
-              "gapRupees": 108,
-              "gapPercent": 3.3,
+              "price": 3145,
+              "gapRupees": 114,
+              "gapPercent": 3.5,
               "tracked": true,
               "kind": "ota_lower"
             },
             {
               "source": "Travelocity",
-              "price": 3151,
-              "gapRupees": 108,
-              "gapPercent": 3.3,
+              "price": 3145,
+              "gapRupees": 114,
+              "gapPercent": 3.5,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Orbitz",
-              "price": 3151,
-              "gapRupees": 108,
-              "gapPercent": 3.3,
+              "price": 3145,
+              "gapRupees": 114,
+              "gapPercent": 3.5,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Vio.com",
-              "price": 3152,
-              "gapRupees": 107,
-              "gapPercent": 3.3,
+              "price": 3146,
+              "gapRupees": 113,
+              "gapPercent": 3.5,
               "tracked": false,
               "kind": "ota_lower"
             }
@@ -2308,8 +2203,8 @@
             "goibibo": null,
             "agoda": 3125,
             "booking": 3264,
-            "expedia": 4240,
-            "tripcom": 5015
+            "expedia": 4233,
+            "tripcom": 4678
           },
           "others": [
             {
@@ -2364,10 +2259,15 @@
             "goibibo": null,
             "agoda": 2865,
             "booking": 3952,
-            "expedia": 3887,
-            "tripcom": 4133
+            "expedia": 3880,
+            "tripcom": 4126
           },
-          "others": [],
+          "others": [
+            {
+              "source": "EaseMyTrip",
+              "price": 3055
+            }
+          ],
           "lowest": {
             "source": "Agoda",
             "price": 2865
@@ -2380,6 +2280,14 @@
               "gapRupees": 255,
               "gapPercent": 8.2,
               "tracked": true,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "EaseMyTrip",
+              "price": 3055,
+              "gapRupees": 65,
+              "gapPercent": 2.1,
+              "tracked": false,
               "kind": "ota_lower"
             }
           ],
@@ -2399,10 +2307,15 @@
             "goibibo": null,
             "agoda": 3018,
             "booking": 3879,
-            "expedia": 5659,
-            "tripcom": 4130
+            "expedia": 5650,
+            "tripcom": 4123
           },
-          "others": [],
+          "others": [
+            {
+              "source": "EaseMyTrip",
+              "price": 3218
+            }
+          ],
           "lowest": {
             "source": "Agoda",
             "price": 3018
@@ -2415,6 +2328,14 @@
               "gapRupees": 265,
               "gapPercent": 8.1,
               "tracked": true,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "EaseMyTrip",
+              "price": 3218,
+              "gapRupees": 65,
+              "gapPercent": 2,
+              "tracked": false,
               "kind": "ota_lower"
             }
           ],
@@ -2434,8 +2355,8 @@
             "goibibo": null,
             "agoda": 2258,
             "booking": 2731,
-            "expedia": 3064,
-            "tripcom": 3223
+            "expedia": 3059,
+            "tripcom": 3218
           },
           "others": [],
           "lowest": {
@@ -2457,6 +2378,41 @@
           "pricesFor": null
         },
         {
+          "id": "select-golf-course-road-sector-27",
+          "name": "Saltstayz Select - Golf Course Road & Sector 27",
+          "brand": "Select",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Select Sector 27 - Golf Course Road",
+          "nameMismatch": false,
+          "direct": 2578,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2393,
+            "booking": 5730,
+            "expedia": 3775,
+            "tripcom": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2393
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2393,
+              "gapRupees": 185,
+              "gapPercent": 7.2,
+              "tracked": true,
+              "kind": "ota_lower"
+            }
+          ],
+          "note": "",
+          "pricesFor": null
+        },
+        {
           "id": "premier-golf-course-extension-road",
           "name": "Saltstayz Premier - Golf Course Extension Road",
           "brand": "Premier",
@@ -2469,8 +2425,8 @@
             "goibibo": null,
             "agoda": 2464,
             "booking": 3469,
-            "expedia": 3305,
-            "tripcom": 3807
+            "expedia": 3299,
+            "tripcom": null
           },
           "others": [],
           "lowest": {
@@ -2504,7 +2460,7 @@
             "goibibo": null,
             "agoda": 2772,
             "booking": 2863,
-            "expedia": 3254,
+            "expedia": 3248,
             "tripcom": null
           },
           "others": [],
@@ -2535,6 +2491,41 @@
           "pricesFor": null
         },
         {
+          "id": "autograph-connaught-place",
+          "name": "Saltstayz Autograph Connaught Place",
+          "brand": "Autograph",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Autograph Connaught Place",
+          "nameMismatch": false,
+          "direct": 9826,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 10587,
+            "booking": 10316,
+            "expedia": 11556,
+            "tripcom": 9149
+          },
+          "others": [],
+          "lowest": {
+            "source": "Trip.com",
+            "price": 9149
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Trip.com",
+              "price": 9149,
+              "gapRupees": 677,
+              "gapPercent": 6.9,
+              "tracked": true,
+              "kind": "ota_lower"
+            }
+          ],
+          "note": "",
+          "pricesFor": null
+        },
+        {
           "id": "autograph-advant-sector-144",
           "name": "Saltstayz Autograph - Advant & Sector 144",
           "brand": "Autograph",
@@ -2547,7 +2538,7 @@
             "goibibo": null,
             "agoda": 3598,
             "booking": 4326,
-            "expedia": 4136,
+            "expedia": 4129,
             "tripcom": null
           },
           "others": [],
@@ -2570,46 +2561,6 @@
           "pricesFor": null
         },
         {
-          "id": "select-unitech-cyber-park",
-          "name": "Saltstayz Select - Unitech Cyber Park",
-          "brand": "Select",
-          "city": "Gurugram",
-          "matchedName": "Saltstayz Select - Unitech Cyber Park",
-          "nameMismatch": false,
-          "direct": 2275,
-          "otas": {
-            "makemytrip": null,
-            "goibibo": null,
-            "agoda": null,
-            "booking": 2541,
-            "expedia": 2840,
-            "tripcom": 2987
-          },
-          "others": [
-            {
-              "source": "Tripadvisor",
-              "price": 2136
-            }
-          ],
-          "lowest": {
-            "source": "Tripadvisor",
-            "price": 2136
-          },
-          "status": "ota_lower",
-          "deviations": [
-            {
-              "source": "Tripadvisor",
-              "price": 2136,
-              "gapRupees": 139,
-              "gapPercent": 6.1,
-              "tracked": false,
-              "kind": "ota_lower"
-            }
-          ],
-          "note": "",
-          "pricesFor": null
-        },
-        {
           "id": "premier-pitampura",
           "name": "Saltstayz Premier - Pitampura",
           "brand": "Premier",
@@ -2622,26 +2573,26 @@
             "goibibo": null,
             "agoda": 3405,
             "booking": 3674,
-            "expedia": 3977,
+            "expedia": 3970,
             "tripcom": null
           },
           "others": [
             {
               "source": "EaseMyTrip",
-              "price": 3015
+              "price": 3125
             }
           ],
           "lowest": {
             "source": "EaseMyTrip",
-            "price": 3015
+            "price": 3125
           },
           "status": "ota_lower",
           "deviations": [
             {
               "source": "EaseMyTrip",
-              "price": 3015,
-              "gapRupees": 172,
-              "gapPercent": 5.4,
+              "price": 3125,
+              "gapRupees": 62,
+              "gapPercent": 1.9,
               "tracked": false,
               "kind": "ota_lower"
             }
@@ -2650,69 +2601,39 @@
           "pricesFor": null
         },
         {
-          "id": "select-golf-course-road-sector-27",
-          "name": "Saltstayz Select - Golf Course Road & Sector 27",
+          "id": "select-unitech-cyber-park",
+          "name": "Saltstayz Select - Unitech Cyber Park",
           "brand": "Select",
           "city": "Gurugram",
-          "matchedName": "Saltstayz Select Sector 27 - Golf Course Road",
+          "matchedName": "Saltstayz Select - Unitech Cyber Park",
           "nameMismatch": false,
-          "direct": 2530,
+          "direct": 2275,
           "otas": {
             "makemytrip": null,
             "goibibo": null,
-            "agoda": 2393,
-            "booking": 3036,
-            "expedia": 3782,
-            "tripcom": null
+            "agoda": null,
+            "booking": 2541,
+            "expedia": 2835,
+            "tripcom": 2982
           },
-          "others": [],
-          "lowest": {
-            "source": "Agoda",
-            "price": 2393
-          },
-          "status": "ota_lower",
-          "deviations": [
+          "others": [
             {
-              "source": "Agoda",
-              "price": 2393,
-              "gapRupees": 137,
-              "gapPercent": 5.4,
-              "tracked": true,
-              "kind": "ota_lower"
+              "source": "EaseMyTrip",
+              "price": 2252
             }
           ],
-          "note": "",
-          "pricesFor": null
-        },
-        {
-          "id": "premier-cyber-hub",
-          "name": "Saltstayz Premier - Cyber Hub",
-          "brand": "Premier",
-          "city": "Gurugram",
-          "matchedName": "Saltstayz Premier - Cyber Hub",
-          "nameMismatch": false,
-          "direct": 3509,
-          "otas": {
-            "makemytrip": null,
-            "goibibo": null,
-            "agoda": 3344,
-            "booking": 4072,
-            "expedia": 4408,
-            "tripcom": null
-          },
-          "others": [],
           "lowest": {
-            "source": "Agoda",
-            "price": 3344
+            "source": "EaseMyTrip",
+            "price": 2252
           },
           "status": "ota_lower",
           "deviations": [
             {
-              "source": "Agoda",
-              "price": 3344,
-              "gapRupees": 165,
-              "gapPercent": 4.7,
-              "tracked": true,
+              "source": "EaseMyTrip",
+              "price": 2252,
+              "gapRupees": 23,
+              "gapPercent": 1,
+              "tracked": false,
               "kind": "ota_lower"
             }
           ],
@@ -2732,22 +2653,22 @@
             "goibibo": null,
             "agoda": null,
             "booking": null,
-            "expedia": 10001,
+            "expedia": 9984,
             "tripcom": null
           },
           "others": [],
           "lowest": {
-            "source": "Expedia",
-            "price": 10001
+            "source": "Hotels.com",
+            "price": 9984
           },
           "status": "direct_missing",
           "deviations": [
             {
-              "source": "Expedia",
-              "price": 10001,
+              "source": "Hotels.com",
+              "price": 9984,
               "gapRupees": null,
               "gapPercent": null,
-              "tracked": true,
+              "tracked": false,
               "kind": "direct_missing"
             }
           ],
@@ -2802,7 +2723,7 @@
             "goibibo": null,
             "agoda": 3988,
             "booking": 3988,
-            "expedia": 4963,
+            "expedia": 4954,
             "tripcom": null
           },
           "others": [],
@@ -2895,8 +2816,8 @@
             "goibibo": null,
             "agoda": 5657,
             "booking": 5657,
-            "expedia": 5098,
-            "tripcom": 6371
+            "expedia": 5090,
+            "tripcom": 6360
           },
           "others": [],
           "lowest": {
@@ -3056,16 +2977,16 @@
       "summary": {
         "total": 33,
         "comparable": 21,
-        "directLowest": 2,
-        "otaLower": 19,
+        "directLowest": 3,
+        "otaLower": 18,
         "directMissing": 4,
         "notOnGoogle": 6,
         "unavailable": 2,
         "errors": 0,
-        "pctDirectLowest": 10,
-        "avgGapNearestOta": -9.9,
-        "avgGapWhereDirectLowest": 12.9,
-        "avgGapWhereOtaLowest": -13.7
+        "pctDirectLowest": 14,
+        "avgGapNearestOta": -10,
+        "avgGapWhereDirectLowest": 14.5,
+        "avgGapWhereOtaLowest": -14.4
       },
       "rows": [
         {
@@ -3081,25 +3002,25 @@
             "goibibo": null,
             "agoda": 3806,
             "booking": 5386,
-            "expedia": 8801,
+            "expedia": 8786,
             "tripcom": null
           },
           "others": [
             {
               "source": "Hotels.com",
-              "price": 8801
+              "price": 8786
             },
             {
               "source": "Travelocity",
-              "price": 8801
+              "price": 8786
             },
             {
               "source": "Orbitz",
-              "price": 8801
+              "price": 8786
             },
             {
               "source": "eDreams",
-              "price": 8801
+              "price": 8786
             }
           ],
           "lowest": {
@@ -3125,42 +3046,42 @@
               "kind": "ota_lower"
             },
             {
-              "source": "Expedia",
-              "price": 8801,
-              "gapRupees": 599,
-              "gapPercent": 6.4,
-              "tracked": true,
-              "kind": "ota_lower"
-            },
-            {
               "source": "Hotels.com",
-              "price": 8801,
-              "gapRupees": 599,
-              "gapPercent": 6.4,
+              "price": 8786,
+              "gapRupees": 614,
+              "gapPercent": 6.5,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
+              "source": "Expedia",
+              "price": 8786,
+              "gapRupees": 614,
+              "gapPercent": 6.5,
+              "tracked": true,
+              "kind": "ota_lower"
+            },
+            {
               "source": "Travelocity",
-              "price": 8801,
-              "gapRupees": 599,
-              "gapPercent": 6.4,
+              "price": 8786,
+              "gapRupees": 614,
+              "gapPercent": 6.5,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Orbitz",
-              "price": 8801,
-              "gapRupees": 599,
-              "gapPercent": 6.4,
+              "price": 8786,
+              "gapRupees": 614,
+              "gapPercent": 6.5,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "eDreams",
-              "price": 8801,
-              "gapRupees": 599,
-              "gapPercent": 6.4,
+              "price": 8786,
+              "gapRupees": 614,
+              "gapPercent": 6.5,
               "tracked": false,
               "kind": "ota_lower"
             }
@@ -3181,33 +3102,37 @@
             "goibibo": null,
             "agoda": 4008,
             "booking": 4573,
-            "expedia": 8079,
+            "expedia": 8065,
             "tripcom": null
           },
           "others": [
             {
               "source": "Bluepillow",
-              "price": 4285
-            },
-            {
-              "source": "Vio.com",
-              "price": 4574
-            },
-            {
-              "source": "goseek.com",
-              "price": 4574
-            },
-            {
-              "source": "Etrip.net",
-              "price": 4574
+              "price": 4278
             },
             {
               "source": "Hotels.com",
-              "price": 7839
+              "price": 7826
+            },
+            {
+              "source": "Vio.com",
+              "price": 7982
+            },
+            {
+              "source": "goseek.com",
+              "price": 7982
             },
             {
               "source": "Travelocity",
-              "price": 8079
+              "price": 8065
+            },
+            {
+              "source": "Orbitz",
+              "price": 8065
+            },
+            {
+              "source": "eDreams",
+              "price": 8065
             }
           ],
           "lowest": {
@@ -3226,9 +3151,9 @@
             },
             {
               "source": "Bluepillow",
-              "price": 4285,
-              "gapRupees": 4335,
-              "gapPercent": 50.3,
+              "price": 4278,
+              "gapRupees": 4342,
+              "gapPercent": 50.4,
               "tracked": false,
               "kind": "ota_lower"
             },
@@ -3241,50 +3166,58 @@
               "kind": "ota_lower"
             },
             {
+              "source": "Hotels.com",
+              "price": 7826,
+              "gapRupees": 794,
+              "gapPercent": 9.2,
+              "tracked": false,
+              "kind": "ota_lower"
+            },
+            {
               "source": "Vio.com",
-              "price": 4574,
-              "gapRupees": 4046,
-              "gapPercent": 46.9,
+              "price": 7982,
+              "gapRupees": 638,
+              "gapPercent": 7.4,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "goseek.com",
-              "price": 4574,
-              "gapRupees": 4046,
-              "gapPercent": 46.9,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Etrip.net",
-              "price": 4574,
-              "gapRupees": 4046,
-              "gapPercent": 46.9,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Hotels.com",
-              "price": 7839,
-              "gapRupees": 781,
-              "gapPercent": 9.1,
+              "price": 7982,
+              "gapRupees": 638,
+              "gapPercent": 7.4,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Expedia",
-              "price": 8079,
-              "gapRupees": 541,
-              "gapPercent": 6.3,
+              "price": 8065,
+              "gapRupees": 555,
+              "gapPercent": 6.4,
               "tracked": true,
               "kind": "ota_lower"
             },
             {
               "source": "Travelocity",
-              "price": 8079,
-              "gapRupees": 541,
-              "gapPercent": 6.3,
+              "price": 8065,
+              "gapRupees": 555,
+              "gapPercent": 6.4,
+              "tracked": false,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "Orbitz",
+              "price": 8065,
+              "gapRupees": 555,
+              "gapPercent": 6.4,
+              "tracked": false,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "eDreams",
+              "price": 8065,
+              "gapRupees": 555,
+              "gapPercent": 6.4,
               "tracked": false,
               "kind": "ota_lower"
             }
@@ -3305,33 +3238,33 @@
             "goibibo": null,
             "agoda": 4425,
             "booking": 4823,
-            "expedia": 7184,
+            "expedia": 7172,
             "tripcom": null
           },
           "others": [
             {
-              "source": "Hotels.com",
-              "price": 7150
-            },
-            {
-              "source": "Vio.com",
-              "price": 7153
-            },
-            {
               "source": "goseek.com",
-              "price": 7153
+              "price": 5663
+            },
+            {
+              "source": "Hotels.com",
+              "price": 7138
             },
             {
               "source": "Travelocity",
-              "price": 7184
+              "price": 7172
             },
             {
               "source": "Orbitz",
-              "price": 7184
+              "price": 7172
             },
             {
               "source": "eDreams",
-              "price": 7184
+              "price": 7172
+            },
+            {
+              "source": "CheapTickets.com",
+              "price": 7172
             }
           ],
           "lowest": {
@@ -3357,58 +3290,58 @@
               "kind": "ota_lower"
             },
             {
-              "source": "Hotels.com",
-              "price": 7150,
-              "gapRupees": 1270,
-              "gapPercent": 15.1,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Vio.com",
-              "price": 7153,
-              "gapRupees": 1267,
-              "gapPercent": 15,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
               "source": "goseek.com",
-              "price": 7153,
-              "gapRupees": 1267,
-              "gapPercent": 15,
+              "price": 5663,
+              "gapRupees": 2757,
+              "gapPercent": 32.7,
+              "tracked": false,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "Hotels.com",
+              "price": 7138,
+              "gapRupees": 1282,
+              "gapPercent": 15.2,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Expedia",
-              "price": 7184,
-              "gapRupees": 1236,
-              "gapPercent": 14.7,
+              "price": 7172,
+              "gapRupees": 1248,
+              "gapPercent": 14.8,
               "tracked": true,
               "kind": "ota_lower"
             },
             {
               "source": "Travelocity",
-              "price": 7184,
-              "gapRupees": 1236,
-              "gapPercent": 14.7,
+              "price": 7172,
+              "gapRupees": 1248,
+              "gapPercent": 14.8,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Orbitz",
-              "price": 7184,
-              "gapRupees": 1236,
-              "gapPercent": 14.7,
+              "price": 7172,
+              "gapRupees": 1248,
+              "gapPercent": 14.8,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "eDreams",
-              "price": 7184,
-              "gapRupees": 1236,
-              "gapPercent": 14.7,
+              "price": 7172,
+              "gapRupees": 1248,
+              "gapPercent": 14.8,
+              "tracked": false,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "CheapTickets.com",
+              "price": 7172,
+              "gapRupees": 1248,
+              "gapPercent": 14.8,
               "tracked": false,
               "kind": "ota_lower"
             }
@@ -3429,8 +3362,8 @@
             "goibibo": null,
             "agoda": 2230,
             "booking": 2701,
-            "expedia": 3025,
-            "tripcom": 3182
+            "expedia": 3019,
+            "tripcom": 3176
           },
           "others": [],
           "lowest": {
@@ -3472,71 +3405,22 @@
             "goibibo": null,
             "agoda": 9644,
             "booking": 9646,
-            "expedia": 10823,
-            "tripcom": 8372
+            "expedia": 10805,
+            "tripcom": 8358
           },
-          "others": [
-            {
-              "source": "goseek.com",
-              "price": 8184
-            },
-            {
-              "source": "dealbase.com",
-              "price": 8184
-            },
-            {
-              "source": "Tripadvisor",
-              "price": 8372
-            },
-            {
-              "source": "Traveloka",
-              "price": 9005
-            }
-          ],
+          "others": [],
           "lowest": {
-            "source": "goseek.com",
-            "price": 8184
+            "source": "Trip.com",
+            "price": 8358
           },
           "status": "ota_lower",
           "deviations": [
             {
-              "source": "goseek.com",
-              "price": 8184,
-              "gapRupees": 1224,
-              "gapPercent": 13,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "dealbase.com",
-              "price": 8184,
-              "gapRupees": 1224,
-              "gapPercent": 13,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Tripadvisor",
-              "price": 8372,
-              "gapRupees": 1036,
-              "gapPercent": 11,
-              "tracked": false,
-              "kind": "ota_lower"
-            },
-            {
               "source": "Trip.com",
-              "price": 8372,
-              "gapRupees": 1036,
-              "gapPercent": 11,
+              "price": 8358,
+              "gapRupees": 1050,
+              "gapPercent": 11.2,
               "tracked": true,
-              "kind": "ota_lower"
-            },
-            {
-              "source": "Traveloka",
-              "price": 9005,
-              "gapRupees": 403,
-              "gapPercent": 4.3,
-              "tracked": false,
               "kind": "ota_lower"
             }
           ],
@@ -3556,7 +3440,7 @@
             "goibibo": null,
             "agoda": 2699,
             "booking": 3969,
-            "expedia": 3408,
+            "expedia": 3402,
             "tripcom": null
           },
           "others": [],
@@ -3591,70 +3475,82 @@
             "goibibo": null,
             "agoda": 1775,
             "booking": 2199,
-            "expedia": 1726,
+            "expedia": 1723,
             "tripcom": null
           },
           "others": [
             {
               "source": "Hotels.com",
-              "price": 1622
+              "price": 1619
             },
             {
               "source": "Travelocity",
-              "price": 1726
+              "price": 1723
             },
             {
               "source": "Orbitz",
-              "price": 1726
+              "price": 1723
+            },
+            {
+              "source": "eDreams",
+              "price": 1723
             },
             {
               "source": "CheapTickets.com",
-              "price": 1726
+              "price": 1723
             }
           ],
           "lowest": {
             "source": "Hotels.com",
-            "price": 1622
+            "price": 1619
           },
           "status": "ota_lower",
           "deviations": [
             {
               "source": "Hotels.com",
-              "price": 1622,
-              "gapRupees": 168,
-              "gapPercent": 9.4,
+              "price": 1619,
+              "gapRupees": 171,
+              "gapPercent": 9.6,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Expedia",
-              "price": 1726,
-              "gapRupees": 64,
-              "gapPercent": 3.6,
+              "price": 1723,
+              "gapRupees": 67,
+              "gapPercent": 3.7,
               "tracked": true,
               "kind": "ota_lower"
             },
             {
               "source": "Travelocity",
-              "price": 1726,
-              "gapRupees": 64,
-              "gapPercent": 3.6,
+              "price": 1723,
+              "gapRupees": 67,
+              "gapPercent": 3.7,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "Orbitz",
-              "price": 1726,
-              "gapRupees": 64,
-              "gapPercent": 3.6,
+              "price": 1723,
+              "gapRupees": 67,
+              "gapPercent": 3.7,
+              "tracked": false,
+              "kind": "ota_lower"
+            },
+            {
+              "source": "eDreams",
+              "price": 1723,
+              "gapRupees": 67,
+              "gapPercent": 3.7,
               "tracked": false,
               "kind": "ota_lower"
             },
             {
               "source": "CheapTickets.com",
-              "price": 1726,
-              "gapRupees": 64,
-              "gapPercent": 3.6,
+              "price": 1723,
+              "gapRupees": 67,
+              "gapPercent": 3.7,
               "tracked": false,
               "kind": "ota_lower"
             },
@@ -3683,7 +3579,7 @@
             "goibibo": null,
             "agoda": 2738,
             "booking": 2575,
-            "expedia": 2927,
+            "expedia": 2922,
             "tripcom": null
           },
           "others": [],
@@ -3726,7 +3622,7 @@
             "goibibo": null,
             "agoda": 3624,
             "booking": 4353,
-            "expedia": 4548,
+            "expedia": 4541,
             "tripcom": null
           },
           "others": [],
@@ -3761,8 +3657,8 @@
             "goibibo": null,
             "agoda": 2684,
             "booking": 3449,
-            "expedia": 5324,
-            "tripcom": 3672
+            "expedia": 5315,
+            "tripcom": 3574
           },
           "others": [
             {
@@ -3809,7 +3705,7 @@
             "goibibo": null,
             "agoda": 3253,
             "booking": 3428,
-            "expedia": 5247,
+            "expedia": 5238,
             "tripcom": null
           },
           "others": [
@@ -3819,7 +3715,7 @@
             },
             {
               "source": "Traveloka",
-              "price": 3427
+              "price": 3422
             }
           ],
           "lowest": {
@@ -3846,9 +3742,9 @@
             },
             {
               "source": "Traveloka",
-              "price": 3427,
-              "gapRupees": 39,
-              "gapPercent": 1.1,
+              "price": 3422,
+              "gapRupees": 44,
+              "gapPercent": 1.3,
               "tracked": false,
               "kind": "ota_lower"
             },
@@ -3877,8 +3773,8 @@
             "goibibo": null,
             "agoda": 2594,
             "booking": 3157,
-            "expedia": 3151,
-            "tripcom": null
+            "expedia": 3145,
+            "tripcom": 3590
           },
           "others": [],
           "lowest": {
@@ -3912,8 +3808,8 @@
             "goibibo": null,
             "agoda": 2869,
             "booking": 2997,
-            "expedia": 3891,
-            "tripcom": 4096
+            "expedia": 3885,
+            "tripcom": 3855
           },
           "others": [],
           "lowest": {
@@ -3947,8 +3843,8 @@
             "goibibo": null,
             "agoda": 2498,
             "booking": 3445,
-            "expedia": 3137,
-            "tripcom": 3604
+            "expedia": 3132,
+            "tripcom": null
           },
           "others": [],
           "lowest": {
@@ -3982,8 +3878,8 @@
             "goibibo": null,
             "agoda": 2626,
             "booking": 3704,
-            "expedia": 3528,
-            "tripcom": 4005
+            "expedia": 3522,
+            "tripcom": 3998
           },
           "others": [],
           "lowest": {
@@ -4017,8 +3913,8 @@
             "goibibo": null,
             "agoda": 2484,
             "booking": 3499,
-            "expedia": 3333,
-            "tripcom": 3544
+            "expedia": 3327,
+            "tripcom": 3538
           },
           "others": [],
           "lowest": {
@@ -4040,46 +3936,6 @@
           "pricesFor": null
         },
         {
-          "id": "select-unitech-cyber-park",
-          "name": "Saltstayz Select - Unitech Cyber Park",
-          "brand": "Select",
-          "city": "Gurugram",
-          "matchedName": "Saltstayz Select - Unitech Cyber Park",
-          "nameMismatch": false,
-          "direct": 2021,
-          "otas": {
-            "makemytrip": null,
-            "goibibo": null,
-            "agoda": null,
-            "booking": 2381,
-            "expedia": 2660,
-            "tripcom": 2799
-          },
-          "others": [
-            {
-              "source": "Tripadvisor",
-              "price": 2001
-            }
-          ],
-          "lowest": {
-            "source": "Tripadvisor",
-            "price": 2001
-          },
-          "status": "ota_lower",
-          "deviations": [
-            {
-              "source": "Tripadvisor",
-              "price": 2001,
-              "gapRupees": 20,
-              "gapPercent": 1,
-              "tracked": false,
-              "kind": "ota_lower"
-            }
-          ],
-          "note": "",
-          "pricesFor": null
-        },
-        {
           "id": "premier-paschim-vihar",
           "name": "Saltstayz Premier - Paschim Vihar",
           "brand": "Premier",
@@ -4092,7 +3948,7 @@
             "goibibo": null,
             "agoda": 2944,
             "booking": 3040,
-            "expedia": 3455,
+            "expedia": 3449,
             "tripcom": null
           },
           "others": [],
@@ -4127,8 +3983,8 @@
             "goibibo": null,
             "agoda": 2150,
             "booking": 2733,
-            "expedia": 3399,
-            "tripcom": 3544
+            "expedia": 3394,
+            "tripcom": 3538
           },
           "others": [],
           "lowest": {
@@ -4162,7 +4018,7 @@
             "goibibo": null,
             "agoda": 5216,
             "booking": 5216,
-            "expedia": 7901,
+            "expedia": 7888,
             "tripcom": null
           },
           "others": [],
@@ -4232,22 +4088,22 @@
             "goibibo": null,
             "agoda": 3998,
             "booking": 3998,
-            "expedia": 6073,
+            "expedia": 6063,
             "tripcom": null
           },
           "others": [],
           "lowest": {
-            "source": "EaseMyTrip",
-            "price": 3282
+            "source": "Booking.com",
+            "price": 3998
           },
           "status": "direct_missing",
           "deviations": [
             {
-              "source": "EaseMyTrip",
-              "price": 3282,
+              "source": "Booking.com",
+              "price": 3998,
               "gapRupees": null,
               "gapPercent": null,
-              "tracked": false,
+              "tracked": true,
               "kind": "direct_missing"
             }
           ],
@@ -4272,45 +4128,22 @@
           },
           "others": [],
           "lowest": {
-            "source": "Booking.com",
-            "price": 4488
+            "source": "Vio.com",
+            "price": 4482
           },
           "status": "direct_missing",
           "deviations": [
             {
-              "source": "Booking.com",
-              "price": 4488,
+              "source": "Vio.com",
+              "price": 4482,
               "gapRupees": null,
               "gapPercent": null,
-              "tracked": true,
+              "tracked": false,
               "kind": "direct_missing"
             }
           ],
           "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
           "pricesFor": null
-        },
-        {
-          "id": "premier-cyber-hub",
-          "name": "Saltstayz Premier - Cyber Hub",
-          "brand": "Premier",
-          "city": "Gurugram",
-          "matchedName": "Saltstayz Premier - Cyber Hub",
-          "nameMismatch": false,
-          "direct": null,
-          "otas": {
-            "makemytrip": null,
-            "goibibo": null,
-            "agoda": null,
-            "booking": null,
-            "expedia": null,
-            "tripcom": null
-          },
-          "others": [],
-          "lowest": null,
-          "status": "no_rooms",
-          "deviations": [],
-          "note": "No rooms on the asked date on Google. Next date Google offers is 6–7 Oct.",
-          "pricesFor": "6–7 Oct"
         },
         {
           "id": "premier-naraina",
@@ -4336,6 +4169,29 @@
           "pricesFor": "8–9 Oct"
         },
         {
+          "id": "premier-cyber-hub",
+          "name": "Saltstayz Premier - Cyber Hub",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Cyber Hub",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "expedia": null,
+            "tripcom": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "no_prices",
+          "deviations": [],
+          "note": "Google shows no Saltstayz.com or OTA price for this date.",
+          "pricesFor": null
+        },
+        {
           "id": "autograph-rishikesh",
           "name": "Saltstayz Autograph - Rishikesh Near Triveni Ghat",
           "brand": "Autograph",
@@ -4348,7 +4204,7 @@
             "goibibo": null,
             "agoda": 6880,
             "booking": 6880,
-            "expedia": 5767,
+            "expedia": 5757,
             "tripcom": null
           },
           "others": [],
@@ -4374,13 +4230,39 @@
             "goibibo": null,
             "agoda": 3333,
             "booking": 3596,
-            "expedia": 3562,
+            "expedia": 3556,
             "tripcom": null
           },
           "others": [],
           "lowest": {
             "source": "Saltstayz.com",
             "price": 3048
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null
+        },
+        {
+          "id": "select-unitech-cyber-park",
+          "name": "Saltstayz Select - Unitech Cyber Park",
+          "brand": "Select",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Select - Unitech Cyber Park",
+          "nameMismatch": false,
+          "direct": 2021,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": 2381,
+            "expedia": 2656,
+            "tripcom": 2794
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 2021
           },
           "status": "direct_lowest",
           "deviations": [],
@@ -4556,39 +4438,27 @@
   "diff": {
     "added": [
       {
-        "propertyId": "premier-bengaluru-hebbal",
-        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "propertyId": "golden-tulip-gurugram-manesar",
+        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
         "window": "D0",
         "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Orbitz",
-        "otaPrice": 5834,
-        "direct": 7380,
-        "gapRupees": 1546,
-        "gapPercent": 20.9,
+        "source": "Booking.com",
+        "otaPrice": 4804,
+        "direct": 8800,
+        "gapRupees": 3996,
+        "gapPercent": 45.4,
         "kind": "ota_lower"
       },
       {
         "propertyId": "premier-bengaluru-hebbal",
         "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "CheapTickets.com",
-        "otaPrice": 5834,
-        "direct": 7380,
-        "gapRupees": 1546,
-        "gapPercent": 20.9,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-arjun-marg",
-        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
         "window": "D0",
         "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
         "source": "eDreams",
-        "otaPrice": 2065,
-        "direct": 3149,
-        "gapRupees": 1084,
-        "gapPercent": 34.4,
+        "otaPrice": 6386,
+        "direct": 7380,
+        "gapRupees": 994,
+        "gapPercent": 13.5,
         "kind": "ota_lower"
       },
       {
@@ -4596,119 +4466,71 @@
         "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
         "window": "D0",
         "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Agoda",
-        "otaPrice": 2887,
+        "source": "CheapTickets.com",
+        "otaPrice": 2062,
         "direct": 3149,
-        "gapRupees": 262,
-        "gapPercent": 8.3,
+        "gapRupees": 1087,
+        "gapPercent": 34.5,
         "kind": "ota_lower"
       },
       {
-        "propertyId": "premier-medicity",
-        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
         "window": "D0",
         "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Expedia",
-        "otaPrice": 2105,
-        "direct": 2275,
-        "gapRupees": 170,
-        "gapPercent": 7.5,
+        "source": "ZenHotels",
+        "otaPrice": 2062,
+        "direct": 3149,
+        "gapRupees": 1087,
+        "gapPercent": 34.5,
         "kind": "ota_lower"
       },
       {
-        "propertyId": "premier-medicity",
-        "property": "Saltstayz Premier - Medicity (Near Medanta)",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Travelocity",
-        "otaPrice": 2105,
-        "direct": 2275,
-        "gapRupees": 170,
-        "gapPercent": 7.5,
+        "propertyId": "golden-tulip-gurugram-manesar",
+        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "ZenHotels",
+        "otaPrice": 8437,
+        "direct": 9000,
+        "gapRupees": 563,
+        "gapPercent": 6.3,
         "kind": "ota_lower"
       },
       {
-        "propertyId": "premier-medicity",
-        "property": "Saltstayz Premier - Medicity (Near Medanta)",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Orbitz",
-        "otaPrice": 2105,
-        "direct": 2275,
-        "gapRupees": 170,
-        "gapPercent": 7.5,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-medicity",
-        "property": "Saltstayz Premier - Medicity (Near Medanta)",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "CheapTickets.com",
-        "otaPrice": 2105,
-        "direct": 2275,
-        "gapRupees": 170,
-        "gapPercent": 7.5,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "autograph-connaught-place",
-        "property": "Saltstayz Autograph Connaught Place",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Vio.com",
-        "otaPrice": 8776,
-        "direct": 9739,
-        "gapRupees": 963,
-        "gapPercent": 9.9,
+        "otaPrice": 3883,
+        "direct": 7810,
+        "gapRupees": 3927,
+        "gapPercent": 50.3,
         "kind": "ota_lower"
       },
       {
-        "propertyId": "autograph-connaught-place",
-        "property": "Saltstayz Autograph Connaught Place",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "dealbase.com",
+        "otaPrice": 3883,
+        "direct": 7810,
+        "gapRupees": 3927,
+        "gapPercent": 50.3,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "goseek.com",
-        "otaPrice": 8776,
-        "direct": 9739,
-        "gapRupees": 963,
-        "gapPercent": 9.9,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "autograph-connaught-place",
-        "property": "Saltstayz Autograph Connaught Place",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Traveloka",
-        "otaPrice": 9548,
-        "direct": 9739,
-        "gapRupees": 191,
-        "gapPercent": 2,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "select-nehru-place",
-        "property": "Saltstayz Select - Nehru Place & New Friends Colony",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Agoda",
-        "otaPrice": 2874,
-        "direct": 3130,
-        "gapRupees": 256,
-        "gapPercent": 8.2,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-galleria-sector-27",
-        "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "EaseMyTrip",
-        "otaPrice": 3073,
-        "direct": 3134,
-        "gapRupees": 61,
-        "gapPercent": 1.9,
+        "otaPrice": 3883,
+        "direct": 7810,
+        "gapRupees": 3927,
+        "gapPercent": 50.3,
         "kind": "ota_lower"
       },
       {
@@ -4716,11 +4538,11 @@
         "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Orbitz",
-        "otaPrice": 6409,
+        "source": "Etrip.net",
+        "otaPrice": 3883,
         "direct": 7810,
-        "gapRupees": 1401,
-        "gapPercent": 17.9,
+        "gapRupees": 3927,
+        "gapPercent": 50.3,
         "kind": "ota_lower"
       },
       {
@@ -4728,11 +4550,11 @@
         "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "CheapTickets.com",
-        "otaPrice": 6409,
+        "source": "eDreams",
+        "otaPrice": 6770,
         "direct": 7810,
-        "gapRupees": 1401,
-        "gapPercent": 17.9,
+        "gapRupees": 1040,
+        "gapPercent": 13.3,
         "kind": "ota_lower"
       },
       {
@@ -4740,23 +4562,83 @@
         "property": "Saltstayz Premier - Sector 15 Noida",
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "goseek.com",
-        "otaPrice": 5463,
+        "source": "dealbase.com",
+        "otaPrice": 5453,
         "direct": 8670,
-        "gapRupees": 3207,
-        "gapPercent": 37,
+        "gapRupees": 3217,
+        "gapPercent": 37.1,
         "kind": "ota_lower"
       },
       {
-        "propertyId": "premier-near-golf-course-road-sector-57",
-        "property": "Saltstayz Premier - Near Golf Course Road & Sector 57",
+        "propertyId": "premier-sector-15-noida",
+        "property": "Saltstayz Premier - Sector 15 Noida",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "Etrip.net",
+        "otaPrice": 5453,
+        "direct": 8670,
+        "gapRupees": 3217,
+        "gapPercent": 37.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-sector-15-noida",
+        "property": "Saltstayz Premier - Sector 15 Noida",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "Hotels.com",
+        "otaPrice": 6684,
+        "direct": 8670,
+        "gapRupees": 1986,
+        "gapPercent": 22.9,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-sector-15-noida",
+        "property": "Saltstayz Premier - Sector 15 Noida",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "eDreams",
+        "otaPrice": 7132,
+        "direct": 8670,
+        "gapRupees": 1538,
+        "gapPercent": 17.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "trinity-chandigarh-mohali",
+        "property": "Saltstayz Trinity - Chandigarh Mohali",
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "EaseMyTrip",
-        "otaPrice": 2730,
-        "direct": 2890,
-        "gapRupees": 160,
-        "gapPercent": 5.5,
+        "otaPrice": 3439,
+        "direct": 3634,
+        "gapRupees": 195,
+        "gapPercent": 5.4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "trinity-chandigarh-mohali",
+        "property": "Saltstayz Trinity - Chandigarh Mohali",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "Bluepillow",
+        "otaPrice": 3612,
+        "direct": 3634,
+        "gapRupees": 22,
+        "gapPercent": 0.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "Traveloka",
+        "otaPrice": 3144,
+        "direct": 3259,
+        "gapRupees": 115,
+        "gapPercent": 3.5,
         "kind": "ota_lower"
       },
       {
@@ -4764,11 +4646,23 @@
         "property": "Saltstayz Select - Nehru Place & New Friends Colony",
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Agoda",
-        "otaPrice": 2865,
+        "source": "EaseMyTrip",
+        "otaPrice": 3055,
         "direct": 3120,
-        "gapRupees": 255,
-        "gapPercent": 8.2,
+        "gapRupees": 65,
+        "gapPercent": 2.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-galleria-sector-27",
+        "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "EaseMyTrip",
+        "otaPrice": 3218,
+        "direct": 3283,
+        "gapRupees": 65,
+        "gapPercent": 2,
         "kind": "ota_lower"
       },
       {
@@ -4776,11 +4670,11 @@
         "property": "Saltstayz Select - Unitech Cyber Park",
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Tripadvisor",
-        "otaPrice": 2136,
+        "source": "EaseMyTrip",
+        "otaPrice": 2252,
         "direct": 2275,
-        "gapRupees": 139,
-        "gapPercent": 6.1,
+        "gapRupees": 23,
+        "gapPercent": 1,
         "kind": "ota_lower"
       },
       {
@@ -4788,195 +4682,99 @@
         "property": "Pause by Saltstayz - East of Kailash",
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Expedia",
-        "otaPrice": 10001,
+        "source": "Hotels.com",
+        "otaPrice": 9984,
         "direct": null,
         "gapRupees": null,
         "gapPercent": null,
         "kind": "direct_missing"
       },
       {
-        "propertyId": "golden-tulip-gurugram-manesar",
-        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Expedia",
-        "otaPrice": 8801,
-        "direct": 9400,
-        "gapRupees": 599,
-        "gapPercent": 6.4,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "golden-tulip-gurugram-manesar",
-        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Hotels.com",
-        "otaPrice": 8801,
-        "direct": 9400,
-        "gapRupees": 599,
-        "gapPercent": 6.4,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "golden-tulip-gurugram-manesar",
-        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Travelocity",
-        "otaPrice": 8801,
-        "direct": 9400,
-        "gapRupees": 599,
-        "gapPercent": 6.4,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "golden-tulip-gurugram-manesar",
-        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
         "window": "D2",
         "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
         "source": "Orbitz",
-        "otaPrice": 8801,
-        "direct": 9400,
-        "gapRupees": 599,
+        "otaPrice": 8065,
+        "direct": 8620,
+        "gapRupees": 555,
         "gapPercent": 6.4,
         "kind": "ota_lower"
       },
       {
-        "propertyId": "golden-tulip-gurugram-manesar",
-        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
         "window": "D2",
         "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
         "source": "eDreams",
-        "otaPrice": 8801,
-        "direct": 9400,
-        "gapRupees": 599,
+        "otaPrice": 8065,
+        "direct": 8620,
+        "gapRupees": 555,
         "gapPercent": 6.4,
         "kind": "ota_lower"
       },
       {
-        "propertyId": "premier-bengaluru-hebbal",
-        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "goseek.com",
-        "otaPrice": 4574,
-        "direct": 8620,
-        "gapRupees": 4046,
-        "gapPercent": 46.9,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-bengaluru-hebbal",
-        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Etrip.net",
-        "otaPrice": 4574,
-        "direct": 8620,
-        "gapRupees": 4046,
-        "gapPercent": 46.9,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "autograph-connaught-place",
-        "property": "Saltstayz Autograph Connaught Place",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "dealbase.com",
-        "otaPrice": 8184,
-        "direct": 9408,
-        "gapRupees": 1224,
-        "gapPercent": 13,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "autograph-connaught-place",
-        "property": "Saltstayz Autograph Connaught Place",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Tripadvisor",
-        "otaPrice": 8372,
-        "direct": 9408,
-        "gapRupees": 1036,
-        "gapPercent": 11,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-medicity",
-        "property": "Saltstayz Premier - Medicity (Near Medanta)",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Expedia",
-        "otaPrice": 1726,
-        "direct": 1790,
-        "gapRupees": 64,
-        "gapPercent": 3.6,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-medicity",
-        "property": "Saltstayz Premier - Medicity (Near Medanta)",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Travelocity",
-        "otaPrice": 1726,
-        "direct": 1790,
-        "gapRupees": 64,
-        "gapPercent": 3.6,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-medicity",
-        "property": "Saltstayz Premier - Medicity (Near Medanta)",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Orbitz",
-        "otaPrice": 1726,
-        "direct": 1790,
-        "gapRupees": 64,
-        "gapPercent": 3.6,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-medicity",
-        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "propertyId": "premier-sector-15-noida",
+        "property": "Saltstayz Premier - Sector 15 Noida",
         "window": "D2",
         "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
         "source": "CheapTickets.com",
-        "otaPrice": 1726,
+        "otaPrice": 7172,
+        "direct": 8420,
+        "gapRupees": 1248,
+        "gapPercent": 14.8,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "eDreams",
+        "otaPrice": 1723,
         "direct": 1790,
-        "gapRupees": 64,
-        "gapPercent": 3.6,
+        "gapRupees": 67,
+        "gapPercent": 3.7,
         "kind": "ota_lower"
       },
       {
-        "propertyId": "trinity-chandigarh-mohali",
-        "property": "Saltstayz Trinity - Chandigarh Mohali",
+        "propertyId": "premier-faridabad-sarita-vihar",
+        "property": "Saltstayz Premier Faridabad Near Sarita Vihar",
         "window": "D2",
         "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Traveloka",
-        "otaPrice": 3427,
-        "direct": 3466,
-        "gapRupees": 39,
-        "gapPercent": 1.1,
-        "kind": "ota_lower"
+        "source": "Booking.com",
+        "otaPrice": 3998,
+        "direct": null,
+        "gapRupees": null,
+        "gapPercent": null,
+        "kind": "direct_missing"
       },
       {
-        "propertyId": "select-unitech-cyber-park",
-        "property": "Saltstayz Select - Unitech Cyber Park",
+        "propertyId": "premier-noida-sector-135-expressway",
+        "property": "Saltstayz Premier Noida Sector 135 Expressway",
         "window": "D2",
         "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Tripadvisor",
-        "otaPrice": 2001,
-        "direct": 2021,
-        "gapRupees": 20,
-        "gapPercent": 1,
-        "kind": "ota_lower"
+        "source": "Vio.com",
+        "otaPrice": 4482,
+        "direct": null,
+        "gapRupees": null,
+        "gapPercent": null,
+        "kind": "direct_missing"
       }
     ],
     "ongoing": [
+      {
+        "propertyId": "golden-tulip-gurugram-manesar",
+        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "Agoda",
+        "otaPrice": 3410,
+        "direct": 8800,
+        "gapRupees": 5390,
+        "gapPercent": 61.3,
+        "kind": "ota_lower"
+      },
       {
         "propertyId": "premier-bengaluru-hebbal",
         "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
@@ -4987,6 +4785,18 @@
         "direct": 7380,
         "gapRupees": 4139,
         "gapPercent": 56.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "goseek.com",
+        "otaPrice": 3648,
+        "direct": 7380,
+        "gapRupees": 3732,
+        "gapPercent": 50.6,
         "kind": "ota_lower"
       },
       {
@@ -5006,35 +4816,11 @@
         "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
         "window": "D0",
         "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Vio.com",
-        "otaPrice": 3655,
-        "direct": 7380,
-        "gapRupees": 3725,
-        "gapPercent": 50.5,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-bengaluru-hebbal",
-        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "goseek.com",
-        "otaPrice": 3655,
-        "direct": 7380,
-        "gapRupees": 3725,
-        "gapPercent": 50.5,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-bengaluru-hebbal",
-        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
         "source": "Expedia",
-        "otaPrice": 5834,
+        "otaPrice": 5824,
         "direct": 7380,
-        "gapRupees": 1546,
-        "gapPercent": 20.9,
+        "gapRupees": 1556,
+        "gapPercent": 21.1,
         "kind": "ota_lower"
       },
       {
@@ -5043,10 +4829,34 @@
         "window": "D0",
         "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
         "source": "Travelocity",
-        "otaPrice": 5834,
+        "otaPrice": 5824,
         "direct": 7380,
-        "gapRupees": 1546,
-        "gapPercent": 20.9,
+        "gapRupees": 1556,
+        "gapPercent": 21.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "Orbitz",
+        "otaPrice": 5824,
+        "direct": 7380,
+        "gapRupees": 1556,
+        "gapPercent": 21.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "CheapTickets.com",
+        "otaPrice": 5824,
+        "direct": 7380,
+        "gapRupees": 1556,
+        "gapPercent": 21.1,
         "kind": "ota_lower"
       },
       {
@@ -5055,46 +4865,10 @@
         "window": "D0",
         "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
         "source": "Hotels.com",
-        "otaPrice": 5881,
+        "otaPrice": 5871,
         "direct": 7380,
-        "gapRupees": 1499,
-        "gapPercent": 20.3,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-arjun-marg",
-        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Hotels.com",
-        "otaPrice": 2065,
-        "direct": 3149,
-        "gapRupees": 1084,
-        "gapPercent": 34.4,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-arjun-marg",
-        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Expedia",
-        "otaPrice": 2065,
-        "direct": 3149,
-        "gapRupees": 1084,
-        "gapPercent": 34.4,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-arjun-marg",
-        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Travelocity",
-        "otaPrice": 2065,
-        "direct": 3149,
-        "gapRupees": 1084,
-        "gapPercent": 34.4,
+        "gapRupees": 1509,
+        "gapPercent": 20.4,
         "kind": "ota_lower"
       },
       {
@@ -5103,10 +4877,46 @@
         "window": "D0",
         "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
         "source": "Traveloka",
-        "otaPrice": 2065,
+        "otaPrice": 2061,
         "direct": 3149,
-        "gapRupees": 1084,
-        "gapPercent": 34.4,
+        "gapRupees": 1088,
+        "gapPercent": 34.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "Hotels.com",
+        "otaPrice": 2062,
+        "direct": 3149,
+        "gapRupees": 1087,
+        "gapPercent": 34.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "Travelocity",
+        "otaPrice": 2062,
+        "direct": 3149,
+        "gapRupees": 1087,
+        "gapPercent": 34.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "Expedia",
+        "otaPrice": 2062,
+        "direct": 3149,
+        "gapRupees": 1087,
+        "gapPercent": 34.5,
         "kind": "ota_lower"
       },
       {
@@ -5115,10 +4925,10 @@
         "window": "D0",
         "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
         "source": "Orbitz",
-        "otaPrice": 2065,
+        "otaPrice": 2062,
         "direct": 3149,
-        "gapRupees": 1084,
-        "gapPercent": 34.4,
+        "gapRupees": 1087,
+        "gapPercent": 34.5,
         "kind": "ota_lower"
       },
       {
@@ -5126,35 +4936,11 @@
         "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
         "window": "D0",
         "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Vio.com",
-        "otaPrice": 2066,
+        "source": "Agoda",
+        "otaPrice": 2887,
         "direct": 3149,
-        "gapRupees": 1083,
-        "gapPercent": 34.4,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-arjun-marg",
-        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Etrip.net",
-        "otaPrice": 2066,
-        "direct": 3149,
-        "gapRupees": 1083,
-        "gapPercent": 34.4,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-arjun-marg",
-        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "goseek.com",
-        "otaPrice": 2066,
-        "direct": 3149,
-        "gapRupees": 1083,
-        "gapPercent": 34.4,
+        "gapRupees": 262,
+        "gapPercent": 8.3,
         "kind": "ota_lower"
       },
       {
@@ -5223,10 +5009,10 @@
         "window": "D0",
         "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
         "source": "Hotels.com",
-        "otaPrice": 1978,
+        "otaPrice": 1975,
         "direct": 2275,
-        "gapRupees": 297,
-        "gapPercent": 13.1,
+        "gapRupees": 300,
+        "gapPercent": 13.2,
         "kind": "ota_lower"
       },
       {
@@ -5235,10 +5021,10 @@
         "window": "D0",
         "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
         "source": "Agoda",
-        "otaPrice": 2039,
+        "otaPrice": 2057,
         "direct": 2275,
-        "gapRupees": 236,
-        "gapPercent": 10.4,
+        "gapRupees": 218,
+        "gapPercent": 9.6,
         "kind": "ota_lower"
       },
       {
@@ -5247,10 +5033,10 @@
         "window": "D0",
         "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
         "source": "eDreams",
-        "otaPrice": 2105,
+        "otaPrice": 2101,
         "direct": 2275,
-        "gapRupees": 170,
-        "gapPercent": 7.5,
+        "gapRupees": 174,
+        "gapPercent": 7.6,
         "kind": "ota_lower"
       },
       {
@@ -5259,10 +5045,10 @@
         "window": "D0",
         "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
         "source": "Agoda",
-        "otaPrice": 3380,
+        "otaPrice": 3290,
         "direct": 3710,
-        "gapRupees": 330,
-        "gapPercent": 8.9,
+        "gapRupees": 420,
+        "gapPercent": 11.3,
         "kind": "ota_lower"
       },
       {
@@ -5287,6 +5073,18 @@
         "direct": 3710,
         "gapRupees": 279,
         "gapPercent": 7.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-naraina",
+        "property": "Saltstayz Premier - Naraina, Central Delhi",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "Agoda",
+        "otaPrice": 3010,
+        "direct": 3288,
+        "gapRupees": 278,
+        "gapPercent": 8.5,
         "kind": "ota_lower"
       },
       {
@@ -5342,11 +5140,11 @@
         "property": "Saltstayz Select - Nehru Place & New Friends Colony",
         "window": "D0",
         "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Traveloka",
-        "otaPrice": 3004,
+        "source": "Agoda",
+        "otaPrice": 2874,
         "direct": 3130,
-        "gapRupees": 126,
-        "gapPercent": 4,
+        "gapRupees": 256,
+        "gapPercent": 8.2,
         "kind": "ota_lower"
       },
       {
@@ -5374,6 +5172,30 @@
         "kind": "ota_lower"
       },
       {
+        "propertyId": "premier-galleria-sector-27",
+        "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "EaseMyTrip",
+        "otaPrice": 3073,
+        "direct": 3134,
+        "gapRupees": 61,
+        "gapPercent": 1.9,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-golf-course-road-sector-27",
+        "property": "Saltstayz Select - Golf Course Road & Sector 27",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "Agoda",
+        "otaPrice": 2310,
+        "direct": 2491,
+        "gapRupees": 181,
+        "gapPercent": 7.3,
+        "kind": "ota_lower"
+      },
+      {
         "propertyId": "premier-golf-course-extension-road",
         "property": "Saltstayz Premier - Golf Course Extension Road",
         "window": "D0",
@@ -5383,30 +5205,6 @@
         "direct": 2602,
         "gapRupees": 184,
         "gapPercent": 7.1,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-paschim-vihar",
-        "property": "Saltstayz Premier - Paschim Vihar",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Agoda",
-        "otaPrice": 2878,
-        "direct": 3096,
-        "gapRupees": 218,
-        "gapPercent": 7,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-paschim-vihar",
-        "property": "Saltstayz Premier - Paschim Vihar",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Booking.com",
-        "otaPrice": 2971,
-        "direct": 3096,
-        "gapRupees": 125,
-        "gapPercent": 4,
         "kind": "ota_lower"
       },
       {
@@ -5422,27 +5220,15 @@
         "kind": "ota_lower"
       },
       {
-        "propertyId": "select-golf-course-road-sector-27",
-        "property": "Saltstayz Select - Golf Course Road & Sector 27",
+        "propertyId": "premier-paschim-vihar",
+        "property": "Saltstayz Premier - Paschim Vihar",
         "window": "D0",
         "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Agoda",
-        "otaPrice": 2310,
-        "direct": 2443,
-        "gapRupees": 133,
-        "gapPercent": 5.4,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-naraina",
-        "property": "Saltstayz Premier - Naraina, Central Delhi",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Agoda",
-        "otaPrice": 3010,
+        "source": "Booking.com",
+        "otaPrice": 2971,
         "direct": 3096,
-        "gapRupees": 86,
-        "gapPercent": 2.8,
+        "gapRupees": 125,
+        "gapPercent": 4,
         "kind": "ota_lower"
       },
       {
@@ -5456,18 +5242,6 @@
         "gapRupees": 26,
         "gapPercent": 1.1,
         "kind": "ota_lower"
-      },
-      {
-        "propertyId": "golden-tulip-gurugram-manesar",
-        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Agoda",
-        "otaPrice": 3410,
-        "direct": null,
-        "gapRupees": null,
-        "gapPercent": null,
-        "kind": "direct_missing"
       },
       {
         "propertyId": "pause-east-of-kailash",
@@ -5547,10 +5321,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Expedia",
-        "otaPrice": 8451,
+        "otaPrice": 8437,
         "direct": 9000,
-        "gapRupees": 549,
-        "gapPercent": 6.1,
+        "gapRupees": 563,
+        "gapPercent": 6.3,
         "kind": "ota_lower"
       },
       {
@@ -5559,10 +5333,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Hotels.com",
-        "otaPrice": 8451,
+        "otaPrice": 8437,
         "direct": 9000,
-        "gapRupees": 549,
-        "gapPercent": 6.1,
+        "gapRupees": 563,
+        "gapPercent": 6.3,
         "kind": "ota_lower"
       },
       {
@@ -5571,10 +5345,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Travelocity",
-        "otaPrice": 8451,
+        "otaPrice": 8437,
         "direct": 9000,
-        "gapRupees": 549,
-        "gapPercent": 6.1,
+        "gapRupees": 563,
+        "gapPercent": 6.3,
         "kind": "ota_lower"
       },
       {
@@ -5583,34 +5357,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Orbitz",
-        "otaPrice": 8451,
+        "otaPrice": 8437,
         "direct": 9000,
-        "gapRupees": 549,
-        "gapPercent": 6.1,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "golden-tulip-gurugram-manesar",
-        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "eDreams",
-        "otaPrice": 8451,
-        "direct": 9000,
-        "gapRupees": 549,
-        "gapPercent": 6.1,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "golden-tulip-gurugram-manesar",
-        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "CheapTickets.com",
-        "otaPrice": 8451,
-        "direct": 9000,
-        "gapRupees": 549,
-        "gapPercent": 6.1,
+        "gapRupees": 563,
+        "gapPercent": 6.3,
         "kind": "ota_lower"
       },
       {
@@ -5623,18 +5373,6 @@
         "direct": 7810,
         "gapRupees": 4373,
         "gapPercent": 56,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-bengaluru-hebbal",
-        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Bluepillow",
-        "otaPrice": 3676,
-        "direct": 7810,
-        "gapRupees": 4134,
-        "gapPercent": 52.9,
         "kind": "ota_lower"
       },
       {
@@ -5655,10 +5393,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Hotels.com",
-        "otaPrice": 6375,
+        "otaPrice": 6364,
         "direct": 7810,
-        "gapRupees": 1435,
-        "gapPercent": 18.4,
+        "gapRupees": 1446,
+        "gapPercent": 18.5,
         "kind": "ota_lower"
       },
       {
@@ -5667,10 +5405,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Expedia",
-        "otaPrice": 6409,
+        "otaPrice": 6473,
         "direct": 7810,
-        "gapRupees": 1401,
-        "gapPercent": 17.9,
+        "gapRupees": 1337,
+        "gapPercent": 17.1,
         "kind": "ota_lower"
       },
       {
@@ -5679,10 +5417,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Travelocity",
-        "otaPrice": 6409,
+        "otaPrice": 6473,
         "direct": 7810,
-        "gapRupees": 1401,
-        "gapPercent": 17.9,
+        "gapRupees": 1337,
+        "gapPercent": 17.1,
         "kind": "ota_lower"
       },
       {
@@ -5714,11 +5452,11 @@
         "property": "Saltstayz Premier - Sector 15 Noida",
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Travelocity",
-        "otaPrice": 6608,
+        "source": "goseek.com",
+        "otaPrice": 5453,
         "direct": 8670,
-        "gapRupees": 2062,
-        "gapPercent": 23.8,
+        "gapRupees": 3217,
+        "gapPercent": 37.1,
         "kind": "ota_lower"
       },
       {
@@ -5727,10 +5465,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Expedia",
-        "otaPrice": 6608,
+        "otaPrice": 6597,
         "direct": 8670,
-        "gapRupees": 2062,
-        "gapPercent": 23.8,
+        "gapRupees": 2073,
+        "gapPercent": 23.9,
         "kind": "ota_lower"
       },
       {
@@ -5738,23 +5476,11 @@
         "property": "Saltstayz Premier - Sector 15 Noida",
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Orbitz",
-        "otaPrice": 6608,
+        "source": "Travelocity",
+        "otaPrice": 6597,
         "direct": 8670,
-        "gapRupees": 2062,
-        "gapPercent": 23.8,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-sector-15-noida",
-        "property": "Saltstayz Premier - Sector 15 Noida",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "CheapTickets.com",
-        "otaPrice": 6608,
-        "direct": 8670,
-        "gapRupees": 2062,
-        "gapPercent": 23.8,
+        "gapRupees": 2073,
+        "gapPercent": 23.9,
         "kind": "ota_lower"
       },
       {
@@ -5763,10 +5489,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Hotels.com",
-        "otaPrice": 1914,
+        "otaPrice": 1911,
         "direct": 2299,
-        "gapRupees": 385,
-        "gapPercent": 16.7,
+        "gapRupees": 388,
+        "gapPercent": 16.9,
         "kind": "ota_lower"
       },
       {
@@ -5775,10 +5501,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Expedia",
-        "otaPrice": 2036,
+        "otaPrice": 2033,
         "direct": 2299,
-        "gapRupees": 263,
-        "gapPercent": 11.4,
+        "gapRupees": 266,
+        "gapPercent": 11.6,
         "kind": "ota_lower"
       },
       {
@@ -5787,10 +5513,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Travelocity",
-        "otaPrice": 2036,
+        "otaPrice": 2033,
         "direct": 2299,
-        "gapRupees": 263,
-        "gapPercent": 11.4,
+        "gapRupees": 266,
+        "gapPercent": 11.6,
         "kind": "ota_lower"
       },
       {
@@ -5799,10 +5525,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Orbitz",
-        "otaPrice": 2036,
+        "otaPrice": 2033,
         "direct": 2299,
-        "gapRupees": 263,
-        "gapPercent": 11.4,
+        "gapRupees": 266,
+        "gapPercent": 11.6,
         "kind": "ota_lower"
       },
       {
@@ -5811,10 +5537,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "eDreams",
-        "otaPrice": 2036,
+        "otaPrice": 2033,
         "direct": 2299,
-        "gapRupees": 263,
-        "gapPercent": 11.4,
+        "gapRupees": 266,
+        "gapPercent": 11.6,
         "kind": "ota_lower"
       },
       {
@@ -5823,10 +5549,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "CheapTickets.com",
-        "otaPrice": 2036,
+        "otaPrice": 2033,
         "direct": 2299,
-        "gapRupees": 263,
-        "gapPercent": 11.4,
+        "gapRupees": 266,
+        "gapPercent": 11.6,
         "kind": "ota_lower"
       },
       {
@@ -5839,78 +5565,6 @@
         "direct": 2299,
         "gapRupees": 237,
         "gapPercent": 10.3,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-medicity",
-        "property": "Saltstayz Premier - Medicity (Near Medanta)",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Bluepillow",
-        "otaPrice": 2204,
-        "direct": 2299,
-        "gapRupees": 95,
-        "gapPercent": 4.1,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "autograph-connaught-place",
-        "property": "Saltstayz Autograph Connaught Place",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Vio.com",
-        "otaPrice": 8334,
-        "direct": 9826,
-        "gapRupees": 1492,
-        "gapPercent": 15.2,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "autograph-connaught-place",
-        "property": "Saltstayz Autograph Connaught Place",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "goseek.com",
-        "otaPrice": 8334,
-        "direct": 9826,
-        "gapRupees": 1492,
-        "gapPercent": 15.2,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "autograph-connaught-place",
-        "property": "Saltstayz Autograph Connaught Place",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Etrip.net",
-        "otaPrice": 8334,
-        "direct": 9826,
-        "gapRupees": 1492,
-        "gapPercent": 15.2,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "autograph-connaught-place",
-        "property": "Saltstayz Autograph Connaught Place",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Trip.com",
-        "otaPrice": 8416,
-        "direct": 9826,
-        "gapRupees": 1410,
-        "gapPercent": 14.3,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "autograph-connaught-place",
-        "property": "Saltstayz Autograph Connaught Place",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Traveloka",
-        "otaPrice": 9630,
-        "direct": 9826,
-        "gapRupees": 196,
-        "gapPercent": 2,
         "kind": "ota_lower"
       },
       {
@@ -5931,10 +5585,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Hotels.com",
-        "otaPrice": 3721,
+        "otaPrice": 3715,
         "direct": 3745,
-        "gapRupees": 24,
-        "gapPercent": 0.6,
+        "gapRupees": 30,
+        "gapPercent": 0.8,
         "kind": "ota_lower"
       },
       {
@@ -5962,15 +5616,15 @@
         "kind": "ota_lower"
       },
       {
-        "propertyId": "premier-near-golf-course-road-sector-57",
-        "property": "Saltstayz Premier - Near Golf Course Road & Sector 57",
+        "propertyId": "premier-cyber-hub",
+        "property": "Saltstayz Premier - Cyber Hub",
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Agoda",
-        "otaPrice": 2590,
-        "direct": 2890,
-        "gapRupees": 300,
-        "gapPercent": 10.4,
+        "otaPrice": 3089,
+        "direct": 3509,
+        "gapRupees": 420,
+        "gapPercent": 12,
         "kind": "ota_lower"
       },
       {
@@ -5979,10 +5633,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Agoda",
-        "otaPrice": 3311,
+        "otaPrice": 3222,
         "direct": 3634,
-        "gapRupees": 323,
-        "gapPercent": 8.9,
+        "gapRupees": 412,
+        "gapPercent": 11.3,
         "kind": "ota_lower"
       },
       {
@@ -5995,6 +5649,30 @@
         "direct": 3634,
         "gapRupees": 146,
         "gapPercent": 4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-near-golf-course-road-sector-57",
+        "property": "Saltstayz Premier - Near Golf Course Road & Sector 57",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "Agoda",
+        "otaPrice": 2590,
+        "direct": 2890,
+        "gapRupees": 300,
+        "gapPercent": 10.4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-near-golf-course-road-sector-57",
+        "property": "Saltstayz Premier - Near Golf Course Road & Sector 57",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "EaseMyTrip",
+        "otaPrice": 2730,
+        "direct": 2890,
+        "gapRupees": 160,
+        "gapPercent": 5.5,
         "kind": "ota_lower"
       },
       {
@@ -6015,10 +5693,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Hotels.com",
-        "otaPrice": 3151,
+        "otaPrice": 3145,
         "direct": 3259,
-        "gapRupees": 108,
-        "gapPercent": 3.3,
+        "gapRupees": 114,
+        "gapPercent": 3.5,
         "kind": "ota_lower"
       },
       {
@@ -6027,10 +5705,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Expedia",
-        "otaPrice": 3151,
+        "otaPrice": 3145,
         "direct": 3259,
-        "gapRupees": 108,
-        "gapPercent": 3.3,
+        "gapRupees": 114,
+        "gapPercent": 3.5,
         "kind": "ota_lower"
       },
       {
@@ -6039,10 +5717,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Travelocity",
-        "otaPrice": 3151,
+        "otaPrice": 3145,
         "direct": 3259,
-        "gapRupees": 108,
-        "gapPercent": 3.3,
+        "gapRupees": 114,
+        "gapPercent": 3.5,
         "kind": "ota_lower"
       },
       {
@@ -6051,10 +5729,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Orbitz",
-        "otaPrice": 3151,
+        "otaPrice": 3145,
         "direct": 3259,
-        "gapRupees": 108,
-        "gapPercent": 3.3,
+        "gapRupees": 114,
+        "gapPercent": 3.5,
         "kind": "ota_lower"
       },
       {
@@ -6063,10 +5741,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "Vio.com",
-        "otaPrice": 3152,
+        "otaPrice": 3146,
         "direct": 3259,
-        "gapRupees": 107,
-        "gapPercent": 3.3,
+        "gapRupees": 113,
+        "gapPercent": 3.5,
         "kind": "ota_lower"
       },
       {
@@ -6106,6 +5784,18 @@
         "kind": "ota_lower"
       },
       {
+        "propertyId": "select-nehru-place",
+        "property": "Saltstayz Select - Nehru Place & New Friends Colony",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "Agoda",
+        "otaPrice": 2865,
+        "direct": 3120,
+        "gapRupees": 255,
+        "gapPercent": 8.2,
+        "kind": "ota_lower"
+      },
+      {
         "propertyId": "premier-galleria-sector-27",
         "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
         "window": "D1",
@@ -6127,6 +5817,18 @@
         "direct": 2458,
         "gapRupees": 200,
         "gapPercent": 8.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-golf-course-road-sector-27",
+        "property": "Saltstayz Select - Golf Course Road & Sector 27",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "Agoda",
+        "otaPrice": 2393,
+        "direct": 2578,
+        "gapRupees": 185,
+        "gapPercent": 7.2,
         "kind": "ota_lower"
       },
       {
@@ -6166,6 +5868,18 @@
         "kind": "ota_lower"
       },
       {
+        "propertyId": "autograph-connaught-place",
+        "property": "Saltstayz Autograph Connaught Place",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "Trip.com",
+        "otaPrice": 9149,
+        "direct": 9826,
+        "gapRupees": 677,
+        "gapPercent": 6.9,
+        "kind": "ota_lower"
+      },
+      {
         "propertyId": "autograph-advant-sector-144",
         "property": "Saltstayz Autograph - Advant & Sector 144",
         "window": "D1",
@@ -6183,34 +5897,10 @@
         "window": "D1",
         "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
         "source": "EaseMyTrip",
-        "otaPrice": 3015,
+        "otaPrice": 3125,
         "direct": 3187,
-        "gapRupees": 172,
-        "gapPercent": 5.4,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "select-golf-course-road-sector-27",
-        "property": "Saltstayz Select - Golf Course Road & Sector 27",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Agoda",
-        "otaPrice": 2393,
-        "direct": 2530,
-        "gapRupees": 137,
-        "gapPercent": 5.4,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-cyber-hub",
-        "property": "Saltstayz Premier - Cyber Hub",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Agoda",
-        "otaPrice": 3344,
-        "direct": 3509,
-        "gapRupees": 165,
-        "gapPercent": 4.7,
+        "gapRupees": 62,
+        "gapPercent": 1.9,
         "kind": "ota_lower"
       },
       {
@@ -6274,6 +5964,66 @@
         "kind": "ota_lower"
       },
       {
+        "propertyId": "golden-tulip-gurugram-manesar",
+        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "Hotels.com",
+        "otaPrice": 8786,
+        "direct": 9400,
+        "gapRupees": 614,
+        "gapPercent": 6.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "golden-tulip-gurugram-manesar",
+        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "Expedia",
+        "otaPrice": 8786,
+        "direct": 9400,
+        "gapRupees": 614,
+        "gapPercent": 6.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "golden-tulip-gurugram-manesar",
+        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "Travelocity",
+        "otaPrice": 8786,
+        "direct": 9400,
+        "gapRupees": 614,
+        "gapPercent": 6.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "golden-tulip-gurugram-manesar",
+        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "Orbitz",
+        "otaPrice": 8786,
+        "direct": 9400,
+        "gapRupees": 614,
+        "gapPercent": 6.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "golden-tulip-gurugram-manesar",
+        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "eDreams",
+        "otaPrice": 8786,
+        "direct": 9400,
+        "gapRupees": 614,
+        "gapPercent": 6.5,
+        "kind": "ota_lower"
+      },
+      {
         "propertyId": "premier-bengaluru-hebbal",
         "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
         "window": "D2",
@@ -6291,10 +6041,10 @@
         "window": "D2",
         "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
         "source": "Bluepillow",
-        "otaPrice": 4285,
+        "otaPrice": 4278,
         "direct": 8620,
-        "gapRupees": 4335,
-        "gapPercent": 50.3,
+        "gapRupees": 4342,
+        "gapPercent": 50.4,
         "kind": "ota_lower"
       },
       {
@@ -6314,11 +6064,11 @@
         "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
         "window": "D2",
         "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Vio.com",
-        "otaPrice": 4574,
+        "source": "Hotels.com",
+        "otaPrice": 7826,
         "direct": 8620,
-        "gapRupees": 4046,
-        "gapPercent": 46.9,
+        "gapRupees": 794,
+        "gapPercent": 9.2,
         "kind": "ota_lower"
       },
       {
@@ -6326,11 +6076,23 @@
         "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
         "window": "D2",
         "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Hotels.com",
-        "otaPrice": 7839,
+        "source": "Vio.com",
+        "otaPrice": 7982,
         "direct": 8620,
-        "gapRupees": 781,
-        "gapPercent": 9.1,
+        "gapRupees": 638,
+        "gapPercent": 7.4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "goseek.com",
+        "otaPrice": 7982,
+        "direct": 8620,
+        "gapRupees": 638,
+        "gapPercent": 7.4,
         "kind": "ota_lower"
       },
       {
@@ -6339,10 +6101,10 @@
         "window": "D2",
         "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
         "source": "Expedia",
-        "otaPrice": 8079,
+        "otaPrice": 8065,
         "direct": 8620,
-        "gapRupees": 541,
-        "gapPercent": 6.3,
+        "gapRupees": 555,
+        "gapPercent": 6.4,
         "kind": "ota_lower"
       },
       {
@@ -6351,10 +6113,10 @@
         "window": "D2",
         "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
         "source": "Travelocity",
-        "otaPrice": 8079,
+        "otaPrice": 8065,
         "direct": 8620,
-        "gapRupees": 541,
-        "gapPercent": 6.3,
+        "gapRupees": 555,
+        "gapPercent": 6.4,
         "kind": "ota_lower"
       },
       {
@@ -6386,35 +6148,23 @@
         "property": "Saltstayz Premier - Sector 15 Noida",
         "window": "D2",
         "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Hotels.com",
-        "otaPrice": 7150,
-        "direct": 8420,
-        "gapRupees": 1270,
-        "gapPercent": 15.1,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-sector-15-noida",
-        "property": "Saltstayz Premier - Sector 15 Noida",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Vio.com",
-        "otaPrice": 7153,
-        "direct": 8420,
-        "gapRupees": 1267,
-        "gapPercent": 15,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-sector-15-noida",
-        "property": "Saltstayz Premier - Sector 15 Noida",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
         "source": "goseek.com",
-        "otaPrice": 7153,
+        "otaPrice": 5663,
         "direct": 8420,
-        "gapRupees": 1267,
-        "gapPercent": 15,
+        "gapRupees": 2757,
+        "gapPercent": 32.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-sector-15-noida",
+        "property": "Saltstayz Premier - Sector 15 Noida",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "Hotels.com",
+        "otaPrice": 7138,
+        "direct": 8420,
+        "gapRupees": 1282,
+        "gapPercent": 15.2,
         "kind": "ota_lower"
       },
       {
@@ -6423,10 +6173,10 @@
         "window": "D2",
         "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
         "source": "Expedia",
-        "otaPrice": 7184,
+        "otaPrice": 7172,
         "direct": 8420,
-        "gapRupees": 1236,
-        "gapPercent": 14.7,
+        "gapRupees": 1248,
+        "gapPercent": 14.8,
         "kind": "ota_lower"
       },
       {
@@ -6435,10 +6185,10 @@
         "window": "D2",
         "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
         "source": "Travelocity",
-        "otaPrice": 7184,
+        "otaPrice": 7172,
         "direct": 8420,
-        "gapRupees": 1236,
-        "gapPercent": 14.7,
+        "gapRupees": 1248,
+        "gapPercent": 14.8,
         "kind": "ota_lower"
       },
       {
@@ -6447,10 +6197,10 @@
         "window": "D2",
         "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
         "source": "Orbitz",
-        "otaPrice": 7184,
+        "otaPrice": 7172,
         "direct": 8420,
-        "gapRupees": 1236,
-        "gapPercent": 14.7,
+        "gapRupees": 1248,
+        "gapPercent": 14.8,
         "kind": "ota_lower"
       },
       {
@@ -6459,10 +6209,10 @@
         "window": "D2",
         "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
         "source": "eDreams",
-        "otaPrice": 7184,
+        "otaPrice": 7172,
         "direct": 8420,
-        "gapRupees": 1236,
-        "gapPercent": 14.7,
+        "gapRupees": 1248,
+        "gapPercent": 14.8,
         "kind": "ota_lower"
       },
       {
@@ -6494,35 +6244,11 @@
         "property": "Saltstayz Autograph Connaught Place",
         "window": "D2",
         "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "goseek.com",
-        "otaPrice": 8184,
-        "direct": 9408,
-        "gapRupees": 1224,
-        "gapPercent": 13,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "autograph-connaught-place",
-        "property": "Saltstayz Autograph Connaught Place",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
         "source": "Trip.com",
-        "otaPrice": 8372,
+        "otaPrice": 8358,
         "direct": 9408,
-        "gapRupees": 1036,
-        "gapPercent": 11,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "autograph-connaught-place",
-        "property": "Saltstayz Autograph Connaught Place",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Traveloka",
-        "otaPrice": 9005,
-        "direct": 9408,
-        "gapRupees": 403,
-        "gapPercent": 4.3,
+        "gapRupees": 1050,
+        "gapPercent": 11.2,
         "kind": "ota_lower"
       },
       {
@@ -6543,10 +6269,58 @@
         "window": "D2",
         "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
         "source": "Hotels.com",
-        "otaPrice": 1622,
+        "otaPrice": 1619,
         "direct": 1790,
-        "gapRupees": 168,
-        "gapPercent": 9.4,
+        "gapRupees": 171,
+        "gapPercent": 9.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "Expedia",
+        "otaPrice": 1723,
+        "direct": 1790,
+        "gapRupees": 67,
+        "gapPercent": 3.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "Travelocity",
+        "otaPrice": 1723,
+        "direct": 1790,
+        "gapRupees": 67,
+        "gapPercent": 3.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "Orbitz",
+        "otaPrice": 1723,
+        "direct": 1790,
+        "gapRupees": 67,
+        "gapPercent": 3.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "CheapTickets.com",
+        "otaPrice": 1723,
+        "direct": 1790,
+        "gapRupees": 67,
+        "gapPercent": 3.7,
         "kind": "ota_lower"
       },
       {
@@ -6643,6 +6417,18 @@
         "direct": 3466,
         "gapRupees": 87,
         "gapPercent": 2.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "trinity-chandigarh-mohali",
+        "property": "Saltstayz Trinity - Chandigarh Mohali",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "Traveloka",
+        "otaPrice": 3422,
+        "direct": 3466,
+        "gapRupees": 44,
+        "gapPercent": 1.3,
         "kind": "ota_lower"
       },
       {
@@ -6764,6 +6550,428 @@
         "gapRupees": null,
         "gapPercent": null,
         "kind": "direct_missing"
+      }
+    ],
+    "resolved": [
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "Vio.com",
+        "otaPrice": 3655,
+        "direct": 7380,
+        "gapRupees": 3725,
+        "gapPercent": 50.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "eDreams",
+        "otaPrice": 2065,
+        "direct": 3149,
+        "gapRupees": 1084,
+        "gapPercent": 34.4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "Vio.com",
+        "otaPrice": 2066,
+        "direct": 3149,
+        "gapRupees": 1083,
+        "gapPercent": 34.4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "Etrip.net",
+        "otaPrice": 2066,
+        "direct": 3149,
+        "gapRupees": 1083,
+        "gapPercent": 34.4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "goseek.com",
+        "otaPrice": 2066,
+        "direct": 3149,
+        "gapRupees": 1083,
+        "gapPercent": 34.4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "Expedia",
+        "otaPrice": 2105,
+        "direct": 2275,
+        "gapRupees": 170,
+        "gapPercent": 7.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "Travelocity",
+        "otaPrice": 2105,
+        "direct": 2275,
+        "gapRupees": 170,
+        "gapPercent": 7.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "Orbitz",
+        "otaPrice": 2105,
+        "direct": 2275,
+        "gapRupees": 170,
+        "gapPercent": 7.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "CheapTickets.com",
+        "otaPrice": 2105,
+        "direct": 2275,
+        "gapRupees": 170,
+        "gapPercent": 7.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-connaught-place",
+        "property": "Saltstayz Autograph Connaught Place",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "Vio.com",
+        "otaPrice": 8776,
+        "direct": 9739,
+        "gapRupees": 963,
+        "gapPercent": 9.9,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-connaught-place",
+        "property": "Saltstayz Autograph Connaught Place",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "goseek.com",
+        "otaPrice": 8776,
+        "direct": 9739,
+        "gapRupees": 963,
+        "gapPercent": 9.9,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-connaught-place",
+        "property": "Saltstayz Autograph Connaught Place",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "Traveloka",
+        "otaPrice": 9548,
+        "direct": 9739,
+        "gapRupees": 191,
+        "gapPercent": 2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-nehru-place",
+        "property": "Saltstayz Select - Nehru Place & New Friends Colony",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "Traveloka",
+        "otaPrice": 3004,
+        "direct": 3130,
+        "gapRupees": 126,
+        "gapPercent": 4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-paschim-vihar",
+        "property": "Saltstayz Premier - Paschim Vihar",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
+        "source": "Agoda",
+        "otaPrice": 2878,
+        "direct": 3096,
+        "gapRupees": 218,
+        "gapPercent": 7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "golden-tulip-gurugram-manesar",
+        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "eDreams",
+        "otaPrice": 8451,
+        "direct": 9000,
+        "gapRupees": 549,
+        "gapPercent": 6.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "golden-tulip-gurugram-manesar",
+        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "CheapTickets.com",
+        "otaPrice": 8451,
+        "direct": 9000,
+        "gapRupees": 549,
+        "gapPercent": 6.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "Bluepillow",
+        "otaPrice": 3676,
+        "direct": 7810,
+        "gapRupees": 4134,
+        "gapPercent": 52.9,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "Orbitz",
+        "otaPrice": 6409,
+        "direct": 7810,
+        "gapRupees": 1401,
+        "gapPercent": 17.9,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "CheapTickets.com",
+        "otaPrice": 6409,
+        "direct": 7810,
+        "gapRupees": 1401,
+        "gapPercent": 17.9,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-sector-15-noida",
+        "property": "Saltstayz Premier - Sector 15 Noida",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "Orbitz",
+        "otaPrice": 6608,
+        "direct": 8670,
+        "gapRupees": 2062,
+        "gapPercent": 23.8,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-sector-15-noida",
+        "property": "Saltstayz Premier - Sector 15 Noida",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "CheapTickets.com",
+        "otaPrice": 6608,
+        "direct": 8670,
+        "gapRupees": 2062,
+        "gapPercent": 23.8,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "Bluepillow",
+        "otaPrice": 2204,
+        "direct": 2299,
+        "gapRupees": 95,
+        "gapPercent": 4.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-connaught-place",
+        "property": "Saltstayz Autograph Connaught Place",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "Vio.com",
+        "otaPrice": 8334,
+        "direct": 9826,
+        "gapRupees": 1492,
+        "gapPercent": 15.2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-connaught-place",
+        "property": "Saltstayz Autograph Connaught Place",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "goseek.com",
+        "otaPrice": 8334,
+        "direct": 9826,
+        "gapRupees": 1492,
+        "gapPercent": 15.2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-connaught-place",
+        "property": "Saltstayz Autograph Connaught Place",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "Etrip.net",
+        "otaPrice": 8334,
+        "direct": 9826,
+        "gapRupees": 1492,
+        "gapPercent": 15.2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-connaught-place",
+        "property": "Saltstayz Autograph Connaught Place",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "Traveloka",
+        "otaPrice": 9630,
+        "direct": 9826,
+        "gapRupees": 196,
+        "gapPercent": 2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-unitech-cyber-park",
+        "property": "Saltstayz Select - Unitech Cyber Park",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "Tripadvisor",
+        "otaPrice": 2136,
+        "direct": 2275,
+        "gapRupees": 139,
+        "gapPercent": 6.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "pause-east-of-kailash",
+        "property": "Pause by Saltstayz - East of Kailash",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
+        "source": "Expedia",
+        "otaPrice": 10001,
+        "direct": null,
+        "gapRupees": null,
+        "gapPercent": null,
+        "kind": "direct_missing"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "Etrip.net",
+        "otaPrice": 4574,
+        "direct": 8620,
+        "gapRupees": 4046,
+        "gapPercent": 46.9,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-sector-15-noida",
+        "property": "Saltstayz Premier - Sector 15 Noida",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "Vio.com",
+        "otaPrice": 7153,
+        "direct": 8420,
+        "gapRupees": 1267,
+        "gapPercent": 15,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-connaught-place",
+        "property": "Saltstayz Autograph Connaught Place",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "goseek.com",
+        "otaPrice": 8184,
+        "direct": 9408,
+        "gapRupees": 1224,
+        "gapPercent": 13,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-connaught-place",
+        "property": "Saltstayz Autograph Connaught Place",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "dealbase.com",
+        "otaPrice": 8184,
+        "direct": 9408,
+        "gapRupees": 1224,
+        "gapPercent": 13,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-connaught-place",
+        "property": "Saltstayz Autograph Connaught Place",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "Tripadvisor",
+        "otaPrice": 8372,
+        "direct": 9408,
+        "gapRupees": 1036,
+        "gapPercent": 11,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-connaught-place",
+        "property": "Saltstayz Autograph Connaught Place",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "Traveloka",
+        "otaPrice": 9005,
+        "direct": 9408,
+        "gapRupees": 403,
+        "gapPercent": 4.3,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-unitech-cyber-park",
+        "property": "Saltstayz Select - Unitech Cyber Park",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
+        "source": "Tripadvisor",
+        "otaPrice": 2001,
+        "direct": 2021,
+        "gapRupees": 20,
+        "gapPercent": 1,
+        "kind": "ota_lower"
       },
       {
         "propertyId": "premier-faridabad-sarita-vihar",
@@ -6788,224 +6996,6 @@
         "gapRupees": null,
         "gapPercent": null,
         "kind": "direct_missing"
-      }
-    ],
-    "resolved": [
-      {
-        "propertyId": "golden-tulip-gurugram-manesar",
-        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Booking.com",
-        "otaPrice": 4804,
-        "direct": 7850,
-        "gapRupees": 3046,
-        "gapPercent": 38.8,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-bengaluru-hebbal",
-        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "dealbase.com",
-        "otaPrice": 3655,
-        "direct": 7380,
-        "gapRupees": 3725,
-        "gapPercent": 50.5,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-bengaluru-hebbal",
-        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "Etrip.net",
-        "otaPrice": 3655,
-        "direct": 7380,
-        "gapRupees": 3725,
-        "gapPercent": 50.5,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-arjun-marg",
-        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
-        "window": "D0",
-        "windowLabel": "Same-day check-in · Mon 5 Oct → Tue 6 Oct",
-        "source": "CheapTickets.com",
-        "otaPrice": 2065,
-        "direct": 3149,
-        "gapRupees": 1084,
-        "gapPercent": 34.4,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "golden-tulip-gurugram-manesar",
-        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "ZenHotels",
-        "otaPrice": 8451,
-        "direct": 9000,
-        "gapRupees": 549,
-        "gapPercent": 6.1,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-bengaluru-hebbal",
-        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Vio.com",
-        "otaPrice": 3890,
-        "direct": 7810,
-        "gapRupees": 3920,
-        "gapPercent": 50.2,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-bengaluru-hebbal",
-        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "goseek.com",
-        "otaPrice": 3890,
-        "direct": 7810,
-        "gapRupees": 3920,
-        "gapPercent": 50.2,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-bengaluru-hebbal",
-        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Etrip.net",
-        "otaPrice": 3890,
-        "direct": 7810,
-        "gapRupees": 3920,
-        "gapPercent": 50.2,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-bengaluru-hebbal",
-        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "eDreams",
-        "otaPrice": 6782,
-        "direct": 7810,
-        "gapRupees": 1028,
-        "gapPercent": 13.2,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-sector-15-noida",
-        "property": "Saltstayz Premier - Sector 15 Noida",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Vio.com",
-        "otaPrice": 5463,
-        "direct": 8670,
-        "gapRupees": 3207,
-        "gapPercent": 37,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-sector-15-noida",
-        "property": "Saltstayz Premier - Sector 15 Noida",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Hotels.com",
-        "otaPrice": 6695,
-        "direct": 8670,
-        "gapRupees": 1975,
-        "gapPercent": 22.8,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-sector-15-noida",
-        "property": "Saltstayz Premier - Sector 15 Noida",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "eDreams",
-        "otaPrice": 7144,
-        "direct": 8670,
-        "gapRupees": 1526,
-        "gapPercent": 17.6,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "autograph-connaught-place",
-        "property": "Saltstayz Autograph Connaught Place",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "dealbase.com",
-        "otaPrice": 8335,
-        "direct": 9826,
-        "gapRupees": 1491,
-        "gapPercent": 15.2,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "pause-east-of-kailash",
-        "property": "Pause by Saltstayz - East of Kailash",
-        "window": "D1",
-        "windowLabel": "Tomorrow check-in · Tue 6 Oct → Wed 7 Oct",
-        "source": "Hotels.com",
-        "otaPrice": 10001,
-        "direct": null,
-        "gapRupees": null,
-        "gapPercent": null,
-        "kind": "direct_missing"
-      },
-      {
-        "propertyId": "premier-bengaluru-hebbal",
-        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Tripadvisor",
-        "otaPrice": 4013,
-        "direct": 8620,
-        "gapRupees": 4607,
-        "gapPercent": 53.4,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-bengaluru-hebbal",
-        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Orbitz",
-        "otaPrice": 8079,
-        "direct": 8620,
-        "gapRupees": 541,
-        "gapPercent": 6.3,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-sector-50-golf-course-ext-road",
-        "property": "Saltstayz Premier - Sector 50 & Golf Course Ext Road",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "Bluepillow",
-        "otaPrice": 2495,
-        "direct": 2971,
-        "gapRupees": 476,
-        "gapPercent": 16,
-        "kind": "ota_lower"
-      },
-      {
-        "propertyId": "premier-medicity",
-        "property": "Saltstayz Premier - Medicity (Near Medanta)",
-        "window": "D2",
-        "windowLabel": "Day-after check-in · Wed 7 Oct → Thu 8 Oct",
-        "source": "eDreams",
-        "otaPrice": 1726,
-        "direct": 1790,
-        "gapRupees": 64,
-        "gapPercent": 3.6,
-        "kind": "ota_lower"
       }
     ]
   }
