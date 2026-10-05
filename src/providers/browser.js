@@ -27,6 +27,22 @@ const KNOWN_SOURCES = [
 ];
 const SOURCE_RE = new RegExp('^(' + KNOWN_SOURCES.map((s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')\\b', 'i');
 const PRICE_RE = /₹\s?\d[\d,]*/;
+const DISCOUNT_RE = /save\s+\d+\s*%|\d+\s*%\s*off|member rate|\bdeal\b|% less/i;
+
+/**
+ * A row can show a crossed-out original price next to the real one, e.g.
+ *   "Official site | Member rate; save 62% | ₹9,735 | ₹3,654"   (original first)
+ *   "Cleartrip.com | DEAL | 5% off | ₹1,823 | ₹1,920"           (real first)
+ * When a row carries a discount marker and has more than one price, the real price is the lower one.
+ * Otherwise the first price is used, as before.
+ */
+export function pickPrice(lines) {
+  const prices = [];
+  for (const l of lines) for (const m of String(l).matchAll(/₹\s?\d[\d,]*/g)) { const v = parsePrice(m[0]); if (v != null) prices.push(v); }
+  if (!prices.length) return null;
+  const discounted = lines.some((l) => DISCOUNT_RE.test(l));
+  return discounted && prices.length > 1 ? Math.min(...prices) : prices[0];
+}
 
 let browser = null;
 let context = null;
@@ -384,9 +400,7 @@ export function parsePricesFromText(text, directLabel = 'Saltstayz.com') {
 
 function parseRow(chunk, directLabel) {
   if (!chunk.length) return null;
-  const priceLine = chunk.find((l) => PRICE_RE.test(l));
-  if (!priceLine) return null;
-  const price = parsePrice(priceLine.match(PRICE_RE)[0]);
+  const price = pickPrice(chunk);
   if (price == null) return null;
   const raw = chunk.join(' | ').replace(/\s+/g, ' ').slice(0, 160);
   const official = chunk.some((l) => /^official site$/i.test(l));
@@ -438,9 +452,7 @@ export function pricesFromRows(rows, directLabel = 'Saltstayz.com') {
   for (const r of rows) {
     if (r.tooltip || r.hidden) continue; // price-breakdown popups and collapsed rows are not listings
     const lines = r.text.split('\n').map((l) => l.trim()).filter(Boolean);
-    const priceLine = lines.find((l) => PRICE_RE.test(l));
-    if (!priceLine) continue;
-    const price = parsePrice(priceLine.match(PRICE_RE)[0]);
+    const price = pickPrice(lines);
     if (price == null) continue;
     if (r.official) { out.push({ source: directLabel, price, official: true }); continue; }
     let source = null;

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parsePrice, normalizeName } from '../src/util.js';
-import { parsePricesFromText, buildTs, matchScore, pricesFromRows, attachAllIn } from '../src/providers/browser.js';
+import { parsePricesFromText, buildTs, matchScore, pricesFromRows, attachAllIn, pickPrice } from '../src/providers/browser.js';
 const bare = (a) => a.map(({ source, price, official }) => ({ source, price, official }));
 
 test('parsePrice handles rupee formats', () => {
@@ -144,4 +144,38 @@ test('an alias with a different sector number still matches when it is exactly t
   assert.equal(matchScore(prop, 'Saltstayz Residences Sector 45'), 100);
   assert.ok(matchScore(prop, 'Saltstayz Premier - Sector 50') < 75);
   assert.ok(matchScore({ name: 'Saltstayz Select - Golf Course Road & Sector 57', aliases: [] }, 'Saltstayz Select Sector 27 - Golf Course Road') <= 50);
+});
+
+test('a crossed-out original price never wins over the real price (Hebbal member rate)', () => {
+  // original price first, real price last
+  assert.equal(pickPrice(['Saltstayz Premier', 'Official site', 'Member rate; save 62%', ',', '₹9,735', '₹3,654']), 3654);
+  // real price first, crossed-out price second (Cleartrip deal layout)
+  assert.equal(pickPrice(['Cleartrip.com', 'DEAL', '5% off', 'Free cancellation until Oct 5', '₹1,823', '₹1,920']), 1823);
+  // no discount marker: first price, as before
+  assert.equal(pickPrice(['Agoda', '₹3,018', '₹3,225']), 3018);
+  assert.equal(pickPrice(['Agoda', 'Free Wi-Fi', '₹2,548 · Breakfast included']), 2548);
+  assert.equal(pickPrice(['Agoda', 'Free Wi-Fi']), null);
+  const text = `Saltstayz Premier Bengaluru, Hebbal
+Sponsored·Featured options
+All options
+Saltstayz Premier Bengaluru, Hebbal, Airport Road
+ Official site
+Member rate; save 62%
+,
+₹9,735
+₹3,654
+Visit site
+Agoda
+Free Wi-Fi
+₹3,761
+Visit site
+Bluepillow.in
+Member rate; save 19%
+₹11,779
+₹9,514
+Visit site
+Sponsored·Similar hotels
+X`;
+  const got = parsePricesFromText(text).map(({ source, price }) => [source, price]);
+  assert.deepEqual(got, [['Saltstayz.com', 3654], ['Agoda', 3761], ['Bluepillow', 9514]]);
 });
