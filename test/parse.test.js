@@ -138,3 +138,10 @@ test('attachAllIn pairs the hover "with taxes + fees" price with the right platf
   assert.equal(out.find((p) => p.source === 'ixigo').allIn, 3310);
   assert.equal(out.find((p) => p.source === 'Booking.com').allIn, undefined);
 });
+
+test('an alias with a different sector number still matches when it is exactly the Google name', () => {
+  const prop = { name: 'Saltstayz Premier Near Sector 44 Corporate Hub', aliases: ['Saltstayz Residences Sector 45', 'Saltstayz Premier Sector 44'] };
+  assert.equal(matchScore(prop, 'Saltstayz Residences Sector 45'), 100);
+  assert.ok(matchScore(prop, 'Saltstayz Premier - Sector 50') < 75);
+  assert.ok(matchScore({ name: 'Saltstayz Select - Golf Course Road & Sector 57', aliases: [] }, 'Saltstayz Select Sector 27 - Golf Course Road') <= 50);
+});

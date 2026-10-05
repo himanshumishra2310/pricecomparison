@@ -260,18 +260,21 @@ export function matchScore(property, text) {
   const wanted = [property.name, ...(property.aliases || [])].map(normalizeName);
   let best = 0;
   for (const w of wanted) {
-    if (t === w) best = Math.max(best, 100);
-    else if (t.startsWith(w + ' ') || t.includes(w)) best = Math.max(best, w.length >= t.length * 0.6 ? 85 : 60);
-    else if (w.includes(t) && t.length >= w.length * 0.6 && t.split(' ').length >= 3) best = Math.max(best, 80);
+    let sc = 0;
+    if (t === w) sc = 100;
+    else if (t.startsWith(w + ' ') || t.includes(w)) sc = w.length >= t.length * 0.6 ? 85 : 60;
+    else if (w.includes(t) && t.length >= w.length * 0.6 && t.split(' ').length >= 3) sc = 80;
     else {
       const toks = w.split(' ').filter((x) => x.length > 2 || /^\d+$/.test(x));
       const hit = toks.filter((x) => new RegExp('(^|\\s)' + x + '(\\s|$)').test(t)).length;
-      best = Math.max(best, Math.round((hit / Math.max(1, toks.length)) * 90));
+      sc = Math.round((hit / Math.max(1, toks.length)) * 90);
     }
-    // "Sector 27" and "Sector 57" are different hotels: numbers must agree when both names have them.
+    // "Sector 27" and "Sector 57" are different hotels: when both names carry numbers they must agree.
+    // This caps only THIS name's score, so a correct alias with its own number still wins.
     const nw = w.match(/\d+/g) || [];
     const nt = t.match(/\d+/g) || [];
-    if (nw.length && nt.length && !nw.some((n) => nt.includes(n))) best = Math.min(best, 50);
+    if (sc < 100 && nw.length && nt.length && !nw.some((n) => nt.includes(n))) sc = Math.min(sc, 50);
+    best = Math.max(best, sc);
   }
   return best;
 }
