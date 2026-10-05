@@ -57,19 +57,26 @@ export function compareProperty(property, raw, settings) {
     return row;
   }
 
+  // Which price do we compare? "listed" is the price in Google's list. "all_in" is the nightly price with taxes + fees
+  // that Google shows when hovering a row. all_in is used only when every price on the page has one, so the basis is never mixed.
+  const priced = (raw.prices || []).filter((p) => p.price != null);
+  const useAllIn = settings.priceBasis === 'all_in' && priced.length > 0 && priced.every((p) => p.allIn != null);
+  row.basis = useAllIn ? 'all_in' : 'listed';
+  row.otaRaw = {};
+
   // Collect the lowest price per channel.
   const all = [];
-  for (const p of raw.prices || []) {
-    if (p.price == null) continue;
+  for (const p0 of priced) {
+    const p = { ...p0, price: useAllIn ? p0.allIn : p0.price };
     const cls = p.official ? { kind: 'direct' } : classifySource(p.source, settings);
     if (cls.kind === 'direct') {
-      row.direct = row.direct == null ? p.price : Math.min(row.direct, p.price);
+      if (row.direct == null || p.price < row.direct) { row.direct = p.price; row.directRaw = p.raw || null; row.directListed = p0.price; }
     } else if (cls.kind === 'tracked') {
       const cur = row.otas[cls.key];
-      row.otas[cls.key] = cur == null ? p.price : Math.min(cur, p.price);
-      all.push({ source: cls.label, key: cls.key, price: p.price, tracked: true });
+      if (cur == null || p.price < cur) { row.otas[cls.key] = p.price; row.otaRaw[cls.key] = { raw: p.raw || null, listed: p0.price, allIn: p0.allIn ?? null }; }
+      all.push({ source: cls.label, key: cls.key, price: p.price, tracked: true, raw: p.raw, listed: p0.price, allIn: p0.allIn ?? null });
     } else {
-      all.push({ source: p.source, price: p.price, tracked: false });
+      all.push({ source: p.source, price: p.price, tracked: false, raw: p.raw, listed: p0.price, allIn: p0.allIn ?? null });
     }
   }
   // Collapse untracked sources to their minimum each.
@@ -85,7 +92,7 @@ export function compareProperty(property, raw, settings) {
     row.status = raw.availability;
     if (raw.availability === 'sold_out') row.note = row.note || 'Sold out tonight on Google.';
     // Still compute what is visible so the dashboard shows it, but no deviation is raised.
-    row.lowest = otas[0] && (row.direct == null || otas[0].price < row.direct) ? { source: otas[0].source, price: otas[0].price } : row.direct != null ? { source: settings.directChannel.label, price: row.direct } : null;
+    row.lowest = otas[0] && (row.direct == null || otas[0].price < row.direct) ? { source: otas[0].source, price: otas[0].price, raw: otas[0].raw || null } : row.direct != null ? { source: settings.directChannel.label, price: row.direct, raw: row.directRaw || null } : null;
     return row;
   }
 
@@ -98,7 +105,7 @@ export function compareProperty(property, raw, settings) {
   if (row.direct == null) {
     row.status = 'direct_missing';
     row.note = row.note || 'Saltstayz.com price not shown on Google. OTAs are selling.';
-    row.lowest = { source: otas[0].source, price: otas[0].price };
+    row.lowest = { source: otas[0].source, price: otas[0].price, raw: otas[0].raw || null };
     if (settings.deviation.flagMissingDirectPrice) {
       row.deviations.push({ source: otas[0].source, price: otas[0].price, gapRupees: null, gapPercent: null, tracked: !!otas[0].tracked, kind: 'direct_missing' });
     }
@@ -111,7 +118,7 @@ export function compareProperty(property, raw, settings) {
     const gapRupees = row.direct - o.price;
     const gapPercent = (gapRupees / row.direct) * 100;
     if (gapRupees > 0 && gapRupees >= minGapRupees && gapPercent >= minGapPercent) {
-      row.deviations.push({ source: o.source, price: o.price, gapRupees, gapPercent: +gapPercent.toFixed(1), tracked: !!o.tracked, kind: 'ota_lower' });
+      row.deviations.push({ source: o.source, price: o.price, gapRupees, gapPercent: +gapPercent.toFixed(1), tracked: !!o.tracked, kind: 'ota_lower', raw: o.raw || null, listed: o.listed, allIn: o.allIn });
     }
   }
   row.others = otas.filter((o) => !o.tracked && o.price < row.direct).map((o) => ({ source: o.source, price: o.price }));
@@ -119,10 +126,10 @@ export function compareProperty(property, raw, settings) {
   if (row.deviations.length) {
     const worst = row.deviations[0];
     row.status = 'ota_lower';
-    row.lowest = { source: worst.source, price: worst.price };
+    row.lowest = { source: worst.source, price: worst.price, raw: worst.raw || null };
   } else {
     row.status = 'direct_lowest';
-    row.lowest = { source: settings.directChannel.label, price: row.direct };
+    row.lowest = { source: settings.directChannel.label, price: row.direct, raw: row.directRaw || null };
   }
   if (row.matchedName && property.name && !sameHotel(property, row.matchedName)) {
     row.nameMismatch = true;

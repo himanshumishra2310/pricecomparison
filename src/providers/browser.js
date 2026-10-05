@@ -352,12 +352,13 @@ function parseRow(chunk, directLabel) {
   if (!priceLine) return null;
   const price = parsePrice(priceLine.match(PRICE_RE)[0]);
   if (price == null) return null;
+  const raw = chunk.join(' | ').replace(/\s+/g, ' ').slice(0, 160);
   const official = chunk.some((l) => /^official site$/i.test(l));
-  if (official) return { source: directLabel, price, official: true };
+  if (official) return { source: directLabel, price, official: true, raw };
   const head = chunk[0];
   const m = head.match(SOURCE_RE);
-  if (m) return { source: m[1], price, official: false };
-  if (/^[A-Za-z][A-Za-z0-9&' .-]{1,30}\.(com|in|co|net|io)$/i.test(head)) return { source: head, price, official: false };
+  if (m) return { source: m[1], price, official: false, raw };
+  if (/^[A-Za-z][A-Za-z0-9&' .-]{1,30}\.(com|in|co|net|io)$/i.test(head)) return { source: head, price, official: false, raw };
   return null; // a room row or something we do not recognise as a booking platform
 }
 
@@ -414,10 +415,34 @@ export function pricesFromRows(rows, directLabel = 'Saltstayz.com') {
     }
     if (!source && r.names.length) source = r.names[0];
     if (!source) continue; // a room row
-    out.push({ source, price, official: false });
+    out.push({ source, price, official: false, raw: r.text.replace(/\s+/g, ' ').slice(0, 160) });
   }
   const seen = new Set();
   return out.filter((p) => { const k = `${p.source.toLowerCase()}|${p.price}`; if (seen.has(k)) return false; seen.add(k); return true; });
+}
+
+/**
+ * Google's price list shows each platform's nightly price before taxes and fees. Hovering a row shows the
+ * nightly price "with taxes + fees". Those hover texts are in the page too, so read them and attach the all-in
+ * price to the matching platform. Example hover text:
+ *   "Agoda₹3,225 with taxes + feesNightly base priceNightly price with taxes + feesStay total with taxes + fees₹3,018₹3,018₹3,225₹3,225"
+ */
+export function attachAllIn(prices, rows, directLabel = 'Saltstayz.com') {
+  const allIn = new Map();
+  for (const r of rows) {
+    const flat = String(r.text || '').replace(/\s+/g, ' ');
+    const m = flat.match(/₹\s?(\d[\d,]*)\s*with taxes \+ fees/i);
+    if (!m) continue;
+    const value = parsePrice(m[1]);
+    let key = null;
+    if (r.official || /official site/i.test(flat)) key = directLabel.toLowerCase();
+    else { const n = flat.trim().match(SOURCE_RE); if (n) key = n[1].toLowerCase(); }
+    if (key && value != null && !allIn.has(key)) allIn.set(key, value);
+  }
+  return prices.map((p) => {
+    const v = allIn.get(String(p.source).toLowerCase().replace(/\.com$/, '')) ?? allIn.get(String(p.source).toLowerCase());
+    return v != null ? { ...p, allIn: v } : p;
+  });
 }
 
 /** "Available for 6–7 Oct for ₹3,346." means no rooms on the asked date. */
@@ -571,7 +596,7 @@ export default {
         const fromText = parsePricesFromText(text, directLabel);
         const have = new Set(fromText.map((p) => p.source.toLowerCase()));
         const fromLogos = pricesFromRows(rows.filter((r) => r.names.length), directLabel).filter((p) => !have.has(p.source.toLowerCase()));
-        const prices = [...fromText, ...fromLogos];
+        const prices = attachAllIn([...fromText, ...fromLogos], rows, directLabel);
         if (!prices.length && /\$\s?\d/.test(text) && !/₹/.test(text)) throw new Error('Google showed prices in a currency other than INR; the ts parameter was not applied.');
         let availability = detectAvailability(text);
         let note = '';

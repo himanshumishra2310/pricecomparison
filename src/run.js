@@ -91,7 +91,9 @@ run.diff = { added: diff.added, ongoing: diff.ongoing, resolved: diff.resolved }
 
 // 4. Save history, dashboard, state
 const runFile = path.join(ROOT, 'data', 'runs', id.slice(0, 10), `${id.slice(11)}.json`);
-writeJson(runFile, run);
+// Evidence text (the Google row behind each price) is kept only in the latest copy, to keep history small.
+const slim = JSON.parse(JSON.stringify(run, (k, v) => (['raw', 'otaRaw', 'directRaw'].includes(k) ? undefined : v)));
+writeJson(runFile, slim);
 writeJson(path.join(ROOT, 'docs', 'latest.json'), run);
 const histFile = path.join(ROOT, 'docs', 'history.json');
 const history = readJson(histFile, []);

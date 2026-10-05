@@ -14,7 +14,8 @@ test('OTA lower than Saltstayz.com is a deviation', () => {
   assert.equal(r.deviations[0].source, 'MakeMyTrip');
   assert.equal(r.deviations[0].gapRupees, 97);
   assert.equal(r.deviations[0].gapPercent, 4);
-  assert.deepEqual(r.lowest, { source: 'MakeMyTrip', price: 2332 });
+  assert.equal(r.lowest.source, 'MakeMyTrip');
+  assert.equal(r.lowest.price, 2332);
 });
 
 test('Saltstayz lowest when every OTA is dearer or equal', () => {
@@ -25,17 +26,17 @@ test('Saltstayz lowest when every OTA is dearer or equal', () => {
   assert.equal(r.otas.booking, 2545);
 });
 
-test('untracked OTA (Cleartrip) still counts as a deviation and shows under "also cheaper"', () => {
-  const r = compareProperty(prop, { availability: 'available', prices: [{ source: S, price: 2308 }, { source: 'Agoda', price: 2304 }, { source: 'Cleartrip', price: 2220 }] }, settings);
+test('untracked OTA (Traveloka) still counts as a deviation and shows under "also cheaper"', () => {
+  const r = compareProperty(prop, { availability: 'available', prices: [{ source: S, price: 2308 }, { source: 'Agoda', price: 2304 }, { source: 'Traveloka', price: 2220 }] }, settings);
   assert.equal(r.status, 'ota_lower');
-  assert.deepEqual(r.deviations.map((d) => d.source), ['Cleartrip', 'Agoda']);
-  assert.deepEqual(r.others, [{ source: 'Cleartrip', price: 2220 }]);
-  assert.equal(r.lowest.source, 'Cleartrip');
+  assert.deepEqual(r.deviations.map((d) => d.source), ['Traveloka', 'Agoda']);
+  assert.deepEqual(r.others, [{ source: 'Traveloka', price: 2220 }]);
+  assert.equal(r.lowest.source, 'Traveloka');
 });
 
 test('untracked OTAs are ignored when anyOtaCountsAsDeviation is false', () => {
   const s = { ...settings, deviation: { ...settings.deviation, anyOtaCountsAsDeviation: false } };
-  const r = compareProperty(prop, { availability: 'available', prices: [{ source: S, price: 2308 }, { source: 'Cleartrip', price: 2220 }] }, s);
+  const r = compareProperty(prop, { availability: 'available', prices: [{ source: S, price: 2308 }, { source: 'Traveloka', price: 2220 }] }, s);
   assert.equal(r.status, 'direct_lowest');
 });
 
@@ -73,4 +74,33 @@ test('summary and sort', () => {
   assert.equal(s.avgGapWhereDirectLowest, 10);
   assert.equal(s.avgGapNearestOta, 0);
   assert.deepEqual(sortRows(rows).map((r) => r.id), ['a', 'b', 'c']);
+});
+
+test('priceBasis all_in compares the with-taxes prices, but only when every price has one', () => {
+  const s = { ...settings, priceBasis: 'all_in' };
+  const full = compareProperty(prop, { availability: 'available', prices: [
+    { source: S, price: 3283, allIn: 3447, official: true, raw: 'direct row' },
+    { source: 'ixigo', price: 3100, allIn: 3560, raw: 'ixigo row' },
+    { source: 'Agoda', price: 3200, allIn: 3300, raw: 'agoda row' },
+  ] }, s);
+  assert.equal(full.basis, 'all_in');
+  assert.equal(full.direct, 3447);
+  assert.equal(full.lowest.source, 'Agoda');          // ixigo is only cheaper before taxes
+  assert.equal(full.deviations.length, 1);
+  assert.equal(full.lowest.raw, 'agoda row');
+  const partial = compareProperty(prop, { availability: 'available', prices: [
+    { source: S, price: 3283, allIn: 3447, official: true },
+    { source: 'ixigo', price: 3100 },
+  ] }, s);
+  assert.equal(partial.basis, 'listed');
+  assert.equal(partial.direct, 3283);
+  assert.equal(partial.lowest.source, 'ixigo');
+});
+
+test('default basis is the listed price', () => {
+  const r = compareProperty(prop, { availability: 'available', prices: [
+    { source: S, price: 3283, allIn: 3447, official: true }, { source: 'ixigo', price: 3100, allIn: 3560 } ] }, settings);
+  assert.equal(r.basis, 'listed');
+  assert.equal(r.lowest.source, 'ixigo');
+  assert.equal(r.otaRaw.ixigo.allIn, 3560);
 });

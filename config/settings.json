@@ -63,17 +63,17 @@
       ]
     },
     {
-      "key": "expedia",
-      "label": "Expedia",
+      "key": "ixigo",
+      "label": "ixigo",
       "matchers": [
-        "expedia"
+        "ixigo"
       ]
     },
     {
-      "key": "tripcom",
-      "label": "Trip.com",
+      "key": "cleartrip",
+      "label": "Cleartrip",
       "matchers": [
-        "trip.com"
+        "cleartrip"
       ]
     }
   ],
@@ -104,5 +104,7 @@
   "failover": {
     "_comment": "The office Mac is the main crawler (Indian connection, sees MakeMyTrip and Goibibo). The GitHub schedule only runs when the last Indian run is older than this many hours.",
     "indianRunFreshHours": 3
-  }
+  },
+  "priceBasis": "listed",
+  "_comment_priceBasis": "listed = the price in Google's list (before taxes and fees). all_in = the nightly price with taxes + fees from Google's hover text, used only when every platform on that hotel has one. Hover a price on the dashboard to see both."
 }

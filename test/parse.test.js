@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parsePrice, normalizeName } from '../src/util.js';
-import { parsePricesFromText, buildTs, matchScore, pricesFromRows } from '../src/providers/browser.js';
+import { parsePricesFromText, buildTs, matchScore, pricesFromRows, attachAllIn } from '../src/providers/browser.js';
+const bare = (a) => a.map(({ source, price, official }) => ({ source, price, official }));
 
 test('parsePrice handles rupee formats', () => {
   assert.equal(parsePrice('₹2,548'), 2548);
@@ -59,7 +60,7 @@ Visit Hotels.com
 People also viewed
 ₹1,656
 Townhouse by OYO Tipsyy Inn 16`;
-  assert.deepEqual(parsePricesFromText(text), [
+  assert.deepEqual(bare(parsePricesFromText(text)), [
     { source: 'Booking.com', price: 2600, official: false },
     { source: 'Expedia', price: 2900, official: false },
     { source: 'Saltstayz.com', price: 2429, official: true },
@@ -103,10 +104,29 @@ test('pricesFromRows uses logo alt text when the provider name is not in the tex
     { text: 'Agoda₹3,225 with taxes + feesNightly base price', names: [], official: false, tooltip: true },
     { text: 'Traveloka\n₹9,999\nVisit site', names: [], official: false, hidden: true },
   ];
-  assert.deepEqual(pricesFromRows(rows), [
+  assert.deepEqual(bare(pricesFromRows(rows)), [
     { source: 'Saltstayz.com', price: 3509, official: true },
     { source: 'Agoda', price: 3346, official: false },
     { source: 'MakeMyTrip', price: 3100, official: false },
     { source: 'Goibibo', price: 3050, official: false },
   ]);
+});
+
+test('attachAllIn pairs the hover "with taxes + fees" price with the right platform', () => {
+  const prices = [
+    { source: 'Saltstayz.com', price: 3283, official: true },
+    { source: 'Agoda', price: 3018, official: false },
+    { source: 'ixigo', price: 2990, official: false },
+    { source: 'Booking.com', price: 3879, official: false },
+  ];
+  const rows = [
+    { text: 'Saltstayz Premier - Galleria Market Road & Sector 27 |  |  Official site₹3,447 with taxes + feesNightly base priceNightly price with taxes + feesStay total with taxes + fees₹3,283₹3,283₹3,447₹3,447', official: true, tooltip: true },
+    { text: 'Agoda₹3,225 with taxes + feesNightly base priceNightly price with taxes + feesStay total with taxes + fees₹3,018₹3,018₹3,225₹3,225Visit site', official: false, tooltip: true },
+    { text: 'ixigo₹3,310 with taxes + feesNightly base price₹2,990₹2,990₹3,310₹3,310', official: false, tooltip: true },
+  ];
+  const out = attachAllIn(prices, rows);
+  assert.equal(out.find((p) => p.official).allIn, 3447);
+  assert.equal(out.find((p) => p.source === 'Agoda').allIn, 3225);
+  assert.equal(out.find((p) => p.source === 'ixigo').allIn, 3310);
+  assert.equal(out.find((p) => p.source === 'Booking.com').allIn, undefined);
 });

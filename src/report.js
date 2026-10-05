@@ -17,12 +17,22 @@ const STATUS = {
   error: () => ({ cls: 'muted', text: 'Crawl error' }),
 };
 
-function cell(value, { lowestOf, isDirect, direct }) {
+const tip = (r) => (r ? ` title="${esc(r)}"` : '');
+function evidence(o) {
+  if (!o) return '';
+  const parts = [];
+  if (o.listed != null) parts.push(`Google list price ${formatInr(o.listed)}`);
+  if (o.allIn != null) parts.push(`with taxes + fees ${formatInr(o.allIn)}`);
+  if (o.raw) parts.push(`Google row: ${o.raw}`);
+  return parts.join(' · ');
+}
+
+function cell(value, { lowestOf, isDirect, direct, title }) {
   if (value == null) return '<td class="num">—</td>';
   const isLowest = lowestOf != null && value === lowestOf;
   const cheaperThanDirect = !isDirect && direct != null && value < direct;
   const cls = ['num', isLowest && isDirect ? 'direct-win' : '', isLowest && !isDirect ? 'ota-win' : '', cheaperThanDirect && !isLowest ? 'ota-cheaper' : ''].filter(Boolean).join(' ');
-  return `<td class="${cls}">${formatInr(value)}</td>`;
+  return `<td class="${cls}"${tip(title)}>${formatInr(value)}</td>`;
 }
 
 function row(r, settings) {
@@ -34,12 +44,13 @@ function row(r, settings) {
   const notes = [];
   if (r.note) notes.push(r.note);
   if (r.others?.length) notes.push('Also cheaper: ' + r.others.map((o) => `${o.source} ${formatInr(o.price)}`).join(', '));
+  if (r.basis === 'all_in') notes.push('Prices include taxes and fees.');
   if (r.nameMismatch) notes.push(`Google lists this only as “${r.matchedName}”. Please confirm the match.`);
   return `<tr class="st-${r.status}">
     <td class="prop"><div class="name">${esc(r.name)}</div>${notes.map((n) => `<div class="note">${esc(n)}</div>`).join('')}</td>
-    ${cell(r.direct, { lowestOf, isDirect: true, direct: r.direct })}
-    ${settings.trackedOtas.map((o) => cell(r.otas[o.key], { lowestOf, isDirect: false, direct: r.direct })).join('')}
-    <td>${r.lowest ? esc(r.lowest.source) : '—'}</td>
+    ${cell(r.direct, { lowestOf, isDirect: true, direct: r.direct, title: evidence({ listed: r.directListed, raw: r.directRaw }) })}
+    ${settings.trackedOtas.map((o) => cell(r.otas[o.key], { lowestOf, isDirect: false, direct: r.direct, title: evidence(r.otaRaw?.[o.key]) })).join('')}
+    <td${tip(r.lowest ? evidence({ raw: r.lowest.raw }) : '')}>${r.lowest ? `${esc(r.lowest.source)}<div class="note">${formatInr(r.lowest.price)}</div>` : '—'}</td>
     <td><span class="pill ${st.cls}">${esc(st.text)}</span></td>
   </tr>`;
 }
@@ -137,7 +148,7 @@ footer{color:var(--muted);font-size:12px;margin-top:28px}
 @media(max-width:700px){header,main{padding-left:16px;padding-right:16px}}
 </style></head>
 <body>
-<header><h1>Saltstayz Rate Parity</h1><p>Google Hotels listing prices · Saltstayz.com vs ${settings.trackedOtas.map((o) => esc(o.label)).join(', ')} · ${run.adults} adults, nightly price as listed on Google (INR) · checked ${esc(run.stamp)}</p></header>
+<header><h1>Saltstayz Rate Parity</h1><p>Google Hotels listing prices · Saltstayz.com vs ${settings.trackedOtas.map((o) => esc(o.label)).join(', ')} · ${run.adults} adults, nightly price as listed on Google (INR, hover a price to see Google's row) · checked ${esc(run.stamp)}</p></header>
 <main>
   ${run.indianOtasVisible === false ? '<div class="banner">This crawl did not come from an Indian internet connection, so Google did not list MakeMyTrip or Goibibo. See the README for how to run it from India (office Mac or an Indian proxy).</div>' : ''}
   ${run.provider === 'fixture' ? '<div class="banner">Sample data replayed from the one-off Chrome crawl of 4 Oct 2026. The first scheduled run replaces this page with live Google Hotels prices.</div>' : ''}
