@@ -298,6 +298,7 @@ async function openEntity(page, property, window, settings) {
   if (/\/travel\/hotels\/entity\//.test(page.url())) return true;
   // Or it shows the hotel's panel inside the search page: heading is the hotel and the price list is there.
   const heading = await readHeading(page, property);
+  if (process.env.DEBUG_PRINT) console.log(`openEntity: heading="${heading}" score=${heading ? matchScore(property, heading) : '-'}`);
   if (heading && matchScore(property, heading) >= 75) return true;
 
   const candidates = await page.evaluate(() => {
@@ -314,6 +315,7 @@ async function openEntity(page, property, window, settings) {
     const score = matchScore(property, name) + (/\/entity\//.test(c.href) ? 2 : 0);
     if (!best || score > best.score) best = { ...c, name, score };
   }
+  if (process.env.DEBUG_PRINT) console.log(`openEntity: ${candidates.length} candidate links; best="${best?.name}" score=${best?.score} href=${(best?.href || '').slice(0, 70)}`);
   if (!best || best.score < 75) return false;
   // An entity link from Google carries an empty ts (no dates). Rebuild it with our dates and currency.
   const tok = best.href.match(/\/entity\/([^/?]+)/);
