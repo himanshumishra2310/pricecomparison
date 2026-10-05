@@ -105,10 +105,11 @@ test('default basis is the listed price', () => {
   assert.equal(r.otaRaw.ixigo.allIn, 3560);
 });
 
-test('a member-rate direct price is flagged in the row note', () => {
+test('a member-rate direct price: public price compared, member rate mentioned in the note', () => {
   const r = compareProperty(prop, { availability: 'available', prices: [
-    { source: S, price: 3576, official: true, raw: 'Official site | Member rate; save 58% | , | ₹8,450 | ₹3,576' },
+    { source: S, price: 8450, member: 3576, official: true, raw: 'Official site | Member rate; save 58% | , | ₹8,450 | ₹3,576' },
     { source: 'Agoda', price: 3532, raw: 'Agoda | ₹3,532' } ] }, settings);
-  assert.match(r.note, /member rate \(save 58%\)/);
-  assert.equal(r.direct, 3576);
+  assert.equal(r.direct, 8450);
+  assert.match(r.note, /member rate of ₹3,576 \(save 58%\)/);
+  assert.equal(r.status, 'ota_lower');
 });

@@ -30,19 +30,25 @@ const PRICE_RE = /₹\s?\d[\d,]*/;
 const DISCOUNT_RE = /save\s+\d+\s*%|\d+\s*%\s*off|member rate|\bdeal\b|% less/i;
 
 /**
- * A row can show a crossed-out original price next to the real one, e.g.
- *   "Official site | Member rate; save 62% | ₹9,735 | ₹3,654"   (original first)
- *   "Cleartrip.com | DEAL | 5% off | ₹1,823 | ₹1,920"           (real first)
- * When a row carries a discount marker and has more than one price, the real price is the lower one.
- * Otherwise the first price is used, as before.
+ * A row can show two prices for one platform:
+ *   "Official site | Member rate; save 62% | ₹9,735 | ₹3,654"  a member-only discount (original first, member price last)
+ *   "Cleartrip.com | DEAL | 5% off | ₹1,823 | ₹1,920"          a public deal (real price first, crossed-out price second)
+ * We compare the PUBLIC (meta) price, the one every Google user can book at, never the signed-in member price:
+ *   - member rate rows: the higher price is the public one, the lower one is reported as `member`
+ *   - public deal rows: the lower price is the real one
+ *   - otherwise: the first price
  */
-export function pickPrice(lines) {
+export function pickPriceInfo(lines) {
   const prices = [];
   for (const l of lines) for (const m of String(l).matchAll(/₹\s?\d[\d,]*/g)) { const v = parsePrice(m[0]); if (v != null) prices.push(v); }
-  if (!prices.length) return null;
+  if (!prices.length) return { price: null, member: null };
+  const isMember = lines.some((l) => /member rate/i.test(l));
+  if (isMember && prices.length > 1) return { price: Math.max(...prices), member: Math.min(...prices) };
   const discounted = lines.some((l) => DISCOUNT_RE.test(l));
-  return discounted && prices.length > 1 ? Math.min(...prices) : prices[0];
+  if (discounted && prices.length > 1) return { price: Math.min(...prices), member: null };
+  return { price: prices[0], member: null };
 }
+export const pickPrice = (lines) => pickPriceInfo(lines).price;
 
 let browser = null;
 let context = null;
@@ -378,19 +384,24 @@ export function parsePricesFromText(text, directLabel = 'Saltstayz.com') {
   if (end < 0) end = lines.length;
   const out = [];
   let chunk = [];
+  // "Featured options" is the sponsored block (for Saltstayz it carries the hotel's own website rates, with room types).
+  // "All options" is the normal metasearch listing. Saltstayz.com is measured on the metasearch listing only.
+  const sectionOf = (l) => (/featured/i.test(l) ? 'featured' : 'all');
+  let section = sectionOf(lines[start]);
   for (let i = start + 1; i < end; i++) {
     const line = lines[i];
     if (/^visit site\b/i.test(line) || /^visit [\w.-]+$/i.test(line)) {
-      const row = parseRow(chunk, directLabel);
+      const row = parseRow(chunk, directLabel, section);
       if (row) out.push(row);
       chunk = [];
       continue;
     }
-    if (SECTION_START.test(line)) { chunk = []; continue; }
+    if (SECTION_START.test(line)) { chunk = []; section = sectionOf(line); continue; }
     chunk.push(line);
   }
+  const haveMetaOfficial = out.some((p) => p.official && p.section === 'all');
   const seen = new Set();
-  return out.filter((p) => {
+  return out.filter((p) => !(haveMetaOfficial && p.official && p.section === 'featured')).filter((p) => {
     const k = `${p.source.toLowerCase()}|${p.price}`;
     if (seen.has(k)) return false;
     seen.add(k);
@@ -398,17 +409,17 @@ export function parsePricesFromText(text, directLabel = 'Saltstayz.com') {
   });
 }
 
-function parseRow(chunk, directLabel) {
+function parseRow(chunk, directLabel, section = null) {
   if (!chunk.length) return null;
-  const price = pickPrice(chunk);
+  const { price, member } = pickPriceInfo(chunk);
   if (price == null) return null;
   const raw = chunk.join(' | ').replace(/\s+/g, ' ').slice(0, 160);
   const official = chunk.some((l) => /^official site$/i.test(l));
-  if (official) return { source: directLabel, price, official: true, raw };
+  if (official) return { source: directLabel, price, official: true, raw, section, ...(member != null ? { member } : {}) };
   const head = chunk[0];
   const m = head.match(SOURCE_RE);
-  if (m) return { source: m[1], price, official: false, raw };
-  if (/^[A-Za-z][A-Za-z0-9&' .-]{1,30}\.(com|in|co|net|io)$/i.test(head)) return { source: head, price, official: false, raw };
+  if (m) return { source: m[1], price, official: false, raw, section };
+  if (/^[A-Za-z][A-Za-z0-9&' .-]{1,30}\.(com|in|co|net|io)$/i.test(head)) return { source: head, price, official: false, raw, section };
   return null; // a room row or something we do not recognise as a booking platform
 }
 
@@ -452,7 +463,7 @@ export function pricesFromRows(rows, directLabel = 'Saltstayz.com') {
   for (const r of rows) {
     if (r.tooltip || r.hidden) continue; // price-breakdown popups and collapsed rows are not listings
     const lines = r.text.split('\n').map((l) => l.trim()).filter(Boolean);
-    const price = pickPrice(lines);
+    const { price } = pickPriceInfo(lines);
     if (price == null) continue;
     if (r.official) { out.push({ source: directLabel, price, official: true }); continue; }
     let source = null;

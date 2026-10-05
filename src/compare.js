@@ -1,3 +1,4 @@
+import { formatInr } from './util.js';
 /**
  * Turns raw crawl results into a per-property verdict for one date window.
  *
@@ -70,7 +71,7 @@ export function compareProperty(property, raw, settings) {
     const p = { ...p0, price: useAllIn ? p0.allIn : p0.price };
     const cls = p.official ? { kind: 'direct' } : classifySource(p.source, settings);
     if (cls.kind === 'direct') {
-      if (row.direct == null || p.price < row.direct) { row.direct = p.price; row.directRaw = p.raw || null; row.directListed = p0.price; }
+      if (row.direct == null || p.price < row.direct) { row.direct = p.price; row.directRaw = p.raw || null; row.directListed = p0.price; row.directMember = p0.member ?? null; }
     } else if (cls.kind === 'tracked') {
       const cur = row.otas[cls.key];
       if (cur == null || p.price < cur) { row.otas[cls.key] = p.price; row.otaRaw[cls.key] = { raw: p.raw || null, listed: p0.price, allIn: p0.allIn ?? null }; }
@@ -96,9 +97,12 @@ export function compareProperty(property, raw, settings) {
     return row;
   }
 
-  // Google sometimes shows the official price as a "Member rate" (a discount for signed-in guests). Say so on the dashboard.
-  const member = (row.directRaw || '').match(/member rate;?\s*save\s*(\d+)\s*%/i);
-  if (member) row.note = [row.note, `Saltstayz.com price on Google is a member rate (save ${member[1]}%).`].filter(Boolean).join(' ');
+  // Google sometimes shows Saltstayz.com with a "Member rate" (a lower price for signed-in guests on the website).
+  // The dashboard compares the public metasearch price, and says what the member rate was.
+  if (row.directMember != null) {
+    const pct = (row.directRaw || '').match(/save\s*(\d+)\s*%/i);
+    row.note = [row.note, `Google also shows a member rate of ${formatInr(row.directMember)}${pct ? ` (save ${pct[1]}%)` : ''} on the Saltstayz website. The public price ${formatInr(row.direct)} is used.`].filter(Boolean).join(' ');
+  }
 
   if (row.direct == null && otas.length === 0) {
     row.status = 'no_prices';

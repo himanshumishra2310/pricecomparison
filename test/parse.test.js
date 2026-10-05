@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parsePrice, normalizeName } from '../src/util.js';
-import { parsePricesFromText, buildTs, matchScore, pricesFromRows, attachAllIn, pickPrice } from '../src/providers/browser.js';
+import { parsePricesFromText, buildTs, matchScore, pricesFromRows, attachAllIn, pickPrice, pickPriceInfo } from '../src/providers/browser.js';
 const bare = (a) => a.map(({ source, price, official }) => ({ source, price, official }));
 
 test('parsePrice handles rupee formats', () => {
@@ -146,36 +146,83 @@ test('an alias with a different sector number still matches when it is exactly t
   assert.ok(matchScore({ name: 'Saltstayz Select - Golf Course Road & Sector 57', aliases: [] }, 'Saltstayz Select Sector 27 - Golf Course Road') <= 50);
 });
 
-test('a crossed-out original price never wins over the real price (Hebbal member rate)', () => {
-  // original price first, real price last
-  assert.equal(pickPrice(['Saltstayz Premier', 'Official site', 'Member rate; save 62%', ',', '₹9,735', '₹3,654']), 3654);
-  // real price first, crossed-out price second (Cleartrip deal layout)
+test('public (meta) price wins over the signed-in member price; public deals use the real price', () => {
+  // member rate: the higher price is the public one
+  assert.deepEqual(pickPriceInfo(['Saltstayz Premier', 'Official site', 'Member rate; save 62%', ',', '₹9,735', '₹3,654']), { price: 9735, member: 3654 });
+  // order does not matter
+  assert.deepEqual(pickPriceInfo(['Bluepillow.in', 'Member rate; save 19%', '₹9,514', '₹11,779']), { price: 11779, member: 9514 });
+  // public deal: real price first, crossed-out second (Cleartrip)
   assert.equal(pickPrice(['Cleartrip.com', 'DEAL', '5% off', 'Free cancellation until Oct 5', '₹1,823', '₹1,920']), 1823);
-  // no discount marker: first price, as before
+  // no marker: first price
   assert.equal(pickPrice(['Agoda', '₹3,018', '₹3,225']), 3018);
   assert.equal(pickPrice(['Agoda', 'Free Wi-Fi', '₹2,548 · Breakfast included']), 2548);
   assert.equal(pickPrice(['Agoda', 'Free Wi-Fi']), null);
-  const text = `Saltstayz Premier Bengaluru, Hebbal
+});
+
+test('Saltstayz.com is read from "All options", not from the sponsored "Featured options" block', () => {
+  const text = `Hotel
 Sponsored·Featured options
-All options
-Saltstayz Premier Bengaluru, Hebbal, Airport Road
+Saltstayz Select
  Official site
-Member rate; save 62%
-,
-₹9,735
-₹3,654
+₹2,550
+Visit site
+Stay Only
+₹2,550
 Visit site
 Agoda
-Free Wi-Fi
-₹3,761
+₹1,985
 Visit site
-Bluepillow.in
-Member rate; save 19%
-₹11,779
-₹9,514
+All options
+Saltstayz Select
+ Official site
+2 guests
+₹2,525
+Visit site
+Agoda
+₹1,985
 Visit site
 Sponsored·Similar hotels
 X`;
-  const got = parsePricesFromText(text).map(({ source, price }) => [source, price]);
-  assert.deepEqual(got, [['Saltstayz.com', 3654], ['Agoda', 3761], ['Bluepillow', 9514]]);
+  const got = parsePricesFromText(text);
+  assert.deepEqual(got.filter((p) => p.official).map((p) => p.price), [2525]);
+  assert.equal(got.filter((p) => !p.official).length, 1);   // Agoda, deduped
+  // featured is higher than all-options here, and still All options wins; and the reverse
+  const text2 = text.replace('₹2,525', '₹2,700');
+  assert.deepEqual(parsePricesFromText(text2).filter((p) => p.official).map((p) => p.price), [2700]);
+  // only a featured official row: fall back to it rather than reporting nothing
+  const onlyFeatured = `Sponsored·Featured options
+Saltstayz Select
+ Official site
+₹2,550
+Visit site
+All options
+Agoda
+₹1,985
+Visit site
+Sponsored·Similar hotels
+X`;
+  assert.deepEqual(parsePricesFromText(onlyFeatured).filter((p) => p.official).map((p) => p.price), [2550]);
+});
+
+test('Hebbal row: public price is used, member rate is kept for the note', () => {
+  const text = `Sponsored·Featured options
+Expedia.com
+₹6,932
+Visit site
+All options
+Saltstayz Premier Bengaluru, Hebbal, Airport Road
+ Official site
+Member rate; save 58%
+,
+₹8,450
+₹3,576
+Visit site
+Agoda
+₹3,532
+Visit site
+Sponsored·Similar hotels
+X`;
+  const direct = parsePricesFromText(text).find((p) => p.official);
+  assert.equal(direct.price, 8450);
+  assert.equal(direct.member, 3576);
 });
