@@ -31,7 +31,9 @@ const results = {};
 try {
   const jobs = windows.flatMap((w) => properties.map((p) => ({ p, w })));
   await mapLimit(jobs, settings.crawl?.concurrency || 2, async ({ p, w }) => {
-    const prop = { ...p, googleToken: p.googleToken || state.tokens?.[p.id] || null };
+    // A Google Hotels link pasted into config/properties.json ("googleUrl") is the most reliable way to point at a hotel.
+    const tokenFromUrl = (String(p.googleUrl || '').match(/\/entity\/([^/?#]+)/) || [])[1] || null;
+    const prop = { ...p, googleToken: p.googleToken || tokenFromUrl || state.tokens?.[p.id] || null };
     try {
       const raw = await provider.fetchPrices(prop, w, settings);
       results[`${p.id}|${w.key}`] = raw;

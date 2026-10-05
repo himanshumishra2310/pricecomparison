@@ -174,6 +174,17 @@ Two options, pick one:
 Until these are set, the dashboard's Alerts section shows "Not sending" with the exact names of the
 missing values.
 
+## When a hotel shows "Not on Google" but you can see it on Google
+
+Google does not always find a hotel by name. Two fixes, easiest first:
+
+1. **Paste the hotel's Google Hotels link.** On Google, open the hotel's price page (search the hotel, click
+   "Check availability" or "View prices"), copy the full address from the browser's address bar, and paste it into
+   `config/properties.json` as `"googleUrl": "https://www.google.com/travel/hotels/entity/..."` on that property.
+   The crawler uses it straight away and does not need the name to match.
+2. **Add the name Google shows** to that property's `aliases`. The dashboard note for a missing hotel lists the
+   closest Google listings it saw, which is usually the name to add.
+
 ## Adding or renaming a property
 
 Edit `config/properties.json`. `name` is what the dashboard shows, `query` is what we search on Google,
