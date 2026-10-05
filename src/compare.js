@@ -96,6 +96,10 @@ export function compareProperty(property, raw, settings) {
     return row;
   }
 
+  // Google sometimes shows the official price as a "Member rate" (a discount for signed-in guests). Say so on the dashboard.
+  const member = (row.directRaw || '').match(/member rate;?\s*save\s*(\d+)\s*%/i);
+  if (member) row.note = [row.note, `Saltstayz.com price on Google is a member rate (save ${member[1]}%).`].filter(Boolean).join(' ');
+
   if (row.direct == null && otas.length === 0) {
     row.status = 'no_prices';
     row.note = row.note || 'Google shows no Saltstayz.com or OTA price.';
