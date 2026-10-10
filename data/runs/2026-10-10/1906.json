@@ -46,8 +46,7 @@
           "others": [],
           "lowest": {
             "source": "ixigo",
-            "price": 2648,
-            "raw": "ixigo | ₹2,648"
+            "price": 2648
           },
           "status": "ota_lower",
           "deviations": [
@@ -58,7 +57,6 @@
               "gapPercent": 55.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | ₹2,648",
               "listed": 2648,
               "allIn": null
             },
@@ -69,7 +67,6 @@
               "gapPercent": 54,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Goibibo.com | ₹2,741",
               "listed": 2741,
               "allIn": null
             },
@@ -80,7 +77,6 @@
               "gapPercent": 54,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "MakeMyTrip.com | Free breakfast | ₹2,743",
               "listed": 2743,
               "allIn": null
             },
@@ -91,7 +87,6 @@
               "gapPercent": 50.8,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | ₹2,935",
               "listed": 2935,
               "allIn": null
             },
@@ -102,7 +97,6 @@
               "gapPercent": 42.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi · Free breakfast | ₹3,422",
               "listed": 3422,
               "allIn": null
             }
@@ -110,34 +104,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi · Free breakfast | ₹3,422",
-              "listed": 3422,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | ₹2,935",
-              "listed": 2935,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free breakfast | ₹2,743",
-              "listed": 2743,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,648",
-              "listed": 2648,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹2,741",
-              "listed": 2741,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier- Sector 15 Noida | Official site | ₹5,964",
           "directListed": 5964,
           "directMember": null
         },
@@ -165,8 +131,7 @@
           ],
           "lowest": {
             "source": "ixigo",
-            "price": 2490,
-            "raw": "ixigo | ₹2,490"
+            "price": 2490
           },
           "status": "ota_lower",
           "deviations": [
@@ -177,7 +142,6 @@
               "gapPercent": 37.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | ₹2,490",
               "listed": 2490,
               "allIn": null
             },
@@ -188,7 +152,6 @@
               "gapPercent": 35.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Goibibo.com | ₹2,549",
               "listed": 2549,
               "allIn": null
             },
@@ -199,7 +162,6 @@
               "gapPercent": 35.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "MakeMyTrip.com | ₹2,550",
               "listed": 2550,
               "allIn": null
             },
@@ -210,7 +172,6 @@
               "gapPercent": 26.4,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹2,915",
               "listed": 2915,
               "allIn": null
             },
@@ -221,7 +182,6 @@
               "gapPercent": 20.3,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi | ₹3,156",
               "listed": 3156,
               "allIn": null
             }
@@ -229,29 +189,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi | ₹3,156",
-              "listed": 3156,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | ₹2,550",
-              "listed": 2550,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,490",
-              "listed": 2490,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹2,549",
-              "listed": 2549,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier Faridabad Sector 28 | Official site | ₹3,961",
           "directListed": 3961,
           "directMember": null
         },
@@ -283,8 +220,7 @@
           ],
           "lowest": {
             "source": "Cleartrip",
-            "price": 5926,
-            "raw": "Cleartrip.com | ₹5,926"
+            "price": 5926
           },
           "status": "ota_lower",
           "deviations": [
@@ -295,7 +231,6 @@
               "gapPercent": 23.7,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | ₹5,926",
               "listed": 5926,
               "allIn": null
             },
@@ -306,7 +241,6 @@
               "gapPercent": 20.1,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹6,204",
               "listed": 6204,
               "allIn": null
             },
@@ -317,7 +251,6 @@
               "gapPercent": 4.7,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹7,401",
               "listed": 7401,
               "allIn": null
             }
@@ -325,34 +258,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free Wi-Fi | ₹11,283",
-              "listed": 11283,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹8,426",
-              "listed": 8426,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹5,926",
-              "listed": 5926,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | ₹9,557",
-              "listed": 9557,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹9,556",
-              "listed": 9556,
-              "allIn": null
-            }
-          },
-          "directRaw": "Golden Tulip, Sector 29, Gurugram | Official site | ₹7,764",
           "directListed": 7764,
           "directMember": null
         },
@@ -375,8 +280,7 @@
           "others": [],
           "lowest": {
             "source": "Agoda",
-            "price": 1529,
-            "raw": "Agoda | Free Wi-Fi | ₹1,529"
+            "price": 1529
           },
           "status": "ota_lower",
           "deviations": [
@@ -387,7 +291,6 @@
               "gapPercent": 19.5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹1,529",
               "listed": 1529,
               "allIn": null
             }
@@ -395,29 +298,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹1,529",
-              "listed": 1529,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹2,167",
-              "listed": 2167,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi · Free breakfast | ₹2,240",
-              "listed": 2240,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free breakfast | ₹1,929",
-              "listed": 1929,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Select | Official site | ₹1,900",
           "directListed": 1900,
           "directMember": null
         },
@@ -440,8 +320,7 @@
           "others": [],
           "lowest": {
             "source": "Cleartrip",
-            "price": 2530,
-            "raw": "Cleartrip.com | ₹2,530"
+            "price": 2530
           },
           "status": "ota_lower",
           "deviations": [
@@ -452,7 +331,6 @@
               "gapPercent": 17.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | ₹2,530",
               "listed": 2530,
               "allIn": null
             },
@@ -463,7 +341,6 @@
               "gapPercent": 11.8,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Goibibo.com | ₹2,694",
               "listed": 2694,
               "allIn": null
             },
@@ -474,7 +351,6 @@
               "gapPercent": 11.8,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "MakeMyTrip.com | Free breakfast | ₹2,695",
               "listed": 2695,
               "allIn": null
             }
@@ -482,34 +358,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹3,505",
-              "listed": 3505,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi · Free breakfast | ₹3,692",
-              "listed": 3692,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free breakfast | ₹2,695",
-              "listed": 2695,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹2,530",
-              "listed": 2530,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹2,694",
-              "listed": 2694,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Millenium City Centre | Official site | ₹3,055",
           "directListed": 3055,
           "directMember": null
         },
@@ -541,8 +389,7 @@
           ],
           "lowest": {
             "source": "Booking.com",
-            "price": 2739,
-            "raw": "Booking.com | ₹2,739"
+            "price": 2739
           },
           "status": "ota_lower",
           "deviations": [
@@ -553,7 +400,6 @@
               "gapPercent": 15.5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Booking.com | ₹2,739",
               "listed": 2739,
               "allIn": null
             },
@@ -564,7 +410,6 @@
               "gapPercent": 9.7,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,927",
               "listed": 2927,
               "allIn": null
             },
@@ -575,7 +420,6 @@
               "gapPercent": 7.7,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "MakeMyTrip.com | ₹2,993",
               "listed": 2993,
               "allIn": null
             },
@@ -586,7 +430,6 @@
               "gapPercent": 7.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "trivago.in | ₹3,005",
               "listed": 3005,
               "allIn": null
             },
@@ -597,7 +440,6 @@
               "gapPercent": 5.9,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹3,049",
               "listed": 3049,
               "allIn": null
             }
@@ -605,39 +447,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,927",
-              "listed": 2927,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | ₹2,993",
-              "listed": 2993,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹3,370",
-              "listed": 3370,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | ₹2,739",
-              "listed": 2739,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹3,341",
-              "listed": 3341,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹3,444",
-              "listed": 3444,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Galleria Market Road & Sector 27 | Official site | ₹3,241",
           "directListed": 3241,
           "directMember": null
         },
@@ -665,8 +474,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2535,
-            "raw": "Agoda | Free Wi-Fi | ₹2,535"
+            "price": 2535
           },
           "status": "ota_lower",
           "deviations": [
@@ -677,7 +485,6 @@
               "gapPercent": 6.7,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,535",
               "listed": 2535,
               "allIn": null
             },
@@ -688,7 +495,6 @@
               "gapPercent": 1.7,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹2,671",
               "listed": 2671,
               "allIn": null
             }
@@ -696,34 +502,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free Wi-Fi | ₹3,156",
-              "listed": 3156,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,535",
-              "listed": 2535,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | ₹3,013",
-              "listed": 3013,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹3,191",
-              "listed": 3191,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹3,130",
-              "listed": 3130,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Naraina, Central Delhi | Official site | ₹2,717",
           "directListed": 2717,
           "directMember": null
         },
@@ -751,8 +529,7 @@
           ],
           "lowest": {
             "source": "EaseMyTrip",
-            "price": 2362,
-            "raw": "EaseMyTrip.com | ₹2,362"
+            "price": 2362
           },
           "status": "ota_lower",
           "deviations": [
@@ -763,7 +540,6 @@
               "gapPercent": 6.6,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹2,362",
               "listed": 2362,
               "allIn": null
             },
@@ -774,7 +550,6 @@
               "gapPercent": 1.5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,492",
               "listed": 2492,
               "allIn": null
             }
@@ -782,39 +557,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹2,677",
-              "listed": 2677,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,492",
-              "listed": 2492,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free Wi-Fi | ₹3,091",
-              "listed": 3091,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | 3 guests | ₹2,550",
-              "listed": 2550,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹2,819",
-              "listed": 2819,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,772",
-              "listed": 2772,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Cyber Hub | Official site | ₹2,530",
           "directListed": 2530,
           "directMember": null
         },
@@ -842,8 +584,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2942,
-            "raw": "Agoda | Free Wi-Fi | ₹2,942"
+            "price": 2942
           },
           "status": "ota_lower",
           "deviations": [
@@ -854,7 +595,6 @@
               "gapPercent": 6.3,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,942",
               "listed": 2942,
               "allIn": null
             },
@@ -865,7 +605,6 @@
               "gapPercent": 3.2,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹3,040",
               "listed": 3040,
               "allIn": null
             },
@@ -876,7 +615,6 @@
               "gapPercent": 2.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | ₹3,057",
               "listed": 3057,
               "allIn": null
             }
@@ -884,39 +622,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free Wi-Fi | ₹3,649",
-              "listed": 3649,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,942",
-              "listed": 2942,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | ₹3,485",
-              "listed": 3485,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹3,057",
-              "listed": 3057,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹3,690",
-              "listed": 3690,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹3,620",
-              "listed": 3620,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Paschim Vihar | Official site | ₹3,140",
           "directListed": 3140,
           "directMember": null
         },
@@ -944,8 +649,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 3335,
-            "raw": "Agoda | Free Wi-Fi | ₹3,335"
+            "price": 3335
           },
           "status": "ota_lower",
           "deviations": [
@@ -956,7 +660,6 @@
               "gapPercent": 5.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹3,335",
               "listed": 3335,
               "allIn": null
             },
@@ -967,7 +670,6 @@
               "gapPercent": 0,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹3,512",
               "listed": 3512,
               "allIn": null
             }
@@ -975,29 +677,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹3,335",
-              "listed": 3335,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹3,531",
-              "listed": 3531,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | 3 guests | ₹3,705",
-              "listed": 3705,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹3,965",
-              "listed": 3965,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Select - Malcha & Chankyapuri | Official site | ₹3,513",
           "directListed": 3513,
           "directMember": null
         },
@@ -1020,8 +699,7 @@
           "others": [],
           "lowest": {
             "source": "ixigo",
-            "price": 1759,
-            "raw": "ixigo | ₹1,759"
+            "price": 1759
           },
           "status": "ota_lower",
           "deviations": [
@@ -1032,7 +710,6 @@
               "gapPercent": 4.7,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | ₹1,759",
               "listed": 1759,
               "allIn": null
             }
@@ -1040,39 +717,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,086",
-              "listed": 2086,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free Wi-Fi · Free breakfast | ₹2,346",
-              "listed": 2346,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free breakfast | ₹2,089",
-              "listed": 2089,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹2,402",
-              "listed": 2402,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹1,759",
-              "listed": 1759,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹2,172",
-              "listed": 2172,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Sector 50 | Official site | ₹1,845",
           "directListed": 1845,
           "directMember": null
         },
@@ -1112,8 +756,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2329,
-            "raw": "Agoda | Free Wi-Fi | ₹2,329"
+            "price": 2329
           },
           "status": "ota_lower",
           "deviations": [
@@ -1124,7 +767,6 @@
               "gapPercent": 3.5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,329",
               "listed": 2329,
               "allIn": null
             },
@@ -1135,7 +777,6 @@
               "gapPercent": 2.9,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Vio.com | ₹2,344",
               "listed": 2344,
               "allIn": null
             },
@@ -1146,7 +787,6 @@
               "gapPercent": 2.9,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "goseek.com | ₹2,344",
               "listed": 2344,
               "allIn": null
             },
@@ -1157,7 +797,6 @@
               "gapPercent": 2.9,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Etrip.net | ₹2,344",
               "listed": 2344,
               "allIn": null
             },
@@ -1168,7 +807,6 @@
               "gapPercent": 0.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹2,407",
               "listed": 2407,
               "allIn": null
             }
@@ -1176,34 +814,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,329",
-              "listed": 2329,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi | ₹3,262",
-              "listed": 3262,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹2,498",
-              "listed": 2498,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | 3 guests | ₹2,620",
-              "listed": 2620,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹3,079",
-              "listed": 3079,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier | Official site | ₹2,414",
           "directListed": 2414,
           "directMember": null
         },
@@ -1231,8 +841,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2491,
-            "raw": "Agoda | Free Wi-Fi | ₹2,491"
+            "price": 2491
           },
           "status": "ota_lower",
           "deviations": [
@@ -1243,7 +852,6 @@
               "gapPercent": 2.9,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,491",
               "listed": 2491,
               "allIn": null
             },
@@ -1254,7 +862,6 @@
               "gapPercent": 1.5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | ₹2,527",
               "listed": 2527,
               "allIn": null
             },
@@ -1265,7 +872,6 @@
               "gapPercent": 0.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹2,558",
               "listed": 2558,
               "allIn": null
             }
@@ -1273,39 +879,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,491",
-              "listed": 2491,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free Wi-Fi | ₹2,983",
-              "listed": 2983,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | ₹2,753",
-              "listed": 2753,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹2,527",
-              "listed": 2527,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹2,910",
-              "listed": 2910,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,958",
-              "listed": 2958,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Autograph- Advant & Sector 144 | Official site | ₹2,565",
           "directListed": 2565,
           "directMember": null
         },
@@ -1328,8 +901,7 @@
           "others": [],
           "lowest": {
             "source": "Agoda",
-            "price": 2182,
-            "raw": "Agoda | Free Wi-Fi | ₹2,182"
+            "price": 2182
           },
           "status": "ota_lower",
           "deviations": [
@@ -1340,7 +912,6 @@
               "gapPercent": 2.9,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,182",
               "listed": 2182,
               "allIn": null
             }
@@ -1348,39 +919,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,949",
-              "listed": 2949,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,182",
-              "listed": 2182,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹2,536",
-              "listed": 2536,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | 3 guests | ₹2,371",
-              "listed": 2371,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹2,257",
-              "listed": 2257,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,591",
-              "listed": 2591,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Golf course extension road | Official site | ₹2,248",
           "directListed": 2248,
           "directMember": null
         },
@@ -1403,8 +941,7 @@
           "others": [],
           "lowest": {
             "source": "ixigo",
-            "price": 2026,
-            "raw": "ixigo | ₹2,026"
+            "price": 2026
           },
           "status": "ota_lower",
           "deviations": [
@@ -1415,7 +952,6 @@
               "gapPercent": 2.7,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | ₹2,026",
               "listed": 2026,
               "allIn": null
             }
@@ -1423,39 +959,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "goibibo": {
-              "raw": "Goibibo.com | ₹2,267",
-              "listed": 2267,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | ₹2,197",
-              "listed": 2197,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹2,521",
-              "listed": 2521,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free Wi-Fi | ₹2,622",
-              "listed": 2622,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | ₹2,307",
-              "listed": 2307,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,026",
-              "listed": 2026,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Select Sector 27 - Golf Course Road | Official site | ₹2,082",
           "directListed": 2082,
           "directMember": null
         },
@@ -1478,8 +981,7 @@
           "others": [],
           "lowest": {
             "source": "Agoda",
-            "price": 2652,
-            "raw": "Agoda | Free Wi-Fi | ₹2,652"
+            "price": 2652
           },
           "status": "ota_lower",
           "deviations": [
@@ -1490,7 +992,6 @@
               "gapPercent": 2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,652",
               "listed": 2652,
               "allIn": null
             }
@@ -1498,34 +999,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | ₹3,146",
-              "listed": 3146,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,652",
-              "listed": 2652,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹3,054",
-              "listed": 3054,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | ₹2,904",
-              "listed": 2904,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹3,069",
-              "listed": 3069,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Arjun Marg | Official site | ₹2,706",
           "directListed": 2706,
           "directMember": null
         },
@@ -1553,8 +1026,7 @@
           ],
           "lowest": {
             "source": "EaseMyTrip",
-            "price": 1745,
-            "raw": "EaseMyTrip.com | ₹1,745"
+            "price": 1745
           },
           "status": "ota_lower",
           "deviations": [
@@ -1565,7 +1037,6 @@
               "gapPercent": 1.6,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹1,745",
               "listed": 1745,
               "allIn": null
             }
@@ -1573,34 +1044,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free Wi-Fi | ₹2,064",
-              "listed": 2064,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹1,838",
-              "listed": 1838,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | 3 guests | ₹1,906",
-              "listed": 1906,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹2,004",
-              "listed": 2004,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,047",
-              "listed": 2047,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Select - Unitech Cyber Park | Official site | ₹1,774",
           "directListed": 1774,
           "directMember": null
         },
@@ -1628,8 +1071,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 1920,
-            "raw": "Agoda | Free Wi-Fi | ₹1,920"
+            "price": 1920
           },
           "status": "ota_lower",
           "deviations": [
@@ -1640,7 +1082,6 @@
               "gapPercent": 1.5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹1,920",
               "listed": 1920,
               "allIn": null
             },
@@ -1651,7 +1092,6 @@
               "gapPercent": 1.4,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹1,923",
               "listed": 1923,
               "allIn": null
             }
@@ -1659,39 +1099,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹1,920",
-              "listed": 1920,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free breakfast | ₹2,212",
-              "listed": 2212,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free breakfast | ₹2,410",
-              "listed": 2410,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹2,350",
-              "listed": 2350,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹2,339",
-              "listed": 2339,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,390",
-              "listed": 2390,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier – Manesar & Sector 86 | Official site | ₹1,950",
           "directListed": 1950,
           "directMember": null
         },
@@ -1723,8 +1130,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 3734,
-            "raw": "Agoda | Free Wi-Fi | ₹3,734"
+            "price": 3734
           },
           "status": "ota_lower",
           "deviations": [
@@ -1735,7 +1141,6 @@
               "gapPercent": 1.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹3,734",
               "listed": 3734,
               "allIn": null
             },
@@ -1746,7 +1151,6 @@
               "gapPercent": 1,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹3,738",
               "listed": 3738,
               "allIn": null
             },
@@ -1757,7 +1161,6 @@
               "gapPercent": 0.5,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "trivago.in | ₹3,758",
               "listed": 3758,
               "allIn": null
             }
@@ -1765,34 +1168,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹3,734",
-              "listed": 3734,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | ₹4,632",
-              "listed": 4632,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | ₹4,202",
-              "listed": 4202,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹4,004",
-              "listed": 4004,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹3,924",
-              "listed": 3924,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier- Pitampura | Official site | ₹3,775",
           "directListed": 3775,
           "directMember": null
         },
@@ -1815,8 +1190,7 @@
           "others": [],
           "lowest": {
             "source": "MakeMyTrip",
-            "price": 1992,
-            "raw": "MakeMyTrip.com | ₹1,992"
+            "price": 1992
           },
           "status": "ota_lower",
           "deviations": [
@@ -1827,7 +1201,6 @@
               "gapPercent": 0.7,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "MakeMyTrip.com | ₹1,992",
               "listed": 1992,
               "allIn": null
             }
@@ -1835,24 +1208,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free Wi-Fi · 3 guests | ₹2,099",
-              "listed": 2099,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | ₹1,992",
-              "listed": 1992,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,083",
-              "listed": 2083,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Medicity | Official site | ₹2,006",
           "directListed": 2006,
           "directMember": null
         },
@@ -1875,8 +1230,7 @@
           "others": [],
           "lowest": {
             "source": "MakeMyTrip",
-            "price": 3290,
-            "raw": "MakeMyTrip.com | ₹3,290"
+            "price": 3290
           },
           "status": "direct_missing",
           "deviations": [
@@ -1891,29 +1245,7 @@
           ],
           "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
           "pricesFor": null,
-          "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | ₹4,159",
-              "listed": 4159,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free Wi-Fi | ₹3,684",
-              "listed": 3684,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | ₹3,290",
-              "listed": 3290,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹3,619",
-              "listed": 3619,
-              "allIn": null
-            }
-          }
+          "basis": "listed"
         },
         {
           "id": "premier-near-sector-44-corporate-hub",
@@ -1934,8 +1266,7 @@
           "others": [],
           "lowest": {
             "source": "Goibibo",
-            "price": 3019,
-            "raw": "Goibibo.com | ₹3,019"
+            "price": 3019
           },
           "status": "direct_missing",
           "deviations": [
@@ -1950,34 +1281,7 @@
           ],
           "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
           "pricesFor": null,
-          "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi | ₹3,321",
-              "listed": 3321,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | ₹3,020",
-              "listed": 3020,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | ₹3,321",
-              "listed": 3321,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹3,019",
-              "listed": 3019,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹3,282",
-              "listed": 3282,
-              "allIn": null
-            }
-          }
+          "basis": "listed"
         },
         {
           "id": "premier-noida-sector-135-expressway",
@@ -1998,8 +1302,7 @@
           "others": [],
           "lowest": {
             "source": "Agoda",
-            "price": 2089,
-            "raw": "Agoda | ₹2,089"
+            "price": 2089
           },
           "status": "direct_missing",
           "deviations": [
@@ -2014,29 +1317,7 @@
           ],
           "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
           "pricesFor": null,
-          "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | ₹2,089",
-              "listed": 2089,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free breakfast | ₹2,253",
-              "listed": 2253,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi · Free breakfast | ₹2,849",
-              "listed": 2849,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,331",
-              "listed": 2331,
-              "allIn": null
-            }
-          }
+          "basis": "listed"
         },
         {
           "id": "trinity-chandigarh-mohali",
@@ -2057,8 +1338,7 @@
           "others": [],
           "lowest": {
             "source": "EaseMyTrip",
-            "price": 3430,
-            "raw": "EaseMyTrip.com | ₹3,430"
+            "price": 3430
           },
           "status": "direct_missing",
           "deviations": [
@@ -2073,14 +1353,7 @@
           ],
           "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
           "pricesFor": null,
-          "basis": "listed",
-          "otaRaw": {
-            "ixigo": {
-              "raw": "ixigo | ₹4,834",
-              "listed": 4834,
-              "allIn": null
-            }
-          }
+          "basis": "listed"
         },
         {
           "id": "autograph-connaught-place",
@@ -2104,8 +1377,7 @@
           "deviations": [],
           "note": "No rooms on the asked date on Google. Next date Google offers is 17–18 Oct.",
           "pricesFor": "17–18 Oct",
-          "basis": "listed",
-          "otaRaw": {}
+          "basis": "listed"
         },
         {
           "id": "patio-farms",
@@ -2129,8 +1401,7 @@
           "deviations": [],
           "note": "Google shows no Saltstayz.com or OTA price for this date.",
           "pricesFor": null,
-          "basis": "listed",
-          "otaRaw": {}
+          "basis": "listed"
         },
         {
           "id": "autograph-rishikesh",
@@ -2151,42 +1422,13 @@
           "others": [],
           "lowest": {
             "source": "Saltstayz.com",
-            "price": 9187,
-            "raw": "Saltstayz Autograph - Rishikesh | Official site | ₹9,187"
+            "price": 9187
           },
           "status": "direct_lowest",
           "deviations": [],
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi · Free breakfast | ₹13,349",
-              "listed": 13349,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi · Free breakfast | ₹13,349",
-              "listed": 13349,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free breakfast | ₹10,167",
-              "listed": 10167,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹10,504",
-              "listed": 10504,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹11,032",
-              "listed": 11032,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Autograph - Rishikesh | Official site | ₹9,187",
           "directListed": 9187,
           "directMember": null
         },
@@ -2209,42 +1451,13 @@
           "others": [],
           "lowest": {
             "source": "Saltstayz.com",
-            "price": 3462,
-            "raw": "Saltstayz Premier Bengaluru, Hebbal, Airport Road | Official site | ₹3,462"
+            "price": 3462
           },
           "status": "direct_lowest",
           "deviations": [],
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi · Free breakfast | ₹4,014",
-              "listed": 4014,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | ₹3,530",
-              "listed": 3530,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | ₹3,597",
-              "listed": 3597,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹3,506",
-              "listed": 3506,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹3,554",
-              "listed": 3554,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier Bengaluru, Hebbal, Airport Road | Official site | ₹3,462",
           "directListed": 3462,
           "directMember": null
         },
@@ -2267,47 +1480,13 @@
           "others": [],
           "lowest": {
             "source": "Saltstayz.com",
-            "price": 2238,
-            "raw": "Saltstayz Gurgaon - Golf Course Road & Sector 42 | Official site | ₹2,238"
+            "price": 2238
           },
           "status": "direct_lowest",
           "deviations": [],
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,715",
-              "listed": 2715,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free Wi-Fi | ₹3,259",
-              "listed": 3259,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹2,947",
-              "listed": 2947,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | 3 guests | ₹2,552",
-              "listed": 2552,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹3,181",
-              "listed": 3181,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,743",
-              "listed": 2743,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Gurgaon - Golf Course Road & Sector 42 | Official site | ₹2,238",
           "directListed": 2238,
           "directMember": null
         },
@@ -2330,42 +1509,13 @@
           "others": [],
           "lowest": {
             "source": "Saltstayz.com",
-            "price": 2339,
-            "raw": "Saltstayz Premier- Sector 26 Noida | Official site | ₹2,339"
+            "price": 2339
           },
           "status": "direct_lowest",
           "deviations": [],
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free Wi-Fi | ₹3,008",
-              "listed": 3008,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | ₹2,479",
-              "listed": 2479,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,420",
-              "listed": 2420,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹2,476",
-              "listed": 2476,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹2,611",
-              "listed": 2611,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier- Sector 26 Noida | Official site | ₹2,339",
           "directListed": 2339,
           "directMember": null
         },
@@ -2388,32 +1538,13 @@
           "others": [],
           "lowest": {
             "source": "Saltstayz.com",
-            "price": 1744,
-            "raw": "Saltstayz | Official site | ₹1,744"
+            "price": 1744
           },
           "status": "direct_lowest",
           "deviations": [],
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹1,966",
-              "listed": 1966,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi · Free breakfast | ₹2,286",
-              "listed": 2286,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | 3 guests | ₹1,869",
-              "listed": 1869,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz | Official site | ₹1,744",
           "directListed": 1744,
           "directMember": null
         },
@@ -2436,47 +1567,13 @@
           "others": [],
           "lowest": {
             "source": "Saltstayz.com",
-            "price": 2530,
-            "raw": "Saltstayz Select - Nehru Place & New Friends colony | Official site | ₹2,530"
+            "price": 2530
           },
           "status": "direct_lowest",
           "deviations": [],
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi | ₹3,454",
-              "listed": 3454,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,672",
-              "listed": 2672,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | ₹2,990",
-              "listed": 2990,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹3,145",
-              "listed": 3145,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹2,750",
-              "listed": 2750,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹3,213",
-              "listed": 3213,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Select - Nehru Place & New Friends colony | Official site | ₹2,530",
           "directListed": 2530,
           "directMember": null
         },
@@ -2557,8 +1654,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 3761,
-            "raw": "Agoda | ₹3,761"
+            "price": 3761
           },
           "status": "ota_lower",
           "deviations": [
@@ -2569,7 +1665,6 @@
               "gapPercent": 62.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | ₹3,761",
               "listed": 3761,
               "allIn": null
             },
@@ -2580,7 +1675,6 @@
               "gapPercent": 62.5,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "dealbase.com | ₹3,766",
               "listed": 3766,
               "allIn": null
             },
@@ -2591,7 +1685,6 @@
               "gapPercent": 61.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹3,913",
               "listed": 3913,
               "allIn": null
             },
@@ -2602,7 +1695,6 @@
               "gapPercent": 59.8,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹4,044",
               "listed": 4044,
               "allIn": null
             },
@@ -2613,7 +1705,6 @@
               "gapPercent": 59.3,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹4,092",
               "listed": 4092,
               "allIn": null
             },
@@ -2624,7 +1715,6 @@
               "gapPercent": 52,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi · Free breakfast | ₹4,823",
               "listed": 4823,
               "allIn": null
             },
@@ -2635,7 +1725,6 @@
               "gapPercent": 30.5,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Expedia.co.in | Book with Expedia.co.in to get these at no extra cost: Wi-Fi and parking | ₹6,991",
               "listed": 6991,
               "allIn": null
             },
@@ -2646,7 +1735,6 @@
               "gapPercent": 24.9,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Hotels.com | ₹7,551",
               "listed": 7551,
               "allIn": null
             }
@@ -2654,34 +1742,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi · Free breakfast | ₹4,823",
-              "listed": 4823,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | ₹3,761",
-              "listed": 3761,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹4,092",
-              "listed": 4092,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹4,044",
-              "listed": 4044,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹3,913",
-              "listed": 3913,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier- Sector 15 Noida | Official site | Free cancellation until 11 Oct | , | ₹10,054",
           "directListed": 10054,
           "directMember": null
         },
@@ -2704,8 +1764,7 @@
           "others": [],
           "lowest": {
             "source": "Agoda",
-            "price": 1485,
-            "raw": "Agoda | Free Wi-Fi | ₹1,485"
+            "price": 1485
           },
           "status": "ota_lower",
           "deviations": [
@@ -2716,7 +1775,6 @@
               "gapPercent": 32.3,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹1,485",
               "listed": 1485,
               "allIn": null
             },
@@ -2727,7 +1785,6 @@
               "gapPercent": 8.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹2,013",
               "listed": 2013,
               "allIn": null
             },
@@ -2738,7 +1795,6 @@
               "gapPercent": 5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Goibibo.com | Free cancellation until 11 Oct · Free breakfast | ₹2,082",
               "listed": 2082,
               "allIn": null
             },
@@ -2749,7 +1805,6 @@
               "gapPercent": 1.5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · Free breakfast · 3 guests | ₹2,160",
               "listed": 2160,
               "allIn": null
             }
@@ -2757,34 +1812,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹2,013",
-              "listed": 2013,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi · Free breakfast | ₹2,471",
-              "listed": 2471,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹1,485",
-              "listed": 1485,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct · Free breakfast | ₹2,082",
-              "listed": 2082,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · Free breakfast · 3 guests | ₹2,160",
-              "listed": 2160,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Select | Official site | Free cancellation until 11 Oct | , | ₹2,192",
           "directListed": 2192,
           "directMember": null
         },
@@ -2812,8 +1839,7 @@
           ],
           "lowest": {
             "source": "EaseMyTrip",
-            "price": 2925,
-            "raw": "EaseMyTrip.com | ₹2,925"
+            "price": 2925
           },
           "status": "ota_lower",
           "deviations": [
@@ -2824,7 +1850,6 @@
               "gapPercent": 28.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹2,925",
               "listed": 2925,
               "allIn": null
             },
@@ -2835,7 +1860,6 @@
               "gapPercent": 26.7,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | ₹2,989",
               "listed": 2989,
               "allIn": null
             },
@@ -2846,7 +1870,6 @@
               "gapPercent": 9.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | ₹3,685",
               "listed": 3685,
               "allIn": null
             }
@@ -2854,39 +1877,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | ₹3,685",
-              "listed": 3685,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi | ₹5,202",
-              "listed": 5202,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | ₹4,497",
-              "listed": 4497,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · 3 guests | ₹4,719",
-              "listed": 4719,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹4,085",
-              "listed": 4085,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,989",
-              "listed": 2989,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Trinity - Chandigarh & Mohali | Official site | ₹4,077",
           "directListed": 4077,
           "directMember": null
         },
@@ -2922,8 +1912,7 @@
           ],
           "lowest": {
             "source": "ixigo",
-            "price": 1945,
-            "raw": "ixigo | ₹1,945"
+            "price": 1945
           },
           "status": "ota_lower",
           "deviations": [
@@ -2934,7 +1923,6 @@
               "gapPercent": 27.9,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | ₹1,945",
               "listed": 1945,
               "allIn": null
             },
@@ -2945,7 +1933,6 @@
               "gapPercent": 19.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,179",
               "listed": 2179,
               "allIn": null
             },
@@ -2956,7 +1943,6 @@
               "gapPercent": 18,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹2,211",
               "listed": 2211,
               "allIn": null
             },
@@ -2967,7 +1953,6 @@
               "gapPercent": 8,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹2,480",
               "listed": 2480,
               "allIn": null
             },
@@ -2978,7 +1963,6 @@
               "gapPercent": 7.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | ₹2,491",
               "listed": 2491,
               "allIn": null
             },
@@ -2989,7 +1973,6 @@
               "gapPercent": 7.4,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Yatra.com | ₹2,496",
               "listed": 2496,
               "allIn": null
             },
@@ -3000,7 +1983,6 @@
               "gapPercent": 3.4,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Trip.com | Free cancellation until 11 Oct | , | ₹2,603",
               "listed": 2603,
               "allIn": null
             }
@@ -3008,39 +1990,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,179",
-              "listed": 2179,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi | ₹3,199",
-              "listed": 3199,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹2,710",
-              "listed": 2710,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹2,480",
-              "listed": 2480,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | ₹2,491",
-              "listed": 2491,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹1,945",
-              "listed": 1945,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Select - Nehru Place & New Friends colony | Official site | ₹2,696",
           "directListed": 2696,
           "directMember": null
         },
@@ -3068,8 +2017,7 @@
           ],
           "lowest": {
             "source": "ixigo",
-            "price": 2002,
-            "raw": "ixigo | ₹2,002"
+            "price": 2002
           },
           "status": "ota_lower",
           "deviations": [
@@ -3080,7 +2028,6 @@
               "gapPercent": 27.3,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | ₹2,002",
               "listed": 2002,
               "allIn": null
             },
@@ -3091,7 +2038,6 @@
               "gapPercent": 21.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | ₹2,172",
               "listed": 2172,
               "allIn": null
             },
@@ -3102,7 +2048,6 @@
               "gapPercent": 18.5,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹2,244",
               "listed": 2244,
               "allIn": null
             },
@@ -3113,7 +2058,6 @@
               "gapPercent": 8.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹2,527",
               "listed": 2527,
               "allIn": null
             }
@@ -3121,39 +2065,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi | ₹3,023",
-              "listed": 3023,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | ₹2,172",
-              "listed": 2172,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹2,887",
-              "listed": 2887,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹2,527",
-              "listed": 2527,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | ₹3,057",
-              "listed": 3057,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,002",
-              "listed": 2002,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Paschim Vihar | Official site | ₹2,752",
           "directListed": 2752,
           "directMember": null
         },
@@ -3185,8 +2096,7 @@
           ],
           "lowest": {
             "source": "ixigo",
-            "price": 2200,
-            "raw": "ixigo | ₹2,200"
+            "price": 2200
           },
           "status": "ota_lower",
           "deviations": [
@@ -3197,7 +2107,6 @@
               "gapPercent": 27.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | ₹2,200",
               "listed": 2200,
               "allIn": null
             },
@@ -3208,7 +2117,6 @@
               "gapPercent": 20.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | ₹2,400",
               "listed": 2400,
               "allIn": null
             },
@@ -3219,7 +2127,6 @@
               "gapPercent": 16.4,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹2,528",
               "listed": 2528,
               "allIn": null
             },
@@ -3230,7 +2137,6 @@
               "gapPercent": 0.8,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Trip.com | Free cancellation until 11 Oct | ₹2,999",
               "listed": 2999,
               "allIn": null
             }
@@ -3238,34 +2144,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | ₹2,400",
-              "listed": 2400,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi | ₹3,308",
-              "listed": 3308,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹3,170",
-              "listed": 3170,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,200",
-              "listed": 2200,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹3,357",
-              "listed": 3357,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Naraina, Central Delhi | Official site | ₹3,024",
           "directListed": 3024,
           "directMember": null
         },
@@ -3293,8 +2171,7 @@
           ],
           "lowest": {
             "source": "ixigo",
-            "price": 1913,
-            "raw": "ixigo | ₹1,913"
+            "price": 1913
           },
           "status": "ota_lower",
           "deviations": [
@@ -3305,7 +2182,6 @@
               "gapPercent": 27.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | ₹1,913",
               "listed": 1913,
               "allIn": null
             },
@@ -3316,7 +2192,6 @@
               "gapPercent": 21.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,073",
               "listed": 2073,
               "allIn": null
             },
@@ -3327,7 +2202,6 @@
               "gapPercent": 17.2,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹2,174",
               "listed": 2174,
               "allIn": null
             },
@@ -3338,7 +2212,6 @@
               "gapPercent": 5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | ₹2,495",
               "listed": 2495,
               "allIn": null
             },
@@ -3349,7 +2222,6 @@
               "gapPercent": 0.3,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · 3 guests | ₹2,619",
               "listed": 2619,
               "allIn": null
             }
@@ -3357,39 +2229,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,073",
-              "listed": 2073,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi | ₹3,248",
-              "listed": 3248,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | ₹2,495",
-              "listed": 2495,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · 3 guests | ₹2,619",
-              "listed": 2619,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹1,913",
-              "listed": 1913,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | , | ₹2,768",
-              "listed": 2768,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier | Official site | Free cancellation until 11 Oct | , | ₹2,626",
           "directListed": 2626,
           "directMember": null
         },
@@ -3421,8 +2260,7 @@
           ],
           "lowest": {
             "source": "ixigo",
-            "price": 2413,
-            "raw": "ixigo | ₹2,413"
+            "price": 2413
           },
           "status": "ota_lower",
           "deviations": [
@@ -3433,7 +2271,6 @@
               "gapPercent": 27.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | ₹2,413",
               "listed": 2413,
               "allIn": null
             },
@@ -3444,7 +2281,6 @@
               "gapPercent": 21.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,617",
               "listed": 2617,
               "allIn": null
             },
@@ -3455,7 +2291,6 @@
               "gapPercent": 17.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹2,743",
               "listed": 2743,
               "allIn": null
             },
@@ -3466,7 +2301,6 @@
               "gapPercent": 7.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹3,079",
               "listed": 3079,
               "allIn": null
             },
@@ -3477,7 +2311,6 @@
               "gapPercent": 5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | ₹3,151",
               "listed": 3151,
               "allIn": null
             },
@@ -3488,7 +2321,6 @@
               "gapPercent": 2.6,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Trip.com | Free cancellation until 11 Oct | , | ₹3,231",
               "listed": 3231,
               "allIn": null
             },
@@ -3499,7 +2331,6 @@
               "gapPercent": 0.3,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹3,305",
               "listed": 3305,
               "allIn": null
             }
@@ -3507,39 +2338,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,617",
-              "listed": 2617,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct | ₹3,631",
-              "listed": 3631,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹3,305",
-              "listed": 3305,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | ₹3,151",
-              "listed": 3151,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹3,079",
-              "listed": 3079,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,413",
-              "listed": 2413,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier- Pitampura | Official site | ₹3,316",
           "directListed": 3316,
           "directMember": null
         },
@@ -3571,8 +2369,7 @@
           ],
           "lowest": {
             "source": "ixigo",
-            "price": 2083,
-            "raw": "ixigo | ₹2,083"
+            "price": 2083
           },
           "status": "ota_lower",
           "deviations": [
@@ -3583,7 +2380,6 @@
               "gapPercent": 27.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | ₹2,083",
               "listed": 2083,
               "allIn": null
             },
@@ -3594,7 +2390,6 @@
               "gapPercent": 18.3,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,334",
               "listed": 2334,
               "allIn": null
             },
@@ -3605,7 +2400,6 @@
               "gapPercent": 17.1,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹2,368",
               "listed": 2368,
               "allIn": null
             },
@@ -3616,7 +2410,6 @@
               "gapPercent": 7,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹2,657",
               "listed": 2657,
               "allIn": null
             },
@@ -3627,7 +2420,6 @@
               "gapPercent": 3.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Yatra.com | ₹2,764",
               "listed": 2764,
               "allIn": null
             }
@@ -3635,39 +2427,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,334",
-              "listed": 2334,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi | ₹3,144",
-              "listed": 3144,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹2,657",
-              "listed": 2657,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · 3 guests | ₹2,902",
-              "listed": 2902,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,083",
-              "listed": 2083,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹3,067",
-              "listed": 3067,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Gurgaon - Golf Course Road & Sector 42 | Official site | ₹2,858",
           "directListed": 2858,
           "directMember": null
         },
@@ -3695,8 +2454,7 @@
           ],
           "lowest": {
             "source": "Cleartrip",
-            "price": 5926,
-            "raw": "Cleartrip.com | ₹5,926"
+            "price": 5926
           },
           "status": "ota_lower",
           "deviations": [
@@ -3707,7 +2465,6 @@
               "gapPercent": 23.7,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | ₹5,926",
               "listed": 5926,
               "allIn": null
             },
@@ -3718,7 +2475,6 @@
               "gapPercent": 2.7,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹7,554",
               "listed": 7554,
               "allIn": null
             }
@@ -3726,34 +2482,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free Wi-Fi | ₹11,283",
-              "listed": 11283,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹5,926",
-              "listed": 5926,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹8,426",
-              "listed": 8426,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | ₹10,619",
-              "listed": 10619,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | ₹10,618",
-              "listed": 10618,
-              "allIn": null
-            }
-          },
-          "directRaw": "Golden Tulip, Sector 29, Gurugram | Official site | ₹7,764",
           "directListed": 7764,
           "directMember": null
         },
@@ -3789,8 +2517,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2705,
-            "raw": "Agoda | Free Wi-Fi | ₹2,705"
+            "price": 2705
           },
           "status": "ota_lower",
           "deviations": [
@@ -3801,7 +2528,6 @@
               "gapPercent": 22.8,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,705",
               "listed": 2705,
               "allIn": null
             },
@@ -3812,7 +2538,6 @@
               "gapPercent": 22.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹2,722",
               "listed": 2722,
               "allIn": null
             },
@@ -3823,7 +2548,6 @@
               "gapPercent": 14.3,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹3,003",
               "listed": 3003,
               "allIn": null
             },
@@ -3834,7 +2558,6 @@
               "gapPercent": 14.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · Free breakfast | ₹3,004",
               "listed": 3004,
               "allIn": null
             },
@@ -3845,7 +2568,6 @@
               "gapPercent": 10,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | , | ₹3,152",
               "listed": 3152,
               "allIn": null
             },
@@ -3856,7 +2578,6 @@
               "gapPercent": 6.9,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Expedia.co.in | Free Wi-Fi | ₹3,263",
               "listed": 3263,
               "allIn": null
             },
@@ -3867,7 +2588,6 @@
               "gapPercent": 4.7,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Hotels.com | ₹3,339",
               "listed": 3339,
               "allIn": null
             }
@@ -3875,34 +2595,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,705",
-              "listed": 2705,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi · Free breakfast | ₹3,704",
-              "listed": 3704,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · Free breakfast | ₹3,004",
-              "listed": 3004,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹3,003",
-              "listed": 3003,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | , | ₹3,152",
-              "listed": 3152,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Millenium City Centre | Official site | ₹3,503",
           "directListed": 3503,
           "directMember": null
         },
@@ -3930,8 +2622,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2007,
-            "raw": "Agoda | Free Wi-Fi | ₹2,007"
+            "price": 2007
           },
           "status": "ota_lower",
           "deviations": [
@@ -3942,7 +2633,6 @@
               "gapPercent": 21.3,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,007",
               "listed": 2007,
               "allIn": null
             },
@@ -3953,7 +2643,6 @@
               "gapPercent": 21.2,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹2,010",
               "listed": 2010,
               "allIn": null
             }
@@ -3961,29 +2650,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,007",
-              "listed": 2007,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free breakfast | ₹2,789",
-              "listed": 2789,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · Free breakfast | ₹2,584",
-              "listed": 2584,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹2,729",
-              "listed": 2729,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier – Manesar & Sector 86 | Official site | ₹2,550",
           "directListed": 2550,
           "directMember": null
         },
@@ -4011,8 +2677,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 1281,
-            "raw": "Agoda | Free Wi-Fi | ₹1,281"
+            "price": 1281
           },
           "status": "ota_lower",
           "deviations": [
@@ -4023,7 +2688,6 @@
               "gapPercent": 20.8,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹1,281",
               "listed": 1281,
               "allIn": null
             },
@@ -4034,7 +2698,6 @@
               "gapPercent": 15.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹1,372",
               "listed": 1372,
               "allIn": null
             },
@@ -4045,7 +2708,6 @@
               "gapPercent": 7,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | ₹1,504",
               "listed": 1504,
               "allIn": null
             },
@@ -4056,7 +2718,6 @@
               "gapPercent": 6.9,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · 3 guests | ₹1,506",
               "listed": 1506,
               "allIn": null
             },
@@ -4067,7 +2728,6 @@
               "gapPercent": 4.5,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Yatra.com | ₹1,545",
               "listed": 1545,
               "allIn": null
             },
@@ -4078,7 +2738,6 @@
               "gapPercent": 0.4,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹1,612",
               "listed": 1612,
               "allIn": null
             }
@@ -4086,39 +2745,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹1,281",
-              "listed": 1281,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free Wi-Fi · 3 guests | ₹1,766",
-              "listed": 1766,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · 3 guests | ₹1,506",
-              "listed": 1506,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹1,372",
-              "listed": 1372,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | ₹1,504",
-              "listed": 1504,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹1,612",
-              "listed": 1612,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Medicity | Official site | Free cancellation until 11 Oct | , | ₹1,618",
           "directListed": 1618,
           "directMember": null
         },
@@ -4154,8 +2780,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2428,
-            "raw": "Agoda | Free Wi-Fi | ₹2,428"
+            "price": 2428
           },
           "status": "ota_lower",
           "deviations": [
@@ -4166,7 +2791,6 @@
               "gapPercent": 20.4,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,428",
               "listed": 2428,
               "allIn": null
             },
@@ -4177,7 +2801,6 @@
               "gapPercent": 19.8,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹2,444",
               "listed": 2444,
               "allIn": null
             },
@@ -4188,7 +2811,6 @@
               "gapPercent": 16.5,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹2,546",
               "listed": 2546,
               "allIn": null
             },
@@ -4199,7 +2821,6 @@
               "gapPercent": 6.7,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Yatra.com | ₹2,845",
               "listed": 2845,
               "allIn": null
             },
@@ -4210,7 +2831,6 @@
               "gapPercent": 0.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹3,044",
               "listed": 3044,
               "allIn": null
             }
@@ -4218,39 +2838,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,428",
-              "listed": 2428,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹3,386",
-              "listed": 3386,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi | ₹3,336",
-              "listed": 3336,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · 3 guests | ₹3,054",
-              "listed": 3054,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹3,054",
-              "listed": 3054,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹3,044",
-              "listed": 3044,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Cyber Hub | Official site | Free cancellation until 11 Oct | , | ₹3,049",
           "directListed": 3049,
           "directMember": null
         },
@@ -4273,8 +2860,7 @@
           "others": [],
           "lowest": {
             "source": "Agoda",
-            "price": 1709,
-            "raw": "Agoda | ₹1,709"
+            "price": 1709
           },
           "status": "ota_lower",
           "deviations": [
@@ -4285,7 +2871,6 @@
               "gapPercent": 17.9,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | ₹1,709",
               "listed": 1709,
               "allIn": null
             },
@@ -4296,7 +2881,6 @@
               "gapPercent": 8.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹1,911",
               "listed": 1911,
               "allIn": null
             },
@@ -4307,7 +2891,6 @@
               "gapPercent": 5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | ₹1,978",
               "listed": 1978,
               "allIn": null
             },
@@ -4318,7 +2901,6 @@
               "gapPercent": 1.4,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹2,052",
               "listed": 2052,
               "allIn": null
             },
@@ -4329,7 +2911,6 @@
               "gapPercent": 0,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹2,081",
               "listed": 2081,
               "allIn": null
             }
@@ -4337,39 +2918,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | ₹1,709",
-              "listed": 1709,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | ₹1,978",
-              "listed": 1978,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi | ₹2,288",
-              "listed": 2288,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹1,911",
-              "listed": 1911,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹2,052",
-              "listed": 2052,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹2,081",
-              "listed": 2081,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Select Sector 27 - Golf Course Road | Official site | ₹2,082",
           "directListed": 2082,
           "directMember": null
         },
@@ -4405,8 +2953,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2132,
-            "raw": "Agoda | ₹2,132"
+            "price": 2132
           },
           "status": "ota_lower",
           "deviations": [
@@ -4417,7 +2964,6 @@
               "gapPercent": 17.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | ₹2,132",
               "listed": 2132,
               "allIn": null
             },
@@ -4428,7 +2974,6 @@
               "gapPercent": 15.4,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "trivago.in | ₹2,189",
               "listed": 2189,
               "allIn": null
             },
@@ -4439,7 +2984,6 @@
               "gapPercent": 7.3,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹2,398",
               "listed": 2398,
               "allIn": null
             },
@@ -4450,7 +2994,6 @@
               "gapPercent": 6.7,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Yatra.com | ₹2,412",
               "listed": 2412,
               "allIn": null
             },
@@ -4461,7 +3004,6 @@
               "gapPercent": 5.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | ₹2,451",
               "listed": 2451,
               "allIn": null
             },
@@ -4472,7 +3014,6 @@
               "gapPercent": 3.8,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Trip.com | Free cancellation until 11 Oct | , | ₹2,488",
               "listed": 2488,
               "allIn": null
             },
@@ -4483,7 +3024,6 @@
               "gapPercent": 0.5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · 3 guests | ₹2,573",
               "listed": 2573,
               "allIn": null
             },
@@ -4494,7 +3034,6 @@
               "gapPercent": 0.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | ₹2,581",
               "listed": 2581,
               "allIn": null
             }
@@ -4502,39 +3041,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | ₹2,132",
-              "listed": 2132,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi | ₹3,192",
-              "listed": 3192,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹2,398",
-              "listed": 2398,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | ₹2,451",
-              "listed": 2451,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · 3 guests | ₹2,573",
-              "listed": 2573,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,581",
-              "listed": 2581,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Golf course extension road | Official site | Free cancellation until 11 Oct | , | ₹2,586",
           "directListed": 2586,
           "directMember": null
         },
@@ -4562,8 +3068,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 1732,
-            "raw": "Agoda | ₹1,732"
+            "price": 1732
           },
           "status": "ota_lower",
           "deviations": [
@@ -4574,7 +3079,6 @@
               "gapPercent": 17.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | ₹1,732",
               "listed": 1732,
               "allIn": null
             },
@@ -4585,7 +3089,6 @@
               "gapPercent": 15.4,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹1,778",
               "listed": 1778,
               "allIn": null
             },
@@ -4596,7 +3099,6 @@
               "gapPercent": 8.4,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹1,926",
               "listed": 1926,
               "allIn": null
             },
@@ -4607,7 +3109,6 @@
               "gapPercent": 0.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹2,097",
               "listed": 2097,
               "allIn": null
             }
@@ -4615,39 +3116,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | ₹1,732",
-              "listed": 1732,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi · Free breakfast | ₹2,255",
-              "listed": 2255,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹2,115",
-              "listed": 2115,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹1,926",
-              "listed": 1926,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹2,200",
-              "listed": 2200,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹2,097",
-              "listed": 2097,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Sector 50 | Official site | ₹2,102",
           "directListed": 2102,
           "directMember": null
         },
@@ -4683,8 +3151,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2804,
-            "raw": "Agoda | Free Wi-Fi | ₹2,804"
+            "price": 2804
           },
           "status": "ota_lower",
           "deviations": [
@@ -4695,7 +3162,6 @@
               "gapPercent": 17.5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,804",
               "listed": 2804,
               "allIn": null
             },
@@ -4706,7 +3172,6 @@
               "gapPercent": 15.2,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹2,879",
               "listed": 2879,
               "allIn": null
             },
@@ -4717,7 +3182,6 @@
               "gapPercent": 8.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Yatra.com | ₹3,116",
               "listed": 3116,
               "allIn": null
             },
@@ -4728,7 +3192,6 @@
               "gapPercent": 2.6,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Traveloka.com | ₹3,310",
               "listed": 3310,
               "allIn": null
             },
@@ -4739,7 +3202,6 @@
               "gapPercent": 0.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹3,394",
               "listed": 3394,
               "allIn": null
             }
@@ -4747,34 +3209,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct | ₹3,719",
-              "listed": 3719,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,804",
-              "listed": 2804,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹3,614",
-              "listed": 3614,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹3,444",
-              "listed": 3444,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹3,394",
-              "listed": 3394,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Arjun Marg | Official site | ₹3,397",
           "directListed": 3397,
           "directMember": null
         },
@@ -4806,8 +3240,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2384,
-            "raw": "Agoda | ₹2,384"
+            "price": 2384
           },
           "status": "ota_lower",
           "deviations": [
@@ -4818,7 +3251,6 @@
               "gapPercent": 17.5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | ₹2,384",
               "listed": 2384,
               "allIn": null
             },
@@ -4829,7 +3261,6 @@
               "gapPercent": 14,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹2,483",
               "listed": 2483,
               "allIn": null
             },
@@ -4840,7 +3271,6 @@
               "gapPercent": 13.1,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹2,511",
               "listed": 2511,
               "allIn": null
             },
@@ -4851,7 +3281,6 @@
               "gapPercent": 8.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | , | ₹2,651",
               "listed": 2651,
               "allIn": null
             },
@@ -4862,7 +3291,6 @@
               "gapPercent": 5.3,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | , | ₹2,734",
               "listed": 2734,
               "allIn": null
             },
@@ -4873,7 +3301,6 @@
               "gapPercent": 1.4,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹2,849",
               "listed": 2849,
               "allIn": null
             }
@@ -4881,29 +3308,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | ₹2,384",
-              "listed": 2384,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | , | ₹2,734",
-              "listed": 2734,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | , | ₹2,651",
-              "listed": 2651,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹2,849",
-              "listed": 2849,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Galleria Market Road & Sector 27 | Official site | ₹2,888",
           "directListed": 2888,
           "directMember": null
         },
@@ -4931,8 +3335,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2623,
-            "raw": "Agoda | Free Wi-Fi | ₹2,623"
+            "price": 2623
           },
           "status": "ota_lower",
           "deviations": [
@@ -4943,7 +3346,6 @@
               "gapPercent": 17.4,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,623",
               "listed": 2623,
               "allIn": null
             },
@@ -4954,7 +3356,6 @@
               "gapPercent": 15.2,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹2,693",
               "listed": 2693,
               "allIn": null
             },
@@ -4965,7 +3366,6 @@
               "gapPercent": 0.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹3,173",
               "listed": 3173,
               "allIn": null
             }
@@ -4973,39 +3373,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,623",
-              "listed": 2623,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi · Free breakfast | ₹3,479",
-              "listed": 3479,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹3,221",
-              "listed": 3221,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹3,173",
-              "listed": 3173,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹3,404",
-              "listed": 3404,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | , | ₹3,380",
-              "listed": 3380,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Autograph- Advant & Sector 144 | Official site | ₹3,175",
           "directListed": 3175,
           "directMember": null
         },
@@ -5028,8 +3395,7 @@
           "others": [],
           "lowest": {
             "source": "Cleartrip",
-            "price": 2449,
-            "raw": "Cleartrip.com | Free cancellation until 11 Oct | , | ₹2,449"
+            "price": 2449
           },
           "status": "ota_lower",
           "deviations": [
@@ -5040,7 +3406,6 @@
               "gapPercent": 16.5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | , | ₹2,449",
               "listed": 2449,
               "allIn": null
             },
@@ -5051,7 +3416,6 @@
               "gapPercent": 0.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹2,929",
               "listed": 2929,
               "allIn": null
             }
@@ -5059,39 +3423,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi | ₹3,304",
-              "listed": 3304,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹2,939",
-              "listed": 2939,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct | ₹3,304",
-              "listed": 3304,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | , | ₹2,449",
-              "listed": 2449,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹2,939",
-              "listed": 2939,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹2,929",
-              "listed": 2929,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Residences Sector 45 | Official site | ₹2,933",
           "directListed": 2933,
           "directMember": null
         },
@@ -5123,8 +3454,7 @@
           ],
           "lowest": {
             "source": "Cleartrip",
-            "price": 2086,
-            "raw": "Cleartrip.com | Free cancellation until 11 Oct | , | ₹2,086"
+            "price": 2086
           },
           "status": "ota_lower",
           "deviations": [
@@ -5135,7 +3465,6 @@
               "gapPercent": 16.4,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | , | ₹2,086",
               "listed": 2086,
               "allIn": null
             },
@@ -5146,7 +3475,6 @@
               "gapPercent": 12.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | ₹2,180",
               "listed": 2180,
               "allIn": null
             },
@@ -5157,7 +3485,6 @@
               "gapPercent": 10.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Vio.com | ₹2,238",
               "listed": 2238,
               "allIn": null
             },
@@ -5168,7 +3495,6 @@
               "gapPercent": 10.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "goseek.com | ₹2,238",
               "listed": 2238,
               "allIn": null
             }
@@ -5176,39 +3502,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi | ₹3,087",
-              "listed": 3087,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹2,503",
-              "listed": 2503,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | , | ₹2,086",
-              "listed": 2086,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | ₹2,180",
-              "listed": 2180,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹2,502",
-              "listed": 2502,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,743",
-              "listed": 2743,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier Faridabad Sector 28 | Official site | ₹2,495",
           "directListed": 2495,
           "directMember": null
         },
@@ -5240,8 +3533,7 @@
           ],
           "lowest": {
             "source": "EaseMyTrip",
-            "price": 1687,
-            "raw": "EaseMyTrip.com | ₹1,687"
+            "price": 1687
           },
           "status": "ota_lower",
           "deviations": [
@@ -5252,7 +3544,6 @@
               "gapPercent": 16.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹1,687",
               "listed": 1687,
               "allIn": null
             },
@@ -5263,7 +3554,6 @@
               "gapPercent": 13.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹1,748",
               "listed": 1748,
               "allIn": null
             },
@@ -5274,7 +3564,6 @@
               "gapPercent": 7,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹1,874",
               "listed": 1874,
               "allIn": null
             },
@@ -5285,7 +3574,6 @@
               "gapPercent": 2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | ₹1,975",
               "listed": 1975,
               "allIn": null
             }
@@ -5293,34 +3581,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi | ₹2,209",
-              "listed": 2209,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | ₹1,975",
-              "listed": 1975,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹1,874",
-              "listed": 1874,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · 3 guests | ₹2,047",
-              "listed": 2047,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,017",
-              "listed": 2017,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Select - Unitech Cyber Park | Official site | Free cancellation until 11 Oct | , | ₹2,016",
           "directListed": 2016,
           "directMember": null
         },
@@ -5352,8 +3612,7 @@
           ],
           "lowest": {
             "source": "EaseMyTrip",
-            "price": 1878,
-            "raw": "EaseMyTrip.com | ₹1,878"
+            "price": 1878
           },
           "status": "ota_lower",
           "deviations": [
@@ -5364,7 +3623,6 @@
               "gapPercent": 13.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹1,878",
               "listed": 1878,
               "allIn": null
             },
@@ -5375,7 +3633,6 @@
               "gapPercent": 12.4,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | ₹1,899",
               "listed": 1899,
               "allIn": null
             },
@@ -5386,7 +3643,6 @@
               "gapPercent": 8,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹1,994",
               "listed": 1994,
               "allIn": null
             },
@@ -5397,7 +3653,6 @@
               "gapPercent": 0.3,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹2,161",
               "listed": 2161,
               "allIn": null
             }
@@ -5405,29 +3660,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | ₹1,994",
-              "listed": 1994,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi · Free breakfast | ₹2,673",
-              "listed": 2673,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · 3 guests | ₹2,193",
-              "listed": 2193,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹2,161",
-              "listed": 2161,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz | Official site | Free cancellation until 11 Oct | , | ₹2,167",
           "directListed": 2167,
           "directMember": null
         },
@@ -5455,8 +3687,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 3991,
-            "raw": "Agoda | Free Wi-Fi | ₹3,991"
+            "price": 3991
           },
           "status": "ota_lower",
           "deviations": [
@@ -5467,7 +3698,6 @@
               "gapPercent": 12.9,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹3,991",
               "listed": 3991,
               "allIn": null
             },
@@ -5478,7 +3708,6 @@
               "gapPercent": 0.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Trip.com | Free cancellation until 11 Oct | ₹4,567",
               "listed": 4567,
               "allIn": null
             }
@@ -5486,34 +3715,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹3,991",
-              "listed": 3991,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | ₹4,696",
-              "listed": 4696,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free Wi-Fi | ₹5,414",
-              "listed": 5414,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹4,591",
-              "listed": 4591,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | , | ₹4,928",
-              "listed": 4928,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Select - Malcha & Chankyapuri | Official site | ₹4,581",
           "directListed": 4581,
           "directMember": null
         },
@@ -5536,8 +3737,7 @@
           "others": [],
           "lowest": {
             "source": "Cleartrip",
-            "price": 2702,
-            "raw": "Cleartrip.com | Free cancellation until 11 Oct | , | ₹2,702"
+            "price": 2702
           },
           "status": "ota_lower",
           "deviations": [
@@ -5548,7 +3748,6 @@
               "gapPercent": 7.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | , | ₹2,702",
               "listed": 2702,
               "allIn": null
             },
@@ -5559,7 +3758,6 @@
               "gapPercent": 2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹2,855",
               "listed": 2855,
               "allIn": null
             }
@@ -5567,34 +3765,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free Wi-Fi | ₹3,188",
-              "listed": 3188,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹2,919",
-              "listed": 2919,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 11 Oct | , | ₹2,702",
-              "listed": 2702,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 11 Oct | , | ₹2,855",
-              "listed": 2855,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹2,919",
-              "listed": 2919,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier- Sector 26 Noida | Official site | ₹2,913",
           "directListed": 2913,
           "directMember": null
         },
@@ -5617,8 +3787,7 @@
           "others": [],
           "lowest": {
             "source": "ixigo",
-            "price": 6163,
-            "raw": "ixigo | ₹6,163"
+            "price": 6163
           },
           "status": "ota_lower",
           "deviations": [
@@ -5629,7 +3798,6 @@
               "gapPercent": 0.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | ₹6,163",
               "listed": 6163,
               "allIn": null
             }
@@ -5637,34 +3805,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free Wi-Fi · Free breakfast | ₹7,625",
-              "listed": 7625,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · Free breakfast | ₹6,327",
-              "listed": 6327,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi · Free breakfast | ₹7,625",
-              "listed": 7625,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹6,163",
-              "listed": 6163,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹6,326",
-              "listed": 6326,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Autograph - Rishikesh | Official site | ₹6,169",
           "directListed": 6169,
           "directMember": null
         },
@@ -5687,8 +3827,7 @@
           "others": [],
           "lowest": {
             "source": "MakeMyTrip",
-            "price": 3689,
-            "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹3,689"
+            "price": 3689
           },
           "status": "direct_missing",
           "deviations": [
@@ -5703,29 +3842,7 @@
           ],
           "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
           "pricesFor": null,
-          "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct | ₹4,609",
-              "listed": 4609,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi | ₹4,082",
-              "listed": 4082,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹3,689",
-              "listed": 3689,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 10 Oct | , | ₹3,853",
-              "listed": 3853,
-              "allIn": null
-            }
-          }
+          "basis": "listed"
         },
         {
           "id": "premier-noida-sector-135-expressway",
@@ -5746,8 +3863,7 @@
           "others": [],
           "lowest": {
             "source": "Agoda",
-            "price": 2216,
-            "raw": "Agoda | ₹2,216"
+            "price": 2216
           },
           "status": "direct_missing",
           "deviations": [
@@ -5762,29 +3878,7 @@
           ],
           "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
           "pricesFor": null,
-          "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | ₹2,216",
-              "listed": 2216,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi · Free breakfast | ₹3,358",
-              "listed": 3358,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct · Free breakfast | ₹2,687",
-              "listed": 2687,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,435",
-              "listed": 2435,
-              "allIn": null
-            }
-          }
+          "basis": "listed"
         },
         {
           "id": "patio-farms",
@@ -5808,8 +3902,7 @@
           "deviations": [],
           "note": "Google shows no Saltstayz.com or OTA price for this date.",
           "pricesFor": null,
-          "basis": "listed",
-          "otaRaw": {}
+          "basis": "listed"
         },
         {
           "id": "autograph-connaught-place",
@@ -5833,8 +3926,7 @@
           "deviations": [],
           "note": "Google shows no Saltstayz.com or OTA price for this date.",
           "pricesFor": null,
-          "basis": "listed",
-          "otaRaw": {}
+          "basis": "listed"
         },
         {
           "id": "premier-bengaluru-hebbal",
@@ -5855,42 +3947,13 @@
           "others": [],
           "lowest": {
             "source": "Saltstayz.com",
-            "price": 3256,
-            "raw": "Saltstayz Premier Bengaluru, Hebbal, Airport Road | Official site | ₹3,256"
+            "price": 3256
           },
           "status": "direct_lowest",
           "deviations": [],
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 11 Oct · Free Wi-Fi · Free breakfast | ₹3,684",
-              "listed": 3684,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹3,299",
-              "listed": 3299,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹3,302",
-              "listed": 3302,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹3,300",
-              "listed": 3300,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹3,821",
-              "listed": 3821,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier Bengaluru, Hebbal, Airport Road | Official site | ₹3,256",
           "directListed": 3256,
           "directMember": null
         },
@@ -5967,8 +4030,7 @@
           ],
           "lowest": {
             "source": "MakeMyTrip",
-            "price": 4129,
-            "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹4,129"
+            "price": 4129
           },
           "status": "ota_lower",
           "deviations": [
@@ -5979,7 +4041,6 @@
               "gapPercent": 57.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹4,129",
               "listed": 4129,
               "allIn": null
             },
@@ -5990,7 +4051,6 @@
               "gapPercent": 49.5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 11 Oct · Free breakfast | ₹4,860",
               "listed": 4860,
               "allIn": null
             },
@@ -6001,7 +4061,6 @@
               "gapPercent": 49.5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi · Free breakfast | ₹4,860",
               "listed": 4860,
               "allIn": null
             },
@@ -6012,7 +4071,6 @@
               "gapPercent": 25.8,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Expedia.co.in | Book with Expedia.co.in to get these at no extra cost: Wi-Fi and parking | ₹7,133",
               "listed": 7133,
               "allIn": null
             },
@@ -6023,7 +4081,6 @@
               "gapPercent": 20.8,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Hotels.com | Free cancellation until 11 Oct | , | ₹7,617",
               "listed": 7617,
               "allIn": null
             }
@@ -6031,24 +4088,6 @@
           "note": "Google also shows a member rate of ₹3,653 (save 62%) on the Saltstayz website. The public price ₹9,617 is used.",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 11 Oct · Free breakfast | ₹4,860",
-              "listed": 4860,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi · Free breakfast | ₹4,860",
-              "listed": 4860,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹4,129",
-              "listed": 4129,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier- Sector 15 Noida | Official site | Member rate; save 62% | , | ₹9,617 | ₹3,653",
           "directListed": 9617,
           "directMember": 3653
         },
@@ -6076,8 +4115,7 @@
           ],
           "lowest": {
             "source": "Cleartrip",
-            "price": 7131,
-            "raw": "Cleartrip.com | ₹7,131"
+            "price": 7131
           },
           "status": "ota_lower",
           "deviations": [
@@ -6088,7 +4126,6 @@
               "gapPercent": 31.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | ₹7,131",
               "listed": 7131,
               "allIn": null
             },
@@ -6099,7 +4136,6 @@
               "gapPercent": 11.4,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹9,241",
               "listed": 9241,
               "allIn": null
             },
@@ -6110,7 +4146,6 @@
               "gapPercent": 10.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹9,363",
               "listed": 9363,
               "allIn": null
             }
@@ -6118,34 +4153,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi | ₹12,536",
-              "listed": 12536,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | ₹7,131",
-              "listed": 7131,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹9,363",
-              "listed": 9363,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 11 Oct | ₹11,799",
-              "listed": 11799,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 11 Oct | , | ₹11,798",
-              "listed": 11798,
-              "allIn": null
-            }
-          },
-          "directRaw": "Golden Tulip, Sector 29, Gurugram | Official site | Free cancellation until 11 Oct | , | ₹10,430",
           "directListed": 10430,
           "directMember": null
         },
@@ -6168,8 +4175,7 @@
           "others": [],
           "lowest": {
             "source": "ixigo",
-            "price": 2696,
-            "raw": "ixigo | Free cancellation until 10 Oct | , | ₹2,696"
+            "price": 2696
           },
           "status": "ota_lower",
           "deviations": [
@@ -6180,7 +4186,6 @@
               "gapPercent": 25.4,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "ixigo | Free cancellation until 10 Oct | , | ₹2,696",
               "listed": 2696,
               "allIn": null
             },
@@ -6191,7 +4196,6 @@
               "gapPercent": 12.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹3,160",
               "listed": 3160,
               "allIn": null
             }
@@ -6199,34 +4203,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹3,160",
-              "listed": 3160,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi | ₹4,189",
-              "listed": 4189,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹4,014",
-              "listed": 4014,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 10 Oct | , | ₹2,696",
-              "listed": 2696,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | , | ₹4,251",
-              "listed": 4251,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Naraina, Central Delhi | Official site | ₹3,614",
           "directListed": 3614,
           "directMember": null
         },
@@ -6262,8 +4238,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2963,
-            "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,963"
+            "price": 2963
           },
           "status": "ota_lower",
           "deviations": [
@@ -6274,7 +4249,6 @@
               "gapPercent": 19,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,963",
               "listed": 2963,
               "allIn": null
             },
@@ -6285,7 +4259,6 @@
               "gapPercent": 18.5,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "trivago.in | ₹2,983",
               "listed": 2983,
               "allIn": null
             },
@@ -6296,7 +4269,6 @@
               "gapPercent": 16.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹3,052",
               "listed": 3052,
               "allIn": null
             },
@@ -6307,7 +4279,6 @@
               "gapPercent": 16.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | Free cancellation until 11 Oct | , | ₹3,063",
               "listed": 3063,
               "allIn": null
             },
@@ -6318,7 +4289,6 @@
               "gapPercent": 15.1,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹3,105",
               "listed": 3105,
               "allIn": null
             },
@@ -6329,7 +4299,6 @@
               "gapPercent": 6.3,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | ₹3,430",
               "listed": 3430,
               "allIn": null
             },
@@ -6340,7 +4309,6 @@
               "gapPercent": 1.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹3,599",
               "listed": 3599,
               "allIn": null
             }
@@ -6348,34 +4316,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,963",
-              "listed": 2963,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct | ₹3,954",
-              "listed": 3954,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | ₹3,430",
-              "listed": 3430,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹3,052",
-              "listed": 3052,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹3,599",
-              "listed": 3599,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier- Pitampura | Official site | ₹3,659",
           "directListed": 3659,
           "directMember": null
         },
@@ -6411,8 +4351,7 @@
           ],
           "lowest": {
             "source": "Traveloka",
-            "price": 2718,
-            "raw": "Traveloka.com | ₹2,718"
+            "price": 2718
           },
           "status": "ota_lower",
           "deviations": [
@@ -6423,7 +4362,6 @@
               "gapPercent": 17.7,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Traveloka.com | ₹2,718",
               "listed": 2718,
               "allIn": null
             },
@@ -6434,7 +4372,6 @@
               "gapPercent": 12.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,884",
               "listed": 2884,
               "allIn": null
             },
@@ -6445,7 +4382,6 @@
               "gapPercent": 10.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | Free cancellation until 11 Oct | , | ₹2,961",
               "listed": 2961,
               "allIn": null
             },
@@ -6456,7 +4392,6 @@
               "gapPercent": 2.9,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Yatra.com | ₹3,205",
               "listed": 3205,
               "allIn": null
             }
@@ -6464,34 +4399,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,884",
-              "listed": 2884,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct | ₹3,822",
-              "listed": 3822,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹3,424",
-              "listed": 3424,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹3,541",
-              "listed": 3541,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 12 Oct | , | ₹3,523",
-              "listed": 3523,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Arjun Marg | Official site | ₹3,301",
           "directListed": 3301,
           "directMember": null
         },
@@ -6514,8 +4421,7 @@
           "others": [],
           "lowest": {
             "source": "Cleartrip",
-            "price": 1645,
-            "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹1,645"
+            "price": 1645
           },
           "status": "ota_lower",
           "deviations": [
@@ -6526,7 +4432,6 @@
               "gapPercent": 15.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹1,645",
               "listed": 1645,
               "allIn": null
             },
@@ -6537,7 +4442,6 @@
               "gapPercent": 12.4,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹1,700",
               "listed": 1700,
               "allIn": null
             },
@@ -6548,7 +4452,6 @@
               "gapPercent": 1.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | ₹1,918",
               "listed": 1918,
               "allIn": null
             }
@@ -6556,29 +4459,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹1,700",
-              "listed": 1700,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi · 3 guests | ₹2,253",
-              "listed": 2253,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹1,645",
-              "listed": 1645,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | ₹1,918",
-              "listed": 1918,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Medicity | Official site | Free cancellation until 12 Oct | , | ₹1,940",
           "directListed": 1940,
           "directMember": null
         },
@@ -6601,8 +4481,7 @@
           "others": [],
           "lowest": {
             "source": "Agoda",
-            "price": 1938,
-            "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹1,938"
+            "price": 1938
           },
           "status": "ota_lower",
           "deviations": [
@@ -6613,7 +4492,6 @@
               "gapPercent": 14.7,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹1,938",
               "listed": 1938,
               "allIn": null
             }
@@ -6621,29 +4499,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹1,938",
-              "listed": 1938,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹2,361",
-              "listed": 2361,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi · Free breakfast | ₹2,713",
-              "listed": 2713,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct · Free breakfast | ₹2,286",
-              "listed": 2286,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Select | Official site | Free cancellation until 12 Oct | , | ₹2,273",
           "directListed": 2273,
           "directMember": null
         },
@@ -6679,8 +4534,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2496,
-            "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,496"
+            "price": 2496
           },
           "status": "ota_lower",
           "deviations": [
@@ -6691,7 +4545,6 @@
               "gapPercent": 13.3,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,496",
               "listed": 2496,
               "allIn": null
             },
@@ -6702,7 +4555,6 @@
               "gapPercent": 13.1,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | Free cancellation until 11 Oct | , | ₹2,500",
               "listed": 2500,
               "allIn": null
             },
@@ -6713,7 +4565,6 @@
               "gapPercent": 13.1,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Vio.com | Free cancellation until 11 Oct | , | ₹2,500",
               "listed": 2500,
               "allIn": null
             },
@@ -6724,7 +4575,6 @@
               "gapPercent": 13.1,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "goseek.com | Free cancellation until 11 Oct | , | ₹2,500",
               "listed": 2500,
               "allIn": null
             },
@@ -6735,7 +4585,6 @@
               "gapPercent": 10.5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | , | ₹2,575",
               "listed": 2575,
               "allIn": null
             }
@@ -6743,34 +4592,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,496",
-              "listed": 2496,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct · Free breakfast | ₹3,090",
-              "listed": 3090,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free breakfast | ₹3,336",
-              "listed": 3336,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | , | ₹2,575",
-              "listed": 2575,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | , | ₹3,267",
-              "listed": 3267,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier – Manesar & Sector 86 | Official site | ₹2,878",
           "directListed": 2878,
           "directMember": null
         },
@@ -6802,8 +4623,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2455,
-            "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,455"
+            "price": 2455
           },
           "status": "ota_lower",
           "deviations": [
@@ -6814,7 +4634,6 @@
               "gapPercent": 13.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,455",
               "listed": 2455,
               "allIn": null
             },
@@ -6825,7 +4644,6 @@
               "gapPercent": 12.6,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Vio.com | Free cancellation until 11 Oct | , | ₹2,471",
               "listed": 2471,
               "allIn": null
             },
@@ -6836,7 +4654,6 @@
               "gapPercent": 11.7,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹2,497",
               "listed": 2497,
               "allIn": null
             },
@@ -6847,7 +4664,6 @@
               "gapPercent": 10.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | Free cancellation until 11 Oct | , | ₹2,537",
               "listed": 2537,
               "allIn": null
             }
@@ -6855,34 +4671,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,455",
-              "listed": 2455,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi | ₹3,287",
-              "listed": 3287,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹2,497",
-              "listed": 2497,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | ₹3,323",
-              "listed": 3323,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹3,139",
-              "listed": 3139,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Paschim Vihar | Official site | ₹2,827",
           "directListed": 2827,
           "directMember": null
         },
@@ -6910,8 +4698,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2098,
-            "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,098"
+            "price": 2098
           },
           "status": "ota_lower",
           "deviations": [
@@ -6922,7 +4709,6 @@
               "gapPercent": 13.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,098",
               "listed": 2098,
               "allIn": null
             },
@@ -6933,7 +4719,6 @@
               "gapPercent": 12.5,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Vio.com | Free cancellation until 11 Oct | , | ₹2,112",
               "listed": 2112,
               "allIn": null
             }
@@ -6941,39 +4726,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,098",
-              "listed": 2098,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi | ₹3,161",
-              "listed": 3161,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | ₹2,428",
-              "listed": 2428,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹2,695",
-              "listed": 2695,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct · 3 guests | ₹2,549",
-              "listed": 2549,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 12 Oct | , | ₹2,691",
-              "listed": 2691,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier | Official site | Free cancellation until 12 Oct | , | ₹2,414",
           "directListed": 2414,
           "directMember": null
         },
@@ -6996,8 +4748,7 @@
           "others": [],
           "lowest": {
             "source": "Agoda",
-            "price": 2041,
-            "raw": "Agoda | Free cancellation until 10 Oct | ₹2,041"
+            "price": 2041
           },
           "status": "ota_lower",
           "deviations": [
@@ -7008,7 +4759,6 @@
               "gapPercent": 13.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct | ₹2,041",
               "listed": 2041,
               "allIn": null
             }
@@ -7016,39 +4766,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | ₹2,361",
-              "listed": 2361,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct | ₹2,041",
-              "listed": 2041,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹2,436",
-              "listed": 2436,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi | ₹2,733",
-              "listed": 2733,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹2,479",
-              "listed": 2479,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 12 Oct | , | ₹2,670",
-              "listed": 2670,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Select Sector 27 - Golf Course Road | Official site | ₹2,349",
           "directListed": 2349,
           "directMember": null
         },
@@ -7076,8 +4793,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 3173,
-            "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹3,173"
+            "price": 3173
           },
           "status": "ota_lower",
           "deviations": [
@@ -7088,7 +4804,6 @@
               "gapPercent": 12.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹3,173",
               "listed": 3173,
               "allIn": null
             },
@@ -7099,7 +4814,6 @@
               "gapPercent": 10.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | Free cancellation until 11 Oct | , | ₹3,257",
               "listed": 3257,
               "allIn": null
             }
@@ -7107,39 +4821,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹3,173",
-              "listed": 3173,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi · Free breakfast | ₹4,100",
-              "listed": 4100,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹3,940",
-              "listed": 3940,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | , | ₹3,767",
-              "listed": 3767,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | , | ₹4,117",
-              "listed": 4117,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 12 Oct | , | ₹3,957",
-              "listed": 3957,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Autograph- Advant & Sector 144 | Official site | ₹3,629",
           "directListed": 3629,
           "directMember": null
         },
@@ -7167,8 +4848,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 1947,
-            "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹1,947"
+            "price": 1947
           },
           "status": "ota_lower",
           "deviations": [
@@ -7179,7 +4859,6 @@
               "gapPercent": 12.6,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹1,947",
               "listed": 1947,
               "allIn": null
             },
@@ -7190,7 +4869,6 @@
               "gapPercent": 10.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | Free cancellation until 11 Oct | , | ₹1,999",
               "listed": 1999,
               "allIn": null
             }
@@ -7198,39 +4876,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹1,947",
-              "listed": 1947,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi · Free breakfast | ₹2,480",
-              "listed": 2480,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹2,509",
-              "listed": 2509,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct · Free breakfast | ₹2,377",
-              "listed": 2377,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | , | ₹2,471",
-              "listed": 2471,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 12 Oct | , | ₹2,425",
-              "listed": 2425,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Sector 50 | Official site | ₹2,228",
           "directListed": 2228,
           "directMember": null
         },
@@ -7262,8 +4907,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2777,
-            "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,777"
+            "price": 2777
           },
           "status": "ota_lower",
           "deviations": [
@@ -7274,7 +4918,6 @@
               "gapPercent": 12.5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,777",
               "listed": 2777,
               "allIn": null
             },
@@ -7285,7 +4928,6 @@
               "gapPercent": 10.5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹2,841",
               "listed": 2841,
               "allIn": null
             },
@@ -7296,7 +4938,6 @@
               "gapPercent": 7.9,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | Free cancellation until 11 Oct | , | ₹2,925",
               "listed": 2925,
               "allIn": null
             },
@@ -7307,7 +4948,6 @@
               "gapPercent": 0.6,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Traveloka.com | Free cancellation until 11 Oct | , | ₹3,155",
               "listed": 3155,
               "allIn": null
             }
@@ -7315,39 +4955,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,777",
-              "listed": 2777,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct | ₹3,693",
-              "listed": 3693,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹2,841",
-              "listed": 2841,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹3,183",
-              "listed": 3183,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | ₹3,318",
-              "listed": 3318,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 12 Oct | , | ₹3,777",
-              "listed": 3777,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Galleria Market Road & Sector 27 | Official site | ₹3,175",
           "directListed": 3175,
           "directMember": null
         },
@@ -7379,8 +4986,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2495,
-            "raw": "Agoda | Free Wi-Fi | ₹2,495"
+            "price": 2495
           },
           "status": "ota_lower",
           "deviations": [
@@ -7391,7 +4997,6 @@
               "gapPercent": 12.5,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free Wi-Fi | ₹2,495",
               "listed": 2495,
               "allIn": null
             },
@@ -7402,7 +5007,6 @@
               "gapPercent": 10.2,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "trivago.in | ₹2,562",
               "listed": 2562,
               "allIn": null
             },
@@ -7413,7 +5017,6 @@
               "gapPercent": 9.4,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹2,585",
               "listed": 2585,
               "allIn": null
             },
@@ -7424,7 +5027,6 @@
               "gapPercent": 1.1,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Yatra.com | ₹2,821",
               "listed": 2821,
               "allIn": null
             }
@@ -7432,39 +5034,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi | ₹3,735",
-              "listed": 3735,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free Wi-Fi | ₹2,495",
-              "listed": 2495,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | ₹2,869",
-              "listed": 2869,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹2,585",
-              "listed": 2585,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct · 3 guests | ₹3,012",
-              "listed": 3012,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹3,019",
-              "listed": 3019,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Golf course extension road | Official site | Free cancellation until 12 Oct | , | ₹2,853",
           "directListed": 2853,
           "directMember": null
         },
@@ -7496,8 +5065,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2813,
-            "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,813"
+            "price": 2813
           },
           "status": "ota_lower",
           "deviations": [
@@ -7508,7 +5076,6 @@
               "gapPercent": 12.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,813",
               "listed": 2813,
               "allIn": null
             },
@@ -7519,7 +5086,6 @@
               "gapPercent": 8,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹2,949",
               "listed": 2949,
               "allIn": null
             },
@@ -7530,7 +5096,6 @@
               "gapPercent": 1.1,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Yatra.com | ₹3,170",
               "listed": 3170,
               "allIn": null
             }
@@ -7538,39 +5103,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,813",
-              "listed": 2813,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹3,316",
-              "listed": 3316,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi | ₹3,719",
-              "listed": 3719,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct · 3 guests | ₹3,404",
-              "listed": 3404,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | , | ₹3,403",
-              "listed": 3403,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 12 Oct | , | ₹3,394",
-              "listed": 3394,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Cyber Hub | Official site | Free cancellation until 12 Oct | , | ₹3,205",
           "directListed": 3205,
           "directMember": null
         },
@@ -7593,8 +5125,7 @@
           "others": [],
           "lowest": {
             "source": "Cleartrip",
-            "price": 2186,
-            "raw": "Cleartrip.com | Free cancellation until 12 Oct | , | ₹2,186"
+            "price": 2186
           },
           "status": "ota_lower",
           "deviations": [
@@ -7605,7 +5136,6 @@
               "gapPercent": 11.7,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | , | ₹2,186",
               "listed": 2186,
               "allIn": null
             }
@@ -7613,39 +5143,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi | ₹2,949",
-              "listed": 2949,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 11 Oct | ₹2,949",
-              "listed": 2949,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹2,624",
-              "listed": 2624,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | , | ₹2,186",
-              "listed": 2186,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | , | ₹2,622",
-              "listed": 2622,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 12 Oct | , | ₹2,670",
-              "listed": 2670,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Residences Sector 45 | Official site | ₹2,475",
           "directListed": 2475,
           "directMember": null
         },
@@ -7681,8 +5178,7 @@
           ],
           "lowest": {
             "source": "Cleartrip",
-            "price": 2420,
-            "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹2,420"
+            "price": 2420
           },
           "status": "ota_lower",
           "deviations": [
@@ -7693,7 +5189,6 @@
               "gapPercent": 11.3,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹2,420",
               "listed": 2420,
               "allIn": null
             },
@@ -7704,7 +5199,6 @@
               "gapPercent": 11,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,427",
               "listed": 2427,
               "allIn": null
             },
@@ -7715,7 +5209,6 @@
               "gapPercent": 8.7,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "trivago.in | ₹2,490",
               "listed": 2490,
               "allIn": null
             },
@@ -7726,7 +5219,6 @@
               "gapPercent": 8.7,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Vio.com | Free cancellation until 11 Oct | , | ₹2,490",
               "listed": 2490,
               "allIn": null
             },
@@ -7737,7 +5229,6 @@
               "gapPercent": 2.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | , | ₹2,667",
               "listed": 2667,
               "allIn": null
             },
@@ -7748,7 +5239,6 @@
               "gapPercent": 2,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Yatra.com | ₹2,673",
               "listed": 2673,
               "allIn": null
             }
@@ -7756,39 +5246,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹2,427",
-              "listed": 2427,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi | ₹3,426",
-              "listed": 3426,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹2,420",
-              "listed": 2420,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹2,902",
-              "listed": 2902,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | , | ₹2,667",
-              "listed": 2667,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 12 Oct | , | ₹2,860",
-              "listed": 2860,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Select - Nehru Place & New Friends colony | Official site | ₹2,727",
           "directListed": 2727,
           "directMember": null
         },
@@ -7811,8 +5268,7 @@
           "others": [],
           "lowest": {
             "source": "Cleartrip",
-            "price": 3467,
-            "raw": "Cleartrip.com | Free cancellation until 12 Oct | , | ₹3,467"
+            "price": 3467
           },
           "status": "ota_lower",
           "deviations": [
@@ -7823,7 +5279,6 @@
               "gapPercent": 10.9,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | , | ₹3,467",
               "listed": 3467,
               "allIn": null
             }
@@ -7831,29 +5286,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹4,158",
-              "listed": 4158,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi | ₹4,490",
-              "listed": 4490,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | , | ₹3,467",
-              "listed": 3467,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 12 Oct | , | ₹4,100",
-              "listed": 4100,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier- Sector 26 Noida | Official site | ₹3,891",
           "directListed": 3891,
           "directMember": null
         },
@@ -7889,8 +5321,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 3600,
-            "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹3,600"
+            "price": 3600
           },
           "status": "ota_lower",
           "deviations": [
@@ -7901,7 +5332,6 @@
               "gapPercent": 10.2,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹3,600",
               "listed": 3600,
               "allIn": null
             },
@@ -7912,7 +5342,6 @@
               "gapPercent": 9.5,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹3,625",
               "listed": 3625,
               "allIn": null
             },
@@ -7923,7 +5352,6 @@
               "gapPercent": 7.8,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Vio.com | Free cancellation until 11 Oct | , | ₹3,694",
               "listed": 3694,
               "allIn": null
             },
@@ -7934,7 +5362,6 @@
               "gapPercent": 7.8,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "goseek.com | Free cancellation until 11 Oct | , | ₹3,694",
               "listed": 3694,
               "allIn": null
             }
@@ -7942,39 +5369,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi | ₹3,600",
-              "listed": 3600,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi | ₹4,620",
-              "listed": 4620,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹4,124",
-              "listed": 4124,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹4,313",
-              "listed": 4313,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 12 Oct | , | ₹4,171",
-              "listed": 4171,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | , | ₹4,507",
-              "listed": 4507,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Gurgaon - Golf Course Road & Sector 42 | Official site | ₹4,007",
           "directListed": 4007,
           "directMember": null
         },
@@ -8014,8 +5408,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 2804,
-            "raw": "Agoda | Free cancellation until 10 Oct | ₹2,804"
+            "price": 2804
           },
           "status": "ota_lower",
           "deviations": [
@@ -8026,7 +5419,6 @@
               "gapPercent": 9.8,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct | ₹2,804",
               "listed": 2804,
               "allIn": null
             },
@@ -8037,7 +5429,6 @@
               "gapPercent": 9.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | Free cancellation until 11 Oct | , | ₹2,822",
               "listed": 2822,
               "allIn": null
             },
@@ -8048,7 +5439,6 @@
               "gapPercent": 9.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Vio.com | Free cancellation until 11 Oct | , | ₹2,822",
               "listed": 2822,
               "allIn": null
             },
@@ -8059,7 +5449,6 @@
               "gapPercent": 9.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Etrip.net | Free cancellation until 11 Oct | , | ₹2,822",
               "listed": 2822,
               "allIn": null
             },
@@ -8070,7 +5459,6 @@
               "gapPercent": 9.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "goseek.com | Free cancellation until 11 Oct | , | ₹2,822",
               "listed": 2822,
               "allIn": null
             }
@@ -8078,29 +5466,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct | ₹2,804",
-              "listed": 2804,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi · Free breakfast | ₹4,069",
-              "listed": 4069,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct · Free breakfast | ₹3,299",
-              "listed": 3299,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | , | ₹3,224",
-              "listed": 3224,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier - Millenium City Centre | Official site | ₹3,110",
           "directListed": 3110,
           "directMember": null
         },
@@ -8128,8 +5493,7 @@
           ],
           "lowest": {
             "source": "Cleartrip",
-            "price": 1799,
-            "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹1,799"
+            "price": 1799
           },
           "status": "ota_lower",
           "deviations": [
@@ -8140,7 +5504,6 @@
               "gapPercent": 9.4,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹1,799",
               "listed": 1799,
               "allIn": null
             },
@@ -8151,7 +5514,6 @@
               "gapPercent": 5,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹1,886",
               "listed": 1886,
               "allIn": null
             }
@@ -8159,34 +5521,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi | ₹2,302",
-              "listed": 2302,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹1,799",
-              "listed": 1799,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct · 3 guests | ₹2,133",
-              "listed": 2133,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | ₹2,058",
-              "listed": 2058,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹2,171",
-              "listed": 2171,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Select - Unitech Cyber Park | Official site | Free cancellation until 12 Oct | , | ₹1,986",
           "directListed": 1986,
           "directMember": null
         },
@@ -8214,8 +5548,7 @@
           ],
           "lowest": {
             "source": "EaseMyTrip",
-            "price": 1448,
-            "raw": "EaseMyTrip.com | ₹1,448"
+            "price": 1448
           },
           "status": "ota_lower",
           "deviations": [
@@ -8226,7 +5559,6 @@
               "gapPercent": 7.9,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "EaseMyTrip.com | ₹1,448",
               "listed": 1448,
               "allIn": null
             }
@@ -8234,29 +5566,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹1,836",
-              "listed": 1836,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi · Free breakfast | ₹2,365",
-              "listed": 2365,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct · 3 guests | ₹1,940",
-              "listed": 1940,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 12 Oct | , | ₹1,667",
-              "listed": 1667,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz | Official site | ₹1,572",
           "directListed": 1572,
           "directMember": null
         },
@@ -8284,8 +5593,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 10561,
-            "raw": "Agoda | Free cancellation until 10 Oct | ₹10,561"
+            "price": 10561
           },
           "status": "ota_lower",
           "deviations": [
@@ -8296,7 +5604,6 @@
               "gapPercent": 7.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct | ₹10,561",
               "listed": 10561,
               "allIn": null
             },
@@ -8307,7 +5614,6 @@
               "gapPercent": 2.3,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | Free cancellation until 10 Oct | , | ₹11,108",
               "listed": 11108,
               "allIn": null
             }
@@ -8315,34 +5621,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi | ₹13,363",
-              "listed": 13363,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct | ₹10,561",
-              "listed": 10561,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹15,845",
-              "listed": 15845,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹12,673",
-              "listed": 12673,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | ₹13,172",
-              "listed": 13172,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Autograph Connaught Place | Official site | ₹11,368",
           "directListed": 11368,
           "directMember": null
         },
@@ -8370,8 +5648,7 @@
           ],
           "lowest": {
             "source": "Agoda",
-            "price": 3822,
-            "raw": "Agoda | Free cancellation until 10 Oct | ₹3,822"
+            "price": 3822
           },
           "status": "ota_lower",
           "deviations": [
@@ -8382,7 +5659,6 @@
               "gapPercent": 5.1,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct | ₹3,822",
               "listed": 3822,
               "allIn": null
             },
@@ -8393,7 +5669,6 @@
               "gapPercent": 4.6,
               "tracked": false,
               "kind": "ota_lower",
-              "raw": "Bluepillow.in | Free cancellation until 11 Oct | , | ₹3,841",
               "listed": 3841,
               "allIn": null
             }
@@ -8401,34 +5676,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi · Free breakfast | ₹4,707",
-              "listed": 4707,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct | ₹3,822",
-              "listed": 3822,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹4,248",
-              "listed": 4248,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹4,148",
-              "listed": 4148,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | , | ₹4,297",
-              "listed": 4297,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier Bengaluru, Hebbal, Airport Road | Official site | ₹4,027",
           "directListed": 4027,
           "directMember": null
         },
@@ -8451,8 +5698,7 @@
           "others": [],
           "lowest": {
             "source": "Agoda",
-            "price": 3431,
-            "raw": "Agoda | Free cancellation until 10 Oct | ₹3,431"
+            "price": 3431
           },
           "status": "ota_lower",
           "deviations": [
@@ -8463,7 +5709,6 @@
               "gapPercent": 2.3,
               "tracked": true,
               "kind": "ota_lower",
-              "raw": "Agoda | Free cancellation until 10 Oct | ₹3,431",
               "listed": 3431,
               "allIn": null
             }
@@ -8471,34 +5716,6 @@
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct | ₹3,431",
-              "listed": 3431,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi | ₹4,971",
-              "listed": 4971,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | ₹4,061",
-              "listed": 4061,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹4,261",
-              "listed": 4261,
-              "allIn": null
-            },
-            "cleartrip": {
-              "raw": "Cleartrip.com | Free cancellation until 12 Oct | ₹3,820",
-              "listed": 3820,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Trinity - Chandigarh & Mohali | Official site | ₹3,513",
           "directListed": 3513,
           "directMember": null
         },
@@ -8521,8 +5738,7 @@
           "others": [],
           "lowest": {
             "source": "MakeMyTrip",
-            "price": 6201,
-            "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹6,201"
+            "price": 6201
           },
           "status": "direct_missing",
           "deviations": [
@@ -8537,24 +5753,7 @@
           ],
           "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
           "pricesFor": null,
-          "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 11 Oct · Free breakfast | ₹7,182",
-              "listed": 7182,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi · Free breakfast | ₹6,362",
-              "listed": 6362,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹6,201",
-              "listed": 6201,
-              "allIn": null
-            }
-          }
+          "basis": "listed"
         },
         {
           "id": "premier-noida-sector-135-expressway",
@@ -8575,8 +5774,7 @@
           "others": [],
           "lowest": {
             "source": "MakeMyTrip",
-            "price": 3465,
-            "raw": "MakeMyTrip.com | Free cancellation until 12 Oct · Free breakfast | ₹3,465"
+            "price": 3465
           },
           "status": "direct_missing",
           "deviations": [
@@ -8591,29 +5789,7 @@
           ],
           "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
           "pricesFor": null,
-          "basis": "listed",
-          "otaRaw": {
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct | ₹3,551",
-              "listed": 3551,
-              "allIn": null
-            },
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi · Free breakfast | ₹4,313",
-              "listed": 4313,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct · Free breakfast | ₹3,465",
-              "listed": 3465,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | Free cancellation until 10 Oct | , | ₹3,952",
-              "listed": 3952,
-              "allIn": null
-            }
-          }
+          "basis": "listed"
         },
         {
           "id": "select-malcha-chanakyapuri",
@@ -8637,8 +5813,7 @@
           "deviations": [],
           "note": "No rooms on the asked date on Google. Next date Google offers is 11–12 Oct.",
           "pricesFor": "11–12 Oct",
-          "basis": "listed",
-          "otaRaw": {}
+          "basis": "listed"
         },
         {
           "id": "patio-farms",
@@ -8662,8 +5837,7 @@
           "deviations": [],
           "note": "Google shows no Saltstayz.com or OTA price for this date.",
           "pricesFor": null,
-          "basis": "listed",
-          "otaRaw": {}
+          "basis": "listed"
         },
         {
           "id": "autograph-rishikesh",
@@ -8684,42 +5858,13 @@
           "others": [],
           "lowest": {
             "source": "Saltstayz.com",
-            "price": 5368,
-            "raw": "Saltstayz Autograph - Rishikesh | Official site | ₹5,368"
+            "price": 5368
           },
           "status": "direct_lowest",
           "deviations": [],
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 10 Oct · Free Wi-Fi · Free breakfast | ₹7,020",
-              "listed": 7020,
-              "allIn": null
-            },
-            "agoda": {
-              "raw": "Agoda | Free cancellation until 10 Oct · Free Wi-Fi · Free breakfast | ₹7,020",
-              "listed": 7020,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct · Free breakfast | ₹5,825",
-              "listed": 5825,
-              "allIn": null
-            },
-            "goibibo": {
-              "raw": "Goibibo.com | Free cancellation until 12 Oct | , | ₹5,823",
-              "listed": 5823,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹5,625",
-              "listed": 5625,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Autograph - Rishikesh | Official site | ₹5,368",
           "directListed": 5368,
           "directMember": null
         },
@@ -8742,32 +5887,13 @@
           "others": [],
           "lowest": {
             "source": "Saltstayz.com",
-            "price": 3150,
-            "raw": "Saltstayz Premier Faridabad Sector 28 | Official site | ₹3,150"
+            "price": 3150
           },
           "status": "direct_lowest",
           "deviations": [],
           "note": "",
           "pricesFor": null,
           "basis": "listed",
-          "otaRaw": {
-            "booking": {
-              "raw": "Booking.com | Free cancellation until 12 Oct · Free Wi-Fi · Free breakfast | ₹4,062",
-              "listed": 4062,
-              "allIn": null
-            },
-            "makemytrip": {
-              "raw": "MakeMyTrip.com | Free cancellation until 12 Oct | ₹3,324",
-              "listed": 3324,
-              "allIn": null
-            },
-            "ixigo": {
-              "raw": "ixigo | ₹3,252",
-              "listed": 3252,
-              "allIn": null
-            }
-          },
-          "directRaw": "Saltstayz Premier Faridabad Sector 28 | Official site | ₹3,150",
           "directListed": 3150,
           "directMember": null
         },
