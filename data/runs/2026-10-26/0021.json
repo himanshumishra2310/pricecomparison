@@ -1,0 +1,5467 @@
+{
+  "id": "2026-10-26_0021",
+  "stamp": "26 Oct 2026, 12:21 am IST",
+  "generatedAt": "2026-10-25T18:51:43.589Z",
+  "provider": "browser",
+  "adults": 2,
+  "scheduled": "GitHub Actions",
+  "indianOtasVisible": false,
+  "windows": [
+    {
+      "key": "D0",
+      "checkIn": "2026-10-26",
+      "checkOut": "2026-10-27",
+      "label": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+      "summary": {
+        "total": 33,
+        "comparable": 22,
+        "directLowest": 8,
+        "otaLower": 14,
+        "directMissing": 3,
+        "notOnGoogle": 5,
+        "unavailable": 3,
+        "errors": 0,
+        "pctDirectLowest": 36,
+        "avgGapNearestOta": -7.7,
+        "avgGapWhereDirectLowest": 5.2,
+        "avgGapWhereOtaLowest": -16
+      },
+      "rows": [
+        {
+          "id": "premier-arjun-marg",
+          "name": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Arjun Marg",
+          "nameMismatch": false,
+          "direct": 2976,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2482,
+            "booking": 3088,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [
+            {
+              "source": "Expedia",
+              "price": 2064
+            },
+            {
+              "source": "Bluepillow",
+              "price": 2535
+            }
+          ],
+          "lowest": {
+            "source": "Expedia",
+            "price": 2064
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Expedia",
+              "price": 2064,
+              "gapRupees": 912,
+              "gapPercent": 30.6,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 2064,
+              "allIn": null
+            },
+            {
+              "source": "Agoda",
+              "price": 2482,
+              "gapRupees": 494,
+              "gapPercent": 16.6,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2482,
+              "allIn": null
+            },
+            {
+              "source": "Bluepillow",
+              "price": 2535,
+              "gapRupees": 441,
+              "gapPercent": 14.8,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 2535,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2976,
+          "directMember": null
+        },
+        {
+          "id": "premier-cyber-hub",
+          "name": "Saltstayz Premier - Cyber Hub",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Cyber Hub",
+          "nameMismatch": false,
+          "direct": 3082,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2457,
+            "booking": 3353,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2457
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2457,
+              "gapRupees": 625,
+              "gapPercent": 20.3,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2457,
+              "allIn": 2619
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 3082,
+          "directMember": null
+        },
+        {
+          "id": "premier-millenium-city-centre",
+          "name": "Saltstayz Premier Millenium City Centre",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Millenium City Centre",
+          "nameMismatch": false,
+          "direct": 2893,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2324,
+            "booking": 3172,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2324
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2324,
+              "gapRupees": 569,
+              "gapPercent": 19.7,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2324,
+              "allIn": 2477
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2893,
+          "directMember": null
+        },
+        {
+          "id": "premier-sector-50-golf-course-ext-road",
+          "name": "Saltstayz Premier - Sector 50 & Golf Course Ext Road",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Sector 50",
+          "nameMismatch": false,
+          "direct": 1992,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 1619,
+            "booking": 1973,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 1619
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 1619,
+              "gapRupees": 373,
+              "gapPercent": 18.7,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 1619,
+              "allIn": 1729
+            },
+            {
+              "source": "Booking.com",
+              "price": 1973,
+              "gapRupees": 19,
+              "gapPercent": 1,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 1973,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 1992,
+          "directMember": null
+        },
+        {
+          "id": "select-golf-course-road-sector-27",
+          "name": "Saltstayz Select - Golf Course Road & Sector 27",
+          "brand": "Select",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Select Sector 27 - Golf Course Road",
+          "nameMismatch": false,
+          "direct": 2443,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 1985,
+            "booking": 2819,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 1985
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 1985,
+              "gapRupees": 458,
+              "gapPercent": 18.7,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 1985,
+              "allIn": 2121
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2443,
+          "directMember": null
+        },
+        {
+          "id": "premier-manesar-sector-86",
+          "name": "Saltstayz Premier - Manesar & Sector 86",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier – Manesar & Sector 86",
+          "nameMismatch": false,
+          "direct": 2059,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 1717,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 1717
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 1717,
+              "gapRupees": 342,
+              "gapPercent": 16.6,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 1717,
+              "allIn": 1831
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2059,
+          "directMember": null
+        },
+        {
+          "id": "premier-medicity",
+          "name": "Saltstayz Premier - Medicity (Near Medanta)",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Medicity",
+          "nameMismatch": false,
+          "direct": 2026,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 1691,
+            "booking": 2334,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [
+            {
+              "source": "Hotels.com",
+              "price": 1745
+            },
+            {
+              "source": "Bluepillow",
+              "price": 2000
+            }
+          ],
+          "lowest": {
+            "source": "Agoda",
+            "price": 1691
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 1691,
+              "gapRupees": 335,
+              "gapPercent": 16.5,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 1691,
+              "allIn": 1803
+            },
+            {
+              "source": "Hotels.com",
+              "price": 1745,
+              "gapRupees": 281,
+              "gapPercent": 13.9,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 1745,
+              "allIn": null
+            },
+            {
+              "source": "Bluepillow",
+              "price": 2000,
+              "gapRupees": 26,
+              "gapPercent": 1.3,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 2000,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2026,
+          "directMember": null
+        },
+        {
+          "id": "autograph-advant-sector-144",
+          "name": "Saltstayz Autograph - Advant & Sector 144",
+          "brand": "Autograph",
+          "city": "Noida",
+          "matchedName": "Saltstayz Autograph- Advant & Sector 144",
+          "nameMismatch": false,
+          "direct": 2947,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2485,
+            "booking": 3381,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2485
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2485,
+              "gapRupees": 462,
+              "gapPercent": 15.7,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2485,
+              "allIn": 2649
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2947,
+          "directMember": null
+        },
+        {
+          "id": "premier-paschim-vihar",
+          "name": "Saltstayz Premier - Paschim Vihar",
+          "brand": "Premier",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Premier - Paschim Vihar",
+          "nameMismatch": false,
+          "direct": 2654,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2237,
+            "booking": 2752,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2237
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2237,
+              "gapRupees": 417,
+              "gapPercent": 15.7,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2237,
+              "allIn": 2384
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2654,
+          "directMember": null
+        },
+        {
+          "id": "trinity-chandigarh-mohali",
+          "name": "Saltstayz Trinity - Chandigarh Mohali",
+          "brand": "Trinity",
+          "city": "Mohali",
+          "matchedName": "Saltstayz Trinity - Chandigarh & Mohali",
+          "nameMismatch": false,
+          "direct": 3571,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3018,
+            "booking": 3337,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 3018
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 3018,
+              "gapRupees": 553,
+              "gapPercent": 15.5,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 3018,
+              "allIn": 3217
+            },
+            {
+              "source": "Booking.com",
+              "price": 3337,
+              "gapRupees": 234,
+              "gapPercent": 6.6,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 3337,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 3571,
+          "directMember": null
+        },
+        {
+          "id": "select-nehru-place",
+          "name": "Saltstayz Select - Nehru Place & New Friends Colony",
+          "brand": "Select",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Select - Nehru Place & New Friends colony",
+          "nameMismatch": false,
+          "direct": 3456,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2937,
+            "booking": 3943,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2937
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2937,
+              "gapRupees": 519,
+              "gapPercent": 15,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2937,
+              "allIn": 3127
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 3456,
+          "directMember": null
+        },
+        {
+          "id": "golden-tulip-gurugram-manesar",
+          "name": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+          "brand": "Partnership",
+          "city": "Gurugram",
+          "matchedName": "Golden Tulip, Sector 29, Gurugram",
+          "nameMismatch": true,
+          "direct": 8805,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 7644,
+            "booking": 10349,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [
+            {
+              "source": "Tripadvisor",
+              "price": 7653
+            }
+          ],
+          "lowest": {
+            "source": "Agoda",
+            "price": 7644
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 7644,
+              "gapRupees": 1161,
+              "gapPercent": 13.2,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 7644,
+              "allIn": 9020
+            },
+            {
+              "source": "Tripadvisor",
+              "price": 7653,
+              "gapRupees": 1152,
+              "gapPercent": 13.1,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 7653,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 8805,
+          "directMember": null
+        },
+        {
+          "id": "premier-bengaluru-hebbal",
+          "name": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+          "brand": "Premier",
+          "city": "Bengaluru",
+          "matchedName": "Saltstayz Premier Bengaluru, Hebbal, Airport Road",
+          "nameMismatch": false,
+          "direct": 5363,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 5385,
+            "booking": 5128,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Booking.com",
+            "price": 5128
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Booking.com",
+              "price": 5128,
+              "gapRupees": 235,
+              "gapPercent": 4.4,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 5128,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 5363,
+          "directMember": null
+        },
+        {
+          "id": "premier-pitampura",
+          "name": "Saltstayz Premier - Pitampura",
+          "brand": "Premier",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Premier- Pitampura",
+          "nameMismatch": false,
+          "direct": 2976,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2873,
+            "booking": 3684,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2873
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2873,
+              "gapRupees": 103,
+              "gapPercent": 3.5,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2873,
+              "allIn": 3051
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2976,
+          "directMember": null
+        },
+        {
+          "id": "pause-east-of-kailash",
+          "name": "Pause by Saltstayz - East of Kailash",
+          "brand": "Pause",
+          "city": "New Delhi",
+          "matchedName": "Pause by Saltstayz - East of Kailash",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 4955,
+            "booking": 4360,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Booking.com",
+            "price": 4360
+          },
+          "status": "direct_missing",
+          "deviations": [
+            {
+              "source": "Booking.com",
+              "price": 4360,
+              "gapRupees": null,
+              "gapPercent": null,
+              "tracked": true,
+              "kind": "direct_missing"
+            }
+          ],
+          "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
+          "pricesFor": null,
+          "basis": "listed"
+        },
+        {
+          "id": "premier-sector-15-noida",
+          "name": "Saltstayz Premier - Sector 15 Noida",
+          "brand": "Premier",
+          "city": "Noida",
+          "matchedName": "Saltstayz Premier- Sector 15 Noida",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 4683,
+            "booking": 4121,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Booking.com",
+            "price": 4121
+          },
+          "status": "direct_missing",
+          "deviations": [
+            {
+              "source": "Booking.com",
+              "price": 4121,
+              "gapRupees": null,
+              "gapPercent": null,
+              "tracked": true,
+              "kind": "direct_missing"
+            }
+          ],
+          "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
+          "pricesFor": null,
+          "basis": "listed"
+        },
+        {
+          "id": "premier-noida-sector-135-expressway",
+          "name": "Saltstayz Premier Noida Sector 135 Expressway",
+          "brand": "Premier",
+          "city": "Noida",
+          "matchedName": "Saltstayz Premier— Noida Sector 135 Expressway",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2604,
+            "booking": 2861,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2604
+          },
+          "status": "direct_missing",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2604,
+              "gapRupees": null,
+              "gapPercent": null,
+              "tracked": true,
+              "kind": "direct_missing"
+            }
+          ],
+          "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
+          "pricesFor": null,
+          "basis": "listed"
+        },
+        {
+          "id": "autograph-connaught-place",
+          "name": "Saltstayz Autograph Connaught Place",
+          "brand": "Autograph",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Autograph Connaught Place",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "no_rooms",
+          "deviations": [],
+          "note": "No rooms on the asked date on Google. Next date Google offers is 27–28 Oct.",
+          "pricesFor": "27–28 Oct",
+          "basis": "listed"
+        },
+        {
+          "id": "patio-farms",
+          "name": "Patio Farms by Saltstayz",
+          "brand": "Patio",
+          "city": "Gurugram",
+          "matchedName": "Patio Farms By Saltstayz",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "no_prices",
+          "deviations": [],
+          "note": "Google shows no Saltstayz.com or OTA price for this date.",
+          "pricesFor": null,
+          "basis": "listed"
+        },
+        {
+          "id": "select-malcha-chanakyapuri",
+          "name": "Saltstayz Select - Malcha & Chanakyapuri",
+          "brand": "Select",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Select - Malcha & Chankyapuri",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "no_prices",
+          "deviations": [],
+          "note": "Google shows no Saltstayz.com or OTA price for this date.",
+          "pricesFor": null,
+          "basis": "listed"
+        },
+        {
+          "id": "autograph-rishikesh",
+          "name": "Saltstayz Autograph - Rishikesh Near Triveni Ghat",
+          "brand": "Autograph",
+          "city": "Rishikesh",
+          "matchedName": "Saltstayz Autograph - Rishikesh",
+          "nameMismatch": false,
+          "direct": 4776,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 5904,
+            "booking": 5195,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 4776
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 4776,
+          "directMember": null
+        },
+        {
+          "id": "premier-galleria-sector-27",
+          "name": "Saltstayz Premier - Galleria Market Road & Sector 27",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Galleria Market Road & Sector 27",
+          "nameMismatch": false,
+          "direct": 2726,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2893,
+            "booking": 3146,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 2726
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2726,
+          "directMember": null
+        },
+        {
+          "id": "premier-golf-course-extension-road",
+          "name": "Saltstayz Premier - Golf Course Extension Road",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Golf course extension road",
+          "nameMismatch": false,
+          "direct": 2381,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2503,
+            "booking": 2472,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 2381
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2381,
+          "directMember": null
+        },
+        {
+          "id": "premier-naraina",
+          "name": "Saltstayz Premier - Naraina, Central Delhi",
+          "brand": "Premier",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Premier - Naraina, Central Delhi",
+          "nameMismatch": false,
+          "direct": 3677,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3757,
+            "booking": 4222,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 3677
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 3677,
+          "directMember": null
+        },
+        {
+          "id": "premier-faridabad-sarita-vihar",
+          "name": "Saltstayz Premier Faridabad Near Sarita Vihar",
+          "brand": "Premier",
+          "city": "Faridabad",
+          "matchedName": "Saltstayz Premier Faridabad Sector 28",
+          "nameMismatch": false,
+          "direct": 2933,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3427,
+            "booking": 3198,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 2933
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2933,
+          "directMember": null
+        },
+        {
+          "id": "premier-near-sector-44-corporate-hub",
+          "name": "Saltstayz Premier Near Sector 44 Corporate Hub",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Residences Sector 45",
+          "nameMismatch": false,
+          "direct": 2194,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": 2281,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 2194
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2194,
+          "directMember": null
+        },
+        {
+          "id": "select-golf-course-road-sector-57",
+          "name": "Saltstayz Select - Golf Course Road & Sector 57",
+          "brand": "Select",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Select",
+          "nameMismatch": false,
+          "direct": 1954,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2028,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 1954
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 1954,
+          "directMember": null
+        },
+        {
+          "id": "select-unitech-cyber-park",
+          "name": "Saltstayz Select - Unitech Cyber Park",
+          "brand": "Select",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Select - Unitech Cyber Park",
+          "nameMismatch": false,
+          "direct": 1814,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": 1884,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 1814
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 1814,
+          "directMember": null
+        },
+        {
+          "id": "pause-mg-road",
+          "name": "Pause by Saltstayz - MG Road",
+          "brand": "Pause",
+          "city": "Gurugram",
+          "matchedName": null,
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "not_on_google",
+          "deviations": [],
+          "note": "Could not find this hotel on Google Hotels.",
+          "pricesFor": null
+        },
+        {
+          "id": "premier-golf-course-road-sector-42",
+          "name": "Saltstayz Premier - Golf Course Road & Sector 42",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": null,
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "not_on_google",
+          "deviations": [],
+          "note": "Could not find this hotel on Google Hotels. Closest Google listings: “Saltstayz Premier - Golf course extension road”, “Saltstayz Premier - Golf course extension road Official site”, “Saltstayz Premier Executive Serviced Apartment - Golf Course Extension Road”, “Frequently asked questions about Saltstayz Premier - Golf course extension road”, “₹2,357 Saltstayz Premier - Sector 57, Gurugram”. If one is this hotel, add its name to aliases in config/properties.json.",
+          "pricesFor": null
+        },
+        {
+          "id": "premier-near-golf-course-road-sector-57",
+          "name": "Saltstayz Premier - Near Golf Course Road & Sector 57",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Sector 57, Gurugram",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "not_on_google",
+          "deviations": [],
+          "note": "Google opened \"Saltstayz Premier - Sector 57, Gurugram\" instead of this hotel. Please check the search wording in config/properties.json.",
+          "pricesFor": null
+        },
+        {
+          "id": "premier-noida-sector-18-metro",
+          "name": "Saltstayz Premier - Noida, Near Sector 18 Metro",
+          "brand": "Premier",
+          "city": "Noida",
+          "matchedName": null,
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "not_on_google",
+          "deviations": [],
+          "note": "Could not find this hotel on Google Hotels.",
+          "pricesFor": null
+        },
+        {
+          "id": "select-near-sohna-road-city-center",
+          "name": "Saltstayz Select - Near Sohna Road City Center",
+          "brand": "Select",
+          "city": "Gurugram",
+          "matchedName": null,
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "not_on_google",
+          "deviations": [],
+          "note": "Could not find this hotel on Google Hotels.",
+          "pricesFor": null
+        }
+      ]
+    },
+    {
+      "key": "D1",
+      "checkIn": "2026-10-27",
+      "checkOut": "2026-10-28",
+      "label": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+      "summary": {
+        "total": 33,
+        "comparable": 24,
+        "directLowest": 8,
+        "otaLower": 16,
+        "directMissing": 3,
+        "notOnGoogle": 5,
+        "unavailable": 1,
+        "errors": 0,
+        "pctDirectLowest": 33,
+        "avgGapNearestOta": -5.8,
+        "avgGapWhereDirectLowest": 21,
+        "avgGapWhereOtaLowest": -20.5
+      },
+      "rows": [
+        {
+          "id": "premier-bengaluru-hebbal",
+          "name": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+          "brand": "Premier",
+          "city": "Bengaluru",
+          "matchedName": "Saltstayz Premier Bengaluru, Hebbal, Airport Road",
+          "nameMismatch": false,
+          "direct": 8070,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 4028,
+            "booking": 3545,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [
+            {
+              "source": "Travelmyth.com",
+              "price": 4028
+            },
+            {
+              "source": "Expedia",
+              "price": 7164
+            },
+            {
+              "source": "eDreams",
+              "price": 7164
+            }
+          ],
+          "lowest": {
+            "source": "Booking.com",
+            "price": 3545
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Booking.com",
+              "price": 3545,
+              "gapRupees": 4525,
+              "gapPercent": 56.1,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 3545,
+              "allIn": null
+            },
+            {
+              "source": "Agoda",
+              "price": 4028,
+              "gapRupees": 4042,
+              "gapPercent": 50.1,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 4028,
+              "allIn": null
+            },
+            {
+              "source": "Travelmyth.com",
+              "price": 4028,
+              "gapRupees": 4042,
+              "gapPercent": 50.1,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 4028,
+              "allIn": null
+            },
+            {
+              "source": "Expedia",
+              "price": 7164,
+              "gapRupees": 906,
+              "gapPercent": 11.2,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 7164,
+              "allIn": null
+            },
+            {
+              "source": "eDreams",
+              "price": 7164,
+              "gapRupees": 906,
+              "gapPercent": 11.2,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 7164,
+              "allIn": null
+            }
+          ],
+          "note": "Google also shows a member rate of ₹3,394 (save 58%) on the Saltstayz website. The public price ₹8,070 is used.",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 8070,
+          "directMember": 3394
+        },
+        {
+          "id": "premier-cyber-hub",
+          "name": "Saltstayz Premier - Cyber Hub",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Cyber Hub",
+          "nameMismatch": false,
+          "direct": 3538,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2708,
+            "booking": 3850,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2708
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2708,
+              "gapRupees": 830,
+              "gapPercent": 23.5,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2708,
+              "allIn": 2886
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 3538,
+          "directMember": null
+        },
+        {
+          "id": "select-golf-course-road-sector-27",
+          "name": "Saltstayz Select - Golf Course Road & Sector 27",
+          "brand": "Select",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Select Sector 27 - Golf Course Road",
+          "nameMismatch": false,
+          "direct": 2645,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2067,
+            "booking": 3041,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2067
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2067,
+              "gapRupees": 578,
+              "gapPercent": 21.9,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2067,
+              "allIn": 2209
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2645,
+          "directMember": null
+        },
+        {
+          "id": "premier-sector-50-golf-course-ext-road",
+          "name": "Saltstayz Premier - Sector 50 & Golf Course Ext Road",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Sector 50",
+          "nameMismatch": false,
+          "direct": 2122,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 1659,
+            "booking": 2083,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 1659
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 1659,
+              "gapRupees": 463,
+              "gapPercent": 21.8,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 1659,
+              "allIn": 1773
+            },
+            {
+              "source": "Booking.com",
+              "price": 2083,
+              "gapRupees": 39,
+              "gapPercent": 1.8,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2083,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2122,
+          "directMember": null
+        },
+        {
+          "id": "premier-manesar-sector-86",
+          "name": "Saltstayz Premier - Manesar & Sector 86",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier – Manesar & Sector 86",
+          "nameMismatch": false,
+          "direct": 2707,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2156,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2156
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2156,
+              "gapRupees": 551,
+              "gapPercent": 20.4,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2156,
+              "allIn": 2300
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2707,
+          "directMember": null
+        },
+        {
+          "id": "premier-arjun-marg",
+          "name": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Arjun Marg",
+          "nameMismatch": false,
+          "direct": 3024,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2421,
+            "booking": 3139,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2421
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2421,
+              "gapRupees": 603,
+              "gapPercent": 19.9,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2421,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 3024,
+          "directMember": null
+        },
+        {
+          "id": "premier-faridabad-sarita-vihar",
+          "name": "Saltstayz Premier Faridabad Near Sarita Vihar",
+          "brand": "Premier",
+          "city": "Faridabad",
+          "matchedName": "Saltstayz Premier Faridabad Sector 28",
+          "nameMismatch": false,
+          "direct": 2490,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2000,
+            "booking": 2732,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2000
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2000,
+              "gapRupees": 490,
+              "gapPercent": 19.7,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2000,
+              "allIn": 2132
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2490,
+          "directMember": null
+        },
+        {
+          "id": "premier-naraina",
+          "name": "Saltstayz Premier - Naraina, Central Delhi",
+          "brand": "Premier",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Premier - Naraina, Central Delhi",
+          "nameMismatch": false,
+          "direct": 3936,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3183,
+            "booking": 4093,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 3183
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 3183,
+              "gapRupees": 753,
+              "gapPercent": 19.1,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 3183,
+              "allIn": 3400
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 3936,
+          "directMember": null
+        },
+        {
+          "id": "select-golf-course-road-sector-57",
+          "name": "Saltstayz Select - Golf Course Road & Sector 57",
+          "brand": "Select",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Select",
+          "nameMismatch": false,
+          "direct": 2107,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 1736,
+            "booking": 2187,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 1736
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 1736,
+              "gapRupees": 371,
+              "gapPercent": 17.6,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 1736,
+              "allIn": 1854
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2107,
+          "directMember": null
+        },
+        {
+          "id": "premier-golf-course-extension-road",
+          "name": "Saltstayz Premier - Golf Course Extension Road",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Golf course extension road",
+          "nameMismatch": false,
+          "direct": 2405,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2002,
+            "booking": 2495,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2002
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2002,
+              "gapRupees": 403,
+              "gapPercent": 16.8,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2002,
+              "allIn": 2135
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2405,
+          "directMember": null
+        },
+        {
+          "id": "select-malcha-chanakyapuri",
+          "name": "Saltstayz Select - Malcha & Chanakyapuri",
+          "brand": "Select",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Select - Malcha & Chankyapuri",
+          "nameMismatch": false,
+          "direct": 5626,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 4699,
+            "booking": 6442,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 4699
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 4699,
+              "gapRupees": 927,
+              "gapPercent": 16.5,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 4699,
+              "allIn": 5010
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 5626,
+          "directMember": null
+        },
+        {
+          "id": "premier-medicity",
+          "name": "Saltstayz Premier - Medicity (Near Medanta)",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Medicity",
+          "nameMismatch": false,
+          "direct": 2107,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2215,
+            "booking": 2427,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [
+            {
+              "source": "Hotels.com",
+              "price": 1772
+            },
+            {
+              "source": "Expedia",
+              "price": 1885
+            }
+          ],
+          "lowest": {
+            "source": "Hotels.com",
+            "price": 1772
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Hotels.com",
+              "price": 1772,
+              "gapRupees": 335,
+              "gapPercent": 15.9,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 1772,
+              "allIn": null
+            },
+            {
+              "source": "Expedia",
+              "price": 1885,
+              "gapRupees": 222,
+              "gapPercent": 10.5,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 1885,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2107,
+          "directMember": null
+        },
+        {
+          "id": "autograph-advant-sector-144",
+          "name": "Saltstayz Autograph - Advant & Sector 144",
+          "brand": "Autograph",
+          "city": "Noida",
+          "matchedName": "Saltstayz Autograph- Advant & Sector 144",
+          "nameMismatch": false,
+          "direct": 3499,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2947,
+            "booking": 3919,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2947
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2947,
+              "gapRupees": 552,
+              "gapPercent": 15.8,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2947,
+              "allIn": 3142
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 3499,
+          "directMember": null
+        },
+        {
+          "id": "premier-paschim-vihar",
+          "name": "Saltstayz Premier - Paschim Vihar",
+          "brand": "Premier",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Premier - Paschim Vihar",
+          "nameMismatch": false,
+          "direct": 2746,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2316,
+            "booking": 2850,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2316
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2316,
+              "gapRupees": 430,
+              "gapPercent": 15.7,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2316,
+              "allIn": 2469
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2746,
+          "directMember": null
+        },
+        {
+          "id": "select-nehru-place",
+          "name": "Saltstayz Select - Nehru Place & New Friends Colony",
+          "brand": "Select",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Select - Nehru Place & New Friends colony",
+          "nameMismatch": false,
+          "direct": 2794,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2398,
+            "booking": 3218,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2398
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2398,
+              "gapRupees": 396,
+              "gapPercent": 14.2,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2398,
+              "allIn": 2553
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2794,
+          "directMember": null
+        },
+        {
+          "id": "premier-pitampura",
+          "name": "Saltstayz Premier - Pitampura",
+          "brand": "Premier",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Premier- Pitampura",
+          "nameMismatch": false,
+          "direct": 2894,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2499,
+            "booking": 3337,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2499
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2499,
+              "gapRupees": 395,
+              "gapPercent": 13.6,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2499,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2894,
+          "directMember": null
+        },
+        {
+          "id": "pause-east-of-kailash",
+          "name": "Pause by Saltstayz - East of Kailash",
+          "brand": "Pause",
+          "city": "New Delhi",
+          "matchedName": "Pause by Saltstayz - East of Kailash",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 4729,
+            "booking": 4162,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Booking.com",
+            "price": 4162
+          },
+          "status": "direct_missing",
+          "deviations": [
+            {
+              "source": "Booking.com",
+              "price": 4162,
+              "gapRupees": null,
+              "gapPercent": null,
+              "tracked": true,
+              "kind": "direct_missing"
+            }
+          ],
+          "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
+          "pricesFor": null,
+          "basis": "listed"
+        },
+        {
+          "id": "premier-sector-15-noida",
+          "name": "Saltstayz Premier - Sector 15 Noida",
+          "brand": "Premier",
+          "city": "Noida",
+          "matchedName": "Saltstayz Premier- Sector 15 Noida",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 5018,
+            "booking": 4200,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Booking.com",
+            "price": 4200
+          },
+          "status": "direct_missing",
+          "deviations": [
+            {
+              "source": "Booking.com",
+              "price": 4200,
+              "gapRupees": null,
+              "gapPercent": null,
+              "tracked": true,
+              "kind": "direct_missing"
+            }
+          ],
+          "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
+          "pricesFor": null,
+          "basis": "listed"
+        },
+        {
+          "id": "premier-noida-sector-135-expressway",
+          "name": "Saltstayz Premier Noida Sector 135 Expressway",
+          "brand": "Premier",
+          "city": "Noida",
+          "matchedName": "Saltstayz Premier— Noida Sector 135 Expressway",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3422,
+            "booking": 3011,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Booking.com",
+            "price": 3011
+          },
+          "status": "direct_missing",
+          "deviations": [
+            {
+              "source": "Booking.com",
+              "price": 3011,
+              "gapRupees": null,
+              "gapPercent": null,
+              "tracked": true,
+              "kind": "direct_missing"
+            }
+          ],
+          "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
+          "pricesFor": null,
+          "basis": "listed"
+        },
+        {
+          "id": "patio-farms",
+          "name": "Patio Farms by Saltstayz",
+          "brand": "Patio",
+          "city": "Gurugram",
+          "matchedName": "Patio Farms By Saltstayz",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "no_prices",
+          "deviations": [],
+          "note": "Google shows no Saltstayz.com or OTA price for this date.",
+          "pricesFor": null,
+          "basis": "listed"
+        },
+        {
+          "id": "golden-tulip-gurugram-manesar",
+          "name": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+          "brand": "Partnership",
+          "city": "Gurugram",
+          "matchedName": "Golden Tulip, Sector 29, Gurugram",
+          "nameMismatch": true,
+          "direct": 8805,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 9908,
+            "booking": 13409,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 8805
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 8805,
+          "directMember": null
+        },
+        {
+          "id": "autograph-rishikesh",
+          "name": "Saltstayz Autograph - Rishikesh Near Triveni Ghat",
+          "brand": "Autograph",
+          "city": "Rishikesh",
+          "matchedName": "Saltstayz Autograph - Rishikesh",
+          "nameMismatch": false,
+          "direct": 4200,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 5192,
+            "booking": 4569,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 4200
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 4200,
+          "directMember": null
+        },
+        {
+          "id": "autograph-connaught-place",
+          "name": "Saltstayz Autograph Connaught Place",
+          "brand": "Autograph",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Autograph Connaught Place",
+          "nameMismatch": false,
+          "direct": 10123,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 11722,
+            "booking": 11011,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 10123
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 10123,
+          "directMember": null
+        },
+        {
+          "id": "premier-galleria-sector-27",
+          "name": "Saltstayz Premier - Galleria Market Road & Sector 27",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Galleria Market Road & Sector 27",
+          "nameMismatch": false,
+          "direct": 2597,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2759,
+            "booking": 3001,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 2597
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2597,
+          "directMember": null
+        },
+        {
+          "id": "premier-millenium-city-centre",
+          "name": "Saltstayz Premier Millenium City Centre",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Millenium City Centre",
+          "nameMismatch": false,
+          "direct": 2817,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2856,
+            "booking": 3094,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 2817
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2817,
+          "directMember": null
+        },
+        {
+          "id": "premier-near-sector-44-corporate-hub",
+          "name": "Saltstayz Premier Near Sector 44 Corporate Hub",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Residences Sector 45",
+          "nameMismatch": false,
+          "direct": 2266,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2677,
+            "booking": 2355,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 2266
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2266,
+          "directMember": null
+        },
+        {
+          "id": "select-unitech-cyber-park",
+          "name": "Saltstayz Select - Unitech Cyber Park",
+          "brand": "Select",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Select - Unitech Cyber Park",
+          "nameMismatch": false,
+          "direct": 1896,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": 4220,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 1896
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 1896,
+          "directMember": null
+        },
+        {
+          "id": "trinity-chandigarh-mohali",
+          "name": "Saltstayz Trinity - Chandigarh Mohali",
+          "brand": "Trinity",
+          "city": "Mohali",
+          "matchedName": "Saltstayz Trinity - Chandigarh & Mohali",
+          "nameMismatch": false,
+          "direct": 3427,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3650,
+            "booking": 3559,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 3427
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 3427,
+          "directMember": null
+        },
+        {
+          "id": "pause-mg-road",
+          "name": "Pause by Saltstayz - MG Road",
+          "brand": "Pause",
+          "city": "Gurugram",
+          "matchedName": null,
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "not_on_google",
+          "deviations": [],
+          "note": "Could not find this hotel on Google Hotels.",
+          "pricesFor": null
+        },
+        {
+          "id": "premier-golf-course-road-sector-42",
+          "name": "Saltstayz Premier - Golf Course Road & Sector 42",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": null,
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "not_on_google",
+          "deviations": [],
+          "note": "Could not find this hotel on Google Hotels. Closest Google listings: “Saltstayz Premier - Golf course extension road”, “Saltstayz Premier - Golf course extension road Official site”, “Saltstayz Premier Executive Serviced Apartment - Golf Course Extension Road”, “Frequently asked questions about Saltstayz Premier - Golf course extension road”, “₹2,357 Saltstayz Premier - Sector 57, Gurugram”. If one is this hotel, add its name to aliases in config/properties.json.",
+          "pricesFor": null
+        },
+        {
+          "id": "premier-near-golf-course-road-sector-57",
+          "name": "Saltstayz Premier - Near Golf Course Road & Sector 57",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Sector 57, Gurugram",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "not_on_google",
+          "deviations": [],
+          "note": "Google opened \"Saltstayz Premier - Sector 57, Gurugram\" instead of this hotel. Please check the search wording in config/properties.json.",
+          "pricesFor": null
+        },
+        {
+          "id": "premier-noida-sector-18-metro",
+          "name": "Saltstayz Premier - Noida, Near Sector 18 Metro",
+          "brand": "Premier",
+          "city": "Noida",
+          "matchedName": null,
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "not_on_google",
+          "deviations": [],
+          "note": "Could not find this hotel on Google Hotels.",
+          "pricesFor": null
+        },
+        {
+          "id": "select-near-sohna-road-city-center",
+          "name": "Saltstayz Select - Near Sohna Road City Center",
+          "brand": "Select",
+          "city": "Gurugram",
+          "matchedName": null,
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "not_on_google",
+          "deviations": [],
+          "note": "Could not find this hotel on Google Hotels.",
+          "pricesFor": null
+        }
+      ]
+    },
+    {
+      "key": "D2",
+      "checkIn": "2026-10-28",
+      "checkOut": "2026-10-29",
+      "label": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+      "summary": {
+        "total": 33,
+        "comparable": 23,
+        "directLowest": 3,
+        "otaLower": 20,
+        "directMissing": 3,
+        "notOnGoogle": 5,
+        "unavailable": 2,
+        "errors": 0,
+        "pctDirectLowest": 13,
+        "avgGapNearestOta": -15.2,
+        "avgGapWhereDirectLowest": 3.6,
+        "avgGapWhereOtaLowest": -19
+      },
+      "rows": [
+        {
+          "id": "premier-bengaluru-hebbal",
+          "name": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+          "brand": "Premier",
+          "city": "Bengaluru",
+          "matchedName": "Saltstayz Premier Bengaluru, Hebbal, Airport Road",
+          "nameMismatch": false,
+          "direct": 11810,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 5052,
+            "booking": 4530,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [
+            {
+              "source": "Travelmyth.com",
+              "price": 5147
+            },
+            {
+              "source": "Hotels.com",
+              "price": 8681
+            },
+            {
+              "source": "Expedia",
+              "price": 8846
+            },
+            {
+              "source": "Travelocity",
+              "price": 8846
+            },
+            {
+              "source": "eDreams",
+              "price": 8846
+            }
+          ],
+          "lowest": {
+            "source": "Booking.com",
+            "price": 4530
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Booking.com",
+              "price": 4530,
+              "gapRupees": 7280,
+              "gapPercent": 61.6,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 4530,
+              "allIn": null
+            },
+            {
+              "source": "Agoda",
+              "price": 5052,
+              "gapRupees": 6758,
+              "gapPercent": 57.2,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 5052,
+              "allIn": null
+            },
+            {
+              "source": "Travelmyth.com",
+              "price": 5147,
+              "gapRupees": 6663,
+              "gapPercent": 56.4,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 5147,
+              "allIn": null
+            },
+            {
+              "source": "Hotels.com",
+              "price": 8681,
+              "gapRupees": 3129,
+              "gapPercent": 26.5,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 8681,
+              "allIn": null
+            },
+            {
+              "source": "Expedia",
+              "price": 8846,
+              "gapRupees": 2964,
+              "gapPercent": 25.1,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 8846,
+              "allIn": null
+            },
+            {
+              "source": "Travelocity",
+              "price": 8846,
+              "gapRupees": 2964,
+              "gapPercent": 25.1,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 8846,
+              "allIn": null
+            },
+            {
+              "source": "eDreams",
+              "price": 8846,
+              "gapRupees": 2964,
+              "gapPercent": 25.1,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 8846,
+              "allIn": null
+            }
+          ],
+          "note": "Google also shows a member rate of ₹5,189 (save 56%) on the Saltstayz website. The public price ₹11,810 is used.",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 11810,
+          "directMember": 5189
+        },
+        {
+          "id": "premier-manesar-sector-86",
+          "name": "Saltstayz Premier - Manesar & Sector 86",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier – Manesar & Sector 86",
+          "nameMismatch": false,
+          "direct": 4387,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3063,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 3063
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 3063,
+              "gapRupees": 1324,
+              "gapPercent": 30.2,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 3063,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 4387,
+          "directMember": null
+        },
+        {
+          "id": "premier-faridabad-sarita-vihar",
+          "name": "Saltstayz Premier Faridabad Near Sarita Vihar",
+          "brand": "Premier",
+          "city": "Faridabad",
+          "matchedName": "Saltstayz Premier Faridabad Sector 28",
+          "nameMismatch": false,
+          "direct": 4037,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2898,
+            "booking": 3848,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2898
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2898,
+              "gapRupees": 1139,
+              "gapPercent": 28.2,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2898,
+              "allIn": null
+            },
+            {
+              "source": "Booking.com",
+              "price": 3848,
+              "gapRupees": 189,
+              "gapPercent": 4.7,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 3848,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 4037,
+          "directMember": null
+        },
+        {
+          "id": "premier-millenium-city-centre",
+          "name": "Saltstayz Premier Millenium City Centre",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Millenium City Centre",
+          "nameMismatch": false,
+          "direct": 4607,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3317,
+            "booking": 4528,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 3317
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 3317,
+              "gapRupees": 1290,
+              "gapPercent": 28,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 3317,
+              "allIn": null
+            },
+            {
+              "source": "Booking.com",
+              "price": 4528,
+              "gapRupees": 79,
+              "gapPercent": 1.7,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 4528,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 4607,
+          "directMember": null
+        },
+        {
+          "id": "premier-sector-50-golf-course-ext-road",
+          "name": "Saltstayz Premier - Sector 50 & Golf Course Ext Road",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Sector 50",
+          "nameMismatch": false,
+          "direct": 3197,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2315,
+            "booking": 2762,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2315
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2315,
+              "gapRupees": 882,
+              "gapPercent": 27.6,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2315,
+              "allIn": null
+            },
+            {
+              "source": "Booking.com",
+              "price": 2762,
+              "gapRupees": 435,
+              "gapPercent": 13.6,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2762,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 3197,
+          "directMember": null
+        },
+        {
+          "id": "premier-medicity",
+          "name": "Saltstayz Premier - Medicity (Near Medanta)",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Medicity",
+          "nameMismatch": false,
+          "direct": 3029,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2267,
+            "booking": 3131,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [
+            {
+              "source": "Hotels.com",
+              "price": 2481
+            },
+            {
+              "source": "Trip.com",
+              "price": 2998
+            }
+          ],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2267
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2267,
+              "gapRupees": 762,
+              "gapPercent": 25.2,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2267,
+              "allIn": null
+            },
+            {
+              "source": "Hotels.com",
+              "price": 2481,
+              "gapRupees": 548,
+              "gapPercent": 18.1,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 2481,
+              "allIn": null
+            },
+            {
+              "source": "Trip.com",
+              "price": 2998,
+              "gapRupees": 31,
+              "gapPercent": 1,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 2998,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 3029,
+          "directMember": null
+        },
+        {
+          "id": "autograph-advant-sector-144",
+          "name": "Saltstayz Autograph - Advant & Sector 144",
+          "brand": "Autograph",
+          "city": "Noida",
+          "matchedName": "Saltstayz Autograph- Advant & Sector 144",
+          "nameMismatch": false,
+          "direct": 5155,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3883,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 3883
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 3883,
+              "gapRupees": 1272,
+              "gapPercent": 24.7,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 3883,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 5155,
+          "directMember": null
+        },
+        {
+          "id": "premier-cyber-hub",
+          "name": "Saltstayz Premier - Cyber Hub",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Cyber Hub",
+          "nameMismatch": false,
+          "direct": 4435,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3355,
+            "booking": 4579,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 3355
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 3355,
+              "gapRupees": 1080,
+              "gapPercent": 24.4,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 3355,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 4435,
+          "directMember": null
+        },
+        {
+          "id": "premier-paschim-vihar",
+          "name": "Saltstayz Premier - Paschim Vihar",
+          "brand": "Premier",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Premier - Paschim Vihar",
+          "nameMismatch": false,
+          "direct": 4435,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3355,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 3355
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 3355,
+              "gapRupees": 1080,
+              "gapPercent": 24.4,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 3355,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 4435,
+          "directMember": null
+        },
+        {
+          "id": "premier-arjun-marg",
+          "name": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Arjun Marg",
+          "nameMismatch": false,
+          "direct": 4118,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3871,
+            "booking": 3824,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [
+            {
+              "source": "Traveloka",
+              "price": 3148
+            },
+            {
+              "source": "Expedia",
+              "price": 3149
+            },
+            {
+              "source": "Bluepillow",
+              "price": 3674
+            }
+          ],
+          "lowest": {
+            "source": "Traveloka",
+            "price": 3148
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Traveloka",
+              "price": 3148,
+              "gapRupees": 970,
+              "gapPercent": 23.6,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 3148,
+              "allIn": 3305
+            },
+            {
+              "source": "Expedia",
+              "price": 3149,
+              "gapRupees": 969,
+              "gapPercent": 23.5,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 3149,
+              "allIn": null
+            },
+            {
+              "source": "Bluepillow",
+              "price": 3674,
+              "gapRupees": 444,
+              "gapPercent": 10.8,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 3674,
+              "allIn": null
+            },
+            {
+              "source": "Booking.com",
+              "price": 3824,
+              "gapRupees": 294,
+              "gapPercent": 7.1,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 3824,
+              "allIn": null
+            },
+            {
+              "source": "Agoda",
+              "price": 3871,
+              "gapRupees": 247,
+              "gapPercent": 6,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 3871,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 4118,
+          "directMember": null
+        },
+        {
+          "id": "select-golf-course-road-sector-57",
+          "name": "Saltstayz Select - Golf Course Road & Sector 57",
+          "brand": "Select",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Select",
+          "nameMismatch": false,
+          "direct": 2981,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2276,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2276
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2276,
+              "gapRupees": 705,
+              "gapPercent": 23.6,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2276,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2981,
+          "directMember": null
+        },
+        {
+          "id": "select-golf-course-road-sector-27",
+          "name": "Saltstayz Select - Golf Course Road & Sector 27",
+          "brand": "Select",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Select Sector 27 - Golf Course Road",
+          "nameMismatch": false,
+          "direct": 3120,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 2856,
+            "booking": 6200,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [
+            {
+              "source": "Trip.com",
+              "price": 3072
+            }
+          ],
+          "lowest": {
+            "source": "Agoda",
+            "price": 2856
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 2856,
+              "gapRupees": 264,
+              "gapPercent": 8.5,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2856,
+              "allIn": null
+            },
+            {
+              "source": "Trip.com",
+              "price": 3072,
+              "gapRupees": 48,
+              "gapPercent": 1.5,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 3072,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 3120,
+          "directMember": null
+        },
+        {
+          "id": "premier-naraina",
+          "name": "Saltstayz Premier - Naraina, Central Delhi",
+          "brand": "Premier",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Premier - Naraina, Central Delhi",
+          "nameMismatch": false,
+          "direct": 5246,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 4811,
+            "booking": 5407,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 4811
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 4811,
+              "gapRupees": 435,
+              "gapPercent": 8.3,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 4811,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 5246,
+          "directMember": null
+        },
+        {
+          "id": "select-nehru-place",
+          "name": "Saltstayz Select - Nehru Place & New Friends Colony",
+          "brand": "Select",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Select - Nehru Place & New Friends colony",
+          "nameMismatch": false,
+          "direct": 3802,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3664,
+            "booking": 3907,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [
+            {
+              "source": "Traveloka",
+              "price": 3498
+            }
+          ],
+          "lowest": {
+            "source": "Traveloka",
+            "price": 3498
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Traveloka",
+              "price": 3498,
+              "gapRupees": 304,
+              "gapPercent": 8,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 3498,
+              "allIn": null
+            },
+            {
+              "source": "Agoda",
+              "price": 3664,
+              "gapRupees": 138,
+              "gapPercent": 3.6,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 3664,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 3802,
+          "directMember": null
+        },
+        {
+          "id": "select-unitech-cyber-park",
+          "name": "Saltstayz Select - Unitech Cyber Park",
+          "brand": "Select",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Select - Unitech Cyber Park",
+          "nameMismatch": false,
+          "direct": 2894,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": 2682,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [
+            {
+              "source": "Trip.com",
+              "price": 2850
+            }
+          ],
+          "lowest": {
+            "source": "Booking.com",
+            "price": 2682
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Booking.com",
+              "price": 2682,
+              "gapRupees": 212,
+              "gapPercent": 7.3,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 2682,
+              "allIn": null
+            },
+            {
+              "source": "Trip.com",
+              "price": 2850,
+              "gapRupees": 44,
+              "gapPercent": 1.5,
+              "tracked": false,
+              "kind": "ota_lower",
+              "listed": 2850,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 2894,
+          "directMember": null
+        },
+        {
+          "id": "premier-near-sector-44-corporate-hub",
+          "name": "Saltstayz Premier Near Sector 44 Corporate Hub",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Residences Sector 45",
+          "nameMismatch": false,
+          "direct": 3394,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3578,
+            "booking": 3148,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Booking.com",
+            "price": 3148
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Booking.com",
+              "price": 3148,
+              "gapRupees": 246,
+              "gapPercent": 7.2,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 3148,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 3394,
+          "directMember": null
+        },
+        {
+          "id": "trinity-chandigarh-mohali",
+          "name": "Saltstayz Trinity - Chandigarh Mohali",
+          "brand": "Trinity",
+          "city": "Mohali",
+          "matchedName": "Saltstayz Trinity - Chandigarh & Mohali",
+          "nameMismatch": false,
+          "direct": 4795,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 4568,
+            "booking": 4454,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Booking.com",
+            "price": 4454
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Booking.com",
+              "price": 4454,
+              "gapRupees": 341,
+              "gapPercent": 7.1,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 4454,
+              "allIn": null
+            },
+            {
+              "source": "Agoda",
+              "price": 4568,
+              "gapRupees": 227,
+              "gapPercent": 4.7,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 4568,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 4795,
+          "directMember": null
+        },
+        {
+          "id": "premier-galleria-sector-27",
+          "name": "Saltstayz Premier - Galleria Market Road & Sector 27",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Galleria Market Road & Sector 27",
+          "nameMismatch": false,
+          "direct": 4435,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 4224,
+            "booking": 4486,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 4224
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 4224,
+              "gapRupees": 211,
+              "gapPercent": 4.8,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 4224,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 4435,
+          "directMember": null
+        },
+        {
+          "id": "premier-golf-course-extension-road",
+          "name": "Saltstayz Premier - Golf Course Extension Road",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Golf course extension road",
+          "nameMismatch": false,
+          "direct": 3941,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 3818,
+            "booking": 3778,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Booking.com",
+            "price": 3778
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Booking.com",
+              "price": 3778,
+              "gapRupees": 163,
+              "gapPercent": 4.1,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 3778,
+              "allIn": null
+            },
+            {
+              "source": "Agoda",
+              "price": 3818,
+              "gapRupees": 123,
+              "gapPercent": 3.1,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 3818,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 3941,
+          "directMember": null
+        },
+        {
+          "id": "golden-tulip-gurugram-manesar",
+          "name": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+          "brand": "Partnership",
+          "city": "Gurugram",
+          "matchedName": "Golden Tulip, Sector 29, Gurugram",
+          "nameMismatch": true,
+          "direct": 8805,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 8442,
+            "booking": 11429,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Agoda",
+            "price": 8442
+          },
+          "status": "ota_lower",
+          "deviations": [
+            {
+              "source": "Agoda",
+              "price": 8442,
+              "gapRupees": 363,
+              "gapPercent": 4.1,
+              "tracked": true,
+              "kind": "ota_lower",
+              "listed": 8442,
+              "allIn": null
+            }
+          ],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 8805,
+          "directMember": null
+        },
+        {
+          "id": "pause-east-of-kailash",
+          "name": "Pause by Saltstayz - East of Kailash",
+          "brand": "Pause",
+          "city": "New Delhi",
+          "matchedName": "Pause by Saltstayz - East of Kailash",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 8751,
+            "booking": 7701,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Booking.com",
+            "price": 7701
+          },
+          "status": "direct_missing",
+          "deviations": [
+            {
+              "source": "Booking.com",
+              "price": 7701,
+              "gapRupees": null,
+              "gapPercent": null,
+              "tracked": true,
+              "kind": "direct_missing"
+            }
+          ],
+          "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
+          "pricesFor": null,
+          "basis": "listed"
+        },
+        {
+          "id": "premier-sector-15-noida",
+          "name": "Saltstayz Premier - Sector 15 Noida",
+          "brand": "Premier",
+          "city": "Noida",
+          "matchedName": "Saltstayz Premier- Sector 15 Noida",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 5498,
+            "booking": 4838,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Booking.com",
+            "price": 4838
+          },
+          "status": "direct_missing",
+          "deviations": [
+            {
+              "source": "Booking.com",
+              "price": 4838,
+              "gapRupees": null,
+              "gapPercent": null,
+              "tracked": true,
+              "kind": "direct_missing"
+            }
+          ],
+          "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
+          "pricesFor": null,
+          "basis": "listed"
+        },
+        {
+          "id": "premier-noida-sector-135-expressway",
+          "name": "Saltstayz Premier Noida Sector 135 Expressway",
+          "brand": "Premier",
+          "city": "Noida",
+          "matchedName": "Saltstayz Premier— Noida Sector 135 Expressway",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 5216,
+            "booking": 4590,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Booking.com",
+            "price": 4590
+          },
+          "status": "direct_missing",
+          "deviations": [
+            {
+              "source": "Booking.com",
+              "price": 4590,
+              "gapRupees": null,
+              "gapPercent": null,
+              "tracked": true,
+              "kind": "direct_missing"
+            }
+          ],
+          "note": "Saltstayz.com price not shown on Google. OTAs are selling.",
+          "pricesFor": null,
+          "basis": "listed"
+        },
+        {
+          "id": "select-malcha-chanakyapuri",
+          "name": "Saltstayz Select - Malcha & Chanakyapuri",
+          "brand": "Select",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Select - Malcha & Chankyapuri",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "no_rooms",
+          "deviations": [],
+          "note": "No rooms on the asked date on Google. Next date Google offers is 27–28 Oct.",
+          "pricesFor": "27–28 Oct",
+          "basis": "listed"
+        },
+        {
+          "id": "patio-farms",
+          "name": "Patio Farms by Saltstayz",
+          "brand": "Patio",
+          "city": "Gurugram",
+          "matchedName": "Patio Farms By Saltstayz",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "no_prices",
+          "deviations": [],
+          "note": "Google shows no Saltstayz.com or OTA price for this date.",
+          "pricesFor": null,
+          "basis": "listed"
+        },
+        {
+          "id": "autograph-rishikesh",
+          "name": "Saltstayz Autograph - Rishikesh Near Triveni Ghat",
+          "brand": "Autograph",
+          "city": "Rishikesh",
+          "matchedName": "Saltstayz Autograph - Rishikesh",
+          "nameMismatch": false,
+          "direct": 7229,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 8732,
+            "booking": 7684,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 7229
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 7229,
+          "directMember": null
+        },
+        {
+          "id": "autograph-connaught-place",
+          "name": "Saltstayz Autograph Connaught Place",
+          "brand": "Autograph",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Autograph Connaught Place",
+          "nameMismatch": false,
+          "direct": 13118,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 14395,
+            "booking": 13531,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 13118
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 13118,
+          "directMember": null
+        },
+        {
+          "id": "premier-pitampura",
+          "name": "Saltstayz Premier - Pitampura",
+          "brand": "Premier",
+          "city": "New Delhi",
+          "matchedName": "Saltstayz Premier- Pitampura",
+          "nameMismatch": false,
+          "direct": 4387,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": 4447,
+            "booking": 4528,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": {
+            "source": "Saltstayz.com",
+            "price": 4387
+          },
+          "status": "direct_lowest",
+          "deviations": [],
+          "note": "",
+          "pricesFor": null,
+          "basis": "listed",
+          "directListed": 4387,
+          "directMember": null
+        },
+        {
+          "id": "pause-mg-road",
+          "name": "Pause by Saltstayz - MG Road",
+          "brand": "Pause",
+          "city": "Gurugram",
+          "matchedName": null,
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "not_on_google",
+          "deviations": [],
+          "note": "Could not find this hotel on Google Hotels.",
+          "pricesFor": null
+        },
+        {
+          "id": "premier-golf-course-road-sector-42",
+          "name": "Saltstayz Premier - Golf Course Road & Sector 42",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": null,
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "not_on_google",
+          "deviations": [],
+          "note": "Could not find this hotel on Google Hotels. Closest Google listings: “Saltstayz Premier - Golf course extension road”, “Saltstayz Premier - Golf course extension road Official site”, “Saltstayz Premier Executive Serviced Apartment - Golf Course Extension Road”, “Frequently asked questions about Saltstayz Premier - Golf course extension road”, “₹2,357 Saltstayz Premier - Sector 57, Gurugram”. If one is this hotel, add its name to aliases in config/properties.json.",
+          "pricesFor": null
+        },
+        {
+          "id": "premier-near-golf-course-road-sector-57",
+          "name": "Saltstayz Premier - Near Golf Course Road & Sector 57",
+          "brand": "Premier",
+          "city": "Gurugram",
+          "matchedName": "Saltstayz Premier - Sector 57, Gurugram",
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "not_on_google",
+          "deviations": [],
+          "note": "Google opened \"Saltstayz Premier - Sector 57, Gurugram\" instead of this hotel. Please check the search wording in config/properties.json.",
+          "pricesFor": null
+        },
+        {
+          "id": "premier-noida-sector-18-metro",
+          "name": "Saltstayz Premier - Noida, Near Sector 18 Metro",
+          "brand": "Premier",
+          "city": "Noida",
+          "matchedName": null,
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "not_on_google",
+          "deviations": [],
+          "note": "Could not find this hotel on Google Hotels.",
+          "pricesFor": null
+        },
+        {
+          "id": "select-near-sohna-road-city-center",
+          "name": "Saltstayz Select - Near Sohna Road City Center",
+          "brand": "Select",
+          "city": "Gurugram",
+          "matchedName": null,
+          "nameMismatch": false,
+          "direct": null,
+          "otas": {
+            "makemytrip": null,
+            "goibibo": null,
+            "agoda": null,
+            "booking": null,
+            "ixigo": null,
+            "cleartrip": null
+          },
+          "others": [],
+          "lowest": null,
+          "status": "not_on_google",
+          "deviations": [],
+          "note": "Could not find this hotel on Google Hotels.",
+          "pricesFor": null
+        }
+      ]
+    }
+  ],
+  "notifications": {
+    "email": {
+      "configured": false,
+      "missing": [
+        "ALERT_EMAIL_TO",
+        "SMTP_HOST",
+        "SMTP_USER",
+        "SMTP_PASS"
+      ],
+      "sent": false,
+      "reason": "Missing ALERT_EMAIL_TO, SMTP_HOST, SMTP_USER, SMTP_PASS"
+    },
+    "whatsapp": {
+      "configured": false,
+      "missing": [
+        "WHATSAPP_TOKEN",
+        "WHATSAPP_PHONE_ID",
+        "WHATSAPP_TO",
+        "WHATSAPP_TEMPLATE"
+      ],
+      "via": "meta",
+      "sent": false,
+      "reason": "Missing WHATSAPP_TOKEN, WHATSAPP_PHONE_ID, WHATSAPP_TO, WHATSAPP_TEMPLATE"
+    }
+  },
+  "diff": {
+    "added": [
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Expedia",
+        "otaPrice": 2064,
+        "direct": 2976,
+        "gapRupees": 912,
+        "gapPercent": 30.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 2482,
+        "direct": 2976,
+        "gapRupees": 494,
+        "gapPercent": 16.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Bluepillow",
+        "otaPrice": 2535,
+        "direct": 2976,
+        "gapRupees": 441,
+        "gapPercent": 14.8,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-millenium-city-centre",
+        "property": "Saltstayz Premier Millenium City Centre",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 2324,
+        "direct": 2893,
+        "gapRupees": 569,
+        "gapPercent": 19.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-sector-50-golf-course-ext-road",
+        "property": "Saltstayz Premier - Sector 50 & Golf Course Ext Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Booking.com",
+        "otaPrice": 1973,
+        "direct": 1992,
+        "gapRupees": 19,
+        "gapPercent": 1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-golf-course-road-sector-27",
+        "property": "Saltstayz Select - Golf Course Road & Sector 27",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 1985,
+        "direct": 2443,
+        "gapRupees": 458,
+        "gapPercent": 18.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Bluepillow",
+        "otaPrice": 2000,
+        "direct": 2026,
+        "gapRupees": 26,
+        "gapPercent": 1.3,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-paschim-vihar",
+        "property": "Saltstayz Premier - Paschim Vihar",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 2237,
+        "direct": 2654,
+        "gapRupees": 417,
+        "gapPercent": 15.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "trinity-chandigarh-mohali",
+        "property": "Saltstayz Trinity - Chandigarh Mohali",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Booking.com",
+        "otaPrice": 3337,
+        "direct": 3571,
+        "gapRupees": 234,
+        "gapPercent": 6.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-nehru-place",
+        "property": "Saltstayz Select - Nehru Place & New Friends Colony",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 2937,
+        "direct": 3456,
+        "gapRupees": 519,
+        "gapPercent": 15,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "golden-tulip-gurugram-manesar",
+        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Tripadvisor",
+        "otaPrice": 7653,
+        "direct": 8805,
+        "gapRupees": 1152,
+        "gapPercent": 13.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-noida-sector-135-expressway",
+        "property": "Saltstayz Premier Noida Sector 135 Expressway",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 2604,
+        "direct": null,
+        "gapRupees": null,
+        "gapPercent": null,
+        "kind": "direct_missing"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 4028,
+        "direct": 8070,
+        "gapRupees": 4042,
+        "gapPercent": 50.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Travelmyth.com",
+        "otaPrice": 4028,
+        "direct": 8070,
+        "gapRupees": 4042,
+        "gapPercent": 50.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Expedia",
+        "otaPrice": 7164,
+        "direct": 8070,
+        "gapRupees": 906,
+        "gapPercent": 11.2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "eDreams",
+        "otaPrice": 7164,
+        "direct": 8070,
+        "gapRupees": 906,
+        "gapPercent": 11.2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-noida-sector-135-expressway",
+        "property": "Saltstayz Premier Noida Sector 135 Expressway",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Booking.com",
+        "otaPrice": 3011,
+        "direct": null,
+        "gapRupees": null,
+        "gapPercent": null,
+        "kind": "direct_missing"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Travelmyth.com",
+        "otaPrice": 5147,
+        "direct": 11810,
+        "gapRupees": 6663,
+        "gapPercent": 56.4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-faridabad-sarita-vihar",
+        "property": "Saltstayz Premier Faridabad Near Sarita Vihar",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Booking.com",
+        "otaPrice": 3848,
+        "direct": 4037,
+        "gapRupees": 189,
+        "gapPercent": 4.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-millenium-city-centre",
+        "property": "Saltstayz Premier Millenium City Centre",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Booking.com",
+        "otaPrice": 4528,
+        "direct": 4607,
+        "gapRupees": 79,
+        "gapPercent": 1.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Trip.com",
+        "otaPrice": 2998,
+        "direct": 3029,
+        "gapRupees": 31,
+        "gapPercent": 1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Traveloka",
+        "otaPrice": 3148,
+        "direct": 4118,
+        "gapRupees": 970,
+        "gapPercent": 23.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Expedia",
+        "otaPrice": 3149,
+        "direct": 4118,
+        "gapRupees": 969,
+        "gapPercent": 23.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Booking.com",
+        "otaPrice": 3824,
+        "direct": 4118,
+        "gapRupees": 294,
+        "gapPercent": 7.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-golf-course-road-sector-27",
+        "property": "Saltstayz Select - Golf Course Road & Sector 27",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Trip.com",
+        "otaPrice": 3072,
+        "direct": 3120,
+        "gapRupees": 48,
+        "gapPercent": 1.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-nehru-place",
+        "property": "Saltstayz Select - Nehru Place & New Friends Colony",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Traveloka",
+        "otaPrice": 3498,
+        "direct": 3802,
+        "gapRupees": 304,
+        "gapPercent": 8,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-unitech-cyber-park",
+        "property": "Saltstayz Select - Unitech Cyber Park",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Booking.com",
+        "otaPrice": 2682,
+        "direct": 2894,
+        "gapRupees": 212,
+        "gapPercent": 7.3,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-unitech-cyber-park",
+        "property": "Saltstayz Select - Unitech Cyber Park",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Trip.com",
+        "otaPrice": 2850,
+        "direct": 2894,
+        "gapRupees": 44,
+        "gapPercent": 1.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-near-sector-44-corporate-hub",
+        "property": "Saltstayz Premier Near Sector 44 Corporate Hub",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Booking.com",
+        "otaPrice": 3148,
+        "direct": 3394,
+        "gapRupees": 246,
+        "gapPercent": 7.2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "trinity-chandigarh-mohali",
+        "property": "Saltstayz Trinity - Chandigarh Mohali",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Booking.com",
+        "otaPrice": 4454,
+        "direct": 4795,
+        "gapRupees": 341,
+        "gapPercent": 7.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-golf-course-extension-road",
+        "property": "Saltstayz Premier - Golf Course Extension Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Booking.com",
+        "otaPrice": 3778,
+        "direct": 3941,
+        "gapRupees": 163,
+        "gapPercent": 4.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "golden-tulip-gurugram-manesar",
+        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 8442,
+        "direct": 8805,
+        "gapRupees": 363,
+        "gapPercent": 4.1,
+        "kind": "ota_lower"
+      }
+    ],
+    "ongoing": [
+      {
+        "propertyId": "premier-cyber-hub",
+        "property": "Saltstayz Premier - Cyber Hub",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 2457,
+        "direct": 3082,
+        "gapRupees": 625,
+        "gapPercent": 20.3,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-sector-50-golf-course-ext-road",
+        "property": "Saltstayz Premier - Sector 50 & Golf Course Ext Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 1619,
+        "direct": 1992,
+        "gapRupees": 373,
+        "gapPercent": 18.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-manesar-sector-86",
+        "property": "Saltstayz Premier - Manesar & Sector 86",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 1717,
+        "direct": 2059,
+        "gapRupees": 342,
+        "gapPercent": 16.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 1691,
+        "direct": 2026,
+        "gapRupees": 335,
+        "gapPercent": 16.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Hotels.com",
+        "otaPrice": 1745,
+        "direct": 2026,
+        "gapRupees": 281,
+        "gapPercent": 13.9,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-advant-sector-144",
+        "property": "Saltstayz Autograph - Advant & Sector 144",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 2485,
+        "direct": 2947,
+        "gapRupees": 462,
+        "gapPercent": 15.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "trinity-chandigarh-mohali",
+        "property": "Saltstayz Trinity - Chandigarh Mohali",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 3018,
+        "direct": 3571,
+        "gapRupees": 553,
+        "gapPercent": 15.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "golden-tulip-gurugram-manesar",
+        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 7644,
+        "direct": 8805,
+        "gapRupees": 1161,
+        "gapPercent": 13.2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Booking.com",
+        "otaPrice": 5128,
+        "direct": 5363,
+        "gapRupees": 235,
+        "gapPercent": 4.4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-pitampura",
+        "property": "Saltstayz Premier - Pitampura",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 2873,
+        "direct": 2976,
+        "gapRupees": 103,
+        "gapPercent": 3.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "pause-east-of-kailash",
+        "property": "Pause by Saltstayz - East of Kailash",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Booking.com",
+        "otaPrice": 4360,
+        "direct": null,
+        "gapRupees": null,
+        "gapPercent": null,
+        "kind": "direct_missing"
+      },
+      {
+        "propertyId": "premier-sector-15-noida",
+        "property": "Saltstayz Premier - Sector 15 Noida",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Booking.com",
+        "otaPrice": 4121,
+        "direct": null,
+        "gapRupees": null,
+        "gapPercent": null,
+        "kind": "direct_missing"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Booking.com",
+        "otaPrice": 3545,
+        "direct": 8070,
+        "gapRupees": 4525,
+        "gapPercent": 56.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-cyber-hub",
+        "property": "Saltstayz Premier - Cyber Hub",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 2708,
+        "direct": 3538,
+        "gapRupees": 830,
+        "gapPercent": 23.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-golf-course-road-sector-27",
+        "property": "Saltstayz Select - Golf Course Road & Sector 27",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 2067,
+        "direct": 2645,
+        "gapRupees": 578,
+        "gapPercent": 21.9,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-sector-50-golf-course-ext-road",
+        "property": "Saltstayz Premier - Sector 50 & Golf Course Ext Road",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 1659,
+        "direct": 2122,
+        "gapRupees": 463,
+        "gapPercent": 21.8,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-sector-50-golf-course-ext-road",
+        "property": "Saltstayz Premier - Sector 50 & Golf Course Ext Road",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Booking.com",
+        "otaPrice": 2083,
+        "direct": 2122,
+        "gapRupees": 39,
+        "gapPercent": 1.8,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-manesar-sector-86",
+        "property": "Saltstayz Premier - Manesar & Sector 86",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 2156,
+        "direct": 2707,
+        "gapRupees": 551,
+        "gapPercent": 20.4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 2421,
+        "direct": 3024,
+        "gapRupees": 603,
+        "gapPercent": 19.9,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-faridabad-sarita-vihar",
+        "property": "Saltstayz Premier Faridabad Near Sarita Vihar",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 2000,
+        "direct": 2490,
+        "gapRupees": 490,
+        "gapPercent": 19.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-naraina",
+        "property": "Saltstayz Premier - Naraina, Central Delhi",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 3183,
+        "direct": 3936,
+        "gapRupees": 753,
+        "gapPercent": 19.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-golf-course-road-sector-57",
+        "property": "Saltstayz Select - Golf Course Road & Sector 57",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 1736,
+        "direct": 2107,
+        "gapRupees": 371,
+        "gapPercent": 17.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-golf-course-extension-road",
+        "property": "Saltstayz Premier - Golf Course Extension Road",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 2002,
+        "direct": 2405,
+        "gapRupees": 403,
+        "gapPercent": 16.8,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-malcha-chanakyapuri",
+        "property": "Saltstayz Select - Malcha & Chanakyapuri",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 4699,
+        "direct": 5626,
+        "gapRupees": 927,
+        "gapPercent": 16.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Hotels.com",
+        "otaPrice": 1772,
+        "direct": 2107,
+        "gapRupees": 335,
+        "gapPercent": 15.9,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Expedia",
+        "otaPrice": 1885,
+        "direct": 2107,
+        "gapRupees": 222,
+        "gapPercent": 10.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-advant-sector-144",
+        "property": "Saltstayz Autograph - Advant & Sector 144",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 2947,
+        "direct": 3499,
+        "gapRupees": 552,
+        "gapPercent": 15.8,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-paschim-vihar",
+        "property": "Saltstayz Premier - Paschim Vihar",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 2316,
+        "direct": 2746,
+        "gapRupees": 430,
+        "gapPercent": 15.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-nehru-place",
+        "property": "Saltstayz Select - Nehru Place & New Friends Colony",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 2398,
+        "direct": 2794,
+        "gapRupees": 396,
+        "gapPercent": 14.2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-pitampura",
+        "property": "Saltstayz Premier - Pitampura",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 2499,
+        "direct": 2894,
+        "gapRupees": 395,
+        "gapPercent": 13.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "pause-east-of-kailash",
+        "property": "Pause by Saltstayz - East of Kailash",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Booking.com",
+        "otaPrice": 4162,
+        "direct": null,
+        "gapRupees": null,
+        "gapPercent": null,
+        "kind": "direct_missing"
+      },
+      {
+        "propertyId": "premier-sector-15-noida",
+        "property": "Saltstayz Premier - Sector 15 Noida",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Booking.com",
+        "otaPrice": 4200,
+        "direct": null,
+        "gapRupees": null,
+        "gapPercent": null,
+        "kind": "direct_missing"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Booking.com",
+        "otaPrice": 4530,
+        "direct": 11810,
+        "gapRupees": 7280,
+        "gapPercent": 61.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 5052,
+        "direct": 11810,
+        "gapRupees": 6758,
+        "gapPercent": 57.2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Hotels.com",
+        "otaPrice": 8681,
+        "direct": 11810,
+        "gapRupees": 3129,
+        "gapPercent": 26.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Expedia",
+        "otaPrice": 8846,
+        "direct": 11810,
+        "gapRupees": 2964,
+        "gapPercent": 25.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Travelocity",
+        "otaPrice": 8846,
+        "direct": 11810,
+        "gapRupees": 2964,
+        "gapPercent": 25.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "eDreams",
+        "otaPrice": 8846,
+        "direct": 11810,
+        "gapRupees": 2964,
+        "gapPercent": 25.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-manesar-sector-86",
+        "property": "Saltstayz Premier - Manesar & Sector 86",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 3063,
+        "direct": 4387,
+        "gapRupees": 1324,
+        "gapPercent": 30.2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-faridabad-sarita-vihar",
+        "property": "Saltstayz Premier Faridabad Near Sarita Vihar",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 2898,
+        "direct": 4037,
+        "gapRupees": 1139,
+        "gapPercent": 28.2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-millenium-city-centre",
+        "property": "Saltstayz Premier Millenium City Centre",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 3317,
+        "direct": 4607,
+        "gapRupees": 1290,
+        "gapPercent": 28,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-sector-50-golf-course-ext-road",
+        "property": "Saltstayz Premier - Sector 50 & Golf Course Ext Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 2315,
+        "direct": 3197,
+        "gapRupees": 882,
+        "gapPercent": 27.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-sector-50-golf-course-ext-road",
+        "property": "Saltstayz Premier - Sector 50 & Golf Course Ext Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Booking.com",
+        "otaPrice": 2762,
+        "direct": 3197,
+        "gapRupees": 435,
+        "gapPercent": 13.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 2267,
+        "direct": 3029,
+        "gapRupees": 762,
+        "gapPercent": 25.2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Hotels.com",
+        "otaPrice": 2481,
+        "direct": 3029,
+        "gapRupees": 548,
+        "gapPercent": 18.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-advant-sector-144",
+        "property": "Saltstayz Autograph - Advant & Sector 144",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 3883,
+        "direct": 5155,
+        "gapRupees": 1272,
+        "gapPercent": 24.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-cyber-hub",
+        "property": "Saltstayz Premier - Cyber Hub",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 3355,
+        "direct": 4435,
+        "gapRupees": 1080,
+        "gapPercent": 24.4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-paschim-vihar",
+        "property": "Saltstayz Premier - Paschim Vihar",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 3355,
+        "direct": 4435,
+        "gapRupees": 1080,
+        "gapPercent": 24.4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Bluepillow",
+        "otaPrice": 3674,
+        "direct": 4118,
+        "gapRupees": 444,
+        "gapPercent": 10.8,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 3871,
+        "direct": 4118,
+        "gapRupees": 247,
+        "gapPercent": 6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-golf-course-road-sector-57",
+        "property": "Saltstayz Select - Golf Course Road & Sector 57",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 2276,
+        "direct": 2981,
+        "gapRupees": 705,
+        "gapPercent": 23.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-golf-course-road-sector-27",
+        "property": "Saltstayz Select - Golf Course Road & Sector 27",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 2856,
+        "direct": 3120,
+        "gapRupees": 264,
+        "gapPercent": 8.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-naraina",
+        "property": "Saltstayz Premier - Naraina, Central Delhi",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 4811,
+        "direct": 5246,
+        "gapRupees": 435,
+        "gapPercent": 8.3,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-nehru-place",
+        "property": "Saltstayz Select - Nehru Place & New Friends Colony",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 3664,
+        "direct": 3802,
+        "gapRupees": 138,
+        "gapPercent": 3.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "trinity-chandigarh-mohali",
+        "property": "Saltstayz Trinity - Chandigarh Mohali",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 4568,
+        "direct": 4795,
+        "gapRupees": 227,
+        "gapPercent": 4.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-galleria-sector-27",
+        "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 4224,
+        "direct": 4435,
+        "gapRupees": 211,
+        "gapPercent": 4.8,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-golf-course-extension-road",
+        "property": "Saltstayz Premier - Golf Course Extension Road",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Agoda",
+        "otaPrice": 3818,
+        "direct": 3941,
+        "gapRupees": 123,
+        "gapPercent": 3.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "pause-east-of-kailash",
+        "property": "Pause by Saltstayz - East of Kailash",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Booking.com",
+        "otaPrice": 7701,
+        "direct": null,
+        "gapRupees": null,
+        "gapPercent": null,
+        "kind": "direct_missing"
+      },
+      {
+        "propertyId": "premier-sector-15-noida",
+        "property": "Saltstayz Premier - Sector 15 Noida",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Booking.com",
+        "otaPrice": 4838,
+        "direct": null,
+        "gapRupees": null,
+        "gapPercent": null,
+        "kind": "direct_missing"
+      },
+      {
+        "propertyId": "premier-noida-sector-135-expressway",
+        "property": "Saltstayz Premier Noida Sector 135 Expressway",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Wed 28 Oct → Thu 29 Oct",
+        "source": "Booking.com",
+        "otaPrice": 4590,
+        "direct": null,
+        "gapRupees": null,
+        "gapPercent": null,
+        "kind": "direct_missing"
+      }
+    ],
+    "resolved": [
+      {
+        "propertyId": "premier-bengaluru-hebbal",
+        "property": "Saltstayz Premier - Bengaluru Hebbal Airport Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Sun 25 Oct → Mon 26 Oct",
+        "source": "Agoda",
+        "otaPrice": 3602,
+        "direct": 7310,
+        "gapRupees": 3708,
+        "gapPercent": 50.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "golden-tulip-gurugram-manesar",
+        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Sun 25 Oct → Mon 26 Oct",
+        "source": "Bluepillow",
+        "otaPrice": 5740,
+        "direct": 6969,
+        "gapRupees": 1229,
+        "gapPercent": 17.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "golden-tulip-gurugram-manesar",
+        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Sun 25 Oct → Mon 26 Oct",
+        "source": "Kiwi.com",
+        "otaPrice": 6312,
+        "direct": 6969,
+        "gapRupees": 657,
+        "gapPercent": 9.4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-cyber-hub",
+        "property": "Saltstayz Premier - Cyber Hub",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Sun 25 Oct → Mon 26 Oct",
+        "source": "Bluepillow",
+        "otaPrice": 2608,
+        "direct": 2837,
+        "gapRupees": 229,
+        "gapPercent": 8.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-pitampura",
+        "property": "Saltstayz Premier - Pitampura",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Sun 25 Oct → Mon 26 Oct",
+        "source": "Bluepillow",
+        "otaPrice": 2245,
+        "direct": 2549,
+        "gapRupees": 304,
+        "gapPercent": 11.9,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "trinity-chandigarh-mohali",
+        "property": "Saltstayz Trinity - Chandigarh Mohali",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Sun 25 Oct → Mon 26 Oct",
+        "source": "Bluepillow",
+        "otaPrice": 3017,
+        "direct": 3144,
+        "gapRupees": 127,
+        "gapPercent": 4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-faridabad-sarita-vihar",
+        "property": "Saltstayz Premier Faridabad Near Sarita Vihar",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Sun 25 Oct → Mon 26 Oct",
+        "source": "Agoda",
+        "otaPrice": 2182,
+        "direct": 2449,
+        "gapRupees": 267,
+        "gapPercent": 10.9,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-naraina",
+        "property": "Saltstayz Premier - Naraina, Central Delhi",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Sun 25 Oct → Mon 26 Oct",
+        "source": "Agoda",
+        "otaPrice": 2241,
+        "direct": 2424,
+        "gapRupees": 183,
+        "gapPercent": 7.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-golf-course-extension-road",
+        "property": "Saltstayz Premier - Golf Course Extension Road",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Sun 25 Oct → Mon 26 Oct",
+        "source": "Agoda",
+        "otaPrice": 1931,
+        "direct": 2083,
+        "gapRupees": 152,
+        "gapPercent": 7.3,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-galleria-sector-27",
+        "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Sun 25 Oct → Mon 26 Oct",
+        "source": "Agoda",
+        "otaPrice": 2042,
+        "direct": 2184,
+        "gapRupees": 142,
+        "gapPercent": 6.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-golf-course-road-sector-57",
+        "property": "Saltstayz Select - Golf Course Road & Sector 57",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Sun 25 Oct → Mon 26 Oct",
+        "source": "Agoda",
+        "otaPrice": 1525,
+        "direct": 1608,
+        "gapRupees": 83,
+        "gapPercent": 5.2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-paschim-vihar",
+        "property": "Saltstayz Premier - Paschim Vihar",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Sun 25 Oct → Mon 26 Oct",
+        "source": "Bluepillow",
+        "otaPrice": 2440,
+        "direct": null,
+        "gapRupees": null,
+        "gapPercent": null,
+        "kind": "direct_missing"
+      },
+      {
+        "propertyId": "premier-noida-sector-135-expressway",
+        "property": "Saltstayz Premier Noida Sector 135 Expressway",
+        "window": "D0",
+        "windowLabel": "Same-day check-in · Sun 25 Oct → Mon 26 Oct",
+        "source": "Booking.com",
+        "otaPrice": 2444,
+        "direct": null,
+        "gapRupees": null,
+        "gapPercent": null,
+        "kind": "direct_missing"
+      },
+      {
+        "propertyId": "premier-naraina",
+        "property": "Saltstayz Premier - Naraina, Central Delhi",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Bluepillow",
+        "otaPrice": 3296,
+        "direct": 3677,
+        "gapRupees": 381,
+        "gapPercent": 10.4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-arjun-marg",
+        "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Bluepillow",
+        "otaPrice": 2708,
+        "direct": 2976,
+        "gapRupees": 268,
+        "gapPercent": 9,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-millenium-city-centre",
+        "property": "Saltstayz Premier Millenium City Centre",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 2324,
+        "direct": 2893,
+        "gapRupees": 569,
+        "gapPercent": 19.7,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-millenium-city-centre",
+        "property": "Saltstayz Premier Millenium City Centre",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Tripadvisor",
+        "otaPrice": 2327,
+        "direct": 2893,
+        "gapRupees": 566,
+        "gapPercent": 19.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-paschim-vihar",
+        "property": "Saltstayz Premier - Paschim Vihar",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Bluepillow",
+        "otaPrice": 2383,
+        "direct": 2654,
+        "gapRupees": 271,
+        "gapPercent": 10.2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 1690,
+        "direct": 2026,
+        "gapRupees": 336,
+        "gapPercent": 16.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-galleria-sector-27",
+        "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 2296,
+        "direct": 2726,
+        "gapRupees": 430,
+        "gapPercent": 15.8,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "trinity-chandigarh-mohali",
+        "property": "Saltstayz Trinity - Chandigarh Mohali",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 3018,
+        "direct": 3571,
+        "gapRupees": 553,
+        "gapPercent": 15.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "golden-tulip-gurugram-manesar",
+        "property": "Golden Tulip Gurugram, Manesar (Saltstayz Partnership)",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 7644,
+        "direct": 8805,
+        "gapRupees": 1161,
+        "gapPercent": 13.2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-faridabad-sarita-vihar",
+        "property": "Saltstayz Premier Faridabad Near Sarita Vihar",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Tripadvisor",
+        "otaPrice": 2724,
+        "direct": 2933,
+        "gapRupees": 209,
+        "gapPercent": 7.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-connaught-place",
+        "property": "Saltstayz Autograph Connaught Place",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 9196,
+        "direct": null,
+        "gapRupees": null,
+        "gapPercent": null,
+        "kind": "direct_missing"
+      },
+      {
+        "propertyId": "premier-noida-sector-135-expressway",
+        "property": "Saltstayz Premier Noida Sector 135 Expressway",
+        "window": "D1",
+        "windowLabel": "Tomorrow check-in · Mon 26 Oct → Tue 27 Oct",
+        "source": "Agoda",
+        "otaPrice": 2604,
+        "direct": null,
+        "gapRupees": null,
+        "gapPercent": null,
+        "kind": "direct_missing"
+      },
+      {
+        "propertyId": "premier-naraina",
+        "property": "Saltstayz Premier - Naraina, Central Delhi",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Bluepillow",
+        "otaPrice": 3195,
+        "direct": 3552,
+        "gapRupees": 357,
+        "gapPercent": 10.1,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-connaught-place",
+        "property": "Saltstayz Autograph Connaught Place",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Vio.com",
+        "otaPrice": 8061,
+        "direct": 10123,
+        "gapRupees": 2062,
+        "gapPercent": 20.4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-connaught-place",
+        "property": "Saltstayz Autograph Connaught Place",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 8887,
+        "direct": 10123,
+        "gapRupees": 1236,
+        "gapPercent": 12.2,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-connaught-place",
+        "property": "Saltstayz Autograph Connaught Place",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "goseek.com",
+        "otaPrice": 9580,
+        "direct": 10123,
+        "gapRupees": 543,
+        "gapPercent": 5.4,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "autograph-connaught-place",
+        "property": "Saltstayz Autograph Connaught Place",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "dealbase.com",
+        "otaPrice": 9758,
+        "direct": 10123,
+        "gapRupees": 365,
+        "gapPercent": 3.6,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-malcha-chanakyapuri",
+        "property": "Saltstayz Select - Malcha & Chanakyapuri",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 4696,
+        "direct": 5626,
+        "gapRupees": 930,
+        "gapPercent": 16.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "select-malcha-chanakyapuri",
+        "property": "Saltstayz Select - Malcha & Chanakyapuri",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Bluepillow",
+        "otaPrice": 5465,
+        "direct": 5626,
+        "gapRupees": 161,
+        "gapPercent": 2.9,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Expedia",
+        "otaPrice": 1885,
+        "direct": 2107,
+        "gapRupees": 222,
+        "gapPercent": 10.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Orbitz",
+        "otaPrice": 1885,
+        "direct": 2107,
+        "gapRupees": 222,
+        "gapPercent": 10.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Travelocity",
+        "otaPrice": 1885,
+        "direct": 2107,
+        "gapRupees": 222,
+        "gapPercent": 10.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-medicity",
+        "property": "Saltstayz Premier - Medicity (Near Medanta)",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "CheapTickets.com",
+        "otaPrice": 1885,
+        "direct": 2107,
+        "gapRupees": 222,
+        "gapPercent": 10.5,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-galleria-sector-27",
+        "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "goseek.com",
+        "otaPrice": 2225,
+        "direct": 2597,
+        "gapRupees": 372,
+        "gapPercent": 14.3,
+        "kind": "ota_lower"
+      },
+      {
+        "propertyId": "premier-pitampura",
+        "property": "Saltstayz Premier - Pitampura",
+        "window": "D2",
+        "windowLabel": "Day-after check-in · Tue 27 Oct → Wed 28 Oct",
+        "source": "Agoda",
+        "otaPrice": 2498,
+        "direct": 2894,
+        "gapRupees": 396,
+        "gapPercent": 13.7,
+        "kind": "ota_lower"
+      }
+    ]
+  }
+}
