@@ -1,18 +1,6 @@
 {
-  "lastRunId": "2026-11-10_1600",
+  "lastRunId": "2026-11-10_1806",
   "openDeviations": {
-    "premier-near-sector-44-corporate-hub|D0|Booking.com": {
-      "propertyId": "premier-near-sector-44-corporate-hub",
-      "property": "Saltstayz Premier Near Sector 44 Corporate Hub",
-      "window": "D0",
-      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
-      "source": "Booking.com",
-      "otaPrice": 1011,
-      "direct": 1956,
-      "gapRupees": 945,
-      "gapPercent": 48.3,
-      "kind": "ota_lower"
-    },
     "premier-sector-15-noida|D0|EaseMyTrip": {
       "propertyId": "premier-sector-15-noida",
       "property": "Saltstayz Premier - Sector 15 Noida",
@@ -23,6 +11,18 @@
       "direct": 3836,
       "gapRupees": 1096,
       "gapPercent": 28.6,
+      "kind": "ota_lower"
+    },
+    "premier-sector-15-noida|D0|ixigo": {
+      "propertyId": "premier-sector-15-noida",
+      "property": "Saltstayz Premier - Sector 15 Noida",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "ixigo",
+      "otaPrice": 3036,
+      "direct": 3836,
+      "gapRupees": 800,
+      "gapPercent": 20.9,
       "kind": "ota_lower"
     },
     "premier-sector-15-noida|D0|Goibibo": {
@@ -61,54 +61,6 @@
       "gapPercent": 1.8,
       "kind": "ota_lower"
     },
-    "premier-manesar-sector-86|D0|ixigo": {
-      "propertyId": "premier-manesar-sector-86",
-      "property": "Saltstayz Premier - Manesar & Sector 86",
-      "window": "D0",
-      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
-      "source": "ixigo",
-      "otaPrice": 2174,
-      "direct": 2676,
-      "gapRupees": 502,
-      "gapPercent": 18.8,
-      "kind": "ota_lower"
-    },
-    "premier-manesar-sector-86|D0|Agoda": {
-      "propertyId": "premier-manesar-sector-86",
-      "property": "Saltstayz Premier - Manesar & Sector 86",
-      "window": "D0",
-      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
-      "source": "Agoda",
-      "otaPrice": 2372,
-      "direct": 2676,
-      "gapRupees": 304,
-      "gapPercent": 11.4,
-      "kind": "ota_lower"
-    },
-    "premier-manesar-sector-86|D0|Bluepillow": {
-      "propertyId": "premier-manesar-sector-86",
-      "property": "Saltstayz Premier - Manesar & Sector 86",
-      "window": "D0",
-      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
-      "source": "Bluepillow",
-      "otaPrice": 2499,
-      "direct": 2676,
-      "gapRupees": 177,
-      "gapPercent": 6.6,
-      "kind": "ota_lower"
-    },
-    "premier-manesar-sector-86|D0|EaseMyTrip": {
-      "propertyId": "premier-manesar-sector-86",
-      "property": "Saltstayz Premier - Manesar & Sector 86",
-      "window": "D0",
-      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
-      "source": "EaseMyTrip",
-      "otaPrice": 2535,
-      "direct": 2676,
-      "gapRupees": 141,
-      "gapPercent": 5.3,
-      "kind": "ota_lower"
-    },
     "premier-cyber-hub|D0|EaseMyTrip": {
       "propertyId": "premier-cyber-hub",
       "property": "Saltstayz Premier - Cyber Hub",
@@ -133,16 +85,16 @@
       "gapPercent": 15.9,
       "kind": "ota_lower"
     },
-    "premier-cyber-hub|D0|Traveloka": {
+    "premier-cyber-hub|D0|goseek.com": {
       "propertyId": "premier-cyber-hub",
       "property": "Saltstayz Premier - Cyber Hub",
       "window": "D0",
       "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
-      "source": "Traveloka",
-      "otaPrice": 2845,
+      "source": "goseek.com",
+      "otaPrice": 2680,
       "direct": 3105,
-      "gapRupees": 260,
-      "gapPercent": 8.4,
+      "gapRupees": 425,
+      "gapPercent": 13.7,
       "kind": "ota_lower"
     },
     "premier-cyber-hub|D0|ixigo": {
@@ -277,52 +229,40 @@
       "gapPercent": 1.4,
       "kind": "ota_lower"
     },
-    "trinity-chandigarh-mohali|D0|ixigo": {
-      "propertyId": "trinity-chandigarh-mohali",
-      "property": "Saltstayz Trinity - Chandigarh Mohali",
-      "window": "D0",
-      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
-      "source": "ixigo",
-      "otaPrice": 2672,
-      "direct": 3140,
-      "gapRupees": 468,
-      "gapPercent": 14.9,
-      "kind": "ota_lower"
-    },
-    "trinity-chandigarh-mohali|D0|EaseMyTrip": {
-      "propertyId": "trinity-chandigarh-mohali",
-      "property": "Saltstayz Trinity - Chandigarh Mohali",
+    "premier-pitampura|D0|EaseMyTrip": {
+      "propertyId": "premier-pitampura",
+      "property": "Saltstayz Premier - Pitampura",
       "window": "D0",
       "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
       "source": "EaseMyTrip",
-      "otaPrice": 2690,
-      "direct": 3140,
-      "gapRupees": 450,
-      "gapPercent": 14.3,
+      "otaPrice": 2173,
+      "direct": 2555,
+      "gapRupees": 382,
+      "gapPercent": 15,
       "kind": "ota_lower"
     },
-    "trinity-chandigarh-mohali|D0|Agoda": {
-      "propertyId": "trinity-chandigarh-mohali",
-      "property": "Saltstayz Trinity - Chandigarh Mohali",
+    "premier-pitampura|D0|Agoda": {
+      "propertyId": "premier-pitampura",
+      "property": "Saltstayz Premier - Pitampura",
       "window": "D0",
       "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
       "source": "Agoda",
-      "otaPrice": 2989,
-      "direct": 3140,
-      "gapRupees": 151,
-      "gapPercent": 4.8,
+      "otaPrice": 2256,
+      "direct": 2555,
+      "gapRupees": 299,
+      "gapPercent": 11.7,
       "kind": "ota_lower"
     },
-    "trinity-chandigarh-mohali|D0|trivago": {
-      "propertyId": "trinity-chandigarh-mohali",
-      "property": "Saltstayz Trinity - Chandigarh Mohali",
+    "premier-pitampura|D0|Bluepillow": {
+      "propertyId": "premier-pitampura",
+      "property": "Saltstayz Premier - Pitampura",
       "window": "D0",
       "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
-      "source": "trivago",
-      "otaPrice": 3067,
-      "direct": 3140,
-      "gapRupees": 73,
-      "gapPercent": 2.3,
+      "source": "Bluepillow",
+      "otaPrice": 2331,
+      "direct": 2555,
+      "gapRupees": 224,
+      "gapPercent": 8.8,
       "kind": "ota_lower"
     },
     "premier-arjun-marg|D0|EaseMyTrip": {
@@ -373,18 +313,6 @@
       "gapPercent": 6.3,
       "kind": "ota_lower"
     },
-    "premier-arjun-marg|D0|Etrip.net": {
-      "propertyId": "premier-arjun-marg",
-      "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
-      "window": "D0",
-      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
-      "source": "Etrip.net",
-      "otaPrice": 2120,
-      "direct": 2263,
-      "gapRupees": 143,
-      "gapPercent": 6.3,
-      "kind": "ota_lower"
-    },
     "autograph-advant-sector-144|D0|EaseMyTrip": {
       "propertyId": "autograph-advant-sector-144",
       "property": "Saltstayz Autograph - Advant & Sector 144",
@@ -421,18 +349,6 @@
       "gapPercent": 3.2,
       "kind": "ota_lower"
     },
-    "autograph-advant-sector-144|D0|Vio.com": {
-      "propertyId": "autograph-advant-sector-144",
-      "property": "Saltstayz Autograph - Advant & Sector 144",
-      "window": "D0",
-      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
-      "source": "Vio.com",
-      "otaPrice": 3416,
-      "direct": 3498,
-      "gapRupees": 82,
-      "gapPercent": 2.3,
-      "kind": "ota_lower"
-    },
     "autograph-connaught-place|D0|EaseMyTrip": {
       "propertyId": "autograph-connaught-place",
       "property": "Saltstayz Autograph Connaught Place",
@@ -445,6 +361,18 @@
       "gapPercent": 14.3,
       "kind": "ota_lower"
     },
+    "autograph-connaught-place|D0|Traveloka": {
+      "propertyId": "autograph-connaught-place",
+      "property": "Saltstayz Autograph Connaught Place",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Traveloka",
+      "otaPrice": 9427,
+      "direct": 10886,
+      "gapRupees": 1459,
+      "gapPercent": 13.4,
+      "kind": "ota_lower"
+    },
     "autograph-connaught-place|D0|Agoda": {
       "propertyId": "autograph-connaught-place",
       "property": "Saltstayz Autograph Connaught Place",
@@ -455,6 +383,66 @@
       "direct": 10886,
       "gapRupees": 1443,
       "gapPercent": 13.3,
+      "kind": "ota_lower"
+    },
+    "autograph-connaught-place|D0|Vio.com": {
+      "propertyId": "autograph-connaught-place",
+      "property": "Saltstayz Autograph Connaught Place",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Vio.com",
+      "otaPrice": 9686,
+      "direct": 10886,
+      "gapRupees": 1200,
+      "gapPercent": 11,
+      "kind": "ota_lower"
+    },
+    "trinity-chandigarh-mohali|D0|EaseMyTrip": {
+      "propertyId": "trinity-chandigarh-mohali",
+      "property": "Saltstayz Trinity - Chandigarh Mohali",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "EaseMyTrip",
+      "otaPrice": 2690,
+      "direct": 3140,
+      "gapRupees": 450,
+      "gapPercent": 14.3,
+      "kind": "ota_lower"
+    },
+    "trinity-chandigarh-mohali|D0|Agoda": {
+      "propertyId": "trinity-chandigarh-mohali",
+      "property": "Saltstayz Trinity - Chandigarh Mohali",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Agoda",
+      "otaPrice": 2989,
+      "direct": 3140,
+      "gapRupees": 151,
+      "gapPercent": 4.8,
+      "kind": "ota_lower"
+    },
+    "trinity-chandigarh-mohali|D0|trivago": {
+      "propertyId": "trinity-chandigarh-mohali",
+      "property": "Saltstayz Trinity - Chandigarh Mohali",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "trivago",
+      "otaPrice": 3067,
+      "direct": 3140,
+      "gapRupees": 73,
+      "gapPercent": 2.3,
+      "kind": "ota_lower"
+    },
+    "trinity-chandigarh-mohali|D0|Vio.com": {
+      "propertyId": "trinity-chandigarh-mohali",
+      "property": "Saltstayz Trinity - Chandigarh Mohali",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Vio.com",
+      "otaPrice": 3067,
+      "direct": 3140,
+      "gapRupees": 73,
+      "gapPercent": 2.3,
       "kind": "ota_lower"
     },
     "premier-noida-sector-18-metro|D0|EaseMyTrip": {
@@ -475,22 +463,10 @@
       "window": "D0",
       "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
       "source": "ixigo",
-      "otaPrice": 3454,
+      "otaPrice": 3388,
       "direct": 3513,
-      "gapRupees": 59,
-      "gapPercent": 1.7,
-      "kind": "ota_lower"
-    },
-    "premier-golf-course-extension-road|D0|Goibibo": {
-      "propertyId": "premier-golf-course-extension-road",
-      "property": "Saltstayz Premier - Golf Course Extension Road",
-      "window": "D0",
-      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
-      "source": "Goibibo",
-      "otaPrice": 2095,
-      "direct": 2409,
-      "gapRupees": 314,
-      "gapPercent": 13,
+      "gapRupees": 125,
+      "gapPercent": 3.6,
       "kind": "ota_lower"
     },
     "premier-golf-course-extension-road|D0|EaseMyTrip": {
@@ -553,6 +529,30 @@
       "gapPercent": 4.5,
       "kind": "ota_lower"
     },
+    "premier-golf-course-extension-road|D0|Goibibo": {
+      "propertyId": "premier-golf-course-extension-road",
+      "property": "Saltstayz Premier - Golf Course Extension Road",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Goibibo",
+      "otaPrice": 2351,
+      "direct": 2409,
+      "gapRupees": 58,
+      "gapPercent": 2.4,
+      "kind": "ota_lower"
+    },
+    "premier-golf-course-extension-road|D0|Bluepillow": {
+      "propertyId": "premier-golf-course-extension-road",
+      "property": "Saltstayz Premier - Golf Course Extension Road",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Bluepillow",
+      "otaPrice": 2369,
+      "direct": 2409,
+      "gapRupees": 40,
+      "gapPercent": 1.7,
+      "kind": "ota_lower"
+    },
     "premier-golf-course-extension-road|D0|Trip.com": {
       "propertyId": "premier-golf-course-extension-road",
       "property": "Saltstayz Premier - Golf Course Extension Road",
@@ -565,6 +565,66 @@
       "gapPercent": 1.2,
       "kind": "ota_lower"
     },
+    "premier-golf-course-road-sector-42|D0|EaseMyTrip": {
+      "propertyId": "premier-golf-course-road-sector-42",
+      "property": "Saltstayz Premier - Golf Course Road & Sector 42",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "EaseMyTrip",
+      "otaPrice": 2435,
+      "direct": 2767,
+      "gapRupees": 332,
+      "gapPercent": 12,
+      "kind": "ota_lower"
+    },
+    "premier-golf-course-road-sector-42|D0|Agoda": {
+      "propertyId": "premier-golf-course-road-sector-42",
+      "property": "Saltstayz Premier - Golf Course Road & Sector 42",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Agoda",
+      "otaPrice": 2528,
+      "direct": 2767,
+      "gapRupees": 239,
+      "gapPercent": 8.6,
+      "kind": "ota_lower"
+    },
+    "premier-golf-course-road-sector-42|D0|Vio.com": {
+      "propertyId": "premier-golf-course-road-sector-42",
+      "property": "Saltstayz Premier - Golf Course Road & Sector 42",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Vio.com",
+      "otaPrice": 2594,
+      "direct": 2767,
+      "gapRupees": 173,
+      "gapPercent": 6.3,
+      "kind": "ota_lower"
+    },
+    "premier-golf-course-road-sector-42|D0|goseek.com": {
+      "propertyId": "premier-golf-course-road-sector-42",
+      "property": "Saltstayz Premier - Golf Course Road & Sector 42",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "goseek.com",
+      "otaPrice": 2594,
+      "direct": 2767,
+      "gapRupees": 173,
+      "gapPercent": 6.3,
+      "kind": "ota_lower"
+    },
+    "premier-golf-course-road-sector-42|D0|Cleartrip": {
+      "propertyId": "premier-golf-course-road-sector-42",
+      "property": "Saltstayz Premier - Golf Course Road & Sector 42",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Cleartrip",
+      "otaPrice": 2677,
+      "direct": 2767,
+      "gapRupees": 90,
+      "gapPercent": 3.3,
+      "kind": "ota_lower"
+    },
     "pause-east-of-kailash|D0|MakeMyTrip": {
       "propertyId": "pause-east-of-kailash",
       "property": "Pause by Saltstayz - East of Kailash",
@@ -575,6 +635,114 @@
       "direct": 3624,
       "gapRupees": 427,
       "gapPercent": 11.8,
+      "kind": "ota_lower"
+    },
+    "premier-manesar-sector-86|D0|Agoda": {
+      "propertyId": "premier-manesar-sector-86",
+      "property": "Saltstayz Premier - Manesar & Sector 86",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Agoda",
+      "otaPrice": 2372,
+      "direct": 2676,
+      "gapRupees": 304,
+      "gapPercent": 11.4,
+      "kind": "ota_lower"
+    },
+    "premier-manesar-sector-86|D0|Bluepillow": {
+      "propertyId": "premier-manesar-sector-86",
+      "property": "Saltstayz Premier - Manesar & Sector 86",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Bluepillow",
+      "otaPrice": 2499,
+      "direct": 2676,
+      "gapRupees": 177,
+      "gapPercent": 6.6,
+      "kind": "ota_lower"
+    },
+    "premier-manesar-sector-86|D0|EaseMyTrip": {
+      "propertyId": "premier-manesar-sector-86",
+      "property": "Saltstayz Premier - Manesar & Sector 86",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "EaseMyTrip",
+      "otaPrice": 2535,
+      "direct": 2676,
+      "gapRupees": 141,
+      "gapPercent": 5.3,
+      "kind": "ota_lower"
+    },
+    "premier-manesar-sector-86|D0|Vio.com": {
+      "propertyId": "premier-manesar-sector-86",
+      "property": "Saltstayz Premier - Manesar & Sector 86",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Vio.com",
+      "otaPrice": 2668,
+      "direct": 2676,
+      "gapRupees": 8,
+      "gapPercent": 0.3,
+      "kind": "ota_lower"
+    },
+    "premier-naraina|D0|Agoda": {
+      "propertyId": "premier-naraina",
+      "property": "Saltstayz Premier - Naraina, Central Delhi",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Agoda",
+      "otaPrice": 2825,
+      "direct": 3180,
+      "gapRupees": 355,
+      "gapPercent": 11.2,
+      "kind": "ota_lower"
+    },
+    "premier-naraina|D0|Vio.com": {
+      "propertyId": "premier-naraina",
+      "property": "Saltstayz Premier - Naraina, Central Delhi",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Vio.com",
+      "otaPrice": 2900,
+      "direct": 3180,
+      "gapRupees": 280,
+      "gapPercent": 8.8,
+      "kind": "ota_lower"
+    },
+    "premier-naraina|D0|Etrip.net": {
+      "propertyId": "premier-naraina",
+      "property": "Saltstayz Premier - Naraina, Central Delhi",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Etrip.net",
+      "otaPrice": 2900,
+      "direct": 3180,
+      "gapRupees": 280,
+      "gapPercent": 8.8,
+      "kind": "ota_lower"
+    },
+    "premier-naraina|D0|EaseMyTrip": {
+      "propertyId": "premier-naraina",
+      "property": "Saltstayz Premier - Naraina, Central Delhi",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "EaseMyTrip",
+      "otaPrice": 2947,
+      "direct": 3180,
+      "gapRupees": 233,
+      "gapPercent": 7.3,
+      "kind": "ota_lower"
+    },
+    "premier-naraina|D0|Bluepillow": {
+      "propertyId": "premier-naraina",
+      "property": "Saltstayz Premier - Naraina, Central Delhi",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Bluepillow",
+      "otaPrice": 2976,
+      "direct": 3180,
+      "gapRupees": 204,
+      "gapPercent": 6.4,
       "kind": "ota_lower"
     },
     "select-golf-course-road-sector-27|D0|EaseMyTrip": {
@@ -595,10 +763,46 @@
       "window": "D0",
       "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
       "source": "Agoda",
-      "otaPrice": 1852,
+      "otaPrice": 1812,
       "direct": 1956,
-      "gapRupees": 104,
-      "gapPercent": 5.3,
+      "gapRupees": 144,
+      "gapPercent": 7.4,
+      "kind": "ota_lower"
+    },
+    "select-golf-course-road-sector-27|D0|Vio.com": {
+      "propertyId": "select-golf-course-road-sector-27",
+      "property": "Saltstayz Select - Golf Course Road & Sector 27",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Vio.com",
+      "otaPrice": 1861,
+      "direct": 1956,
+      "gapRupees": 95,
+      "gapPercent": 4.9,
+      "kind": "ota_lower"
+    },
+    "select-golf-course-road-sector-27|D0|Cleartrip": {
+      "propertyId": "select-golf-course-road-sector-27",
+      "property": "Saltstayz Select - Golf Course Road & Sector 27",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Cleartrip",
+      "otaPrice": 1935,
+      "direct": 1956,
+      "gapRupees": 21,
+      "gapPercent": 1.1,
+      "kind": "ota_lower"
+    },
+    "premier-faridabad-sarita-vihar|D0|EaseMyTrip": {
+      "propertyId": "premier-faridabad-sarita-vihar",
+      "property": "Saltstayz Premier Faridabad Near Sarita Vihar",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "EaseMyTrip",
+      "otaPrice": 2143,
+      "direct": 2399,
+      "gapRupees": 256,
+      "gapPercent": 10.7,
       "kind": "ota_lower"
     },
     "select-malcha-chanakyapuri|D0|EaseMyTrip": {
@@ -637,6 +841,18 @@
       "gapPercent": 4.2,
       "kind": "ota_lower"
     },
+    "select-malcha-chanakyapuri|D0|Vio.com": {
+      "propertyId": "select-malcha-chanakyapuri",
+      "property": "Saltstayz Select - Malcha & Chanakyapuri",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Vio.com",
+      "otaPrice": 5035,
+      "direct": 5257,
+      "gapRupees": 222,
+      "gapPercent": 4.2,
+      "kind": "ota_lower"
+    },
     "premier-galleria-sector-27|D0|EaseMyTrip": {
       "propertyId": "premier-galleria-sector-27",
       "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
@@ -659,18 +875,6 @@
       "direct": 2399,
       "gapRupees": 118,
       "gapPercent": 4.9,
-      "kind": "ota_lower"
-    },
-    "premier-galleria-sector-27|D0|trivago": {
-      "propertyId": "premier-galleria-sector-27",
-      "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
-      "window": "D0",
-      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
-      "source": "trivago",
-      "otaPrice": 2341,
-      "direct": 2399,
-      "gapRupees": 58,
-      "gapPercent": 2.4,
       "kind": "ota_lower"
     },
     "premier-galleria-sector-27|D0|Cleartrip": {
@@ -781,28 +985,40 @@
       "gapPercent": 5,
       "kind": "ota_lower"
     },
-    "premier-faridabad-sarita-vihar|D0|EaseMyTrip": {
-      "propertyId": "premier-faridabad-sarita-vihar",
-      "property": "Saltstayz Premier Faridabad Near Sarita Vihar",
+    "select-unitech-cyber-park|D0|Bluepillow": {
+      "propertyId": "select-unitech-cyber-park",
+      "property": "Saltstayz Select - Unitech Cyber Park",
       "window": "D0",
       "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
-      "source": "EaseMyTrip",
-      "otaPrice": 2371,
-      "direct": 2399,
-      "gapRupees": 28,
-      "gapPercent": 1.2,
+      "source": "Bluepillow",
+      "otaPrice": 1779,
+      "direct": 1824,
+      "gapRupees": 45,
+      "gapPercent": 2.5,
       "kind": "ota_lower"
     },
-    "premier-golf-course-road-sector-42|D0|EaseMyTrip": {
-      "propertyId": "premier-golf-course-road-sector-42",
-      "property": "Saltstayz Premier - Golf Course Road & Sector 42",
+    "select-unitech-cyber-park|D0|Cleartrip": {
+      "propertyId": "select-unitech-cyber-park",
+      "property": "Saltstayz Select - Unitech Cyber Park",
       "window": "D0",
       "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
-      "source": "EaseMyTrip",
-      "otaPrice": 2756,
-      "direct": 2767,
-      "gapRupees": 11,
-      "gapPercent": 0.4,
+      "source": "Cleartrip",
+      "otaPrice": 1789,
+      "direct": 1824,
+      "gapRupees": 35,
+      "gapPercent": 1.9,
+      "kind": "ota_lower"
+    },
+    "premier-near-sector-44-corporate-hub|D0|Cleartrip": {
+      "propertyId": "premier-near-sector-44-corporate-hub",
+      "property": "Saltstayz Premier Near Sector 44 Corporate Hub",
+      "window": "D0",
+      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
+      "source": "Cleartrip",
+      "otaPrice": 1872,
+      "direct": 1956,
+      "gapRupees": 84,
+      "gapPercent": 4.3,
       "kind": "ota_lower"
     },
     "golden-tulip-gurugram-manesar|D0|Cleartrip": {
@@ -812,30 +1028,6 @@
       "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
       "source": "Cleartrip",
       "otaPrice": 5121,
-      "direct": null,
-      "gapRupees": null,
-      "gapPercent": null,
-      "kind": "direct_missing"
-    },
-    "premier-naraina|D0|Bluepillow": {
-      "propertyId": "premier-naraina",
-      "property": "Saltstayz Premier - Naraina, Central Delhi",
-      "window": "D0",
-      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
-      "source": "Bluepillow",
-      "otaPrice": 4388,
-      "direct": null,
-      "gapRupees": null,
-      "gapPercent": null,
-      "kind": "direct_missing"
-    },
-    "premier-pitampura|D0|EaseMyTrip": {
-      "propertyId": "premier-pitampura",
-      "property": "Saltstayz Premier - Pitampura",
-      "window": "D0",
-      "windowLabel": "Same-day check-in · Tue 10 Nov → Wed 11 Nov",
-      "source": "EaseMyTrip",
-      "otaPrice": 2353,
       "direct": null,
       "gapRupees": null,
       "gapPercent": null,
@@ -871,10 +1063,10 @@
       "window": "D1",
       "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
       "source": "Vio.com",
-      "otaPrice": 7994,
+      "otaPrice": 8159,
       "direct": 10065,
-      "gapRupees": 2071,
-      "gapPercent": 20.6,
+      "gapRupees": 1906,
+      "gapPercent": 18.9,
       "kind": "ota_lower"
     },
     "premier-sector-15-noida|D1|ixigo": {
@@ -907,10 +1099,10 @@
       "window": "D1",
       "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
       "source": "Goibibo",
-      "otaPrice": 2876,
+      "otaPrice": 2817,
       "direct": 3452,
-      "gapRupees": 576,
-      "gapPercent": 16.7,
+      "gapRupees": 635,
+      "gapPercent": 18.4,
       "kind": "ota_lower"
     },
     "premier-sector-15-noida|D1|MakeMyTrip": {
@@ -925,66 +1117,6 @@
       "gapPercent": 13.6,
       "kind": "ota_lower"
     },
-    "premier-golf-course-road-sector-42|D1|ixigo": {
-      "propertyId": "premier-golf-course-road-sector-42",
-      "property": "Saltstayz Premier - Golf Course Road & Sector 42",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "ixigo",
-      "otaPrice": 2042,
-      "direct": 2792,
-      "gapRupees": 750,
-      "gapPercent": 26.9,
-      "kind": "ota_lower"
-    },
-    "premier-golf-course-road-sector-42|D1|EaseMyTrip": {
-      "propertyId": "premier-golf-course-road-sector-42",
-      "property": "Saltstayz Premier - Golf Course Road & Sector 42",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "EaseMyTrip",
-      "otaPrice": 2211,
-      "direct": 2792,
-      "gapRupees": 581,
-      "gapPercent": 20.8,
-      "kind": "ota_lower"
-    },
-    "premier-golf-course-road-sector-42|D1|Agoda": {
-      "propertyId": "premier-golf-course-road-sector-42",
-      "property": "Saltstayz Premier - Golf Course Road & Sector 42",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "Agoda",
-      "otaPrice": 2294,
-      "direct": 2792,
-      "gapRupees": 498,
-      "gapPercent": 17.8,
-      "kind": "ota_lower"
-    },
-    "premier-golf-course-road-sector-42|D1|Bluepillow": {
-      "propertyId": "premier-golf-course-road-sector-42",
-      "property": "Saltstayz Premier - Golf Course Road & Sector 42",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "Bluepillow",
-      "otaPrice": 2414,
-      "direct": 2792,
-      "gapRupees": 378,
-      "gapPercent": 13.5,
-      "kind": "ota_lower"
-    },
-    "premier-cyber-hub|D1|EaseMyTrip": {
-      "propertyId": "premier-cyber-hub",
-      "property": "Saltstayz Premier - Cyber Hub",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "EaseMyTrip",
-      "otaPrice": 2226,
-      "direct": 2974,
-      "gapRupees": 748,
-      "gapPercent": 25.2,
-      "kind": "ota_lower"
-    },
     "premier-cyber-hub|D1|Agoda": {
       "propertyId": "premier-cyber-hub",
       "property": "Saltstayz Premier - Cyber Hub",
@@ -995,6 +1127,30 @@
       "direct": 2974,
       "gapRupees": 724,
       "gapPercent": 24.3,
+      "kind": "ota_lower"
+    },
+    "premier-cyber-hub|D1|EaseMyTrip": {
+      "propertyId": "premier-cyber-hub",
+      "property": "Saltstayz Premier - Cyber Hub",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "EaseMyTrip",
+      "otaPrice": 2337,
+      "direct": 2974,
+      "gapRupees": 637,
+      "gapPercent": 21.4,
+      "kind": "ota_lower"
+    },
+    "premier-cyber-hub|D1|Bluepillow": {
+      "propertyId": "premier-cyber-hub",
+      "property": "Saltstayz Premier - Cyber Hub",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "Bluepillow",
+      "otaPrice": 2370,
+      "direct": 2974,
+      "gapRupees": 604,
+      "gapPercent": 20.3,
       "kind": "ota_lower"
     },
     "premier-cyber-hub|D1|ixigo": {
@@ -1039,18 +1195,6 @@
       "window": "D1",
       "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
       "source": "goseek.com",
-      "otaPrice": 2952,
-      "direct": 3709,
-      "gapRupees": 757,
-      "gapPercent": 20.4,
-      "kind": "ota_lower"
-    },
-    "premier-pitampura|D1|dealbase.com": {
-      "propertyId": "premier-pitampura",
-      "property": "Saltstayz Premier - Pitampura",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "dealbase.com",
       "otaPrice": 2952,
       "direct": 3709,
       "gapRupees": 757,
@@ -1153,6 +1297,66 @@
       "gapPercent": 5.9,
       "kind": "ota_lower"
     },
+    "premier-golf-course-extension-road|D1|EaseMyTrip": {
+      "propertyId": "premier-golf-course-extension-road",
+      "property": "Saltstayz Premier - Golf Course Extension Road",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "EaseMyTrip",
+      "otaPrice": 5465,
+      "direct": 6829,
+      "gapRupees": 1364,
+      "gapPercent": 20,
+      "kind": "ota_lower"
+    },
+    "premier-golf-course-extension-road|D1|Agoda": {
+      "propertyId": "premier-golf-course-extension-road",
+      "property": "Saltstayz Premier - Golf Course Extension Road",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "Agoda",
+      "otaPrice": 5694,
+      "direct": 6829,
+      "gapRupees": 1135,
+      "gapPercent": 16.6,
+      "kind": "ota_lower"
+    },
+    "premier-golf-course-extension-road|D1|ixigo": {
+      "propertyId": "premier-golf-course-extension-road",
+      "property": "Saltstayz Premier - Golf Course Extension Road",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "ixigo",
+      "otaPrice": 5940,
+      "direct": 6829,
+      "gapRupees": 889,
+      "gapPercent": 13,
+      "kind": "ota_lower"
+    },
+    "premier-golf-course-extension-road|D1|Goibibo": {
+      "propertyId": "premier-golf-course-extension-road",
+      "property": "Saltstayz Premier - Golf Course Extension Road",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "Goibibo",
+      "otaPrice": 6012,
+      "direct": 6829,
+      "gapRupees": 817,
+      "gapPercent": 12,
+      "kind": "ota_lower"
+    },
+    "premier-golf-course-extension-road|D1|MakeMyTrip": {
+      "propertyId": "premier-golf-course-extension-road",
+      "property": "Saltstayz Premier - Golf Course Extension Road",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "MakeMyTrip",
+      "otaPrice": 6509,
+      "direct": 6829,
+      "gapRupees": 320,
+      "gapPercent": 4.7,
+      "kind": "ota_lower"
+    },
     "premier-manesar-sector-86|D1|Agoda": {
       "propertyId": "premier-manesar-sector-86",
       "property": "Saltstayz Premier - Manesar & Sector 86",
@@ -1189,6 +1393,30 @@
       "gapPercent": 14.5,
       "kind": "ota_lower"
     },
+    "premier-manesar-sector-86|D1|ixigo": {
+      "propertyId": "premier-manesar-sector-86",
+      "property": "Saltstayz Premier - Manesar & Sector 86",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "ixigo",
+      "otaPrice": 2523,
+      "direct": 2681,
+      "gapRupees": 158,
+      "gapPercent": 5.9,
+      "kind": "ota_lower"
+    },
+    "premier-manesar-sector-86|D1|trivago": {
+      "propertyId": "premier-manesar-sector-86",
+      "property": "Saltstayz Premier - Manesar & Sector 86",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "trivago",
+      "otaPrice": 2628,
+      "direct": 2681,
+      "gapRupees": 53,
+      "gapPercent": 2,
+      "kind": "ota_lower"
+    },
     "premier-noida-sector-18-metro|D1|EaseMyTrip": {
       "propertyId": "premier-noida-sector-18-metro",
       "property": "Saltstayz Premier - Noida, Near Sector 18 Metro",
@@ -1201,16 +1429,16 @@
       "gapPercent": 19.4,
       "kind": "ota_lower"
     },
-    "premier-noida-sector-18-metro|D1|ixigo": {
+    "premier-noida-sector-18-metro|D1|Cleartrip": {
       "propertyId": "premier-noida-sector-18-metro",
       "property": "Saltstayz Premier - Noida, Near Sector 18 Metro",
       "window": "D1",
       "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "ixigo",
-      "otaPrice": 3327,
+      "source": "Cleartrip",
+      "otaPrice": 3827,
       "direct": 3830,
-      "gapRupees": 503,
-      "gapPercent": 13.1,
+      "gapRupees": 3,
+      "gapPercent": 0.1,
       "kind": "ota_lower"
     },
     "premier-noida-sector-135-expressway|D1|MakeMyTrip": {
@@ -1231,10 +1459,10 @@
       "window": "D1",
       "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
       "source": "ixigo",
-      "otaPrice": 3174,
+      "otaPrice": 3113,
       "direct": 3751,
-      "gapRupees": 577,
-      "gapPercent": 15.4,
+      "gapRupees": 638,
+      "gapPercent": 17,
       "kind": "ota_lower"
     },
     "premier-noida-sector-135-expressway|D1|Booking.com": {
@@ -1261,6 +1489,30 @@
       "gapPercent": 4.6,
       "kind": "ota_lower"
     },
+    "premier-noida-sector-135-expressway|D1|Vio.com": {
+      "propertyId": "premier-noida-sector-135-expressway",
+      "property": "Saltstayz Premier Noida Sector 135 Expressway",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "Vio.com",
+      "otaPrice": 3582,
+      "direct": 3751,
+      "gapRupees": 169,
+      "gapPercent": 4.5,
+      "kind": "ota_lower"
+    },
+    "premier-noida-sector-135-expressway|D1|goseek.com": {
+      "propertyId": "premier-noida-sector-135-expressway",
+      "property": "Saltstayz Premier Noida Sector 135 Expressway",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "goseek.com",
+      "otaPrice": 3582,
+      "direct": 3751,
+      "gapRupees": 169,
+      "gapPercent": 4.5,
+      "kind": "ota_lower"
+    },
     "premier-noida-sector-135-expressway|D1|EaseMyTrip": {
       "propertyId": "premier-noida-sector-135-expressway",
       "property": "Saltstayz Premier Noida Sector 135 Expressway",
@@ -1271,6 +1523,54 @@
       "direct": 3751,
       "gapRupees": 145,
       "gapPercent": 3.9,
+      "kind": "ota_lower"
+    },
+    "premier-golf-course-road-sector-42|D1|Agoda": {
+      "propertyId": "premier-golf-course-road-sector-42",
+      "property": "Saltstayz Premier - Golf Course Road & Sector 42",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "Agoda",
+      "otaPrice": 2294,
+      "direct": 2792,
+      "gapRupees": 498,
+      "gapPercent": 17.8,
+      "kind": "ota_lower"
+    },
+    "premier-golf-course-road-sector-42|D1|EaseMyTrip": {
+      "propertyId": "premier-golf-course-road-sector-42",
+      "property": "Saltstayz Premier - Golf Course Road & Sector 42",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "EaseMyTrip",
+      "otaPrice": 2321,
+      "direct": 2792,
+      "gapRupees": 471,
+      "gapPercent": 16.9,
+      "kind": "ota_lower"
+    },
+    "premier-golf-course-road-sector-42|D1|Bluepillow": {
+      "propertyId": "premier-golf-course-road-sector-42",
+      "property": "Saltstayz Premier - Golf Course Road & Sector 42",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "Bluepillow",
+      "otaPrice": 2414,
+      "direct": 2792,
+      "gapRupees": 378,
+      "gapPercent": 13.5,
+      "kind": "ota_lower"
+    },
+    "premier-golf-course-road-sector-42|D1|ixigo": {
+      "propertyId": "premier-golf-course-road-sector-42",
+      "property": "Saltstayz Premier - Golf Course Road & Sector 42",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "ixigo",
+      "otaPrice": 2622,
+      "direct": 2792,
+      "gapRupees": 170,
+      "gapPercent": 6.1,
       "kind": "ota_lower"
     },
     "premier-arjun-marg|D1|Agoda": {
@@ -1321,18 +1621,6 @@
       "gapPercent": 6,
       "kind": "ota_lower"
     },
-    "premier-arjun-marg|D1|Yatra": {
-      "propertyId": "premier-arjun-marg",
-      "property": "Saltstayz Premier - Arjun Marg & Golf Course Road",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "Yatra",
-      "otaPrice": 2162,
-      "direct": 2278,
-      "gapRupees": 116,
-      "gapPercent": 5.1,
-      "kind": "ota_lower"
-    },
     "select-nehru-place|D1|EaseMyTrip": {
       "propertyId": "select-nehru-place",
       "property": "Saltstayz Select - Nehru Place & New Friends Colony",
@@ -1357,28 +1645,16 @@
       "gapPercent": 14.4,
       "kind": "ota_lower"
     },
-    "select-nehru-place|D1|Vio.com": {
-      "propertyId": "select-nehru-place",
-      "property": "Saltstayz Select - Nehru Place & New Friends Colony",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "Vio.com",
-      "otaPrice": 1971,
-      "direct": 2243,
-      "gapRupees": 272,
-      "gapPercent": 12.1,
-      "kind": "ota_lower"
-    },
     "select-nehru-place|D1|ixigo": {
       "propertyId": "select-nehru-place",
       "property": "Saltstayz Select - Nehru Place & New Friends Colony",
       "window": "D1",
       "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
       "source": "ixigo",
-      "otaPrice": 2057,
+      "otaPrice": 2019,
       "direct": 2243,
-      "gapRupees": 186,
-      "gapPercent": 8.3,
+      "gapRupees": 224,
+      "gapPercent": 10,
       "kind": "ota_lower"
     },
     "select-nehru-place|D1|Yatra": {
@@ -1403,90 +1679,6 @@
       "direct": 2243,
       "gapRupees": 31,
       "gapPercent": 1.4,
-      "kind": "ota_lower"
-    },
-    "premier-galleria-sector-27|D1|EaseMyTrip": {
-      "propertyId": "premier-galleria-sector-27",
-      "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "EaseMyTrip",
-      "otaPrice": 1952,
-      "direct": 2364,
-      "gapRupees": 412,
-      "gapPercent": 17.4,
-      "kind": "ota_lower"
-    },
-    "premier-galleria-sector-27|D1|Agoda": {
-      "propertyId": "premier-galleria-sector-27",
-      "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "Agoda",
-      "otaPrice": 2026,
-      "direct": 2364,
-      "gapRupees": 338,
-      "gapPercent": 14.3,
-      "kind": "ota_lower"
-    },
-    "premier-galleria-sector-27|D1|trivago": {
-      "propertyId": "premier-galleria-sector-27",
-      "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "trivago",
-      "otaPrice": 2079,
-      "direct": 2364,
-      "gapRupees": 285,
-      "gapPercent": 12.1,
-      "kind": "ota_lower"
-    },
-    "premier-galleria-sector-27|D1|Bluepillow": {
-      "propertyId": "premier-galleria-sector-27",
-      "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "Bluepillow",
-      "otaPrice": 2131,
-      "direct": 2364,
-      "gapRupees": 233,
-      "gapPercent": 9.9,
-      "kind": "ota_lower"
-    },
-    "premier-galleria-sector-27|D1|ixigo": {
-      "propertyId": "premier-galleria-sector-27",
-      "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "ixigo",
-      "otaPrice": 2223,
-      "direct": 2364,
-      "gapRupees": 141,
-      "gapPercent": 6,
-      "kind": "ota_lower"
-    },
-    "select-malcha-chanakyapuri|D1|EaseMyTrip": {
-      "propertyId": "select-malcha-chanakyapuri",
-      "property": "Saltstayz Select - Malcha & Chanakyapuri",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "EaseMyTrip",
-      "otaPrice": 5610,
-      "direct": 6794,
-      "gapRupees": 1184,
-      "gapPercent": 17.4,
-      "kind": "ota_lower"
-    },
-    "select-malcha-chanakyapuri|D1|Agoda": {
-      "propertyId": "select-malcha-chanakyapuri",
-      "property": "Saltstayz Select - Malcha & Chanakyapuri",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "Agoda",
-      "otaPrice": 5627,
-      "direct": 6794,
-      "gapRupees": 1167,
-      "gapPercent": 17.2,
       "kind": "ota_lower"
     },
     "premier-paschim-vihar|D1|Agoda": {
@@ -1561,66 +1753,6 @@
       "gapPercent": 5.9,
       "kind": "ota_lower"
     },
-    "premier-golf-course-extension-road|D1|Agoda": {
-      "propertyId": "premier-golf-course-extension-road",
-      "property": "Saltstayz Premier - Golf Course Extension Road",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "Agoda",
-      "otaPrice": 5234,
-      "direct": 6325,
-      "gapRupees": 1091,
-      "gapPercent": 17.2,
-      "kind": "ota_lower"
-    },
-    "premier-golf-course-extension-road|D1|ixigo": {
-      "propertyId": "premier-golf-course-extension-road",
-      "property": "Saltstayz Premier - Golf Course Extension Road",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "ixigo",
-      "otaPrice": 5452,
-      "direct": 6325,
-      "gapRupees": 873,
-      "gapPercent": 13.8,
-      "kind": "ota_lower"
-    },
-    "premier-golf-course-extension-road|D1|EaseMyTrip": {
-      "propertyId": "premier-golf-course-extension-road",
-      "property": "Saltstayz Premier - Golf Course Extension Road",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "EaseMyTrip",
-      "otaPrice": 5465,
-      "direct": 6325,
-      "gapRupees": 860,
-      "gapPercent": 13.6,
-      "kind": "ota_lower"
-    },
-    "premier-golf-course-extension-road|D1|Goibibo": {
-      "propertyId": "premier-golf-course-extension-road",
-      "property": "Saltstayz Premier - Golf Course Extension Road",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "Goibibo",
-      "otaPrice": 5518,
-      "direct": 6325,
-      "gapRupees": 807,
-      "gapPercent": 12.8,
-      "kind": "ota_lower"
-    },
-    "premier-golf-course-extension-road|D1|MakeMyTrip": {
-      "propertyId": "premier-golf-course-extension-road",
-      "property": "Saltstayz Premier - Golf Course Extension Road",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "MakeMyTrip",
-      "otaPrice": 5974,
-      "direct": 6325,
-      "gapRupees": 351,
-      "gapPercent": 5.5,
-      "kind": "ota_lower"
-    },
     "select-golf-course-road-sector-27|D1|Agoda": {
       "propertyId": "select-golf-course-road-sector-27",
       "property": "Saltstayz Select - Golf Course Road & Sector 27",
@@ -1631,6 +1763,42 @@
       "direct": 2082,
       "gapRupees": 345,
       "gapPercent": 16.6,
+      "kind": "ota_lower"
+    },
+    "select-golf-course-road-sector-27|D1|Vio.com": {
+      "propertyId": "select-golf-course-road-sector-27",
+      "property": "Saltstayz Select - Golf Course Road & Sector 27",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "Vio.com",
+      "otaPrice": 1783,
+      "direct": 2082,
+      "gapRupees": 299,
+      "gapPercent": 14.4,
+      "kind": "ota_lower"
+    },
+    "select-golf-course-road-sector-27|D1|goseek.com": {
+      "propertyId": "select-golf-course-road-sector-27",
+      "property": "Saltstayz Select - Golf Course Road & Sector 27",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "goseek.com",
+      "otaPrice": 1783,
+      "direct": 2082,
+      "gapRupees": 299,
+      "gapPercent": 14.4,
+      "kind": "ota_lower"
+    },
+    "select-golf-course-road-sector-27|D1|dealbase.com": {
+      "propertyId": "select-golf-course-road-sector-27",
+      "property": "Saltstayz Select - Golf Course Road & Sector 27",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "dealbase.com",
+      "otaPrice": 1783,
+      "direct": 2082,
+      "gapRupees": 299,
+      "gapPercent": 14.4,
       "kind": "ota_lower"
     },
     "select-golf-course-road-sector-27|D1|EaseMyTrip": {
@@ -1651,10 +1819,10 @@
       "window": "D1",
       "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
       "source": "ixigo",
-      "otaPrice": 1907,
+      "otaPrice": 1957,
       "direct": 2082,
-      "gapRupees": 175,
-      "gapPercent": 8.4,
+      "gapRupees": 125,
+      "gapPercent": 6,
       "kind": "ota_lower"
     },
     "select-golf-course-road-sector-57|D1|Agoda": {
@@ -1669,6 +1837,18 @@
       "gapPercent": 15.8,
       "kind": "ota_lower"
     },
+    "select-golf-course-road-sector-57|D1|trivago": {
+      "propertyId": "select-golf-course-road-sector-57",
+      "property": "Saltstayz Select - Golf Course Road & Sector 57",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "trivago",
+      "otaPrice": 1581,
+      "direct": 1830,
+      "gapRupees": 249,
+      "gapPercent": 13.6,
+      "kind": "ota_lower"
+    },
     "select-golf-course-road-sector-57|D1|EaseMyTrip": {
       "propertyId": "select-golf-course-road-sector-57",
       "property": "Saltstayz Select - Golf Course Road & Sector 57",
@@ -1679,30 +1859,6 @@
       "direct": 1830,
       "gapRupees": 192,
       "gapPercent": 10.5,
-      "kind": "ota_lower"
-    },
-    "select-golf-course-road-sector-57|D1|ixigo": {
-      "propertyId": "select-golf-course-road-sector-57",
-      "property": "Saltstayz Select - Golf Course Road & Sector 57",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "ixigo",
-      "otaPrice": 1717,
-      "direct": 1830,
-      "gapRupees": 113,
-      "gapPercent": 6.2,
-      "kind": "ota_lower"
-    },
-    "autograph-rishikesh|D1|EaseMyTrip": {
-      "propertyId": "autograph-rishikesh",
-      "property": "Saltstayz Autograph - Rishikesh Near Triveni Ghat",
-      "window": "D1",
-      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
-      "source": "EaseMyTrip",
-      "otaPrice": 5176,
-      "direct": 6124,
-      "gapRupees": 948,
-      "gapPercent": 15.5,
       "kind": "ota_lower"
     },
     "autograph-advant-sector-144|D1|EaseMyTrip": {
@@ -1727,6 +1883,54 @@
       "direct": 3407,
       "gapRupees": 487,
       "gapPercent": 14.3,
+      "kind": "ota_lower"
+    },
+    "premier-galleria-sector-27|D1|Agoda": {
+      "propertyId": "premier-galleria-sector-27",
+      "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "Agoda",
+      "otaPrice": 2026,
+      "direct": 2364,
+      "gapRupees": 338,
+      "gapPercent": 14.3,
+      "kind": "ota_lower"
+    },
+    "premier-galleria-sector-27|D1|EaseMyTrip": {
+      "propertyId": "premier-galleria-sector-27",
+      "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "EaseMyTrip",
+      "otaPrice": 2048,
+      "direct": 2364,
+      "gapRupees": 316,
+      "gapPercent": 13.4,
+      "kind": "ota_lower"
+    },
+    "premier-galleria-sector-27|D1|Bluepillow": {
+      "propertyId": "premier-galleria-sector-27",
+      "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "Bluepillow",
+      "otaPrice": 2131,
+      "direct": 2364,
+      "gapRupees": 233,
+      "gapPercent": 9.9,
+      "kind": "ota_lower"
+    },
+    "premier-galleria-sector-27|D1|ixigo": {
+      "propertyId": "premier-galleria-sector-27",
+      "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "ixigo",
+      "otaPrice": 2223,
+      "direct": 2364,
+      "gapRupees": 141,
+      "gapPercent": 6,
       "kind": "ota_lower"
     },
     "trinity-chandigarh-mohali|D1|Agoda": {
@@ -1801,6 +2005,18 @@
       "gapPercent": 10.4,
       "kind": "ota_lower"
     },
+    "premier-sector-50-golf-course-ext-road|D1|ixigo": {
+      "propertyId": "premier-sector-50-golf-course-ext-road",
+      "property": "Saltstayz Premier - Sector 50 & Golf Course Ext Road",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "ixigo",
+      "otaPrice": 1991,
+      "direct": 2117,
+      "gapRupees": 126,
+      "gapPercent": 6,
+      "kind": "ota_lower"
+    },
     "premier-medicity|D1|EaseMyTrip": {
       "propertyId": "premier-medicity",
       "property": "Saltstayz Premier - Medicity (Near Medanta)",
@@ -1849,16 +2065,28 @@
       "gapPercent": 12.2,
       "kind": "ota_lower"
     },
+    "premier-near-sector-44-corporate-hub|D1|Cleartrip": {
+      "propertyId": "premier-near-sector-44-corporate-hub",
+      "property": "Saltstayz Premier Near Sector 44 Corporate Hub",
+      "window": "D1",
+      "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
+      "source": "Cleartrip",
+      "otaPrice": 1849,
+      "direct": 2026,
+      "gapRupees": 177,
+      "gapPercent": 8.7,
+      "kind": "ota_lower"
+    },
     "premier-near-sector-44-corporate-hub|D1|ixigo": {
       "propertyId": "premier-near-sector-44-corporate-hub",
       "property": "Saltstayz Premier Near Sector 44 Corporate Hub",
       "window": "D1",
       "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
       "source": "ixigo",
-      "otaPrice": 1929,
+      "otaPrice": 1907,
       "direct": 2026,
-      "gapRupees": 97,
-      "gapPercent": 4.8,
+      "gapRupees": 119,
+      "gapPercent": 5.9,
       "kind": "ota_lower"
     },
     "pause-east-of-kailash|D1|MakeMyTrip": {
@@ -1903,10 +2131,10 @@
       "window": "D1",
       "windowLabel": "Tomorrow check-in · Wed 11 Nov → Thu 12 Nov",
       "source": "Cleartrip",
-      "otaPrice": 2689,
+      "otaPrice": 2666,
       "direct": 2717,
-      "gapRupees": 28,
-      "gapPercent": 1,
+      "gapRupees": 51,
+      "gapPercent": 1.9,
       "kind": "ota_lower"
     },
     "golden-tulip-gurugram-manesar|D1|Cleartrip": {
@@ -2005,16 +2233,64 @@
       "gapPercent": 15.7,
       "kind": "ota_lower"
     },
-    "premier-cyber-hub|D2|ixigo": {
-      "propertyId": "premier-cyber-hub",
-      "property": "Saltstayz Premier - Cyber Hub",
+    "premier-sector-15-noida|D2|ixigo": {
+      "propertyId": "premier-sector-15-noida",
+      "property": "Saltstayz Premier - Sector 15 Noida",
       "window": "D2",
       "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
       "source": "ixigo",
-      "otaPrice": 2243,
-      "direct": 3241,
-      "gapRupees": 998,
-      "gapPercent": 30.8,
+      "otaPrice": 2963,
+      "direct": 3960,
+      "gapRupees": 997,
+      "gapPercent": 25.2,
+      "kind": "ota_lower"
+    },
+    "premier-sector-15-noida|D2|EaseMyTrip": {
+      "propertyId": "premier-sector-15-noida",
+      "property": "Saltstayz Premier - Sector 15 Noida",
+      "window": "D2",
+      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
+      "source": "EaseMyTrip",
+      "otaPrice": 2971,
+      "direct": 3960,
+      "gapRupees": 989,
+      "gapPercent": 25,
+      "kind": "ota_lower"
+    },
+    "premier-sector-15-noida|D2|Cleartrip": {
+      "propertyId": "premier-sector-15-noida",
+      "property": "Saltstayz Premier - Sector 15 Noida",
+      "window": "D2",
+      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
+      "source": "Cleartrip",
+      "otaPrice": 3191,
+      "direct": 3960,
+      "gapRupees": 769,
+      "gapPercent": 19.4,
+      "kind": "ota_lower"
+    },
+    "premier-sector-15-noida|D2|Goibibo": {
+      "propertyId": "premier-sector-15-noida",
+      "property": "Saltstayz Premier - Sector 15 Noida",
+      "window": "D2",
+      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
+      "source": "Goibibo",
+      "otaPrice": 3414,
+      "direct": 3960,
+      "gapRupees": 546,
+      "gapPercent": 13.8,
+      "kind": "ota_lower"
+    },
+    "premier-sector-15-noida|D2|MakeMyTrip": {
+      "propertyId": "premier-sector-15-noida",
+      "property": "Saltstayz Premier - Sector 15 Noida",
+      "window": "D2",
+      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
+      "source": "MakeMyTrip",
+      "otaPrice": 3613,
+      "direct": 3960,
+      "gapRupees": 347,
+      "gapPercent": 8.8,
       "kind": "ota_lower"
     },
     "premier-cyber-hub|D2|Agoda": {
@@ -2041,52 +2317,16 @@
       "gapPercent": 21.4,
       "kind": "ota_lower"
     },
-    "premier-sector-15-noida|D2|ixigo": {
-      "propertyId": "premier-sector-15-noida",
-      "property": "Saltstayz Premier - Sector 15 Noida",
+    "premier-cyber-hub|D2|Traveloka": {
+      "propertyId": "premier-cyber-hub",
+      "property": "Saltstayz Premier - Cyber Hub",
       "window": "D2",
       "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "ixigo",
-      "otaPrice": 2963,
-      "direct": 3960,
-      "gapRupees": 997,
-      "gapPercent": 25.2,
-      "kind": "ota_lower"
-    },
-    "premier-sector-15-noida|D2|EaseMyTrip": {
-      "propertyId": "premier-sector-15-noida",
-      "property": "Saltstayz Premier - Sector 15 Noida",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "EaseMyTrip",
-      "otaPrice": 2971,
-      "direct": 3960,
-      "gapRupees": 989,
-      "gapPercent": 25,
-      "kind": "ota_lower"
-    },
-    "premier-sector-15-noida|D2|Goibibo": {
-      "propertyId": "premier-sector-15-noida",
-      "property": "Saltstayz Premier - Sector 15 Noida",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "Goibibo",
-      "otaPrice": 3414,
-      "direct": 3960,
-      "gapRupees": 546,
-      "gapPercent": 13.8,
-      "kind": "ota_lower"
-    },
-    "premier-sector-15-noida|D2|MakeMyTrip": {
-      "propertyId": "premier-sector-15-noida",
-      "property": "Saltstayz Premier - Sector 15 Noida",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "MakeMyTrip",
-      "otaPrice": 3613,
-      "direct": 3960,
-      "gapRupees": 347,
-      "gapPercent": 8.8,
+      "source": "Traveloka",
+      "otaPrice": 3047,
+      "direct": 3241,
+      "gapRupees": 194,
+      "gapPercent": 6,
       "kind": "ota_lower"
     },
     "premier-golf-course-extension-road|D2|EaseMyTrip": {
@@ -2137,6 +2377,18 @@
       "gapPercent": 5.5,
       "kind": "ota_lower"
     },
+    "premier-golf-course-extension-road|D2|Yatra": {
+      "propertyId": "premier-golf-course-extension-road",
+      "property": "Saltstayz Premier - Golf Course Extension Road",
+      "window": "D2",
+      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
+      "source": "Yatra",
+      "otaPrice": 6113,
+      "direct": 6325,
+      "gapRupees": 212,
+      "gapPercent": 3.4,
+      "kind": "ota_lower"
+    },
     "premier-pitampura|D2|Agoda": {
       "propertyId": "premier-pitampura",
       "property": "Saltstayz Premier - Pitampura",
@@ -2147,42 +2399,6 @@
       "direct": 3432,
       "gapRupees": 708,
       "gapPercent": 20.6,
-      "kind": "ota_lower"
-    },
-    "premier-pitampura|D2|Vio.com": {
-      "propertyId": "premier-pitampura",
-      "property": "Saltstayz Premier - Pitampura",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "Vio.com",
-      "otaPrice": 2742,
-      "direct": 3432,
-      "gapRupees": 690,
-      "gapPercent": 20.1,
-      "kind": "ota_lower"
-    },
-    "premier-pitampura|D2|goseek.com": {
-      "propertyId": "premier-pitampura",
-      "property": "Saltstayz Premier - Pitampura",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "goseek.com",
-      "otaPrice": 2742,
-      "direct": 3432,
-      "gapRupees": 690,
-      "gapPercent": 20.1,
-      "kind": "ota_lower"
-    },
-    "premier-pitampura|D2|Etrip.net": {
-      "propertyId": "premier-pitampura",
-      "property": "Saltstayz Premier - Pitampura",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "Etrip.net",
-      "otaPrice": 2742,
-      "direct": 3432,
-      "gapRupees": 690,
-      "gapPercent": 20.1,
       "kind": "ota_lower"
     },
     "premier-pitampura|D2|Bluepillow": {
@@ -2257,6 +2473,18 @@
       "gapPercent": 14.5,
       "kind": "ota_lower"
     },
+    "premier-manesar-sector-86|D2|ixigo": {
+      "propertyId": "premier-manesar-sector-86",
+      "property": "Saltstayz Premier - Manesar & Sector 86",
+      "window": "D2",
+      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
+      "source": "ixigo",
+      "otaPrice": 3642,
+      "direct": 3871,
+      "gapRupees": 229,
+      "gapPercent": 5.9,
+      "kind": "ota_lower"
+    },
     "premier-noida-sector-18-metro|D2|EaseMyTrip": {
       "propertyId": "premier-noida-sector-18-metro",
       "property": "Saltstayz Premier - Noida, Near Sector 18 Metro",
@@ -2275,10 +2503,10 @@
       "window": "D2",
       "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
       "source": "ixigo",
-      "otaPrice": 4213,
+      "otaPrice": 4134,
       "direct": 4758,
-      "gapRupees": 545,
-      "gapPercent": 11.5,
+      "gapRupees": 624,
+      "gapPercent": 13.1,
       "kind": "ota_lower"
     },
     "premier-millenium-city-centre|D2|EaseMyTrip": {
@@ -2311,18 +2539,6 @@
       "window": "D2",
       "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
       "source": "Expedia",
-      "otaPrice": 5493,
-      "direct": 6235,
-      "gapRupees": 742,
-      "gapPercent": 11.9,
-      "kind": "ota_lower"
-    },
-    "premier-millenium-city-centre|D2|Vio.com": {
-      "propertyId": "premier-millenium-city-centre",
-      "property": "Saltstayz Premier Millenium City Centre",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "Vio.com",
       "otaPrice": 5493,
       "direct": 6235,
       "gapRupees": 742,
@@ -2413,16 +2629,16 @@
       "gapPercent": 16.7,
       "kind": "ota_lower"
     },
-    "premier-golf-course-road-sector-42|D2|Bluepillow": {
+    "premier-golf-course-road-sector-42|D2|ixigo": {
       "propertyId": "premier-golf-course-road-sector-42",
       "property": "Saltstayz Premier - Golf Course Road & Sector 42",
       "window": "D2",
       "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "Bluepillow",
-      "otaPrice": 2788,
+      "source": "ixigo",
+      "otaPrice": 3029,
       "direct": 3221,
-      "gapRupees": 433,
-      "gapPercent": 13.4,
+      "gapRupees": 192,
+      "gapPercent": 6,
       "kind": "ota_lower"
     },
     "select-malcha-chanakyapuri|D2|EaseMyTrip": {
@@ -2473,18 +2689,6 @@
       "gapPercent": 3.2,
       "kind": "ota_lower"
     },
-    "select-malcha-chanakyapuri|D2|Tripadvisor": {
-      "propertyId": "select-malcha-chanakyapuri",
-      "property": "Saltstayz Select - Malcha & Chanakyapuri",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "Tripadvisor",
-      "otaPrice": 7477,
-      "direct": 7711,
-      "gapRupees": 234,
-      "gapPercent": 3,
-      "kind": "ota_lower"
-    },
     "select-unitech-cyber-park|D2|EaseMyTrip": {
       "propertyId": "select-unitech-cyber-park",
       "property": "Saltstayz Select - Unitech Cyber Park",
@@ -2507,6 +2711,78 @@
       "direct": 2802,
       "gapRupees": 343,
       "gapPercent": 12.2,
+      "kind": "ota_lower"
+    },
+    "select-nehru-place|D2|EaseMyTrip": {
+      "propertyId": "select-nehru-place",
+      "property": "Saltstayz Select - Nehru Place & New Friends Colony",
+      "window": "D2",
+      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
+      "source": "EaseMyTrip",
+      "otaPrice": 1922,
+      "direct": 2323,
+      "gapRupees": 401,
+      "gapPercent": 17.3,
+      "kind": "ota_lower"
+    },
+    "select-nehru-place|D2|Agoda": {
+      "propertyId": "select-nehru-place",
+      "property": "Saltstayz Select - Nehru Place & New Friends Colony",
+      "window": "D2",
+      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
+      "source": "Agoda",
+      "otaPrice": 1993,
+      "direct": 2323,
+      "gapRupees": 330,
+      "gapPercent": 14.2,
+      "kind": "ota_lower"
+    },
+    "select-nehru-place|D2|Vio.com": {
+      "propertyId": "select-nehru-place",
+      "property": "Saltstayz Select - Nehru Place & New Friends Colony",
+      "window": "D2",
+      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
+      "source": "Vio.com",
+      "otaPrice": 2045,
+      "direct": 2323,
+      "gapRupees": 278,
+      "gapPercent": 12,
+      "kind": "ota_lower"
+    },
+    "select-nehru-place|D2|ixigo": {
+      "propertyId": "select-nehru-place",
+      "property": "Saltstayz Select - Nehru Place & New Friends Colony",
+      "window": "D2",
+      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
+      "source": "ixigo",
+      "otaPrice": 2096,
+      "direct": 2323,
+      "gapRupees": 227,
+      "gapPercent": 9.8,
+      "kind": "ota_lower"
+    },
+    "select-nehru-place|D2|Yatra": {
+      "propertyId": "select-nehru-place",
+      "property": "Saltstayz Select - Nehru Place & New Friends Colony",
+      "window": "D2",
+      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
+      "source": "Yatra",
+      "otaPrice": 2247,
+      "direct": 2323,
+      "gapRupees": 76,
+      "gapPercent": 3.3,
+      "kind": "ota_lower"
+    },
+    "select-nehru-place|D2|Goibibo": {
+      "propertyId": "select-nehru-place",
+      "property": "Saltstayz Select - Nehru Place & New Friends Colony",
+      "window": "D2",
+      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
+      "source": "Goibibo",
+      "otaPrice": 2295,
+      "direct": 2323,
+      "gapRupees": 28,
+      "gapPercent": 1.2,
       "kind": "ota_lower"
     },
     "premier-paschim-vihar|D2|Agoda": {
@@ -2555,78 +2831,6 @@
       "direct": 3059,
       "gapRupees": 181,
       "gapPercent": 5.9,
-      "kind": "ota_lower"
-    },
-    "select-nehru-place|D2|EaseMyTrip": {
-      "propertyId": "select-nehru-place",
-      "property": "Saltstayz Select - Nehru Place & New Friends Colony",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "EaseMyTrip",
-      "otaPrice": 1928,
-      "direct": 2323,
-      "gapRupees": 395,
-      "gapPercent": 17,
-      "kind": "ota_lower"
-    },
-    "select-nehru-place|D2|Agoda": {
-      "propertyId": "select-nehru-place",
-      "property": "Saltstayz Select - Nehru Place & New Friends Colony",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "Agoda",
-      "otaPrice": 1993,
-      "direct": 2323,
-      "gapRupees": 330,
-      "gapPercent": 14.2,
-      "kind": "ota_lower"
-    },
-    "select-nehru-place|D2|ixigo": {
-      "propertyId": "select-nehru-place",
-      "property": "Saltstayz Select - Nehru Place & New Friends Colony",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "ixigo",
-      "otaPrice": 2096,
-      "direct": 2323,
-      "gapRupees": 227,
-      "gapPercent": 9.8,
-      "kind": "ota_lower"
-    },
-    "select-nehru-place|D2|Bluepillow": {
-      "propertyId": "select-nehru-place",
-      "property": "Saltstayz Select - Nehru Place & New Friends Colony",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "Bluepillow",
-      "otaPrice": 2097,
-      "direct": 2323,
-      "gapRupees": 226,
-      "gapPercent": 9.7,
-      "kind": "ota_lower"
-    },
-    "select-nehru-place|D2|Yatra": {
-      "propertyId": "select-nehru-place",
-      "property": "Saltstayz Select - Nehru Place & New Friends Colony",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "Yatra",
-      "otaPrice": 2247,
-      "direct": 2323,
-      "gapRupees": 76,
-      "gapPercent": 3.3,
-      "kind": "ota_lower"
-    },
-    "select-nehru-place|D2|Goibibo": {
-      "propertyId": "select-nehru-place",
-      "property": "Saltstayz Select - Nehru Place & New Friends Colony",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "Goibibo",
-      "otaPrice": 2295,
-      "direct": 2323,
-      "gapRupees": 28,
-      "gapPercent": 1.2,
       "kind": "ota_lower"
     },
     "premier-medicity|D2|Agoda": {
@@ -2809,42 +3013,6 @@
       "gapPercent": 14.3,
       "kind": "ota_lower"
     },
-    "autograph-advant-sector-144|D2|Vio.com": {
-      "propertyId": "autograph-advant-sector-144",
-      "property": "Saltstayz Autograph - Advant & Sector 144",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "Vio.com",
-      "otaPrice": 3243,
-      "direct": 3689,
-      "gapRupees": 446,
-      "gapPercent": 12.1,
-      "kind": "ota_lower"
-    },
-    "autograph-advant-sector-144|D2|dealbase.com": {
-      "propertyId": "autograph-advant-sector-144",
-      "property": "Saltstayz Autograph - Advant & Sector 144",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "dealbase.com",
-      "otaPrice": 3243,
-      "direct": 3689,
-      "gapRupees": 446,
-      "gapPercent": 12.1,
-      "kind": "ota_lower"
-    },
-    "autograph-advant-sector-144|D2|Etrip.net": {
-      "propertyId": "autograph-advant-sector-144",
-      "property": "Saltstayz Autograph - Advant & Sector 144",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "Etrip.net",
-      "otaPrice": 3243,
-      "direct": 3689,
-      "gapRupees": 446,
-      "gapPercent": 12.1,
-      "kind": "ota_lower"
-    },
     "autograph-advant-sector-144|D2|ixigo": {
       "propertyId": "autograph-advant-sector-144",
       "property": "Saltstayz Autograph - Advant & Sector 144",
@@ -2881,28 +3049,16 @@
       "gapPercent": 13.3,
       "kind": "ota_lower"
     },
-    "premier-galleria-sector-27|D2|Tripadvisor": {
+    "premier-galleria-sector-27|D2|Bluepillow": {
       "propertyId": "premier-galleria-sector-27",
       "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
       "window": "D2",
       "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "Tripadvisor",
-      "otaPrice": 2318,
+      "source": "Bluepillow",
+      "otaPrice": 2377,
       "direct": 2636,
-      "gapRupees": 318,
-      "gapPercent": 12.1,
-      "kind": "ota_lower"
-    },
-    "premier-galleria-sector-27|D2|trivago": {
-      "propertyId": "premier-galleria-sector-27",
-      "property": "Saltstayz Premier - Galleria Market Road & Sector 27",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "trivago",
-      "otaPrice": 2318,
-      "direct": 2636,
-      "gapRupees": 318,
-      "gapPercent": 12.1,
+      "gapRupees": 259,
+      "gapPercent": 9.8,
       "kind": "ota_lower"
     },
     "premier-sector-50-golf-course-ext-road|D2|Agoda": {
@@ -2965,28 +3121,28 @@
       "gapPercent": 14.3,
       "kind": "ota_lower"
     },
-    "trinity-chandigarh-mohali|D2|trivago": {
+    "trinity-chandigarh-mohali|D2|Vio.com": {
       "propertyId": "trinity-chandigarh-mohali",
       "property": "Saltstayz Trinity - Chandigarh Mohali",
       "window": "D2",
       "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "trivago",
+      "source": "Vio.com",
       "otaPrice": 3003,
       "direct": 3417,
       "gapRupees": 414,
       "gapPercent": 12.1,
       "kind": "ota_lower"
     },
-    "trinity-chandigarh-mohali|D2|Bluepillow": {
+    "trinity-chandigarh-mohali|D2|Etrip.net": {
       "propertyId": "trinity-chandigarh-mohali",
       "property": "Saltstayz Trinity - Chandigarh Mohali",
       "window": "D2",
       "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "Bluepillow",
-      "otaPrice": 3079,
+      "source": "Etrip.net",
+      "otaPrice": 3003,
       "direct": 3417,
-      "gapRupees": 338,
-      "gapPercent": 9.9,
+      "gapRupees": 414,
+      "gapPercent": 12.1,
       "kind": "ota_lower"
     },
     "trinity-chandigarh-mohali|D2|ixigo": {
@@ -3061,18 +3217,6 @@
       "gapPercent": 12.2,
       "kind": "ota_lower"
     },
-    "pause-east-of-kailash|D2|MakeMyTrip": {
-      "propertyId": "pause-east-of-kailash",
-      "property": "Pause by Saltstayz - East of Kailash",
-      "window": "D2",
-      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
-      "source": "MakeMyTrip",
-      "otaPrice": 3526,
-      "direct": 3997,
-      "gapRupees": 471,
-      "gapPercent": 11.8,
-      "kind": "ota_lower"
-    },
     "premier-faridabad-sarita-vihar|D2|EaseMyTrip": {
       "propertyId": "premier-faridabad-sarita-vihar",
       "property": "Saltstayz Premier Faridabad Near Sarita Vihar",
@@ -3095,6 +3239,30 @@
       "direct": 2722,
       "gapRupees": 20,
       "gapPercent": 0.7,
+      "kind": "ota_lower"
+    },
+    "premier-faridabad-sarita-vihar|D2|Tripadvisor": {
+      "propertyId": "premier-faridabad-sarita-vihar",
+      "property": "Saltstayz Premier Faridabad Near Sarita Vihar",
+      "window": "D2",
+      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
+      "source": "Tripadvisor",
+      "otaPrice": 2721,
+      "direct": 2722,
+      "gapRupees": 1,
+      "gapPercent": 0,
+      "kind": "ota_lower"
+    },
+    "premier-faridabad-sarita-vihar|D2|Vio.com": {
+      "propertyId": "premier-faridabad-sarita-vihar",
+      "property": "Saltstayz Premier Faridabad Near Sarita Vihar",
+      "window": "D2",
+      "windowLabel": "Day-after check-in · Thu 12 Nov → Fri 13 Nov",
+      "source": "Vio.com",
+      "otaPrice": 2721,
+      "direct": 2722,
+      "gapRupees": 1,
+      "gapPercent": 0,
       "kind": "ota_lower"
     },
     "golden-tulip-gurugram-manesar|D2|Cleartrip": {
